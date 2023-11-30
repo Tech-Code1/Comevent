@@ -29,6 +29,6 @@ export interface ISimplifiedUserEditProfile {
   gender: string;
   bornDate: Date;
   age: number;
-  specialty: Specialty;
-  country: Country;
+  specialty: string;
+  country: string;
 }

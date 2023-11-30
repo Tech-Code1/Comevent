@@ -58,3 +58,13 @@ export enum SocialPlatform {
   LINKEDIN = 'LinkedIn',
   INSTAGRAM = 'Instagram',
 }
+
+export enum Gender {
+  MALE = 'Male',
+  FEMALE = 'Female',
+}
+
+export enum TYPE_AREA {
+  EXPERTISE = 'EXPERTISE',
+  INTEREST = 'INTEREST',
+}

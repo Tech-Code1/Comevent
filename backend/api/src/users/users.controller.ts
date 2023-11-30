@@ -84,13 +84,27 @@ export class UsersController {
   }
 
   @Get('profile/:id')
-  @UserDoc()
   public async findUserProfileById(
     @Param('id') id: string,
     @CurrentUser([ROLES.ADMIN, ROLES.USER]) currentUser: User
   ) {
     try {
       const user = await this.usersService.findUserProfileById(id);
+      console.log('Controller user:', user);
+
+      return Resp.Success<UserProfileDTO>(user, 'OK');
+    } catch (error) {
+      throw Resp.Error('NOT_FOUND', 'User not found');
+    }
+  }
+
+  @Get('edit-profile/:id')
+  public async findUserEditProfileById(
+    @Param('id') id: string,
+    @CurrentUser([ROLES.ADMIN, ROLES.USER]) currentUser: User
+  ) {
+    try {
+      const user = await this.usersService.findUserEditProfileById(id);
       console.log('Controller user:', user);
 
       return Resp.Success<UserProfileDTO>(user, 'OK');

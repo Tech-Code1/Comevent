@@ -1,4 +1,4 @@
-import { Country, Specialty } from '@db/entities';
+import { Gender } from '@db/constants';
 import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
 import {
   IsArray,
@@ -9,9 +9,9 @@ import {
   IsString,
   MaxLength,
 } from 'class-validator';
-import { IUserEditProfile } from '../types/userEditProfile.dto';
+import { ISimplifiedUserEditProfile } from '../types/userEditProfile.dto';
 
-export class UserEditProfileDTO implements IUserEditProfile {
+export class UserEditProfileDTO implements ISimplifiedUserEditProfile {
   @ApiProperty({
     description: 'Username of the user',
     example: 'johndoe',
@@ -48,12 +48,23 @@ export class UserEditProfileDTO implements IUserEditProfile {
 
   @ApiProperty({
     description: 'Areas of expertise of the user',
-    example: 'Web Development, JavaScript',
+    example: ['Web Development', 'JavaScript'],
     type: 'string',
+    isArray: true,
   })
   @IsArray()
   @IsString({ each: true })
-  userAreas!: string[];
+  areaOfExpertise!: string[];
+
+  @ApiProperty({
+    description: 'Areas of interest of the user',
+    example: ['Artificial Intelligence', 'Machine Learning'],
+    type: 'string',
+    isArray: true,
+  })
+  @IsArray()
+  @IsString({ each: true })
+  areaOfInteres!: string[];
 
   @ApiPropertyOptional({
     description: 'Social networks of the user',
@@ -82,10 +93,10 @@ export class UserEditProfileDTO implements IUserEditProfile {
 
   @ApiPropertyOptional({
     description: 'Gender of the user',
-    type: 'string',
+    enum: Gender,
   })
-  @IsString()
-  gender!: string;
+  @IsEnum(Gender)
+  gender!: Gender;
 
   @ApiPropertyOptional({
     description: 'Birth date of the user',
@@ -106,13 +117,13 @@ export class UserEditProfileDTO implements IUserEditProfile {
     description: 'Specialty of the user',
     type: 'Specialty',
   })
-  @IsEnum(Specialty)
-  specialty!: Specialty;
+  @IsString()
+  specialty!: string;
 
   @ApiProperty({
     description: 'Country of the user',
     type: 'Country',
   })
-  @IsEnum(Country)
-  country!: Country;
+  @IsString()
+  country!: string;
 }

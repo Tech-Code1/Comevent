@@ -1,5 +1,5 @@
 import { claimTypes } from '@config';
-import { AuthProvider, ROLES } from '@db/constants';
+import { AuthProvider, ROLES, TYPE_AREA } from '@db/constants';
 import {
   Area,
   User,
@@ -237,8 +237,6 @@ export class UsersService {
 
       return userProfile;
     } catch (error) {
-      console.log('error user', error);
-
       throw Resp.Error(error);
     }
   }
@@ -260,21 +258,10 @@ export class UsersService {
         ])
         .leftJoinAndSelect('user.socialNetworks', 'socialNetwork')
         .leftJoinAndSelect('user.events', 'events')
-        .leftJoinAndSelect(
-          'user.userAreas',
-          'userArea',
-          'userArea.type = :type',
-          { type: 'EXPERTISE' }
-        )
-        .leftJoinAndSelect(
-          'user.userAreas',
-          'userArea',
-          'userArea.type = :type',
-          { type: 'INTEREST' }
-        )
+        .leftJoinAndSelect('user.userAreas', 'userArea')
         .leftJoinAndSelect('userArea.area', 'area')
         .leftJoinAndSelect('user.specialty', 'name')
-        .leftJoinAndSelect('user.countries', 'name')
+        .leftJoinAndSelect('user.country', 'country')
         .where('user.id = :id', { id })
         .getOne();
 
@@ -290,15 +277,21 @@ export class UsersService {
         socialNetworks: userWithAreas.socialNetworks.map(
           (social) => social.platform
         ),
-        areaOfExpertise: userWithAreas.userAreas.map((area) => area.area.name),
-        areaOfInteres: userWithAreas.userAreas.map((area) => area.area.name),
+        areaOfExpertise: userWithAreas.userAreas
+          .filter((ua) => ua.type === TYPE_AREA.EXPERTISE)
+          .map((ua) => (ua.area ? ua.area.name : null)),
+        areaOfInteres: userWithAreas.userAreas
+          .filter((ua) => ua.type === TYPE_AREA.INTEREST)
+          .map((ua) => (ua.area ? ua.area.name : null)),
         firstName: userWithAreas.firstName,
         lastName: userWithAreas.lastName,
         bornDate: userWithAreas.bornDate,
         gender: userWithAreas.gender,
         age: userWithAreas.age,
-        specialty: userWithAreas.specialty,
-        country: userWithAreas.country,
+        specialty: userWithAreas.specialty
+          ? userWithAreas.specialty.name
+          : null,
+        country: userWithAreas.country ? userWithAreas.country.name : null,
       };
 
       const userProfile = Object.assign(
@@ -308,8 +301,6 @@ export class UsersService {
 
       return userProfile;
     } catch (error) {
-      console.log('error user', error);
-
       throw Resp.Error(error);
     }
   }

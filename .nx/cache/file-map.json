@@ -2259,7 +2259,7 @@
         },
         {
           "file": "backend/api/src/users/users.controller.ts",
-          "hash": "839476617742567009",
+          "hash": "447101483896342893",
           "deps": [
             "database",
             "npm:@nestjs/common",
@@ -2277,7 +2277,7 @@
         },
         {
           "file": "backend/api/src/users/users.service.ts",
-          "hash": "279580542360009172",
+          "hash": "16960367862540541547",
           "deps": [
             "npm:@config",
             "database",
@@ -2443,7 +2443,7 @@
         },
         {
           "file": "backend/api/src/users/dto/userEditProfile.dto.ts",
-          "hash": "10603417784686601997",
+          "hash": "3469452319178455780",
           "deps": [
             "database",
             "npm:@nestjs/swagger",
@@ -2452,7 +2452,7 @@
         },
         {
           "file": "backend/api/src/users/types/userEditProfile.dto.ts",
-          "hash": "13530360859086089995",
+          "hash": "155193821576385947",
           "deps": [
             "database"
           ]
@@ -2577,7 +2577,7 @@
         },
         {
           "file": "backend/database/src/constants/interfaces.entities.ts",
-          "hash": "1878436292774241353"
+          "hash": "4080563215746568378"
         },
         {
           "file": "backend/database/src/decorators/lastUpdateBy.decorator.ts",
