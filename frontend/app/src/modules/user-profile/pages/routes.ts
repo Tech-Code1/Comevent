@@ -11,6 +11,13 @@ export default [
           import('./profile/profile.component').then((c) => c.ProfileComponent),
       },
       {
+        path: 'edit-profile',
+        loadComponent: () =>
+          import('./edit-profile/edit-profile.component').then(
+            (c) => c.EditProfileComponent
+          ),
+      },
+      {
         path: 'badges',
         loadComponent: () =>
           import('./badges/badges.component').then((c) => c.BadgesComponent),

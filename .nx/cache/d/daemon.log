@@ -15798,3 +15798,179 @@ Error: EPERM: operation not permitted, rename 'c:\projects\Comevent\.nx\cache\pr
 [NX Daemon Server] - 2023-11-29T15:30:02.716Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/card-without-events/card-without-events.component.html
 [NX Daemon Server] - 2023-11-29T15:30:02.716Z - [REQUEST]: 
 [NX Daemon Server] - 2023-11-29T15:30:02.813Z - Time taken for 'hash changed files from watcher' 1.3770999908447266ms
+[NX Daemon Server] - 2023-11-29T15:30:53.067Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-29T15:30:53.069Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/card-profile/card-profile.component.ts was modified
+[NX Daemon Server] - 2023-11-29T15:30:54.514Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-29T15:30:55.938Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-29T15:30:59.499Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-29T15:30:59.499Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/card-profile/card-profile.component.ts
+[NX Daemon Server] - 2023-11-29T15:30:59.499Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-29T15:30:59.586Z - Time taken for 'hash changed files from watcher' 1.107100009918213ms
+[NX Daemon Server] - 2023-11-29T15:31:06.619Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/card-profile/card-profile.component.html was modified
+[NX Daemon Server] - 2023-11-29T15:31:06.620Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-29T15:31:07.625Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-29T15:31:08.927Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-29T15:31:13.063Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-29T15:31:13.063Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/card-profile/card-profile.component.html
+[NX Daemon Server] - 2023-11-29T15:31:13.064Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-29T15:31:13.145Z - Time taken for 'hash changed files from watcher' 1.4529000520706177ms
+[NX Daemon Server] - 2023-11-29T19:15:20.535Z - There are 4 open connections. Reset inactivity timer.
+[NX Daemon Server] - 2023-11-29T22:15:23.109Z - There are 4 open connections. Reset inactivity timer.
+[NX Daemon Server] - 2023-11-30T00:25:24.340Z - [WATCHER]: frontend/app/src/modules/user-profile/pages/profile/profile.component.html was modified
+[NX Daemon Server] - 2023-11-30T00:25:24.343Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-30T00:25:27.315Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-30T00:25:29.427Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-30T00:25:29.494Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-30T00:25:30.954Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-30T00:25:30.954Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/profile/profile.component.html
+[NX Daemon Server] - 2023-11-30T00:25:30.954Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-30T00:25:31.116Z - Time taken for 'hash changed files from watcher' 27.033900022506714ms
+[NX Daemon Server] - 2023-11-30T00:25:44.486Z - Closed a connection. Number of open connections: 3
+[NX Daemon Server] - 2023-11-30T00:25:49.195Z - Closed a connection. Number of open connections: 2
+[NX Daemon Server] - 2023-11-30T00:25:49.786Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-30T13:24:12.449Z - Started listening on: \\.\pipe\nx\C:\Users\David\AppData\Local\Temp\1333570d747707fc9927\d.sock
+[NX Daemon Server] - 2023-11-30T13:24:12.463Z - [WATCHER]: Subscribed to changes within: c:\projects\Comevent (native)
+[NX Daemon Server] - 2023-11-30T13:24:12.466Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-30T13:24:12.468Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2023-11-30T13:24:12.468Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-30T13:24:12.470Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2023-11-30T13:24:13.067Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-30T13:24:13.067Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-30T13:24:13.067Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-30T13:24:13.161Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2023-11-30T13:24:13.164Z - Time taken for 'total for creating and serializing project graph' 690.255999982357ms
+[NX Daemon Server] - 2023-11-30T13:24:13.164Z - Done responding to the client project-graph
+[NX Daemon Server] - 2023-11-30T13:24:13.164Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 691. Response time: 3.
+[NX Daemon Server] - 2023-11-30T13:24:13.170Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2023-11-30T13:24:13.171Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-30T13:24:13.171Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2023-11-30T13:24:13.172Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-30T13:24:13.177Z - [REQUEST]: Responding to the client. handleRequestFileData
+[NX Daemon Server] - 2023-11-30T13:24:13.177Z - Done responding to the client handleRequestFileData
+[NX Daemon Server] - 2023-11-30T13:24:13.177Z - Handled REQUEST_FILE_DATA. Handling time: 2. Response time: 0.
+[NX Daemon Server] - 2023-11-30T13:30:46.372Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-30T13:30:46.374Z - [WATCHER]: 3 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2023-11-30T13:30:46.508Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-30T13:30:46.508Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/edit-profile/profile.component.ts,frontend/app/src/modules/user-profile/pages/edit-profile/profile.component.html,frontend/app/src/modules/user-profile/pages/edit-profile/profile.component.scss
+[NX Daemon Server] - 2023-11-30T13:30:46.508Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-30T13:30:46.765Z - Time taken for 'hash changed files from watcher' 8.39520001411438ms
+[NX Daemon Server] - 2023-11-30T13:30:55.354Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-30T13:30:55.355Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-11-30T13:30:55.483Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-30T13:30:55.483Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.html
+[NX Daemon Server] - 2023-11-30T13:30:55.483Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/edit-profile/profile.component.html
+[NX Daemon Server] - 2023-11-30T13:30:55.578Z - Time taken for 'hash changed files from watcher' 1.0684000253677368ms
+[NX Daemon Server] - 2023-11-30T13:30:59.422Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-11-30T13:30:59.422Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-30T13:30:59.549Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-30T13:30:59.549Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.scss
+[NX Daemon Server] - 2023-11-30T13:30:59.549Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/edit-profile/profile.component.scss
+[NX Daemon Server] - 2023-11-30T13:30:59.625Z - Time taken for 'hash changed files from watcher' 1.7480000257492065ms
+[NX Daemon Server] - 2023-11-30T13:31:04.981Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-11-30T13:31:04.981Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-30T13:31:05.109Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-30T13:31:05.109Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.ts
+[NX Daemon Server] - 2023-11-30T13:31:05.109Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/edit-profile/profile.component.ts
+[NX Daemon Server] - 2023-11-30T13:31:05.190Z - Time taken for 'hash changed files from watcher' 1.917199969291687ms
+[NX Daemon Server] - 2023-11-30T13:31:26.667Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-30T13:31:26.668Z - [WATCHER]: frontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.html was modified
+[NX Daemon Server] - 2023-11-30T13:31:26.898Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-30T13:31:26.898Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.html
+[NX Daemon Server] - 2023-11-30T13:31:26.898Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-30T13:31:26.992Z - Time taken for 'hash changed files from watcher' 1.078000009059906ms
+[NX Daemon Server] - 2023-11-30T13:31:55.304Z - [WATCHER]: frontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.ts was modified
+[NX Daemon Server] - 2023-11-30T13:31:55.305Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-30T13:31:55.727Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-30T13:31:55.727Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.ts
+[NX Daemon Server] - 2023-11-30T13:31:55.728Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-30T13:31:55.815Z - Time taken for 'hash changed files from watcher' 1.0572999715805054ms
+[NX Daemon Server] - 2023-11-30T13:33:01.930Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-30T13:33:01.932Z - [WATCHER]: frontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.ts was modified
+[NX Daemon Server] - 2023-11-30T13:33:02.756Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-30T13:33:02.756Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.ts
+[NX Daemon Server] - 2023-11-30T13:33:02.756Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-30T13:33:02.848Z - Time taken for 'hash changed files from watcher' 1.0821999907493591ms
+[NX Daemon Server] - 2023-11-30T13:33:10.818Z - [WATCHER]: frontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.html was modified
+[NX Daemon Server] - 2023-11-30T13:33:10.818Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-30T13:33:12.439Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-30T13:33:12.439Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.html
+[NX Daemon Server] - 2023-11-30T13:33:12.439Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-30T13:33:12.519Z - Time taken for 'hash changed files from watcher' 1.4969000220298767ms
+[NX Daemon Server] - 2023-11-30T13:33:59.612Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-30T13:33:59.613Z - [WATCHER]: frontend/app/src/modules/user-profile/pages/routes.ts was modified
+[NX Daemon Server] - 2023-11-30T13:34:02.851Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-30T13:34:02.851Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/routes.ts
+[NX Daemon Server] - 2023-11-30T13:34:02.851Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-30T13:34:02.930Z - Time taken for 'hash changed files from watcher' 1.6175000071525574ms
+[NX Daemon Server] - 2023-11-30T13:34:31.870Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/card-profile/card-profile.component.html was modified
+[NX Daemon Server] - 2023-11-30T13:34:31.870Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-30T13:34:38.298Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-30T13:34:38.298Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/card-profile/card-profile.component.html
+[NX Daemon Server] - 2023-11-30T13:34:38.298Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-30T13:34:38.356Z - Time taken for 'hash changed files from watcher' 1.5115999579429626ms
+[NX Daemon Server] - 2023-11-30T13:35:34.816Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-30T13:35:34.818Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/card-profile/card-profile.component.html was modified
+[NX Daemon Server] - 2023-11-30T13:35:41.242Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-30T13:35:41.242Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/card-profile/card-profile.component.html
+[NX Daemon Server] - 2023-11-30T13:35:41.242Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-30T13:35:41.333Z - Time taken for 'hash changed files from watcher' 1.5464999675750732ms
+[NX Daemon Server] - 2023-11-30T13:35:59.329Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2023-11-30T13:35:59.331Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-30T13:35:59.331Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2023-11-30T13:35:59.333Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2023-11-30T13:35:59.334Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2023-11-30T13:35:59.336Z - Time taken for 'total for creating and serializing project graph' 0.3111000061035156ms
+[NX Daemon Server] - 2023-11-30T13:35:59.336Z - Done responding to the client project-graph
+[NX Daemon Server] - 2023-11-30T13:35:59.336Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 1. Response time: 2.
+[NX Daemon Server] - 2023-11-30T13:35:59.439Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX Daemon Server] - 2023-11-30T13:35:59.439Z - Done responding to the client handleHashTasks
+[NX Daemon Server] - 2023-11-30T13:35:59.439Z - Handled HASH_TASKS. Handling time: 60. Response time: 0.
+[NX Daemon Server] - 2023-11-30T13:36:03.427Z - Established a connection. Number of open connections: 3
+[NX Daemon Server] - 2023-11-30T13:36:03.428Z - Closed a connection. Number of open connections: 2
+[NX Daemon Server] - 2023-11-30T13:36:03.428Z - Established a connection. Number of open connections: 3
+[NX Daemon Server] - 2023-11-30T13:36:03.430Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2023-11-30T13:36:03.430Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2023-11-30T13:36:03.432Z - Time taken for 'total for creating and serializing project graph' 0.12440001964569092ms
+[NX Daemon Server] - 2023-11-30T13:36:03.432Z - Done responding to the client project-graph
+[NX Daemon Server] - 2023-11-30T13:36:03.432Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 2.
+[NX Daemon Server] - 2023-11-30T13:36:27.179Z - Established a connection. Number of open connections: 4
+[NX Daemon Server] - 2023-11-30T13:36:27.179Z - Closed a connection. Number of open connections: 3
+[NX Daemon Server] - 2023-11-30T13:36:27.180Z - Established a connection. Number of open connections: 4
+[NX Daemon Server] - 2023-11-30T13:36:27.182Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2023-11-30T13:36:27.183Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2023-11-30T13:36:27.185Z - Time taken for 'total for creating and serializing project graph' 0.1646999716758728ms
+[NX Daemon Server] - 2023-11-30T13:36:27.185Z - Done responding to the client project-graph
+[NX Daemon Server] - 2023-11-30T13:36:27.185Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 1. Response time: 2.
+[NX Daemon Server] - 2023-11-30T13:36:27.230Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX Daemon Server] - 2023-11-30T13:36:27.231Z - Done responding to the client handleHashTasks
+[NX Daemon Server] - 2023-11-30T13:36:27.231Z - Handled HASH_TASKS. Handling time: 5. Response time: 1.
+[NX Daemon Server] - 2023-11-30T13:36:30.533Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-30T13:36:30.773Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-30T13:36:30.837Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-30T13:36:30.965Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-30T13:36:33.309Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-30T13:36:38.210Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-30T13:39:16.482Z - [WATCHER]: frontend/app/src/modules/user-profile/pages/routes.ts was modified
+[NX Daemon Server] - 2023-11-30T13:39:16.482Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-30T13:39:16.614Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-30T13:39:16.614Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/routes.ts
+[NX Daemon Server] - 2023-11-30T13:39:16.614Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-30T13:39:16.669Z - Time taken for 'hash changed files from watcher' 1.042300045490265ms
+[NX Daemon Server] - 2023-11-30T13:39:18.763Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-30T13:39:18.826Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-30T13:39:29.842Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-30T13:39:29.844Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/card-profile/card-profile.component.html was modified
+[NX Daemon Server] - 2023-11-30T13:39:30.065Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-30T13:39:30.065Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/card-profile/card-profile.component.html
+[NX Daemon Server] - 2023-11-30T13:39:30.065Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-30T13:39:30.160Z - Time taken for 'hash changed files from watcher' 1.4946999549865723ms
+[NX Daemon Server] - 2023-11-30T13:39:30.517Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-30T13:39:31.843Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-30T13:40:10.053Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-30T13:40:10.054Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/card-profile/card-profile.component.ts was modified
+[NX Daemon Server] - 2023-11-30T13:40:10.484Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-30T13:40:10.484Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/card-profile/card-profile.component.ts
+[NX Daemon Server] - 2023-11-30T13:40:10.484Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-30T13:40:10.585Z - Time taken for 'hash changed files from watcher' 1.4225000143051147ms
+[NX Daemon Server] - 2023-11-30T13:40:11.352Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-30T13:40:12.674Z - [WATCHER]: Processing file changes in outputs

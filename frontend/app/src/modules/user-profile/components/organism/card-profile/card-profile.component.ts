@@ -5,6 +5,7 @@ import {
   Input,
   ViewEncapsulation,
 } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import {
   IconDiscordComponent,
@@ -31,6 +32,7 @@ import { ButtonActionComponent } from '../../molecules';
     IconGithubTwoComponent,
     IconXComponent,
     TranslateModule,
+    RouterModule,
   ],
   selector: 'card-profile',
   templateUrl: './card-profile.component.html',
