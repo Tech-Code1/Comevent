@@ -1165,7 +1165,7 @@
         },
         {
           "file": "frontend/ui/components/atoms/icons/index.ts",
-          "hash": "460609739806225011"
+          "hash": "9677450024904603952"
         },
         {
           "file": "frontend/ui/components/atoms/index.ts",
@@ -1432,6 +1432,22 @@
         {
           "file": "frontend/ui/tsconfig.spec.json",
           "hash": "8246693900492800589"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-circle-arrow-left/icon-circle-arrow-left.component.html",
+          "hash": "5705977196106674535"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-circle-arrow-left/icon-circle-arrow-left.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-circle-arrow-left/icon-circle-arrow-left.component.ts",
+          "hash": "3054362149903018480",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
         }
       ],
       "tailwind-preset": [
@@ -4350,7 +4366,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.html",
-          "hash": "17409663668109349900"
+          "hash": "12289122817646374215"
         },
         {
           "file": "frontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.scss",
@@ -4358,7 +4374,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.ts",
-          "hash": "1992214658106517522",
+          "hash": "4128681163615887588",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
@@ -4369,6 +4385,10 @@
         {
           "file": "frontend/app/src/modules/user-profile/adapters/user-edit-profile.adapter.ts",
           "hash": "14741939404053966049"
+        },
+        {
+          "file": "frontend/app/src/assets/svg/icon-circle-arrow-left.svg",
+          "hash": "9497985277609197411"
         }
       ]
     }

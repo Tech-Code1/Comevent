@@ -2,6 +2,7 @@ export * from './icon-area/icon-area.component';
 export * from './icon-arrow-right/icon-arrow-right.component';
 export * from './icon-badges/icon-badges.component';
 export * from './icon-basic/icon-basic.component';
+export * from './icon-circle-arrow-left/icon-circle-arrow-left.component';
 export * from './icon-clear';
 export * from './icon-comevent/icon-comevent.component';
 export * from './icon-communities/icon-communities.component';

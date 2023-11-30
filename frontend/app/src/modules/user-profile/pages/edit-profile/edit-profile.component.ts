@@ -1,13 +1,23 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit, inject } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
-import { ButtonComponent, TitleComponent } from '@ui/components';
+import {
+  ButtonComponent,
+  IconCircleArrowLeftComponent,
+  TitleComponent,
+} from '@ui/components';
 import { UserProfileStateService } from '../..';
 import { TokenService } from '../../../../common/services/token.service';
 
 @Component({
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule, ButtonComponent, TitleComponent],
+  imports: [
+    CommonModule,
+    ReactiveFormsModule,
+    ButtonComponent,
+    TitleComponent,
+    IconCircleArrowLeftComponent,
+  ],
   selector: 'edit-profile',
   templateUrl: './edit-profile.component.html',
   styleUrls: ['./edit-profile.component.scss'],
