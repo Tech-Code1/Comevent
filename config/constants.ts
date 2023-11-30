@@ -44,3 +44,4 @@ export const FACEBOOK_URL = String(process.env.FACEBOOK_URL);
 export const GITHUB_CLIENT_ID = String(process.env.GITHUB_CLIENT_ID);
 export const GITHUB_CLIENT_SECRET = String(process.env.GITHUB_CLIENT_SECRET);
 export const GITHUB_CALLBACK_URL = String(process.env.GITHUB_CALLBACK_URL);
+export const SEEDERS_TO_RUN = String(process.env.SEEDERS_TO_RUN);

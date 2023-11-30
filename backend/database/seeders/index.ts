@@ -1,3 +1,4 @@
+export { default as CountrySeeder } from './country.seeder';
 export { default as ProjectSeeder } from './project.seeder';
 export { default as TaskSeeder } from './task.seeder';
 export { default as UserSeeder } from './user.seeder';

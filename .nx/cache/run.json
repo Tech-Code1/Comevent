@@ -1,21 +1,21 @@
 {
   "run": {
-    "command": "nx run frontend-ui:storybook",
-    "startTime": "2023-11-14T00:23:49.880Z",
-    "endTime": "2023-11-14T00:27:30.156Z",
+    "command": "nx run database:seed",
+    "startTime": "2023-11-30T16:42:51.748Z",
+    "endTime": "2023-11-30T16:42:58.816Z",
     "inner": false
   },
   "tasks": [
     {
-      "taskId": "frontend-ui:storybook",
-      "target": "storybook",
-      "projectName": "frontend-ui",
-      "hash": "17083145367723511165",
-      "startTime": "2023-11-14T00:23:49.894Z",
-      "endTime": "2023-11-14T00:27:30.155Z",
+      "taskId": "database:seed",
+      "target": "seed",
+      "projectName": "database",
+      "hash": "1677735017810629218",
+      "startTime": "2023-11-30T16:42:51.759Z",
+      "endTime": "2023-11-30T16:42:58.815Z",
       "params": "",
       "cacheStatus": "cache-miss",
-      "status": 1
+      "status": 0
     }
   ]
 }

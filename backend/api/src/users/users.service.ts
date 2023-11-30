@@ -19,10 +19,11 @@ import {
   CreateUserDTO,
   CreateUserWithExternalProviderDTO,
   UpdateUserDTO,
+  UserEditProfileDTO,
   UserToProjectDTO,
 } from './dto';
 import { UserProfileDTO } from './dto/UserProfile.dto';
-import { ISimplifiedUser } from './types/simplifiedUser.type';
+import { ISimplifiedUser, ISimplifiedUserEditProfile } from './types';
 
 @Injectable()
 export class UsersService {
@@ -233,6 +234,77 @@ export class UsersService {
       };
 
       const userProfile = Object.assign(new UserProfileDTO(), simplifiedUser);
+
+      return userProfile;
+    } catch (error) {
+      console.log('error user', error);
+
+      throw Resp.Error(error);
+    }
+  }
+
+  public async findUserEditProfileById(id: string): Promise<UserProfileDTO> {
+    try {
+      const userWithAreas = await this.userRepository
+        .createQueryBuilder('user')
+        .select([
+          'user.avatar',
+          'user.username',
+          'user.email',
+          'user.description',
+          'user.first_name',
+          'user.last_name',
+          'user.gender',
+          'user.born_date',
+          'user.age',
+        ])
+        .leftJoinAndSelect('user.socialNetworks', 'socialNetwork')
+        .leftJoinAndSelect('user.events', 'events')
+        .leftJoinAndSelect(
+          'user.userAreas',
+          'userArea',
+          'userArea.type = :type',
+          { type: 'EXPERTISE' }
+        )
+        .leftJoinAndSelect(
+          'user.userAreas',
+          'userArea',
+          'userArea.type = :type',
+          { type: 'INTEREST' }
+        )
+        .leftJoinAndSelect('userArea.area', 'area')
+        .leftJoinAndSelect('user.specialty', 'name')
+        .leftJoinAndSelect('user.countries', 'name')
+        .where('user.id = :id', { id })
+        .getOne();
+
+      if (!userWithAreas) {
+        throw Resp.Error('NOT_FOUND');
+      }
+
+      const simplifiedUser: ISimplifiedUserEditProfile = {
+        avatar: userWithAreas.avatar,
+        username: userWithAreas.username,
+        email: userWithAreas.email,
+        description: userWithAreas.description,
+        socialNetworks: userWithAreas.socialNetworks.map(
+          (social) => social.platform
+        ),
+        areaOfExpertise: userWithAreas.userAreas.map((area) => area.area.name),
+        areaOfInteres: userWithAreas.userAreas.map((area) => area.area.name),
+        firstName: userWithAreas.firstName,
+        lastName: userWithAreas.lastName,
+        bornDate: userWithAreas.bornDate,
+        gender: userWithAreas.gender,
+        age: userWithAreas.age,
+        specialty: userWithAreas.specialty,
+        country: userWithAreas.country,
+      };
+
+      const userProfile = Object.assign(
+        new UserEditProfileDTO(),
+        simplifiedUser
+      );
 
       return userProfile;
     } catch (error) {

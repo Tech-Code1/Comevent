@@ -426,11 +426,11 @@
       },
       {
         "file": "config/config-module.ts",
-        "hash": "14350737589804717069"
+        "hash": "12576757570947337676"
       },
       {
         "file": "config/constants.ts",
-        "hash": "8284782618332438707"
+        "hash": "17382325369787660241"
       },
       {
         "file": "config/index.ts",
@@ -526,7 +526,7 @@
       },
       {
         "file": "types/nodejs/index.d.ts",
-        "hash": "4344276709641898412"
+        "hash": "18397709382864482441"
       },
       {
         "file": "yarn.lock",
@@ -2026,7 +2026,7 @@
         },
         {
           "file": "backend/api/src/shared/utils/validationSchema.ts",
-          "hash": "2615013388581906509",
+          "hash": "16338646587039568477",
           "deps": [
             "npm:joi"
           ]
@@ -2212,7 +2212,7 @@
         },
         {
           "file": "backend/api/src/users/dto/index.ts",
-          "hash": "7809932208324161381"
+          "hash": "3449291592476650741"
         },
         {
           "file": "backend/api/src/users/dto/roles.dto.ts",
@@ -2277,7 +2277,7 @@
         },
         {
           "file": "backend/api/src/users/users.service.ts",
-          "hash": "7273968183616128268",
+          "hash": "279580542360009172",
           "deps": [
             "npm:@config",
             "database",
@@ -2440,6 +2440,33 @@
           "deps": [
             "npm:@nx/webpack"
           ]
+        },
+        {
+          "file": "backend/api/src/users/dto/userEditProfile.dto.ts",
+          "hash": "10603417784686601997",
+          "deps": [
+            "database",
+            "npm:@nestjs/swagger",
+            "npm:class-validator"
+          ]
+        },
+        {
+          "file": "backend/api/src/users/types/userEditProfile.dto.ts",
+          "hash": "13530360859086089995",
+          "deps": [
+            "database"
+          ]
+        },
+        {
+          "file": "backend/api/src/users/dto/userEditProfilePartial.dto.ts",
+          "hash": "6268072110309570621",
+          "deps": [
+            "npm:@nestjs/swagger"
+          ]
+        },
+        {
+          "file": "backend/api/src/users/types/index.ts",
+          "hash": "16736870576183756712"
         }
       ],
       "database": [
@@ -2501,12 +2528,13 @@
         },
         {
           "file": "backend/database/seeders/index.ts",
-          "hash": "14437758765531486270"
+          "hash": "15908876120131333764"
         },
         {
           "file": "backend/database/seeders/init.seeders.ts",
-          "hash": "17994307243051536134",
+          "hash": "7139680240110992275",
           "deps": [
+            "npm:@config",
             "npm:typeorm",
             "npm:typeorm-extension"
           ]
@@ -2694,6 +2722,14 @@
         {
           "file": "backend/database/tsconfig.spec.json",
           "hash": "17313551537729802733"
+        },
+        {
+          "file": "backend/database/seeders/country.seeder.ts",
+          "hash": "6000711160211082222",
+          "deps": [
+            "npm:typeorm",
+            "npm:typeorm-extension"
+          ]
         }
       ],
       "api-e2e": [
