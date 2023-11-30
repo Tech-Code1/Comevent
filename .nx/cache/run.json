@@ -1,8 +1,8 @@
 {
   "run": {
     "command": "nx run database:seed",
-    "startTime": "2023-11-30T16:42:51.748Z",
-    "endTime": "2023-11-30T16:42:58.816Z",
+    "startTime": "2023-11-30T19:27:19.045Z",
+    "endTime": "2023-11-30T19:27:31.000Z",
     "inner": false
   },
   "tasks": [
@@ -10,9 +10,9 @@
       "taskId": "database:seed",
       "target": "seed",
       "projectName": "database",
-      "hash": "1677735017810629218",
-      "startTime": "2023-11-30T16:42:51.759Z",
-      "endTime": "2023-11-30T16:42:58.815Z",
+      "hash": "17962073188988826099",
+      "startTime": "2023-11-30T19:27:19.058Z",
+      "endTime": "2023-11-30T19:27:30.999Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0

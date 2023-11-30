@@ -10,12 +10,19 @@ import {
 import {
   CountrySeeder,
   ProjectSeeder,
+  SpecialtySeeder,
   TaskSeeder,
   UserSeeder,
   UsersProjectsSeeder,
 } from './';
 
-type SeederKey = 'user' | 'project' | 'task' | 'usersProjects' | 'country';
+type SeederKey =
+  | 'user'
+  | 'project'
+  | 'task'
+  | 'usersProjects'
+  | 'country'
+  | 'specialty';
 
 export default class InitSeeder implements Seeder {
   public async run(
@@ -33,6 +40,7 @@ export default class InitSeeder implements Seeder {
       task: TaskSeeder,
       usersProjects: UsersProjectsSeeder,
       country: CountrySeeder,
+      specialty: SpecialtySeeder,
       // ? Agrega otros seeders aquí si los tienes
     };
 

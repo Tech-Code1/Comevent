@@ -7,7 +7,7 @@ export class Specialty {
   id!: number;
 
   @Column({ type: 'text' })
-  name!: string; // Nombre de la especialidad, ej. "Desarrollo Web", "Diseño Gráfico", etc.
+  name!: string;
 
   @OneToMany(() => User, (user) => user.specialty)
   users!: User[];

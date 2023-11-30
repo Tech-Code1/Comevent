@@ -2528,11 +2528,11 @@
         },
         {
           "file": "backend/database/seeders/index.ts",
-          "hash": "15908876120131333764"
+          "hash": "7418275171420687158"
         },
         {
           "file": "backend/database/seeders/init.seeders.ts",
-          "hash": "7139680240110992275",
+          "hash": "7171372659626399218",
           "deps": [
             "npm:@config",
             "npm:typeorm",
@@ -2648,7 +2648,7 @@
         },
         {
           "file": "backend/database/src/lib/entities/specialty.entity.ts",
-          "hash": "17320590680889582372",
+          "hash": "2633792597143775073",
           "deps": [
             "npm:typeorm"
           ]
@@ -2726,6 +2726,14 @@
         {
           "file": "backend/database/seeders/country.seeder.ts",
           "hash": "6000711160211082222",
+          "deps": [
+            "npm:typeorm",
+            "npm:typeorm-extension"
+          ]
+        },
+        {
+          "file": "backend/database/seeders/specialty.seeder.ts",
+          "hash": "2681567930681220574",
           "deps": [
             "npm:typeorm",
             "npm:typeorm-extension"

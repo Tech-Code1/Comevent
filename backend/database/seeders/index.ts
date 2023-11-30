@@ -1,5 +1,6 @@
 export { default as CountrySeeder } from './country.seeder';
 export { default as ProjectSeeder } from './project.seeder';
+export { default as SpecialtySeeder } from './specialty.seeder';
 export { default as TaskSeeder } from './task.seeder';
 export { default as UserSeeder } from './user.seeder';
 export { default as UsersProjectsSeeder } from './usersProjects.seeder';
