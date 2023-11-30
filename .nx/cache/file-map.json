@@ -3918,7 +3918,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/adapters/index.ts",
-          "hash": "6803585370381891127"
+          "hash": "3744227077272533028"
         },
         {
           "file": "frontend/app/src/modules/user-profile/adapters/user-date.adapter.ts",
@@ -4207,7 +4207,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/service/api/user.api.service.ts",
-          "hash": "14349617068884221409",
+          "hash": "6015912187578996806",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
@@ -4221,7 +4221,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/service/state/reset.state.service.ts",
-          "hash": "12048161147424347922",
+          "hash": "2016044573356122639",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/forms",
@@ -4231,7 +4231,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/service/state/user.state.service.ts",
-          "hash": "12446945677843755574",
+          "hash": "1541589043842885712",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/router",
@@ -4248,7 +4248,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/types/user.types.ts",
-          "hash": "10484270548794623600",
+          "hash": "13174681525392776938",
           "deps": [
             "database"
           ]
@@ -4358,13 +4358,17 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.ts",
-          "hash": "15474833515737316280",
+          "hash": "1992214658106517522",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
             "npm:@angular/forms",
             "frontend-ui"
           ]
+        },
+        {
+          "file": "frontend/app/src/modules/user-profile/adapters/user-edit-profile.adapter.ts",
+          "hash": "14741939404053966049"
         }
       ]
     }

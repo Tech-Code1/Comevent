@@ -12,3 +12,20 @@ export interface IUserProfile {
   socialNetworks?: string[];
   events?: string[];
 }
+
+export interface ISimplifiedUserEditProfile {
+  avatar: string;
+  username: string;
+  email: string;
+  description: string;
+  socialNetworks: string[];
+  areaOfInteres: string[];
+  areaOfExpertise: string[];
+  firstName: string;
+  lastName: string;
+  gender: string;
+  bornDate: Date | null;
+  age: number | null;
+  specialty: string;
+  country: string;
+}

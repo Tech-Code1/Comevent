@@ -22,7 +22,7 @@ export class ResetStateService {
       .resetPassword({ currentPassword, newPassword })
       .pipe(take(1))
       .subscribe({
-        next: ({ data, response }) => {
+        next: ({ response }) => {
           this.router.navigateByUrl('/user/profile');
           Swal.success(response.message, true);
         },
