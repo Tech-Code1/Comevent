@@ -33,7 +33,7 @@ export class ControlValueAccesorDirective<T>
 
   control: FormControl | undefined;
   protected _isDisabled = false;
-  private _destroy$ = new Subject<void>();
+  protected _destroy$ = new Subject<void>();
   private _onTouched!: () => T;
 
   protected getValidatorsForType(type: string): ValidatorFn[] | null {

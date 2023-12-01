@@ -49,9 +49,9 @@ module.exports = {
           darkMode: '#FF6B6B',
         },
         warning: {
-          DEFAULT: '#FF8964',
-          light: '#FFCABA',
-          darkMode: '#FF8964',
+          DEFAULT: '#FFB864',
+          light: '#FFDDB6',
+          darkMode: '#FFB864',
         },
         gray: {
           0: '#F3F3F3',
@@ -132,6 +132,10 @@ module.exports = {
 
         '.body-small': {
           '@apply text-body-3 font-normal font-body': {},
+        },
+
+        '.body-small-accent': {
+          '@apply text-body-3 font-bold font-body': {},
         },
 
         '.body-smaller': {

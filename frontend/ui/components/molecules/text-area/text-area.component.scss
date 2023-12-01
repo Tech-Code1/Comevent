@@ -1,0 +1,78 @@
+.content-text-area {
+  @apply flex flex-col gap-1;
+}
+
+.content-inner-text-area {
+  @apply flex flex-col relative;
+}
+
+.text-area {
+  @apply outline-none rounded-md w-auto min-h-[90px] px-4 pt-4 pb-10 body-medium bg-white-1 dark:bg-black-2;
+}
+
+.content-max-characters {
+  @apply border-b-2 h-[28px] absolute bottom-[4px] right-[4px] rounded-md w-max flex items-center justify-center body-small-accent px-2;
+}
+
+.success-characters {
+  @apply bg-success-light-2 text-success;
+}
+
+.warning-characters {
+  @apply bg-warning-light text-warning;
+}
+
+.error-characters {
+  @apply bg-error-light text-error;
+}
+
+.input::placeholder {
+  @apply placeholder:text-gray-2 placeholder:text-body-2 placeholder:font-normal;
+}
+
+.text-area-base {
+  @apply focus:placeholder-transparent h-9 border-x-2 border-2 text-black-1 dark:text-white-1 focus:outline-none focus:border-primary dark:focus:border-primary-darkMode transition-all w-auto;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.b-success {
+  @apply border-success dark:border-success-darkMode;
+}
+
+.b-error {
+  @apply border-error dark:border-error-darkMode;
+}
+
+.b-neutral {
+  @apply border-black-1 dark:border-black-2;
+}
+
+.b-disabled {
+  @apply border-gray-2;
+}
+
+/* .clear-button,
+.icon-pass {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+} */
+
+/* .clear-button {
+  right: 16px;
+} */
+
+/* .r-4 {
+  @apply right-4;
+}
+
+.r-10 {
+  @apply right-10;
+}
+ */

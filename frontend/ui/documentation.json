@@ -107,7 +107,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".button {\r\n  @apply outline-none rounded-md w-full font-title text-title-6 font-semibold px-4 h-9 flex justify-center items-center flex-row;\r\n}\r\n\r\n.click-button {\r\n  @apply duration-100 transition-shadow shadow-neutral-level1 active:transform active:scale-95;\r\n}\r\n\r\n.button-base {\r\n  @apply bg-primary text-white-1;\r\n}\r\n\r\n.button-base:hover {\r\n  @apply bg-primary-dark;\r\n}\r\n\r\n.button:disabled {\r\n  @apply bg-gray-2 text-white-1;\r\n}\r\n\r\n.button-ghost {\r\n  @apply border-solid border-2 border-primary bg-transparent;\r\n}\r\n\r\n.button-ghost:hover {\r\n  @apply bg-primary-light-2;\r\n}\r\n\r\n.button-ghost:disabled {\r\n  @apply border-solid border-2 border-gray-2 bg-transparent;\r\n}\r\n\r\n.content-container {\r\n  @apply flex flex-row gap-2;\r\n}\r\n\r\n.button-ghost ::ng-deep p {\r\n  @apply text-primary;\r\n}\r\n\r\n.button-ghost:hover ::ng-deep p {\r\n  @apply text-primary-dark;\r\n}\r\n\r\n.button-ghost:disabled ::ng-deep p {\r\n  @apply text-primary-dark;\r\n}\r\n\r\n.button-ghost:disabled ::ng-deep p {\r\n  @apply text-gray-2;\r\n}\r\n\r\n.button-accent {\r\n  @apply bg-accent;\r\n}\r\n\r\n.button-disabled {\r\n  @apply transition-all h-9;\r\n}\r\n",
+                    "data": ".button {\r\n  @apply outline-none rounded-md w-full font-title text-title-6 font-semibold px-4 h-9 flex justify-center items-center flex-row;\r\n}\r\n\r\n.click-button {\r\n  @apply duration-100 transition-shadow shadow-neutral-level1 active:transform active:scale-95;\r\n}\r\n\r\n.button-base {\r\n  @apply bg-primary dark:bg-primary-darkMode text-white-1;\r\n}\r\n\r\n.button-base:hover {\r\n  @apply bg-primary-dark;\r\n}\r\n\r\n.button:disabled {\r\n  @apply bg-gray-2 text-white-1;\r\n}\r\n\r\n.button-ghost {\r\n  @apply border-solid border-2 border-primary dark:border-primary-darkMode bg-transparent;\r\n}\r\n\r\n.button-ghost:hover {\r\n  @apply bg-primary-light-2;\r\n}\r\n\r\n.button-ghost:disabled {\r\n  @apply border-solid border-2 border-gray-2 bg-transparent;\r\n}\r\n\r\n.content-container {\r\n  @apply flex flex-row gap-2;\r\n}\r\n\r\n.button-ghost ::ng-deep {\r\n  @apply text-primary dark:text-primary-darkMode;\r\n}\r\n\r\n.button-ghost:hover ::ng-deep p {\r\n  @apply text-primary-dark;\r\n}\r\n\r\n.button-ghost:disabled ::ng-deep p {\r\n  @apply text-gray-2;\r\n}\r\n\r\n.button-accent ::ng-deep {\r\n  @apply text-primary dark:text-primary-darkMode;\r\n}\r\n\r\n.button-accent:hover ::ng-deep p {\r\n  @apply text-primary-dark;\r\n}\r\n\r\n.button-accent {\r\n  @apply bg-accent dark:bg-accent-darkMode;\r\n}\r\n\r\n.button-accent:hover {\r\n  @apply bg-accent-light dark:bg-accent;\r\n}\r\n\r\n.button-disabled {\r\n  @apply transition-all h-9;\r\n}\r\n",
                     "styleUrl": "./button.component.scss"
                 }
             ],
@@ -439,7 +439,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".error {\n  @apply w-full rounded-md h-auto p-1 bg-error-light gap-2 items-center flex flex-wrap justify-start font-semibold px-4;\n}\n\n.text-error-content {\n  @apply text-start font-body text-error text-body-3 font-normal;\n}\n\n.size-icon {\n  @apply h-4 w-4;\n}\n",
+                    "data": ".error {\n  @apply w-full rounded-md h-auto p-1 bg-error-light gap-2 items-center flex flex-wrap justify-start font-semibold px-4;\n}\n\n.text-error-content {\n  @apply text-start font-body text-error dark:text-error-darkMode text-body-3 font-normal;\n}\n\n.size-icon {\n  @apply h-4 w-4;\n}\n",
                     "styleUrl": "./error-input.component.scss"
                 }
             ],
@@ -533,6 +533,121 @@
             "templateData": "<svg\n  width=\"24\"\n  height=\"24\"\n  viewBox=\"0 0 24 24\"\n  fill=\"none\"\n  xmlns=\"http://www.w3.org/2000/svg\"\n>\n  <g clip-path=\"url(#clip0_21_398)\">\n    <path\n      [ngClass]=\"{\n        's-primary': status === 'In Progress',\n        's-gray': status === 'Pending'\n      }\"\n      d=\"M4 18V13L8 11L12 13V18L8 20L4 18Z\"\n      stroke-width=\"2\"\n      stroke-linecap=\"round\"\n      stroke-linejoin=\"round\"\n    />\n    <path\n      [ngClass]=\"{\n        's-primary': status === 'In Progress',\n        's-gray': status === 'Pending'\n      }\"\n      d=\"M8 11V6L12 4L16 6V11\"\n      stroke-width=\"2\"\n      stroke-linecap=\"round\"\n      stroke-linejoin=\"round\"\n    />\n    <path\n      [ngClass]=\"{\n        's-primary': status === 'In Progress',\n        's-gray': status === 'Pending'\n      }\"\n      d=\"M12.5 13L16.5 11L20.5 13V18L16.5 20L12.5 18\"\n      stroke-width=\"2\"\n      stroke-linecap=\"round\"\n      stroke-linejoin=\"round\"\n    />\n  </g>\n  <defs>\n    <clipPath id=\"clip0_21_398\">\n      <rect width=\"24\" height=\"24\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>\n"
         },
         {
+            "name": "IconArrowRightComponent",
+            "id": "component-IconArrowRightComponent-7d796f7c3d3303ec376ab7fa328c527bd81cf689db849180c8e33e48ab4c860e49e1e09a5a163275706713746e0815ebb71632b2a1d194d3c53e19fc5bdc3153",
+            "file": "frontend/ui/components/atoms/icons/icon-arrow-right/icon-arrow-right.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [
+                "ViewEncapsulation.Emulated"
+            ],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "icon-arrow-right",
+            "styleUrls": [
+                "./icon-arrow-right.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./icon-arrow-right.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "required": true,
+                    "name": "index",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "optional": false,
+                    "line": 19,
+                    "type": "number",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  ViewEncapsulation,\n} from '@angular/core';\n\n@Component({\n  standalone: true,\n  selector: 'icon-arrow-right',\n  imports: [CommonModule],\n  templateUrl: './icon-arrow-right.component.html',\n  styleUrls: ['./icon-arrow-right.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class IconArrowRightComponent {\n  @Input({ required: true }) index!: number;\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".s-secondary {\n  @apply stroke-secondary dark:stroke-secondary-darkMode;\n}\n\n.s-primary {\n  @apply stroke-primary dark:stroke-primary-darkMode;\n}\n\n.s-accent {\n  @apply stroke-accent dark:stroke-accent-darkMode;\n}\n",
+                    "styleUrl": "./icon-arrow-right.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<svg\n  width=\"24\"\n  height=\"24\"\n  viewBox=\"0 0 24 24\"\n  fill=\"none\"\n  xmlns=\"http://www.w3.org/2000/svg\"\n>\n  <g clip-path=\"url(#clip0_212_949)\">\n    <path\n      [ngClass]=\"{\n        's-secondary': index === 0,\n        's-primary': index === 1,\n        's-accent': index === 2\n      }\"\n      d=\"M12 8.99985V5.41385C12 5.2161 12.0587 5.0228 12.1686 4.85839C12.2785 4.69398 12.4346 4.56584 12.6173 4.49017C12.8 4.4145 13.0011 4.3947 13.195 4.43327C13.389 4.47183 13.5671 4.56704 13.707 4.70685L20.293 11.2928C20.4805 11.4804 20.5858 11.7347 20.5858 11.9998C20.5858 12.265 20.4805 12.5193 20.293 12.7068L13.707 19.2928C13.5671 19.4327 13.389 19.5279 13.195 19.5664C13.0011 19.605 12.8 19.5852 12.6173 19.5095C12.4346 19.4339 12.2785 19.3057 12.1686 19.1413C12.0587 18.9769 12 18.7836 12 18.5858V14.9998H9V8.99985H12Z\"\n      stroke-width=\"2\"\n      stroke-linecap=\"round\"\n      stroke-linejoin=\"round\"\n    />\n    <path\n      [ngClass]=\"{\n        's-secondary': index === 0,\n        's-primary': index === 1,\n        's-accent': index === 2\n      }\"\n      d=\"M3 9V15\"\n      stroke-width=\"2\"\n      stroke-linecap=\"round\"\n      stroke-linejoin=\"round\"\n    />\n    <path\n      [ngClass]=\"{\n        's-secondary': index === 0,\n        's-primary': index === 1,\n        's-accent': index === 2\n      }\"\n      d=\"M6 9V15\"\n      stroke-width=\"2\"\n      stroke-linecap=\"round\"\n      stroke-linejoin=\"round\"\n    />\n  </g>\n  <defs>\n    <clipPath id=\"clip0_212_949\">\n      <rect width=\"24\" height=\"24\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>\n"
+        },
+        {
+            "name": "IconBadgesComponent",
+            "id": "component-IconBadgesComponent-0fe62d80240882114ad5242a78c9154c726043c04e3f7081c6110b04ecc2b0d9e693448b8810c652fde1de184a8975c229b4f2196811ab1b3294918bd2d3eb38",
+            "file": "frontend/ui/components/atoms/icons/icon-badges/icon-badges.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [
+                "ViewEncapsulation.Emulated"
+            ],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "icon-badges",
+            "styleUrls": [
+                "./icon-badges.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./icon-badges.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  ViewEncapsulation,\n} from '@angular/core';\n\n@Component({\n  standalone: true,\n  selector: 'icon-badges',\n  imports: [CommonModule],\n  templateUrl: './icon-badges.component.html',\n  styleUrls: ['./icon-badges.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class IconBadgesComponent {}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./icon-badges.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<svg\n  width=\"17\"\n  height=\"27\"\n  viewBox=\"0 0 17 27\"\n  fill=\"none\"\n  xmlns=\"http://www.w3.org/2000/svg\"\n>\n  <path\n    d=\"M16 21V15L8.5 19.5L1 15V21L8.5 25.5L16 21Z\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    d=\"M16 7.5V1.5L8.5 6L1 1.5V7.5L8.5 12L16 7.5Z\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n</svg>\n"
+        },
+        {
             "name": "IconBasicComponent",
             "id": "component-IconBasicComponent-6369aa4b573ff1544db1164ece4df70e09314ccc3275d140c7cb7ec51c6d7689966562539f0d2879c55f76655d5242dc5648402078eaf7c8f494d837cd638571",
             "file": "frontend/ui/components/atoms/icons/icon-basic/icon-basic.component.ts",
@@ -596,6 +711,58 @@
                 "IconType"
             ],
             "templateData": "<svg\n  width=\"25\"\n  height=\"24\"\n  viewBox=\"0 0 25 24\"\n  fill=\"none\"\n  xmlns=\"http://www.w3.org/2000/svg\"\n>\n  <path\n    [ngClass]=\"{\n      's-primary': status === 'In Progress',\n      's-gray': status === 'Pending'\n    }\"\n    d=\"M8.5 5H6.5C5.96957 5 5.46086 5.21071 5.08579 5.58579C4.71071 5.96086 4.5 6.46957 4.5 7V19C4.5 19.5304 4.71071 20.0391 5.08579 20.4142C5.46086 20.7893 5.96957 21 6.5 21H12.197\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    [ngClass]=\"{\n      's-primary': status === 'In Progress',\n      's-gray': status === 'Pending'\n    }\"\n    d=\"M18.5 12V7C18.5 6.46957 18.2893 5.96086 17.9142 5.58579C17.5391 5.21071 17.0304 5 16.5 5H14.5\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    [ngClass]=\"{\n      's-primary': status === 'In Progress',\n      's-gray': status === 'Pending'\n    }\"\n    d=\"M8.5 5C8.5 4.46957 8.71071 3.96086 9.08579 3.58579C9.46086 3.21071 9.96957 3 10.5 3H12.5C13.0304 3 13.5391 3.21071 13.9142 3.58579C14.2893 3.96086 14.5 4.46957 14.5 5C14.5 5.53043 14.2893 6.03914 13.9142 6.41421C13.5391 6.78929 13.0304 7 12.5 7H10.5C9.96957 7 9.46086 6.78929 9.08579 6.41421C8.71071 6.03914 8.5 5.53043 8.5 5Z\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    [ngClass]=\"{\n      's-primary': status === 'In Progress',\n      's-gray': status === 'Pending'\n    }\"\n    d=\"M8.5 11H12.5\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    [ngClass]=\"{\n      's-primary': status === 'In Progress',\n      's-gray': status === 'Pending'\n    }\"\n    d=\"M8.5 15H11.5\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    [ngClass]=\"{\n      's-primary': status === 'In Progress',\n      's-gray': status === 'Pending'\n    }\"\n    d=\"M14.5 17.5C14.5 18.163 14.7634 18.7989 15.2322 19.2678C15.7011 19.7366 16.337 20 17 20C17.663 20 18.2989 19.7366 18.7678 19.2678C19.2366 18.7989 19.5 18.163 19.5 17.5C19.5 16.837 19.2366 16.2011 18.7678 15.7322C18.2989 15.2634 17.663 15 17 15C16.337 15 15.7011 15.2634 15.2322 15.7322C14.7634 16.2011 14.5 16.837 14.5 17.5Z\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    [ngClass]=\"{\n      's-primary': status === 'In Progress',\n      's-gray': status === 'Pending'\n    }\"\n    d=\"M19 19.5L21.5 22\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n</svg>\n"
+        },
+        {
+            "name": "IconCircleArrowLeftComponent",
+            "id": "component-IconCircleArrowLeftComponent-1b5f007c372aff7c591c2f7a0e38e9dac6cd7104cd89672cb7ee2fbdd6fbbd8752620d7fcb1f70f9a294408cc8e3f3782342258abee1f3c5db0fe6dc6c57309a",
+            "file": "frontend/ui/components/atoms/icons/icon-circle-arrow-left/icon-circle-arrow-left.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [
+                "ViewEncapsulation.Emulated"
+            ],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "icon-circle-arrow-left",
+            "styleUrls": [
+                "./icon-circle-arrow-left.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./icon-circle-arrow-left.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  ViewEncapsulation,\n} from '@angular/core';\n\n@Component({\n  standalone: true,\n  selector: 'icon-circle-arrow-left',\n  imports: [CommonModule],\n  templateUrl: './icon-circle-arrow-left.component.html',\n  styleUrls: ['./icon-circle-arrow-left.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class IconCircleArrowLeftComponent {}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./icon-circle-arrow-left.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<svg\n  width=\"32\"\n  height=\"32\"\n  viewBox=\"0 0 32 32\"\n  fill=\"none\"\n  xmlns=\"http://www.w3.org/2000/svg\"\n>\n  <path\n    d=\"M16 28C17.5759 28 19.1363 27.6896 20.5922 27.0866C22.0481 26.4835 23.371 25.5996 24.4853 24.4853C25.5996 23.371 26.4835 22.0481 27.0866 20.5922C27.6896 19.1363 28 17.5759 28 16C28 14.4241 27.6896 12.8637 27.0866 11.4078C26.4835 9.95189 25.5996 8.62902 24.4853 7.51472C23.371 6.40042 22.0481 5.5165 20.5922 4.91345C19.1363 4.31039 17.5759 4 16 4C12.8174 4 9.76516 5.26428 7.51472 7.51472C5.26428 9.76516 4 12.8174 4 16C4 19.1826 5.26428 22.2348 7.51472 24.4853C9.76516 26.7357 12.8174 28 16 28Z\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    d=\"M10.667 16L16.0003 21.3333\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    d=\"M10.667 16H21.3337\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    d=\"M16.0003 10.667L10.667 16.0003\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n</svg>\n"
         },
         {
             "name": "IconClearComponent",
@@ -733,6 +900,223 @@
             "templateData": "<svg\n  width=\"38\"\n  height=\"38\"\n  viewBox=\"0 0 38 38\"\n  fill=\"none\"\n  xmlns=\"http://www.w3.org/2000/svg\"\n>\n  <path\n    d=\"M17.7316 0.481381C20.6967 -0.849797 27.6153 0.481419 28.0683 5.71109C23.3572 6.14811 15.734 9.12636 14.2723 15.5365C13.7024 18.0359 14.3333 20.6539 16.0431 24.4505C7.76553 24.0147 6.32416 17.9927 5.95352 16.7646C5.65562 15.3709 5.60461 14.0785 5.74704 12.8819C6.60872 5.64225 14.5509 1.90934 17.7316 0.481381Z\"\n    fill=\"url(#paint0_radial_134_1555)\"\n  />\n  <path\n    d=\"M20.3093 37.5186C17.3442 38.8498 10.4256 37.5186 9.97263 32.2889C14.6837 31.8519 22.3069 28.8736 23.7686 22.4635C24.3386 19.9641 23.7076 17.3461 21.9978 13.5495C30.2754 13.9853 31.7168 20.0073 32.0874 21.2354C32.3853 22.6291 32.4363 23.9215 32.2939 25.1181C31.4322 32.3577 23.49 36.0907 20.3093 37.5186Z\"\n    fill=\"url(#paint1_radial_134_1555)\"\n  />\n  <path\n    d=\"M20.9082 13.1136C31.2037 11.8458 32.851 20.8788 33.1393 22.3843C38.4655 18.5942 42.2781 10.743 28.6093 6.33893C23.8982 6.77595 16.275 9.7542 14.8133 16.1643C17.0722 14.5479 19.9216 13.2985 20.9082 13.1136Z\"\n    fill=\"url(#paint2_radial_134_1555)\"\n  />\n  <path\n    d=\"M17.0918 24.9113C6.79626 26.1791 5.14897 17.1461 4.8607 15.6406C-0.465516 19.4307 -4.27815 27.2819 9.39072 31.686C14.1018 31.2489 21.725 28.2707 23.1867 21.8606C20.9278 23.477 18.0784 24.7264 17.0918 24.9113Z\"\n    fill=\"url(#paint3_radial_134_1555)\"\n  />\n  <defs>\n    <radialGradient\n      id=\"paint0_radial_134_1555\"\n      cx=\"0\"\n      cy=\"0\"\n      r=\"1\"\n      gradientUnits=\"userSpaceOnUse\"\n      gradientTransform=\"translate(19.0151 19.0066) rotate(-38.1071) scale(25.2798 21.2199)\"\n    >\n      <stop stop-color=\"#8C44CC\" />\n      <stop offset=\"0.476094\" stop-color=\"#FA4A86\" />\n      <stop offset=\"1\" stop-color=\"#FFC107\" />\n    </radialGradient>\n    <radialGradient\n      id=\"paint1_radial_134_1555\"\n      cx=\"0\"\n      cy=\"0\"\n      r=\"1\"\n      gradientUnits=\"userSpaceOnUse\"\n      gradientTransform=\"translate(19.0151 19.0066) rotate(-38.1071) scale(25.2798 21.2199)\"\n    >\n      <stop stop-color=\"#8C44CC\" />\n      <stop offset=\"0.476094\" stop-color=\"#FA4A86\" />\n      <stop offset=\"1\" stop-color=\"#FFC107\" />\n    </radialGradient>\n    <radialGradient\n      id=\"paint2_radial_134_1555\"\n      cx=\"0\"\n      cy=\"0\"\n      r=\"1\"\n      gradientUnits=\"userSpaceOnUse\"\n      gradientTransform=\"translate(19.0151 19.0066) rotate(-38.1071) scale(25.2798 21.2199)\"\n    >\n      <stop stop-color=\"#8C44CC\" />\n      <stop offset=\"0.476094\" stop-color=\"#FA4A86\" />\n      <stop offset=\"1\" stop-color=\"#FFC107\" />\n    </radialGradient>\n    <radialGradient\n      id=\"paint3_radial_134_1555\"\n      cx=\"0\"\n      cy=\"0\"\n      r=\"1\"\n      gradientUnits=\"userSpaceOnUse\"\n      gradientTransform=\"translate(19.0151 19.0066) rotate(-38.1071) scale(25.2798 21.2199)\"\n    >\n      <stop stop-color=\"#8C44CC\" />\n      <stop offset=\"0.476094\" stop-color=\"#FA4A86\" />\n      <stop offset=\"1\" stop-color=\"#FFC107\" />\n    </radialGradient>\n  </defs>\n</svg>\n"
         },
         {
+            "name": "IconCommunitiesComponent",
+            "id": "component-IconCommunitiesComponent-d7d6d44663b1c148fd13b53b4c492a3a09fe9b99156993db6dd78cb275c2adb11006d05119b06bc137520b9367215caf8a99d0a9a200449e3d2ce103a59003eb",
+            "file": "frontend/ui/components/atoms/icons/icon-communities/icon-communities.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [
+                "ViewEncapsulation.Emulated"
+            ],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "icon-communities",
+            "styleUrls": [
+                "./icon-communities.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./icon-communities.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  ViewEncapsulation,\n} from '@angular/core';\n\n@Component({\n  standalone: true,\n  selector: 'icon-communities',\n  imports: [CommonModule],\n  templateUrl: './icon-communities.component.html',\n  styleUrls: ['./icon-communities.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class IconCommunitiesComponent {}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./icon-communities.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<svg\n  width=\"26\"\n  height=\"27\"\n  viewBox=\"0 0 26 27\"\n  fill=\"none\"\n  xmlns=\"http://www.w3.org/2000/svg\"\n>\n  <path\n    d=\"M24.9997 16.1667L20.9997 12.1667H11.6663C11.3127 12.1667 10.9736 12.0262 10.7235 11.7761C10.4735 11.5261 10.333 11.187 10.333 10.8333V2.83333C10.333 2.47971 10.4735 2.14057 10.7235 1.89052C10.9736 1.64048 11.3127 1.5 11.6663 1.5H23.6663C24.02 1.5 24.3591 1.64048 24.6092 1.89052C24.8592 2.14057 24.9997 2.47971 24.9997 2.83333V16.1667Z\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    d=\"M15.6667 17.4997V20.1663C15.6667 20.52 15.5262 20.8591 15.2761 21.1092C15.0261 21.3592 14.687 21.4997 14.3333 21.4997H5L1 25.4997V12.1663C1 11.8127 1.14048 11.4736 1.39052 11.2235C1.64057 10.9735 1.97971 10.833 2.33333 10.833H5\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n</svg>\n"
+        },
+        {
+            "name": "IconDiscordComponent",
+            "id": "component-IconDiscordComponent-755d0f1afca5045f8adeac127cb207c17b3fba913513421d9bfdc4de6ab0f84d271de8e99c0e571eec4be8c6ea1b1fa1b6ce20339a3a87cf60281b10c0a86c11",
+            "file": "frontend/ui/components/atoms/icons/icon-discord/icon-discord.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [
+                "ViewEncapsulation.Emulated"
+            ],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "icon-discord",
+            "styleUrls": [
+                "./icon-discord.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./icon-discord.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "color",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 19,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  ViewEncapsulation,\n} from '@angular/core';\n\n@Component({\n  standalone: true,\n  selector: 'icon-discord',\n  imports: [CommonModule],\n  templateUrl: './icon-discord.component.html',\n  styleUrls: ['./icon-discord.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class IconDiscordComponent {\n  @Input() color!: string;\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".s-primary {\r\n  @apply stroke-primary;\r\n}\r\n",
+                    "styleUrl": "./icon-discord.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<svg\n  width=\"24\"\n  height=\"24\"\n  viewBox=\"0 0 24 24\"\n  fill=\"none\"\n  xmlns=\"http://www.w3.org/2000/svg\"\n>\n  <path\n    class=\"s-primary\"\n    d=\"M8 12C8 12.2652 8.10536 12.5196 8.29289 12.7071C8.48043 12.8946 8.73478 13 9 13C9.26522 13 9.51957 12.8946 9.70711 12.7071C9.89464 12.5196 10 12.2652 10 12C10 11.7348 9.89464 11.4804 9.70711 11.2929C9.51957 11.1054 9.26522 11 9 11C8.73478 11 8.48043 11.1054 8.29289 11.2929C8.10536 11.4804 8 11.7348 8 12Z\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    class=\"s-primary\"\n    d=\"M14 12C14 12.2652 14.1054 12.5196 14.2929 12.7071C14.4804 12.8946 14.7348 13 15 13C15.2652 13 15.5196 12.8946 15.7071 12.7071C15.8946 12.5196 16 12.2652 16 12C16 11.7348 15.8946 11.4804 15.7071 11.2929C15.5196 11.1054 15.2652 11 15 11C14.7348 11 14.4804 11.1054 14.2929 11.2929C14.1054 11.4804 14 11.7348 14 12Z\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    class=\"s-primary\"\n    d=\"M15.5004 17C15.5004 18 17.0004 20 17.5004 20C19.0004 20 20.3334 18.333 21.0004 17C21.6674 15.333 21.5004 11.167 19.5004 5.5C18.0434 4.485 16.5004 4.16 15.0004 4L14.0284 5.923C12.6874 5.6915 11.3165 5.6915 9.97544 5.923L9.00044 4C7.50044 4.16 5.95744 4.485 4.50044 5.5C2.50044 11.167 2.33344 15.333 3.00044 17C3.66744 18.333 5.00044 20 6.50044 20C7.00044 20 8.50044 18 8.50044 17\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    class=\"s-primary\"\n    d=\"M7 16.5C10.5 17.5 13.5 17.5 17 16.5\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n</svg>\n"
+        },
+        {
+            "name": "IconEditComponent",
+            "id": "component-IconEditComponent-580b4c66edb0683405b3ac04597909fb1392f0060bde2d6ed2d8ce53ffb2f53b6dee6038f14ac03c2a8e3ca3a3a54ebcb795d4ac49925c9e8634c958d6b05b90",
+            "file": "frontend/ui/components/atoms/icons/icon-edit/icon-edit.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [
+                "ViewEncapsulation.Emulated"
+            ],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "icon-edit",
+            "styleUrls": [
+                "./icon-edit.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./icon-edit.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  ViewEncapsulation,\n} from '@angular/core';\n\n@Component({\n  standalone: true,\n  selector: 'icon-edit',\n  imports: [CommonModule],\n  templateUrl: './icon-edit.component.html',\n  styleUrls: ['./icon-edit.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class IconEditComponent {}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./icon-edit.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<svg\n  width=\"25\"\n  height=\"24\"\n  viewBox=\"0 0 25 24\"\n  fill=\"none\"\n  xmlns=\"http://www.w3.org/2000/svg\"\n>\n  <path\n    d=\"M7.5 7H6.5C5.96957 7 5.46086 7.21071 5.08579 7.58579C4.71071 7.96086 4.5 8.46957 4.5 9V18C4.5 18.5304 4.71071 19.0391 5.08579 19.4142C5.46086 19.7893 5.96957 20 6.5 20H15.5C16.0304 20 16.5391 19.7893 16.9142 19.4142C17.2893 19.0391 17.5 18.5304 17.5 18V17\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    d=\"M20.885 6.58511C21.2788 6.19126 21.5001 5.65709 21.5001 5.10011C21.5001 4.54312 21.2788 4.00895 20.885 3.61511C20.4912 3.22126 19.957 3 19.4 3C18.843 3 18.3088 3.22126 17.915 3.61511L9.5 12.0001V15.0001H12.5L20.885 6.58511Z\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    d=\"M16.5 5L19.5 8\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n</svg>\n"
+        },
+        {
+            "name": "IconEventsComponent",
+            "id": "component-IconEventsComponent-12a01009733a69aef8ef2fa03ae369d799e133fb4a934911a4ce16ca2d3a589dca7148e46fe9b4783108924e5a8f8267929adbc234c67f86f672191ad609b1a2",
+            "file": "frontend/ui/components/atoms/icons/icon-events/icon-events.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [
+                "ViewEncapsulation.Emulated"
+            ],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "icon-events",
+            "styleUrls": [
+                "./icon-events.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./icon-events.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  ViewEncapsulation,\n} from '@angular/core';\n\n@Component({\n  standalone: true,\n  selector: 'icon-events',\n  imports: [CommonModule],\n  templateUrl: './icon-events.component.html',\n  styleUrls: ['./icon-events.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class IconEventsComponent {}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./icon-events.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<svg\n  width=\"25\"\n  height=\"27\"\n  viewBox=\"0 0 25 27\"\n  fill=\"none\"\n  xmlns=\"http://www.w3.org/2000/svg\"\n>\n  <path\n    d=\"M1.83301 6.83366C1.83301 6.12641 2.11396 5.44814 2.61406 4.94804C3.11415 4.44794 3.79243 4.16699 4.49967 4.16699H20.4997C21.2069 4.16699 21.8852 4.44794 22.3853 4.94804C22.8854 5.44814 23.1663 6.12641 23.1663 6.83366V22.8337C23.1663 23.5409 22.8854 24.2192 22.3853 24.7193C21.8852 25.2194 21.2069 25.5003 20.4997 25.5003H4.49967C3.79243 25.5003 3.11415 25.2194 2.61406 24.7193C2.11396 24.2192 1.83301 23.5409 1.83301 22.8337V6.83366Z\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    d=\"M17.833 1.5V6.83333\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    d=\"M7.16602 1.5V6.83333\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    d=\"M1.83301 12.167H23.1663\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    d=\"M7.16602 17.5H9.83268V20.1667H7.16602V17.5Z\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n</svg>\n"
+        },
+        {
             "name": "IconFacebookComponent",
             "id": "component-IconFacebookComponent-c559f4dd9b87b2a08d6828f558a1c209471f734dfaa38b5ab573ede96812ed95492a684a15accb85de4e2ef1d9d1cd767a395616d24ab0251ab31b8d0b46fa96",
             "file": "frontend/ui/components/atoms/icons/icon-facebook/icon-facebook.component.ts",
@@ -776,6 +1160,67 @@
             "stylesData": "",
             "extends": [],
             "templateData": "<svg\n  width=\"20\"\n  height=\"20\"\n  viewBox=\"0 0 20 20\"\n  fill=\"none\"\n  xmlns=\"http://www.w3.org/2000/svg\"\n>\n  <path\n    d=\"M20 10C20 4.47719 15.5228 0 10 0C4.47719 0 0 4.47711 0 10C0 14.9913 3.65687 19.1284 8.4375 19.8785V12.8906H5.89844V10H8.4375V7.79688C8.4375 5.29063 9.93047 3.90625 12.2146 3.90625C13.3088 3.90625 14.4531 4.10156 14.4531 4.10156V6.5625H13.1922C11.9498 6.5625 11.5625 7.33336 11.5625 8.12422V10H14.3359L13.8926 12.8906H11.5625V19.8785C16.3431 19.1284 20 14.9913 20 10Z\"\n    fill=\"#1877F2\"\n  />\n  <path\n    d=\"M13.8926 12.8906L14.3359 10H11.5625V8.12422C11.5625 7.33328 11.9499 6.5625 13.1922 6.5625H14.4531V4.10156C14.4531 4.10156 13.3088 3.90625 12.2146 3.90625C9.93047 3.90625 8.4375 5.29063 8.4375 7.79688V10H5.89844V12.8906H8.4375V19.8785C8.95439 19.9595 9.4768 20.0001 10 20C10.5232 20.0002 11.0456 19.9595 11.5625 19.8785V12.8906H13.8926Z\"\n    fill=\"white\"\n  />\n</svg>\n"
+        },
+        {
+            "name": "IconFacebookTwoComponent",
+            "id": "component-IconFacebookTwoComponent-921404aa1ad75cc94dd693df46211ffe2b632e7d8a5ccf4ceb0ea1e6d96fd912013fbad92634bdf2c77f4c00e8a4ced1ea0332f2d5cf13271f37111597d1727e",
+            "file": "frontend/ui/components/atoms/icons/icon-facebook-two/icon-facebook-two.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [
+                "ViewEncapsulation.Emulated"
+            ],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "icon-facebook-two",
+            "styleUrls": [
+                "./icon-facebook-two.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./icon-facebook-two.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "color",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 19,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  ViewEncapsulation,\n} from '@angular/core';\n\n@Component({\n  standalone: true,\n  selector: 'icon-facebook-two',\n  imports: [CommonModule],\n  templateUrl: './icon-facebook-two.component.html',\n  styleUrls: ['./icon-facebook-two.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class IconFacebookTwoComponent {\n  @Input() color!: string;\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".s-primary {\r\n  @apply stroke-primary;\r\n}\r\n",
+                    "styleUrl": "./icon-facebook-two.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<svg\n  width=\"24\"\n  height=\"24\"\n  viewBox=\"0 0 24 24\"\n  fill=\"none\"\n  xmlns=\"http://www.w3.org/2000/svg\"\n>\n  <path\n    class=\"s-primary\"\n    d=\"M7 10V14H10V21H14V14H17L18 10H14V8C14 7.73478 14.1054 7.48043 14.2929 7.29289C14.4804 7.10536 14.7348 7 15 7H18V3H15C13.6739 3 12.4021 3.52678 11.4645 4.46447C10.5268 5.40215 10 6.67392 10 8V10H7Z\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n</svg>\n"
         },
         {
             "name": "IconGithubComponent",
@@ -823,6 +1268,67 @@
             "templateData": "<svg\n  width=\"21\"\n  height=\"20\"\n  viewBox=\"0 0 21 20\"\n  fill=\"none\"\n  xmlns=\"http://www.w3.org/2000/svg\"\n>\n  <path\n    d=\"M10.2483 0C8.90245 0 7.5698 0.265079 6.32643 0.780103C5.08305 1.29513 3.95329 2.05001 3.00165 3.00165C1.07973 4.92357 0 7.53026 0 10.2483C0 14.778 2.94125 18.6211 7.00982 19.9841C7.52223 20.0661 7.6862 19.7484 7.6862 19.4717V17.7398C4.84743 18.3547 4.24278 16.3665 4.24278 16.3665C3.77136 15.1777 3.10523 14.86 3.10523 14.86C2.17263 14.2246 3.17696 14.2451 3.17696 14.2451C4.20179 14.3168 4.74495 15.3007 4.74495 15.3007C5.63655 16.8584 7.14304 16.3972 7.7272 16.1513C7.81943 15.4851 8.08589 15.0342 8.37284 14.778C6.09772 14.5218 3.70987 13.6404 3.70987 9.73586C3.70987 8.5983 4.09931 7.6862 4.76545 6.95858C4.66296 6.70237 4.30427 5.63655 4.86793 4.25303C4.86793 4.25303 5.72878 3.97633 7.6862 5.29836C8.49582 5.07289 9.37717 4.96016 10.2483 4.96016C11.1194 4.96016 12.0007 5.07289 12.8103 5.29836C14.7678 3.97633 15.6286 4.25303 15.6286 4.25303C16.1923 5.63655 15.8336 6.70237 15.7311 6.95858C16.3972 7.6862 16.7867 8.5983 16.7867 9.73586C16.7867 13.6507 14.3886 14.5116 12.1032 14.7678C12.4721 15.0855 12.8103 15.7106 12.8103 16.6637V19.4717C12.8103 19.7484 12.9743 20.0764 13.497 19.9841C17.5655 18.6109 20.4965 14.778 20.4965 10.2483C20.4965 8.90245 20.2315 7.5698 19.7164 6.32643C19.2014 5.08305 18.4465 3.95329 17.4949 3.00165C16.5433 2.05001 15.4135 1.29513 14.1701 0.780103C12.9267 0.265079 11.5941 0 10.2483 0Z\"\n    fill=\"black\"\n  />\n</svg>\n"
         },
         {
+            "name": "IconGithubTwoComponent",
+            "id": "component-IconGithubTwoComponent-20399d7ad9251279bd63c8cd2fde6ecfd303044ffe7e4ed0cba0bb8feaecc3ae9a5bd1c09802f9c0c45d2b50c1e424cd33e3ab3513c71aab222686ed677896cb",
+            "file": "frontend/ui/components/atoms/icons/icon-github-two/icon-github-two.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [
+                "ViewEncapsulation.Emulated"
+            ],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "icon-github-two",
+            "styleUrls": [
+                "./icon-github-two.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./icon-github-two.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "color",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 19,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  ViewEncapsulation,\n} from '@angular/core';\n\n@Component({\n  standalone: true,\n  selector: 'icon-github-two',\n  imports: [CommonModule],\n  templateUrl: './icon-github-two.component.html',\n  styleUrls: ['./icon-github-two.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class IconGithubTwoComponent {\n  @Input() color!: string;\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".s-primary {\r\n  @apply stroke-primary;\r\n}\r\n",
+                    "styleUrl": "./icon-github-two.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<svg\n  width=\"24\"\n  height=\"24\"\n  viewBox=\"0 0 24 24\"\n  fill=\"none\"\n  xmlns=\"http://www.w3.org/2000/svg\"\n>\n  <path\n    class=\"s-primary\"\n    d=\"M9 19.0004C4.7 20.4004 4.7 16.5004 3 16.0004M15 21.0004V17.5004C15 16.5004 15.1 16.1004 14.5 15.5004C17.3 15.2004 20 14.1004 20 9.50044C19.9988 8.3054 19.5325 7.15775 18.7 6.30044C19.0905 5.26241 19.0545 4.11207 18.6 3.10044C18.6 3.10044 17.5 2.80044 15.1 4.40044C13.0672 3.87103 10.9328 3.87103 8.9 4.40044C6.5 2.80044 5.4 3.10044 5.4 3.10044C4.94548 4.11207 4.90953 5.26241 5.3 6.30044C4.46745 7.15775 4.00122 8.3054 4 9.50044C4 14.1004 6.7 15.2004 9.5 15.5004C8.9 16.1004 8.9 16.7004 9 17.5004V21.0004\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n</svg>\n"
+        },
+        {
             "name": "IconGoogleComponent",
             "id": "component-IconGoogleComponent-af50c80cd4dced8717a551827417aee14ee2654f541801ed9aef332940eceb6de40a12ab14bc1bc45ba807b5fb6b4c3920df7e8a6373d2688d8f79d9bbad5bbb",
             "file": "frontend/ui/components/atoms/icons/icon-google/icon-google.component.ts",
@@ -866,6 +1372,310 @@
             "stylesData": "",
             "extends": [],
             "templateData": "<svg\n  width=\"20\"\n  height=\"20\"\n  viewBox=\"0 0 20 20\"\n  fill=\"none\"\n  xmlns=\"http://www.w3.org/2000/svg\"\n>\n  <path\n    d=\"M19.8055 8.0415H19V8H10V12H15.6515C14.827 14.3285 12.6115 16 10 16C6.6865 16 4 13.3135 4 10C4 6.6865 6.6865 4 10 4C11.5295 4 12.921 4.577 13.9805 5.5195L16.809 2.691C15.023 1.0265 12.634 0 10 0C4.4775 0 0 4.4775 0 10C0 15.5225 4.4775 20 10 20C15.5225 20 20 15.5225 20 10C20 9.3295 19.931 8.675 19.8055 8.0415Z\"\n    fill=\"#FFC107\"\n  />\n  <path\n    d=\"M1.15308 5.3455L4.43858 7.755C5.32758 5.554 7.48058 4 10.0001 4C11.5296 4 12.9211 4.577 13.9806 5.5195L16.8091 2.691C15.0231 1.0265 12.6341 0 10.0001 0C6.15908 0 2.82808 2.1685 1.15308 5.3455Z\"\n    fill=\"#FF3D00\"\n  />\n  <path\n    d=\"M10 19.9999C12.583 19.9999 14.93 19.0114 16.7045 17.4039L13.6095 14.7849C12.5718 15.574 11.3038 16.0009 10 15.9999C7.39903 15.9999 5.19053 14.3414 4.35853 12.0269L1.09753 14.5394C2.75253 17.7779 6.11353 19.9999 10 19.9999Z\"\n    fill=\"#4CAF50\"\n  />\n  <path\n    d=\"M19.8055 8.0415H19V8H10V12H15.6515C15.2571 13.1082 14.5467 14.0766 13.608 14.7855L13.6095 14.7845L16.7045 17.4035C16.4855 17.6025 20 15 20 10C20 9.3295 19.931 8.675 19.8055 8.0415Z\"\n    fill=\"#1976D2\"\n  />\n</svg>\n"
+        },
+        {
+            "name": "IconGroupsComponent",
+            "id": "component-IconGroupsComponent-2294bb03fda4a26b09fedc12b3b12527efa79ea269a1b18048cc3cf58918e9d63edabbf2fa5c04cb96d112e124e4caf98962414459d84ae87004fc96d5d21453",
+            "file": "frontend/ui/components/atoms/icons/icon-groups/icon-groups.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [
+                "ViewEncapsulation.Emulated"
+            ],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "icon-groups",
+            "styleUrls": [
+                "./icon-groups.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./icon-groups.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  ViewEncapsulation,\n} from '@angular/core';\n\n@Component({\n  standalone: true,\n  selector: 'icon-groups',\n  imports: [CommonModule],\n  templateUrl: './icon-groups.component.html',\n  styleUrls: ['./icon-groups.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class IconGroupsComponent {}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./icon-groups.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<svg\n  width=\"27\"\n  height=\"27\"\n  viewBox=\"0 0 27 27\"\n  fill=\"none\"\n  xmlns=\"http://www.w3.org/2000/svg\"\n>\n  <path\n    d=\"M10.833 14.8337C10.833 15.5409 11.114 16.2192 11.6141 16.7193C12.1142 17.2194 12.7924 17.5003 13.4997 17.5003C14.2069 17.5003 14.8852 17.2194 15.3853 16.7193C15.8854 16.2192 16.1663 15.5409 16.1663 14.8337C16.1663 14.1264 15.8854 13.4481 15.3853 12.948C14.8852 12.4479 14.2069 12.167 13.4997 12.167C12.7924 12.167 12.1142 12.4479 11.6141 12.948C11.114 13.4481 10.833 14.1264 10.833 14.8337Z\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    d=\"M8.16699 25.5V24.1667C8.16699 23.4594 8.44794 22.7811 8.94804 22.281C9.44814 21.781 10.1264 21.5 10.8337 21.5H16.167C16.8742 21.5 17.5525 21.781 18.0526 22.281C18.5527 22.7811 18.8337 23.4594 18.8337 24.1667V25.5\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    d=\"M17.5 4.16667C17.5 4.87391 17.781 5.55219 18.281 6.05229C18.7811 6.55238 19.4594 6.83333 20.1667 6.83333C20.8739 6.83333 21.5522 6.55238 22.0523 6.05229C22.5524 5.55219 22.8333 4.87391 22.8333 4.16667C22.8333 3.45942 22.5524 2.78115 22.0523 2.28105C21.5522 1.78095 20.8739 1.5 20.1667 1.5C19.4594 1.5 18.7811 1.78095 18.281 2.28105C17.781 2.78115 17.5 3.45942 17.5 4.16667Z\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    d=\"M20.167 10.833H22.8337C23.5409 10.833 24.2192 11.114 24.7193 11.6141C25.2194 12.1142 25.5003 12.7924 25.5003 13.4997V14.833\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    d=\"M4.16699 4.16667C4.16699 4.87391 4.44794 5.55219 4.94804 6.05229C5.44814 6.55238 6.12641 6.83333 6.83366 6.83333C7.5409 6.83333 8.21918 6.55238 8.71928 6.05229C9.21937 5.55219 9.50033 4.87391 9.50033 4.16667C9.50033 3.45942 9.21937 2.78115 8.71928 2.28105C8.21918 1.78095 7.5409 1.5 6.83366 1.5C6.12641 1.5 5.44814 1.78095 4.94804 2.28105C4.44794 2.78115 4.16699 3.45942 4.16699 4.16667Z\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    d=\"M1.5 14.833V13.4997C1.5 12.7924 1.78095 12.1142 2.28105 11.6141C2.78115 11.114 3.45942 10.833 4.16667 10.833H6.83333\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n</svg>\n"
+        },
+        {
+            "name": "IconHexagonNumberFourComponent",
+            "id": "component-IconHexagonNumberFourComponent-524dcb34bf0ac9983faee2a6b01e8c3cf1448987b06208c5ffb85c76e3fd9f442214f469a4d9f19420e21c3a04bbadf130ce51c299657b1783ff36eee928bffe",
+            "file": "frontend/ui/components/atoms/icons/icon-hexagon-number-four/icon-hexagon-number-four.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [
+                "ViewEncapsulation.Emulated"
+            ],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "icon-hexagon-number-four",
+            "styleUrls": [
+                "./icon-hexagon-number-four.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./icon-hexagon-number-four.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "required": true,
+                    "name": "step",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "optional": false,
+                    "line": 19,
+                    "type": "number",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  ViewEncapsulation,\n} from '@angular/core';\n\n@Component({\n  standalone: true,\n  selector: 'icon-hexagon-number-four',\n  imports: [CommonModule],\n  templateUrl: './icon-hexagon-number-four.component.html',\n  styleUrls: ['./icon-hexagon-number-four.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class IconHexagonNumberFourComponent {\n  @Input({ required: true }) step!: number;\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./icon-hexagon-number-four.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "extends": [],
+            "templateData": "@if (step === 4) {\r\n<svg\r\n  xmlns=\"http://www.w3.org/2000/svg\"\r\n  width=\"62\"\r\n  height=\"66\"\r\n  viewBox=\"0 0 62 66\"\r\n  fill=\"none\"\r\n>\r\n  <g filter=\"url(#filter0_d_192_1485)\">\r\n    <path\r\n      d=\"M49.5007 15.2472C50.3256 15.7163 51.0105 16.3967 51.4851 17.2185C51.9597 18.0402 52.2067 18.9736 52.2008 19.9225V37.4044C52.2008 39.346 51.1375 41.1365 49.4215 42.0797L33.2212 52.3278C32.4181 52.7688 31.5166 53 30.6004 53C29.6841 53 28.7827 52.7688 27.9795 52.3278L11.7792 42.0797C10.9396 41.6208 10.2387 40.9448 9.7498 40.1224C9.26088 39.2999 9.00192 38.3612 9 37.4044V19.9201C9 17.9784 10.0632 16.1904 11.7792 15.2472L27.9795 5.69503C28.8064 5.23911 29.7353 5 30.6796 5C31.6238 5 32.5527 5.23911 33.3796 5.69503L49.5799 15.2472H49.5007Z\"\r\n      stroke=\"white\"\r\n      stroke-width=\"4\"\r\n      stroke-linecap=\"round\"\r\n      stroke-linejoin=\"round\"\r\n      shape-rendering=\"crispEdges\"\r\n    />\r\n  </g>\r\n  <g filter=\"url(#filter1_d_192_1485)\">\r\n    <path\r\n      d=\"M25.8003 19.3989V26.5991C25.8003 27.2356 26.0532 27.846 26.5032 28.2961C26.9533 28.7462 27.5638 28.9991 28.2003 28.9991H35.4005\"\r\n      stroke=\"white\"\r\n      stroke-width=\"4\"\r\n      stroke-linecap=\"round\"\r\n      stroke-linejoin=\"round\"\r\n      shape-rendering=\"crispEdges\"\r\n    />\r\n  </g>\r\n  <g filter=\"url(#filter2_d_192_1485)\">\r\n    <path\r\n      d=\"M35.4004 19.3989V38.5993\"\r\n      stroke=\"white\"\r\n      stroke-width=\"4\"\r\n      stroke-linecap=\"round\"\r\n      stroke-linejoin=\"round\"\r\n      shape-rendering=\"crispEdges\"\r\n    />\r\n  </g>\r\n  <defs>\r\n    <filter\r\n      id=\"filter0_d_192_1485\"\r\n      x=\"0\"\r\n      y=\"0\"\r\n      width=\"61.2009\"\r\n      height=\"66\"\r\n      filterUnits=\"userSpaceOnUse\"\r\n      color-interpolation-filters=\"sRGB\"\r\n    >\r\n      <feFlood flood-opacity=\"0\" result=\"BackgroundImageFix\" />\r\n      <feColorMatrix\r\n        in=\"SourceAlpha\"\r\n        type=\"matrix\"\r\n        values=\"0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0\"\r\n        result=\"hardAlpha\"\r\n      />\r\n      <feOffset dy=\"4\" />\r\n      <feGaussianBlur stdDeviation=\"3.5\" />\r\n      <feComposite in2=\"hardAlpha\" operator=\"out\" />\r\n      <feColorMatrix\r\n        type=\"matrix\"\r\n        values=\"0 0 0 0 0.980392 0 0 0 0 0.290196 0 0 0 0 0.52549 0 0 0 1 0\"\r\n      />\r\n      <feBlend\r\n        mode=\"normal\"\r\n        in2=\"BackgroundImageFix\"\r\n        result=\"effect1_dropShadow_192_1485\"\r\n      />\r\n      <feBlend\r\n        mode=\"normal\"\r\n        in=\"SourceGraphic\"\r\n        in2=\"effect1_dropShadow_192_1485\"\r\n        result=\"shape\"\r\n      />\r\n    </filter>\r\n    <filter\r\n      id=\"filter1_d_192_1485\"\r\n      x=\"16.8003\"\r\n      y=\"14.3989\"\r\n      width=\"27.6001\"\r\n      height=\"27.6001\"\r\n      filterUnits=\"userSpaceOnUse\"\r\n      color-interpolation-filters=\"sRGB\"\r\n    >\r\n      <feFlood flood-opacity=\"0\" result=\"BackgroundImageFix\" />\r\n      <feColorMatrix\r\n        in=\"SourceAlpha\"\r\n        type=\"matrix\"\r\n        values=\"0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0\"\r\n        result=\"hardAlpha\"\r\n      />\r\n      <feOffset dy=\"4\" />\r\n      <feGaussianBlur stdDeviation=\"3.5\" />\r\n      <feComposite in2=\"hardAlpha\" operator=\"out\" />\r\n      <feColorMatrix\r\n        type=\"matrix\"\r\n        values=\"0 0 0 0 0.980392 0 0 0 0 0.290196 0 0 0 0 0.52549 0 0 0 1 0\"\r\n      />\r\n      <feBlend\r\n        mode=\"normal\"\r\n        in2=\"BackgroundImageFix\"\r\n        result=\"effect1_dropShadow_192_1485\"\r\n      />\r\n      <feBlend\r\n        mode=\"normal\"\r\n        in=\"SourceGraphic\"\r\n        in2=\"effect1_dropShadow_192_1485\"\r\n        result=\"shape\"\r\n      />\r\n    </filter>\r\n    <filter\r\n      id=\"filter2_d_192_1485\"\r\n      x=\"26.4004\"\r\n      y=\"14.3989\"\r\n      width=\"18\"\r\n      height=\"37.2002\"\r\n      filterUnits=\"userSpaceOnUse\"\r\n      color-interpolation-filters=\"sRGB\"\r\n    >\r\n      <feFlood flood-opacity=\"0\" result=\"BackgroundImageFix\" />\r\n      <feColorMatrix\r\n        in=\"SourceAlpha\"\r\n        type=\"matrix\"\r\n        values=\"0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0\"\r\n        result=\"hardAlpha\"\r\n      />\r\n      <feOffset dy=\"4\" />\r\n      <feGaussianBlur stdDeviation=\"3.5\" />\r\n      <feComposite in2=\"hardAlpha\" operator=\"out\" />\r\n      <feColorMatrix\r\n        type=\"matrix\"\r\n        values=\"0 0 0 0 0.980392 0 0 0 0 0.290196 0 0 0 0 0.52549 0 0 0 1 0\"\r\n      />\r\n      <feBlend\r\n        mode=\"normal\"\r\n        in2=\"BackgroundImageFix\"\r\n        result=\"effect1_dropShadow_192_1485\"\r\n      />\r\n      <feBlend\r\n        mode=\"normal\"\r\n        in=\"SourceGraphic\"\r\n        in2=\"effect1_dropShadow_192_1485\"\r\n        result=\"shape\"\r\n      />\r\n    </filter>\r\n  </defs>\r\n</svg>\r\n} @else {\r\n<svg\r\n  width=\"48\"\r\n  height=\"52\"\r\n  viewBox=\"0 0 48 52\"\r\n  fill=\"none\"\r\n  xmlns=\"http://www.w3.org/2000/svg\"\r\n>\r\n  <path\r\n    d=\"M42.5007 12.2472C43.3256 12.7163 44.0105 13.3967 44.4851 14.2185C44.9597 15.0402 45.2067 15.9736 45.2008 16.9225V34.4044C45.2008 36.346 44.1375 38.1365 42.4215 39.0797L26.2212 49.3278C25.4181 49.7688 24.5166 50 23.6004 50C22.6841 50 21.7827 49.7688 20.9795 49.3278L4.77925 39.0797C3.93963 38.6208 3.23872 37.9448 2.7498 37.1224C2.26088 36.2999 2.00192 35.3612 2 34.4044V16.9201C2 14.9784 3.06322 13.1904 4.77925 12.2472L20.9795 2.69503C21.8064 2.23911 22.7353 2 23.6796 2C24.6238 2 25.5527 2.23911 26.3796 2.69503L42.5799 12.2472H42.5007Z\"\r\n    stroke=\"white\"\r\n    stroke-width=\"4\"\r\n    stroke-linecap=\"round\"\r\n    stroke-linejoin=\"round\"\r\n  />\r\n  <path\r\n    d=\"M18.8003 16.3989V23.5991C18.8003 24.2356 19.0532 24.846 19.5032 25.2961C19.9533 25.7462 20.5638 25.9991 21.2003 25.9991H28.4005\"\r\n    stroke=\"white\"\r\n    stroke-width=\"4\"\r\n    stroke-linecap=\"round\"\r\n    stroke-linejoin=\"round\"\r\n  />\r\n  <path\r\n    d=\"M28.4004 16.3989V35.5993\"\r\n    stroke=\"white\"\r\n    stroke-width=\"4\"\r\n    stroke-linecap=\"round\"\r\n    stroke-linejoin=\"round\"\r\n  />\r\n</svg>\r\n}\r\n"
+        },
+        {
+            "name": "IconHexagonNumberOneComponent",
+            "id": "component-IconHexagonNumberOneComponent-b0396e34d60673085a80d19d3b2bb2280d7c412c067e75ff29177506cd749d7541a10d608ff3800936c8a74ae915418752b8e51bdbaa8ed542ab02712d2cc3c6",
+            "file": "frontend/ui/components/atoms/icons/icon-hexagon-number-one/icon-hexagon-number-one.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [
+                "ViewEncapsulation.Emulated"
+            ],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "icon-hexagon-number-one",
+            "styleUrls": [
+                "./icon-hexagon-number-one.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./icon-hexagon-number-one.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "required": true,
+                    "name": "step",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "optional": false,
+                    "line": 19,
+                    "type": "number",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  ViewEncapsulation,\n} from '@angular/core';\n\n@Component({\n  standalone: true,\n  selector: 'icon-hexagon-number-one',\n  imports: [CommonModule],\n  templateUrl: './icon-hexagon-number-one.component.html',\n  styleUrls: ['./icon-hexagon-number-one.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class IconHexagonNumberOneComponent {\n  @Input({ required: true }) step!: number;\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./icon-hexagon-number-one.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "extends": [],
+            "templateData": "@if(step === 1) {\n<svg\n  xmlns=\"http://www.w3.org/2000/svg\"\n  width=\"62\"\n  height=\"66\"\n  viewBox=\"0 0 62 66\"\n  fill=\"none\"\n>\n  <g filter=\"url(#filter0_d_192_1406)\">\n    <path\n      d=\"M49.5007 15.2472C50.3256 15.7163 51.0105 16.3967 51.4851 17.2185C51.9597 18.0402 52.2067 18.9736 52.2008 19.9225V37.4044C52.2008 39.346 51.1375 41.1365 49.4215 42.0797L33.2212 52.3278C32.4181 52.7688 31.5166 53 30.6004 53C29.6841 53 28.7827 52.7688 27.9795 52.3278L11.7792 42.0797C10.9396 41.6208 10.2387 40.9448 9.7498 40.1224C9.26088 39.2999 9.00192 38.3612 9 37.4044V19.9201C9 17.9784 10.0632 16.1904 11.7792 15.2472L27.9795 5.69503C28.8064 5.23911 29.7353 5 30.6796 5C31.6238 5 32.5527 5.23911 33.3796 5.69503L49.5799 15.2472H49.5007Z\"\n      stroke=\"white\"\n      stroke-width=\"4\"\n      stroke-linecap=\"round\"\n      stroke-linejoin=\"round\"\n      shape-rendering=\"crispEdges\"\n    />\n  </g>\n  <g filter=\"url(#filter1_d_192_1406)\">\n    <path\n      d=\"M25.8006 24.1995L30.6007 19.3994V38.5998\"\n      stroke=\"white\"\n      stroke-width=\"4\"\n      stroke-linecap=\"round\"\n      stroke-linejoin=\"round\"\n      shape-rendering=\"crispEdges\"\n    />\n  </g>\n  <defs>\n    <filter\n      id=\"filter0_d_192_1406\"\n      x=\"0\"\n      y=\"0\"\n      width=\"61.2009\"\n      height=\"66\"\n      filterUnits=\"userSpaceOnUse\"\n      color-interpolation-filters=\"sRGB\"\n    >\n      <feFlood flood-opacity=\"0\" result=\"BackgroundImageFix\" />\n      <feColorMatrix\n        in=\"SourceAlpha\"\n        type=\"matrix\"\n        values=\"0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0\"\n        result=\"hardAlpha\"\n      />\n      <feOffset dy=\"4\" />\n      <feGaussianBlur stdDeviation=\"3.5\" />\n      <feComposite in2=\"hardAlpha\" operator=\"out\" />\n      <feColorMatrix\n        type=\"matrix\"\n        values=\"0 0 0 0 0.980392 0 0 0 0 0.290196 0 0 0 0 0.52549 0 0 0 1 0\"\n      />\n      <feBlend\n        mode=\"normal\"\n        in2=\"BackgroundImageFix\"\n        result=\"effect1_dropShadow_192_1406\"\n      />\n      <feBlend\n        mode=\"normal\"\n        in=\"SourceGraphic\"\n        in2=\"effect1_dropShadow_192_1406\"\n        result=\"shape\"\n      />\n    </filter>\n    <filter\n      id=\"filter1_d_192_1406\"\n      x=\"16.8006\"\n      y=\"14.3994\"\n      width=\"22.8001\"\n      height=\"37.2002\"\n      filterUnits=\"userSpaceOnUse\"\n      color-interpolation-filters=\"sRGB\"\n    >\n      <feFlood flood-opacity=\"0\" result=\"BackgroundImageFix\" />\n      <feColorMatrix\n        in=\"SourceAlpha\"\n        type=\"matrix\"\n        values=\"0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0\"\n        result=\"hardAlpha\"\n      />\n      <feOffset dy=\"4\" />\n      <feGaussianBlur stdDeviation=\"3.5\" />\n      <feComposite in2=\"hardAlpha\" operator=\"out\" />\n      <feColorMatrix\n        type=\"matrix\"\n        values=\"0 0 0 0 0.980392 0 0 0 0 0.290196 0 0 0 0 0.52549 0 0 0 1 0\"\n      />\n      <feBlend\n        mode=\"normal\"\n        in2=\"BackgroundImageFix\"\n        result=\"effect1_dropShadow_192_1406\"\n      />\n      <feBlend\n        mode=\"normal\"\n        in=\"SourceGraphic\"\n        in2=\"effect1_dropShadow_192_1406\"\n        result=\"shape\"\n      />\n    </filter>\n  </defs>\n</svg>\n} @else {\n<svg\n  width=\"48\"\n  height=\"52\"\n  viewBox=\"0 0 48 52\"\n  fill=\"none\"\n  xmlns=\"http://www.w3.org/2000/svg\"\n>\n  <path\n    d=\"M42.5007 12.2472C43.3256 12.7163 44.0105 13.3967 44.4851 14.2185C44.9597 15.0402 45.2067 15.9736 45.2008 16.9225V34.4044C45.2008 36.346 44.1375 38.1365 42.4215 39.0797L26.2212 49.3278C25.4181 49.7688 24.5166 50 23.6004 50C22.6841 50 21.7827 49.7688 20.9795 49.3278L4.77925 39.0797C3.93963 38.6208 3.23872 37.9448 2.7498 37.1224C2.26088 36.2999 2.00192 35.3612 2 34.4044L2 16.9201C2 14.9784 3.06322 13.1904 4.77925 12.2472L20.9795 2.69503C21.8064 2.23911 22.7353 2 23.6796 2C24.6238 2 25.5527 2.23911 26.3796 2.69503L42.5799 12.2472H42.5007Z\"\n    stroke=\"white\"\n    stroke-width=\"4\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    d=\"M18.8006 21.1995L23.6007 16.3994V35.5998\"\n    stroke=\"white\"\n    stroke-width=\"4\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n</svg>\n}\n"
+        },
+        {
+            "name": "IconHexagonNumberThreeComponent",
+            "id": "component-IconHexagonNumberThreeComponent-990a49610219cd06bbc7b60131dbeb6e0f7838d34279691935ba372f9e4a144049002edb474ecdf5c4bd1534aa110881473c485ca27ec7533289fe35350bb81a",
+            "file": "frontend/ui/components/atoms/icons/icon-hexagon-number-three/icon-hexagon-number-three.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [
+                "ViewEncapsulation.Emulated"
+            ],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "icon-hexagon-number-three",
+            "styleUrls": [
+                "./icon-hexagon-number-three.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./icon-hexagon-number-three.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "required": true,
+                    "name": "step",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "optional": false,
+                    "line": 19,
+                    "type": "number",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  ViewEncapsulation,\n} from '@angular/core';\n\n@Component({\n  standalone: true,\n  selector: 'icon-hexagon-number-three',\n  imports: [CommonModule],\n  templateUrl: './icon-hexagon-number-three.component.html',\n  styleUrls: ['./icon-hexagon-number-three.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class IconHexagonNumberThreeComponent {\n  @Input({ required: true }) step!: number;\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./icon-hexagon-number-three.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "extends": [],
+            "templateData": "@if (step === 3) {\r\n<svg\r\n  xmlns=\"http://www.w3.org/2000/svg\"\r\n  width=\"62\"\r\n  height=\"66\"\r\n  viewBox=\"0 0 62 66\"\r\n  fill=\"none\"\r\n>\r\n  <g filter=\"url(#filter0_d_192_1448)\">\r\n    <path\r\n      d=\"M49.5007 15.2472C50.3256 15.7163 51.0105 16.3967 51.4851 17.2185C51.9597 18.0402 52.2067 18.9736 52.2008 19.9225V37.4044C52.2008 39.346 51.1375 41.1365 49.4215 42.0797L33.2212 52.3278C32.4181 52.7688 31.5166 53 30.6004 53C29.6841 53 28.7827 52.7688 27.9795 52.3278L11.7792 42.0797C10.9396 41.6208 10.2387 40.9448 9.7498 40.1224C9.26088 39.2999 9.00192 38.3612 9 37.4044V19.9201C9 17.9784 10.0632 16.1904 11.7792 15.2472L27.9795 5.69503C28.8064 5.23911 29.7353 5 30.6796 5C31.6238 5 32.5527 5.23911 33.3796 5.69503L49.5799 15.2472H49.5007Z\"\r\n      stroke=\"white\"\r\n      stroke-width=\"4\"\r\n      stroke-linecap=\"round\"\r\n      stroke-linejoin=\"round\"\r\n      shape-rendering=\"crispEdges\"\r\n    />\r\n  </g>\r\n  <g filter=\"url(#filter1_d_192_1448)\">\r\n    <path\r\n      d=\"M25.8004 21.7999C25.8004 21.1634 26.0533 20.553 26.5034 20.1029C26.9535 19.6528 27.5639 19.3999 28.2005 19.3999H33.0005C33.6371 19.3999 34.2475 19.6528 34.6976 20.1029C35.1477 20.553 35.4006 21.1634 35.4006 21.7999V26.6C35.4006 27.2366 35.1477 27.847 34.6976 28.2971C34.2475 28.7472 33.6371 29.0001 33.0005 29.0001M33.0005 29.0001H28.2005M33.0005 29.0001C33.6371 29.0001 34.2475 29.2529 34.6976 29.703C35.1477 30.1531 35.4006 30.7636 35.4006 31.4001V36.2002C35.4006 36.8367 35.1477 37.4472 34.6976 37.8973C34.2475 38.3474 33.6371 38.6002 33.0005 38.6002H28.2005C27.5639 38.6002 26.9535 38.3474 26.5034 37.8973C26.0533 37.4472 25.8004 36.8367 25.8004 36.2002\"\r\n      stroke=\"white\"\r\n      stroke-width=\"4\"\r\n      stroke-linecap=\"round\"\r\n      stroke-linejoin=\"round\"\r\n      shape-rendering=\"crispEdges\"\r\n    />\r\n  </g>\r\n  <defs>\r\n    <filter\r\n      id=\"filter0_d_192_1448\"\r\n      x=\"0\"\r\n      y=\"0\"\r\n      width=\"61.2008\"\r\n      height=\"66\"\r\n      filterUnits=\"userSpaceOnUse\"\r\n      color-interpolation-filters=\"sRGB\"\r\n    >\r\n      <feFlood flood-opacity=\"0\" result=\"BackgroundImageFix\" />\r\n      <feColorMatrix\r\n        in=\"SourceAlpha\"\r\n        type=\"matrix\"\r\n        values=\"0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0\"\r\n        result=\"hardAlpha\"\r\n      />\r\n      <feOffset dy=\"4\" />\r\n      <feGaussianBlur stdDeviation=\"3.5\" />\r\n      <feComposite in2=\"hardAlpha\" operator=\"out\" />\r\n      <feColorMatrix\r\n        type=\"matrix\"\r\n        values=\"0 0 0 0 0.980392 0 0 0 0 0.290196 0 0 0 0 0.52549 0 0 0 1 0\"\r\n      />\r\n      <feBlend\r\n        mode=\"normal\"\r\n        in2=\"BackgroundImageFix\"\r\n        result=\"effect1_dropShadow_192_1448\"\r\n      />\r\n      <feBlend\r\n        mode=\"normal\"\r\n        in=\"SourceGraphic\"\r\n        in2=\"effect1_dropShadow_192_1448\"\r\n        result=\"shape\"\r\n      />\r\n    </filter>\r\n    <filter\r\n      id=\"filter1_d_192_1448\"\r\n      x=\"16.8004\"\r\n      y=\"14.3999\"\r\n      width=\"27.6002\"\r\n      height=\"37.2002\"\r\n      filterUnits=\"userSpaceOnUse\"\r\n      color-interpolation-filters=\"sRGB\"\r\n    >\r\n      <feFlood flood-opacity=\"0\" result=\"BackgroundImageFix\" />\r\n      <feColorMatrix\r\n        in=\"SourceAlpha\"\r\n        type=\"matrix\"\r\n        values=\"0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0\"\r\n        result=\"hardAlpha\"\r\n      />\r\n      <feOffset dy=\"4\" />\r\n      <feGaussianBlur stdDeviation=\"3.5\" />\r\n      <feComposite in2=\"hardAlpha\" operator=\"out\" />\r\n      <feColorMatrix\r\n        type=\"matrix\"\r\n        values=\"0 0 0 0 0.980392 0 0 0 0 0.290196 0 0 0 0 0.52549 0 0 0 1 0\"\r\n      />\r\n      <feBlend\r\n        mode=\"normal\"\r\n        in2=\"BackgroundImageFix\"\r\n        result=\"effect1_dropShadow_192_1448\"\r\n      />\r\n      <feBlend\r\n        mode=\"normal\"\r\n        in=\"SourceGraphic\"\r\n        in2=\"effect1_dropShadow_192_1448\"\r\n        result=\"shape\"\r\n      />\r\n    </filter>\r\n  </defs>\r\n</svg>\r\n} @else {\r\n<svg\r\n  width=\"48\"\r\n  height=\"52\"\r\n  viewBox=\"0 0 48 52\"\r\n  fill=\"none\"\r\n  xmlns=\"http://www.w3.org/2000/svg\"\r\n>\r\n  <path\r\n    d=\"M42.5007 12.2472C43.3256 12.7163 44.0105 13.3967 44.4851 14.2185C44.9597 15.0402 45.2067 15.9736 45.2008 16.9225V34.4044C45.2008 36.346 44.1375 38.1365 42.4215 39.0797L26.2212 49.3278C25.4181 49.7688 24.5166 50 23.6004 50C22.6841 50 21.7827 49.7688 20.9795 49.3278L4.77925 39.0797C3.93963 38.6208 3.23872 37.9448 2.7498 37.1224C2.26088 36.2999 2.00192 35.3612 2 34.4044V16.9201C2 14.9784 3.06322 13.1904 4.77925 12.2472L20.9795 2.69503C21.8064 2.23911 22.7353 2 23.6796 2C24.6238 2 25.5527 2.23911 26.3796 2.69503L42.5799 12.2472H42.5007Z\"\r\n    stroke=\"white\"\r\n    stroke-width=\"4\"\r\n    stroke-linecap=\"round\"\r\n    stroke-linejoin=\"round\"\r\n  />\r\n  <path\r\n    d=\"M18.8004 18.7999C18.8004 18.1634 19.0533 17.553 19.5034 17.1029C19.9535 16.6528 20.5639 16.3999 21.2005 16.3999H26.0005C26.6371 16.3999 27.2475 16.6528 27.6976 17.1029C28.1477 17.553 28.4006 18.1634 28.4006 18.7999V23.6C28.4006 24.2366 28.1477 24.847 27.6976 25.2971C27.2475 25.7472 26.6371 26.0001 26.0005 26.0001M26.0005 26.0001H21.2005M26.0005 26.0001C26.6371 26.0001 27.2475 26.2529 27.6976 26.703C28.1477 27.1531 28.4006 27.7636 28.4006 28.4001V33.2002C28.4006 33.8367 28.1477 34.4472 27.6976 34.8973C27.2475 35.3474 26.6371 35.6002 26.0005 35.6002H21.2005C20.5639 35.6002 19.9535 35.3474 19.5034 34.8973C19.0533 34.4472 18.8004 33.8367 18.8004 33.2002\"\r\n    stroke=\"white\"\r\n    stroke-width=\"4\"\r\n    stroke-linecap=\"round\"\r\n    stroke-linejoin=\"round\"\r\n  />\r\n</svg>\r\n}\r\n"
+        },
+        {
+            "name": "IconHexagonNumberTwoComponent",
+            "id": "component-IconHexagonNumberTwoComponent-09432a16f57ce3d89984a1c1223552f87ff10dfa85b7b5bb803cf82950d5a983e891d36fb130042cff5ac8e51df22a586f0fb53d3c5bf7b0684249ef6f29ba5e",
+            "file": "frontend/ui/components/atoms/icons/icon-hexagon-number-two/icon-hexagon-number-two.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [
+                "ViewEncapsulation.Emulated"
+            ],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "icon-hexagon-number-two",
+            "styleUrls": [
+                "./icon-hexagon-number-two.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./icon-hexagon-number-two.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "required": true,
+                    "name": "step",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "optional": false,
+                    "line": 19,
+                    "type": "number",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  ViewEncapsulation,\n} from '@angular/core';\n\n@Component({\n  standalone: true,\n  selector: 'icon-hexagon-number-two',\n  imports: [CommonModule],\n  templateUrl: './icon-hexagon-number-two.component.html',\n  styleUrls: ['./icon-hexagon-number-two.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class IconHexagonNumberTwoComponent {\n  @Input({ required: true }) step!: number;\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./icon-hexagon-number-two.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "extends": [],
+            "templateData": "@if(step === 2) {\r\n<svg\r\n  xmlns=\"http://www.w3.org/2000/svg\"\r\n  width=\"62\"\r\n  height=\"66\"\r\n  viewBox=\"0 0 62 66\"\r\n  fill=\"none\"\r\n>\r\n  <g filter=\"url(#filter0_d_191_1374)\">\r\n    <g filter=\"url(#filter1_d_191_1374)\">\r\n      <path\r\n        d=\"M49.5007 15.2472C50.3256 15.7163 51.0105 16.3967 51.4851 17.2185C51.9597 18.0402 52.2067 18.9736 52.2008 19.9225V37.4044C52.2008 39.346 51.1375 41.1365 49.4215 42.0797L33.2212 52.3278C32.4181 52.7688 31.5166 53 30.6004 53C29.6841 53 28.7827 52.7688 27.9795 52.3278L11.7792 42.0797C10.9396 41.6208 10.2387 40.9448 9.7498 40.1224C9.26088 39.2999 9.00192 38.3612 9 37.4044V19.9201C9 17.9784 10.0632 16.1904 11.7792 15.2472L27.9795 5.69503C28.8064 5.23911 29.7353 5 30.6796 5C31.6238 5 32.5527 5.23911 33.3796 5.69503L49.5799 15.2472H49.5007Z\"\r\n        stroke=\"white\"\r\n        stroke-width=\"4\"\r\n        stroke-linecap=\"round\"\r\n        stroke-linejoin=\"round\"\r\n        shape-rendering=\"crispEdges\"\r\n      />\r\n    </g>\r\n    <g filter=\"url(#filter2_d_191_1374)\">\r\n      <path\r\n        d=\"M25.8005 19.3999H33.0007C33.6372 19.3999 34.2477 19.6528 34.6977 20.1029C35.1478 20.553 35.4007 21.1634 35.4007 21.7999V26.6C35.4007 27.2366 35.1478 27.847 34.6977 28.2971C34.2477 28.7472 33.6372 29.0001 33.0007 29.0001H28.2006C27.564 29.0001 26.9536 29.2529 26.5035 29.703C26.0534 30.1531 25.8005 30.7636 25.8005 31.4001V36.2002C25.8005 36.8367 26.0534 37.4472 26.5035 37.8973C26.9536 38.3474 27.564 38.6002 28.2006 38.6002H35.4007\"\r\n        stroke=\"white\"\r\n        stroke-width=\"4\"\r\n        stroke-linecap=\"round\"\r\n        stroke-linejoin=\"round\"\r\n        shape-rendering=\"crispEdges\"\r\n      />\r\n    </g>\r\n  </g>\r\n  <defs>\r\n    <filter\r\n      id=\"filter0_d_191_1374\"\r\n      x=\"2\"\r\n      y=\"2\"\r\n      width=\"57.2008\"\r\n      height=\"62\"\r\n      filterUnits=\"userSpaceOnUse\"\r\n      color-interpolation-filters=\"sRGB\"\r\n    >\r\n      <feFlood flood-opacity=\"0\" result=\"BackgroundImageFix\" />\r\n      <feColorMatrix\r\n        in=\"SourceAlpha\"\r\n        type=\"matrix\"\r\n        values=\"0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0\"\r\n        result=\"hardAlpha\"\r\n      />\r\n      <feOffset dy=\"4\" />\r\n      <feGaussianBlur stdDeviation=\"2.5\" />\r\n      <feComposite in2=\"hardAlpha\" operator=\"out\" />\r\n      <feColorMatrix\r\n        type=\"matrix\"\r\n        values=\"0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0\"\r\n      />\r\n      <feBlend\r\n        mode=\"normal\"\r\n        in2=\"BackgroundImageFix\"\r\n        result=\"effect1_dropShadow_191_1374\"\r\n      />\r\n      <feBlend\r\n        mode=\"normal\"\r\n        in=\"SourceGraphic\"\r\n        in2=\"effect1_dropShadow_191_1374\"\r\n        result=\"shape\"\r\n      />\r\n    </filter>\r\n    <filter\r\n      id=\"filter1_d_191_1374\"\r\n      x=\"0\"\r\n      y=\"0\"\r\n      width=\"61.2008\"\r\n      height=\"66\"\r\n      filterUnits=\"userSpaceOnUse\"\r\n      color-interpolation-filters=\"sRGB\"\r\n    >\r\n      <feFlood flood-opacity=\"0\" result=\"BackgroundImageFix\" />\r\n      <feColorMatrix\r\n        in=\"SourceAlpha\"\r\n        type=\"matrix\"\r\n        values=\"0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0\"\r\n        result=\"hardAlpha\"\r\n      />\r\n      <feOffset dy=\"4\" />\r\n      <feGaussianBlur stdDeviation=\"3.5\" />\r\n      <feComposite in2=\"hardAlpha\" operator=\"out\" />\r\n      <feColorMatrix\r\n        type=\"matrix\"\r\n        values=\"0 0 0 0 0.980392 0 0 0 0 0.290196 0 0 0 0 0.52549 0 0 0 1 0\"\r\n      />\r\n      <feBlend\r\n        mode=\"normal\"\r\n        in2=\"BackgroundImageFix\"\r\n        result=\"effect1_dropShadow_191_1374\"\r\n      />\r\n      <feBlend\r\n        mode=\"normal\"\r\n        in=\"SourceGraphic\"\r\n        in2=\"effect1_dropShadow_191_1374\"\r\n        result=\"shape\"\r\n      />\r\n    </filter>\r\n    <filter\r\n      id=\"filter2_d_191_1374\"\r\n      x=\"16.8005\"\r\n      y=\"14.3999\"\r\n      width=\"27.6002\"\r\n      height=\"37.2002\"\r\n      filterUnits=\"userSpaceOnUse\"\r\n      color-interpolation-filters=\"sRGB\"\r\n    >\r\n      <feFlood flood-opacity=\"0\" result=\"BackgroundImageFix\" />\r\n      <feColorMatrix\r\n        in=\"SourceAlpha\"\r\n        type=\"matrix\"\r\n        values=\"0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0\"\r\n        result=\"hardAlpha\"\r\n      />\r\n      <feOffset dy=\"4\" />\r\n      <feGaussianBlur stdDeviation=\"3.5\" />\r\n      <feComposite in2=\"hardAlpha\" operator=\"out\" />\r\n      <feColorMatrix\r\n        type=\"matrix\"\r\n        values=\"0 0 0 0 0.980392 0 0 0 0 0.290196 0 0 0 0 0.52549 0 0 0 1 0\"\r\n      />\r\n      <feBlend\r\n        mode=\"normal\"\r\n        in2=\"BackgroundImageFix\"\r\n        result=\"effect1_dropShadow_191_1374\"\r\n      />\r\n      <feBlend\r\n        mode=\"normal\"\r\n        in=\"SourceGraphic\"\r\n        in2=\"effect1_dropShadow_191_1374\"\r\n        result=\"shape\"\r\n      />\r\n    </filter>\r\n  </defs>\r\n</svg>\r\n} @else {\r\n<svg\r\n  width=\"58\"\r\n  height=\"62\"\r\n  viewBox=\"0 0 58 62\"\r\n  fill=\"none\"\r\n  xmlns=\"http://www.w3.org/2000/svg\"\r\n>\r\n  <g filter=\"url(#filter0_d_192_1411)\">\r\n    <path\r\n      d=\"M47.5007 13.2472C48.3256 13.7163 49.0105 14.3967 49.4851 15.2185C49.9597 16.0402 50.2067 16.9736 50.2008 17.9225V35.4044C50.2008 37.346 49.1375 39.1365 47.4215 40.0797L31.2212 50.3278C30.4181 50.7688 29.5166 51 28.6004 51C27.6841 51 26.7827 50.7688 25.9795 50.3278L9.77925 40.0797C8.93963 39.6208 8.23872 38.9448 7.7498 38.1224C7.26088 37.2999 7.00192 36.3612 7 35.4044V17.9201C7 15.9784 8.06322 14.1904 9.77925 13.2472L25.9795 3.69503C26.8064 3.23911 27.7353 3 28.6796 3C29.6238 3 30.5527 3.23911 31.3796 3.69503L47.5799 13.2472H47.5007Z\"\r\n      stroke=\"white\"\r\n      stroke-width=\"4\"\r\n      stroke-linecap=\"round\"\r\n      stroke-linejoin=\"round\"\r\n    />\r\n    <path\r\n      d=\"M23.8005 17.3999H31.0007C31.6372 17.3999 32.2477 17.6528 32.6977 18.1029C33.1478 18.553 33.4007 19.1634 33.4007 19.7999V24.6C33.4007 25.2366 33.1478 25.847 32.6977 26.2971C32.2477 26.7472 31.6372 27.0001 31.0007 27.0001H26.2006C25.564 27.0001 24.9536 27.2529 24.5035 27.703C24.0534 28.1531 23.8005 28.7636 23.8005 29.4001V34.2002C23.8005 34.8367 24.0534 35.4472 24.5035 35.8973C24.9536 36.3474 25.564 36.6002 26.2006 36.6002H33.4007\"\r\n      stroke=\"white\"\r\n      stroke-width=\"4\"\r\n      stroke-linecap=\"round\"\r\n      stroke-linejoin=\"round\"\r\n    />\r\n  </g>\r\n  <defs>\r\n    <filter\r\n      id=\"filter0_d_192_1411\"\r\n      x=\"0\"\r\n      y=\"0\"\r\n      width=\"57.2008\"\r\n      height=\"62\"\r\n      filterUnits=\"userSpaceOnUse\"\r\n      color-interpolation-filters=\"sRGB\"\r\n    >\r\n      <feFlood flood-opacity=\"0\" result=\"BackgroundImageFix\" />\r\n      <feColorMatrix\r\n        in=\"SourceAlpha\"\r\n        type=\"matrix\"\r\n        values=\"0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0\"\r\n        result=\"hardAlpha\"\r\n      />\r\n      <feOffset dy=\"4\" />\r\n      <feGaussianBlur stdDeviation=\"2.5\" />\r\n      <feComposite in2=\"hardAlpha\" operator=\"out\" />\r\n      <feColorMatrix\r\n        type=\"matrix\"\r\n        values=\"0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0\"\r\n      />\r\n      <feBlend\r\n        mode=\"normal\"\r\n        in2=\"BackgroundImageFix\"\r\n        result=\"effect1_dropShadow_192_1411\"\r\n      />\r\n      <feBlend\r\n        mode=\"normal\"\r\n        in=\"SourceGraphic\"\r\n        in2=\"effect1_dropShadow_192_1411\"\r\n        result=\"shape\"\r\n      />\r\n    </filter>\r\n  </defs>\r\n</svg>\r\n}\r\n"
         },
         {
             "name": "IconHiddenPassComponent",
@@ -918,6 +1728,128 @@
             "stylesData": "",
             "extends": [],
             "templateData": "<svg\n  class=\"hover-global\"\n  width=\"20\"\n  height=\"20\"\n  viewBox=\"0 0 20 20\"\n  fill=\"none\"\n  xmlns=\"http://www.w3.org/2000/svg\"\n>\n  <path\n    class=\"background-icon\"\n    d=\"M10 0C18 0 20 2 20 10C20 18 18 20 10 20C2 20 0 18 0 10C0 2 2 0 10 0Z\"\n  />\n  <path\n    class=\"eye-icon\"\n    d=\"M18 6.55542C15.8667 8.92609 13.2 10.111 10 10.111C6.8 10.111 4.13333 8.92609 2 6.55542\"\n    stroke-width=\"1.18519\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    class=\"eye-icon\"\n    d=\"M2 11.8888L4.22222 8.51099\"\n    stroke-width=\"1.18519\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    class=\"eye-icon\"\n    d=\"M18 11.8674L15.7849 8.51099\"\n    stroke-width=\"1.18519\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    class=\"eye-icon\"\n    d=\"M7.33337 13.6666L7.77782 10.1111\"\n    stroke-width=\"1.18519\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    class=\"eye-icon\"\n    d=\"M12.6667 13.6666L12.2223 10.1111\"\n    stroke-width=\"1.18519\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n</svg>\n"
+        },
+        {
+            "name": "IconInstagramTwoComponent",
+            "id": "component-IconInstagramTwoComponent-e83270d02885f7c172ed27f445592092bf27b2b5c61c75d80554703af9c0e58317cdea7df4cdaf0dcd565eed0186a6387dade7fd96693d652baa7dd34866c6c3",
+            "file": "frontend/ui/components/atoms/icons/icon-instagram-two/icon-instagram-two.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [
+                "ViewEncapsulation.Emulated"
+            ],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "icon-instagram-two",
+            "styleUrls": [
+                "./icon-instagram-two.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./icon-instagram-two.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "color",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 19,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  ViewEncapsulation,\n} from '@angular/core';\n\n@Component({\n  standalone: true,\n  selector: 'icon-instagram-two',\n  imports: [CommonModule],\n  templateUrl: './icon-instagram-two.component.html',\n  styleUrls: ['./icon-instagram-two.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class IconInstagramTwoComponent {\n  @Input() color!: string;\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".s-primary {\r\n  @apply stroke-primary;\r\n}\r\n",
+                    "styleUrl": "./icon-instagram-two.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<svg\n  width=\"24\"\n  height=\"24\"\n  viewBox=\"0 0 24 24\"\n  fill=\"none\"\n  xmlns=\"http://www.w3.org/2000/svg\"\n>\n  <path\n    class=\"s-primary\"\n    d=\"M4 8C4 6.93913 4.42143 5.92172 5.17157 5.17157C5.92172 4.42143 6.93913 4 8 4H16C17.0609 4 18.0783 4.42143 18.8284 5.17157C19.5786 5.92172 20 6.93913 20 8V16C20 17.0609 19.5786 18.0783 18.8284 18.8284C18.0783 19.5786 17.0609 20 16 20H8C6.93913 20 5.92172 19.5786 5.17157 18.8284C4.42143 18.0783 4 17.0609 4 16V8Z\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    class=\"s-primary\"\n    d=\"M9 12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12C15 11.2044 14.6839 10.4413 14.1213 9.87868C13.5587 9.31607 12.7956 9 12 9C11.2044 9 10.4413 9.31607 9.87868 9.87868C9.31607 10.4413 9 11.2044 9 12Z\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    class=\"s-primary\"\n    d=\"M16.5 7.5V7.51\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n</svg>\n"
+        },
+        {
+            "name": "IconLinkedinTwoComponent",
+            "id": "component-IconLinkedinTwoComponent-070ad0ac3b0799f86b83b087d9650959e54ba4e32d28385d473726ab6020b7323f329d6c549f40171eaa962948dc38dd2776cee53ef44013962c87d94971c4b1",
+            "file": "frontend/ui/components/atoms/icons/icon-linkedin-two/icon-linkedin-two.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [
+                "ViewEncapsulation.Emulated"
+            ],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "icon-linkedin-two",
+            "styleUrls": [
+                "./icon-linkedin-two.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./icon-linkedin-two.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "color",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 19,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  ViewEncapsulation,\n} from '@angular/core';\n\n@Component({\n  standalone: true,\n  selector: 'icon-linkedin-two',\n  imports: [CommonModule],\n  templateUrl: './icon-linkedin-two.component.html',\n  styleUrls: ['./icon-linkedin-two.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class IconLinkedinTwoComponent {\n  @Input() color!: string;\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".s-primary {\r\n  @apply stroke-primary;\r\n}\r\n",
+                    "styleUrl": "./icon-linkedin-two.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<svg\n  width=\"24\"\n  height=\"24\"\n  viewBox=\"0 0 24 24\"\n  fill=\"none\"\n  xmlns=\"http://www.w3.org/2000/svg\"\n>\n  <path\n    class=\"s-primary\"\n    d=\"M4 6C4 5.46957 4.21071 4.96086 4.58579 4.58579C4.96086 4.21071 5.46957 4 6 4H18C18.5304 4 19.0391 4.21071 19.4142 4.58579C19.7893 4.96086 20 5.46957 20 6V18C20 18.5304 19.7893 19.0391 19.4142 19.4142C19.0391 19.7893 18.5304 20 18 20H6C5.46957 20 4.96086 19.7893 4.58579 19.4142C4.21071 19.0391 4 18.5304 4 18V6Z\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    class=\"s-primary\"\n    d=\"M8 11V16\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    class=\"s-primary\"\n    d=\"M8 8V8.01\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    class=\"s-primary\"\n    d=\"M12 16V11\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    class=\"s-primary\"\n    d=\"M16 16V13C16 12.4696 15.7893 11.9609 15.4142 11.5858C15.0391 11.2107 14.5304 11 14 11C13.4696 11 12.9609 11.2107 12.5858 11.5858C12.2107 11.9609 12 12.4696 12 13\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n</svg>\n"
         },
         {
             "name": "IconLoadingComponent",
@@ -1050,6 +1982,58 @@
             "templateData": "<svg\n  width=\"24\"\n  height=\"24\"\n  viewBox=\"0 0 24 24\"\n  fill=\"none\"\n  xmlns=\"http://www.w3.org/2000/svg\"\n>\n  <g clip-path=\"url(#clip0_21_327)\">\n    <path\n      [ngClass]=\"{\n        's-primary': status === 'In Progress',\n        's-gray': status === 'Pending'\n      }\"\n      d=\"M12 17V21\"\n      stroke-width=\"2\"\n      stroke-linecap=\"round\"\n      stroke-linejoin=\"round\"\n    />\n    <path\n      [ngClass]=\"{\n        's-primary': status === 'In Progress',\n        's-gray': status === 'Pending'\n      }\"\n      d=\"M10 20L14 18\"\n      stroke-width=\"2\"\n      stroke-linecap=\"round\"\n      stroke-linejoin=\"round\"\n    />\n    <path\n      [ngClass]=\"{\n        's-primary': status === 'In Progress',\n        's-gray': status === 'Pending'\n      }\"\n      d=\"M10 18L14 20\"\n      stroke-width=\"2\"\n      stroke-linecap=\"round\"\n      stroke-linejoin=\"round\"\n    />\n    <path\n      [ngClass]=\"{\n        's-primary': status === 'In Progress',\n        's-gray': status === 'Pending'\n      }\"\n      d=\"M5 17V21\"\n      stroke-width=\"2\"\n      stroke-linecap=\"round\"\n      stroke-linejoin=\"round\"\n    />\n    <path\n      [ngClass]=\"{\n        's-primary': status === 'In Progress',\n        's-gray': status === 'Pending'\n      }\"\n      d=\"M3 20L7 18\"\n      stroke-width=\"2\"\n      stroke-linecap=\"round\"\n      stroke-linejoin=\"round\"\n    />\n    <path\n      [ngClass]=\"{\n        's-primary': status === 'In Progress',\n        's-gray': status === 'Pending'\n      }\"\n      d=\"M3 18L7 20\"\n      stroke-width=\"2\"\n      stroke-linecap=\"round\"\n      stroke-linejoin=\"round\"\n    />\n    <path\n      [ngClass]=\"{\n        's-primary': status === 'In Progress',\n        's-gray': status === 'Pending'\n      }\"\n      d=\"M19 17V21\"\n      stroke-width=\"2\"\n      stroke-linecap=\"round\"\n      stroke-linejoin=\"round\"\n    />\n    <path\n      [ngClass]=\"{\n        's-primary': status === 'In Progress',\n        's-gray': status === 'Pending'\n      }\"\n      d=\"M17 20L21 18\"\n      stroke-width=\"2\"\n      stroke-linecap=\"round\"\n      stroke-linejoin=\"round\"\n    />\n    <path\n      [ngClass]=\"{\n        's-primary': status === 'In Progress',\n        's-gray': status === 'Pending'\n      }\"\n      d=\"M17 18L21 20\"\n      stroke-width=\"2\"\n      stroke-linecap=\"round\"\n      stroke-linejoin=\"round\"\n    />\n    <path\n      [ngClass]=\"{\n        's-primary': status === 'In Progress',\n        's-gray': status === 'Pending'\n      }\"\n      d=\"M9 6C9 6.79565 9.31607 7.55871 9.87868 8.12132C10.4413 8.68393 11.2044 9 12 9C12.7956 9 13.5587 8.68393 14.1213 8.12132C14.6839 7.55871 15 6.79565 15 6C15 5.20435 14.6839 4.44129 14.1213 3.87868C13.5587 3.31607 12.7956 3 12 3C11.2044 3 10.4413 3.31607 9.87868 3.87868C9.31607 4.44129 9 5.20435 9 6Z\"\n      stroke-width=\"2\"\n      stroke-linecap=\"round\"\n      stroke-linejoin=\"round\"\n    />\n    <path\n      [ngClass]=\"{\n        's-primary': status === 'In Progress',\n        's-gray': status === 'Pending'\n      }\"\n      d=\"M7 14C7 13.4696 7.21071 12.9609 7.58579 12.5858C7.96086 12.2107 8.46957 12 9 12H15C15.5304 12 16.0391 12.2107 16.4142 12.5858C16.7893 12.9609 17 13.4696 17 14\"\n      stroke-width=\"2\"\n      stroke-linecap=\"round\"\n      stroke-linejoin=\"round\"\n    />\n  </g>\n  <defs>\n    <clipPath id=\"clip0_21_327\">\n      <rect width=\"24\" height=\"24\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>\n"
         },
         {
+            "name": "IconProfileComponent",
+            "id": "component-IconProfileComponent-4244e2b75f90bcdaca95a5cfe9c46e2087dc5d0805d948717a3e8645de8cfc04794e5a57fd0220df296af7537a2d07d680071e919a219ac650c4ae322d3c9524",
+            "file": "frontend/ui/components/atoms/icons/icon-profile/icon-profile.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [
+                "ViewEncapsulation.Emulated"
+            ],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "icon-profile",
+            "styleUrls": [
+                "./icon-profile.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./icon-profile.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  ViewEncapsulation,\n} from '@angular/core';\n\n@Component({\n  standalone: true,\n  selector: 'icon-profile',\n  imports: [CommonModule],\n  templateUrl: './icon-profile.component.html',\n  styleUrls: ['./icon-profile.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class IconProfileComponent {}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./icon-profile.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<svg\n  width=\"19\"\n  height=\"27\"\n  viewBox=\"0 0 19 27\"\n  fill=\"none\"\n  xmlns=\"http://www.w3.org/2000/svg\"\n>\n  <path\n    d=\"M4.16699 6.83333C4.16699 8.24782 4.7289 9.60438 5.72909 10.6046C6.72928 11.6048 8.08584 12.1667 9.50033 12.1667C10.9148 12.1667 12.2714 11.6048 13.2716 10.6046C14.2718 9.60438 14.8337 8.24782 14.8337 6.83333C14.8337 5.41885 14.2718 4.06229 13.2716 3.0621C12.2714 2.0619 10.9148 1.5 9.50033 1.5C8.08584 1.5 6.72928 2.0619 5.72909 3.0621C4.7289 4.06229 4.16699 5.41885 4.16699 6.83333Z\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    d=\"M1.5 25.5V22.8333C1.5 21.4188 2.0619 20.0623 3.0621 19.0621C4.06229 18.0619 5.41885 17.5 6.83333 17.5H12.1667C13.5812 17.5 14.9377 18.0619 15.9379 19.0621C16.9381 20.0623 17.5 21.4188 17.5 22.8333V25.5\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n</svg>\n"
+        },
+        {
             "name": "IconShowPassComponent",
             "id": "component-IconShowPassComponent-c1f8bf9521dac3f8b001665066e6ef93d7502d3f40b5f8fcf6100bf00d2fc9c89483ec432427bd190fca13a0695a426ea50d37202a4d7359d260e211027cdc2c",
             "file": "frontend/ui/components/atoms/icons/icon-show-pass/icon-show-pass.component.ts",
@@ -1158,6 +2142,119 @@
                 "IconUserType"
             ],
             "templateData": "<svg\n  width=\"20\"\n  height=\"20\"\n  viewBox=\"0 0 20 20\"\n  fill=\"none\"\n  xmlns=\"http://www.w3.org/2000/svg\"\n>\n  <path\n    class=\"fill-transparent\"\n    d=\"M10 0C18 0 20 2 20 10C20 18 18 20 10 20C2 20 0 18 0 10C0 2 2 0 10 0Z\"\n  />\n  <path\n    [ngClass]=\"{\n      'stroke-primary': color === 'primary',\n      'stroke-white-1': color === 'white'\n    }\"\n    d=\"M10 10.889C10.7073 10.889 11.3856 10.608 11.8857 10.1079C12.3858 9.60785 12.6667 8.92957 12.6667 8.22233C12.6667 7.51509 12.3858 6.83681 11.8857 6.33671C11.3856 5.83662 10.7073 5.55566 10 5.55566C9.2928 5.55566 8.61452 5.83662 8.11442 6.33671C7.61433 6.83681 7.33337 7.51509 7.33337 8.22233C7.33337 8.92957 7.61433 9.60785 8.11442 10.1079C8.61452 10.608 9.2928 10.889 10 10.889Z\"\n    stroke-width=\"1.19\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    [ngClass]=\"{\n      'stroke-primary': color === 'primary',\n      'stroke-white-1': color === 'white'\n    }\"\n    d=\"M10 2C16.4 2 18 3.6 18 10C18 16.4 16.4 18 10 18C3.6 18 2 16.4 2 10C2 3.6 3.6 2 10 2Z\"\n    stroke-width=\"1.19\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    [ngClass]=\"{\n      'stroke-primary': color === 'primary',\n      'stroke-white-1': color === 'white'\n    }\"\n    d=\"M4.66663 17.1557V17.1112C4.66663 16.1682 5.04123 15.2639 5.70802 14.5971C6.37482 13.9303 7.27919 13.5557 8.22218 13.5557H11.7777C12.7207 13.5557 13.6251 13.9303 14.2919 14.5971C14.9587 15.2639 15.3333 16.1682 15.3333 17.1112V17.1557\"\n    stroke-width=\"1.19\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n</svg>\n"
+        },
+        {
+            "name": "IconViewComponent",
+            "id": "component-IconViewComponent-04ecd2ff734b74156490ac87f3955c7463aa76004d21ae6883e6dabdd16dee86a28259d2f8ec95b4eaf7624fa18ec6de8a1e42f40215be3b663bd05ed36e95eb",
+            "file": "frontend/ui/components/atoms/icons/icon-view/icon-view.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [
+                "ViewEncapsulation.Emulated"
+            ],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "icon-view",
+            "styleUrls": [
+                "./icon-view.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./icon-view.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  ViewEncapsulation,\n} from '@angular/core';\n\n@Component({\n  standalone: true,\n  selector: 'icon-view',\n  imports: [CommonModule],\n  templateUrl: './icon-view.component.html',\n  styleUrls: ['./icon-view.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class IconViewComponent {}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./icon-view.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<svg\n  width=\"24\"\n  height=\"24\"\n  viewBox=\"0 0 24 24\"\n  fill=\"none\"\n  xmlns=\"http://www.w3.org/2000/svg\"\n>\n  <path\n    d=\"M10 12C10 12.5304 10.2107 13.0391 10.5858 13.4142C10.9609 13.7893 11.4696 14 12 14C12.5304 14 13.0391 13.7893 13.4142 13.4142C13.7893 13.0391 14 12.5304 14 12C14 11.4696 13.7893 10.9609 13.4142 10.5858C13.0391 10.2107 12.5304 10 12 10C11.4696 10 10.9609 10.2107 10.5858 10.5858C10.2107 10.9609 10 11.4696 10 12Z\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    d=\"M21 12C18.6 16 15.6 18 12 18C8.4 18 5.4 16 3 12C5.4 8 8.4 6 12 6C15.6 6 18.6 8 21 12Z\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n</svg>\n"
+        },
+        {
+            "name": "IconXComponent",
+            "id": "component-IconXComponent-fedaa25675f52bde40dc5f6ab5a979c573ac6616036f86d57adead41b3b6840976eb927e9d7a3256354ef48ef2d759b5380e04a4167e1208a518ab1d4e24eb74",
+            "file": "frontend/ui/components/atoms/icons/icon-x/icon-x.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [
+                "ViewEncapsulation.Emulated"
+            ],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "icon-x",
+            "styleUrls": [
+                "./icon-x.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./icon-x.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "color",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 19,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  ViewEncapsulation,\n} from '@angular/core';\n\n@Component({\n  standalone: true,\n  selector: 'icon-x',\n  imports: [CommonModule],\n  templateUrl: './icon-x.component.html',\n  styleUrls: ['./icon-x.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class IconXComponent {\n  @Input() color!: string;\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".s-primary {\r\n  @apply stroke-primary;\r\n}\r\n",
+                    "styleUrl": "./icon-x.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<svg\n  width=\"24\"\n  height=\"24\"\n  viewBox=\"0 0 24 24\"\n  fill=\"none\"\n  xmlns=\"http://www.w3.org/2000/svg\"\n>\n  <path\n    class=\"s-primary\"\n    d=\"M4 4L15.733 20H20L8.267 4H4Z\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    class=\"s-primary\"\n    d=\"M4 20L10.768 13.232M13.228 10.772L20 4\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n</svg>\n"
         },
         {
             "name": "InputComponent",
@@ -1325,7 +2422,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".content-input {\n  @apply flex flex-col gap-1;\n}\n\n.input {\n  @apply outline-none rounded-md w-auto px-4 body-medium;\n}\n\n.input::placeholder {\n  @apply placeholder:text-gray-2 placeholder:text-body-2 placeholder:font-normal;\n}\n\n.input-base {\n  @apply focus:placeholder-transparent h-9 border-2 text-black-1 focus:outline-none focus:border-primary transition-all w-auto;\n}\n\n.position-relative {\n  position: relative;\n}\n\n.clear-button,\n.icon-pass {\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n  background-color: transparent;\n  border: none;\n  cursor: pointer;\n}\n\n.clear-button {\n  right: 16px;\n}\n\n/* Chrome, Safari y Opera */\ninput[type='number']::-webkit-inner-spin-button,\ninput[type='number']::-webkit-outer-spin-button {\n  -webkit-appearance: none;\n  margin: 0;\n}\n\n/* Firefox */\ninput[type='number'] {\n  -moz-appearance: textfield;\n}\n\n.b-success {\n  @apply border-success;\n}\n\n.b-error {\n  @apply border-error;\n}\n\n.b-neutral {\n  @apply border-black-1;\n}\n\n.b-disabled {\n  @apply border-gray-2;\n}\n\n.r-4 {\n  @apply right-4;\n}\n\n.r-10 {\n  @apply right-10;\n}\n",
+                    "data": ".content-input {\n  @apply flex flex-col gap-1;\n}\n\n.input {\n  @apply outline-none rounded-md w-auto px-4 body-medium bg-white-1 dark:bg-black-2;\n}\n\n.input::placeholder {\n  @apply placeholder:text-gray-2 placeholder:text-body-2 placeholder:font-normal;\n}\n\n.input-base {\n  @apply focus:placeholder-transparent h-9 border-2 text-black-1 dark:text-white-1 focus:outline-none focus:border-primary dark:focus:border-primary-darkMode transition-all w-auto;\n}\n\n.position-relative {\n  position: relative;\n}\n\n.clear-button,\n.icon-pass {\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n  background-color: transparent;\n  border: none;\n  cursor: pointer;\n}\n\n.clear-button {\n  right: 16px;\n}\n\n/* Chrome, Safari y Opera */\ninput[type='number']::-webkit-inner-spin-button,\ninput[type='number']::-webkit-outer-spin-button {\n  -webkit-appearance: none;\n  margin: 0;\n}\n\n/* Firefox */\ninput[type='number'] {\n  -moz-appearance: textfield;\n}\n\n.b-success {\n  @apply border-success dark:border-success-darkMode;\n}\n\n.b-error {\n  @apply border-error dark:border-error-darkMode;\n}\n\n.b-neutral {\n  @apply border-black-1 dark:border-black-2;\n}\n\n.b-disabled {\n  @apply border-gray-2;\n}\n\n.r-4 {\n  @apply right-4;\n}\n\n.r-10 {\n  @apply right-10;\n}\n",
                     "styleUrl": "./input.component.scss"
                 }
             ],
@@ -1441,7 +2538,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".label {\r\n  @apply title-h6 focus-within:text-primary text-black-1;\r\n}\r\n",
+                    "data": ".label {\r\n  @apply title-h6 focus-within:text-primary dark:focus-within:text-primary-darkMode text-black-1 dark:text-white-1;\r\n}\r\n",
                     "styleUrl": "./label.component.scss"
                 }
             ],
@@ -1579,7 +2676,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".content-select-master {\r\n  @apply flex flex-col gap-1;\r\n}\r\n\r\n.select {\r\n  @apply outline-none rounded-md w-auto px-4 body-medium;\r\n}\r\n\r\n.select-placeholder {\r\n  @apply text-gray-2;\r\n}\r\n\r\n.select-options {\r\n  @apply text-black-1;\r\n}\r\n\r\n.select-base {\r\n  @apply focus:placeholder-transparent h-9 border-2 focus:outline-none focus:border-primary transition-all w-auto;\r\n}\r\n\r\n.b-success {\r\n  @apply border-success;\r\n}\r\n\r\n.b-error {\r\n  @apply border-error;\r\n}\r\n\r\n.b-neutral {\r\n  @apply border-black-1;\r\n}\r\n\r\n.b-disabled {\r\n  @apply border-gray-2;\r\n}\r\n",
+                    "data": ".content-select-master {\r\n  @apply flex flex-col gap-1;\r\n}\r\n\r\n.select {\r\n  @apply outline-none rounded-md w-auto px-4 body-medium bg-white-1 dark:bg-black-2;\r\n}\r\n\r\n.select-placeholder {\r\n  @apply text-gray-2 dark:text-gray-0 font-bold;\r\n}\r\n\r\n.select-options {\r\n  @apply text-black-1 dark:text-white-1;\r\n}\r\n\r\n.select-base {\r\n  @apply focus:placeholder-transparent h-9 border-2 focus:outline-none focus:border-primary transition-all w-auto;\r\n}\r\n\r\n.b-success {\r\n  @apply border-success dark:border-success-darkMode;\r\n}\r\n\r\n.b-error {\r\n  @apply border-error dark:border-error-darkMode;\r\n}\r\n\r\n.b-neutral {\r\n  @apply border-black-1;\r\n}\r\n\r\n.b-disabled {\r\n  @apply border-gray-2;\r\n}\r\n",
                     "styleUrl": "./select.component.scss"
                 }
             ],
@@ -1699,7 +2796,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".content-global-step {\n  @apply flex flex-col gap-1 items-center;\n}\n\n.content-step {\n  @apply flex justify-center items-center h-[46px] w-[46px] rounded-full;\n}\n\n.content-inner-step {\n  @apply flex justify-center items-center h-[38px] w-[38px] bg-white-1 rounded-full border-transparent border-2;\n}\n\n.progress {\n  @apply bg-primary;\n}\n\n.pending {\n  @apply bg-gray-2;\n}\n\n.success {\n  @apply bg-success;\n}\n\n.t-progress {\n  @apply text-primary;\n}\n\n.t-pending {\n  @apply text-gray-2;\n}\n\n.t-success {\n  @apply text-success;\n}\n\n.s-success {\n  @apply stroke-success;\n}\n\n.style-body-small {\n  @apply body-small;\n}\n",
+                    "data": ".content-global-step {\n  @apply flex flex-col gap-1 items-center;\n}\n\n.content-step {\n  @apply flex justify-center items-center h-[46px] w-[46px] rounded-full;\n}\n\n.content-inner-step {\n  @apply flex justify-center items-center h-[38px] w-[38px] bg-white-1 dark:bg-black-2 rounded-full border-transparent border-2;\n}\n\n.progress {\n  @apply bg-primary dark:bg-primary-darkMode;\n}\n\n.pending {\n  @apply bg-gray-2;\n}\n\n.success {\n  @apply bg-success dark:bg-success-darkMode;\n}\n\n.t-progress {\n  @apply text-primary dark:text-primary-darkMode;\n}\n\n.t-pending {\n  @apply text-gray-2;\n}\n\n.t-success {\n  @apply text-success dark:text-success-darkMode;\n}\n\n.s-success {\n  @apply stroke-success dark:stroke-success-darkMode;\n}\n\n.style-body-small,\n.style-body-small-two {\n  @apply body-small;\n}\n\n.style-body-small-two {\n  @apply text-black-1 dark:text-white-1;\n}\n",
                     "styleUrl": "./step.component.scss"
                 }
             ],
@@ -1708,11 +2805,195 @@
             "implements": [
                 "StepType"
             ],
-            "templateData": "<div class=\"content-global-step\">\n  <div\n    [ngClass]=\"{\n      progress: status === 'In Progress',\n      pending: status === 'Pending',\n      success: status === 'Completed',\n      'content-step': true\n    }\"\n  >\n    <div class=\"content-inner-step\">\n      <div *ngIf=\"status === 'Completed'\">\n        <svg\n          width=\"19\"\n          height=\"14\"\n          viewBox=\"0 0 19 14\"\n          fill=\"none\"\n          xmlns=\"http://www.w3.org/2000/svg\"\n        >\n          <path\n            [ngClass]=\"{\n              's-success': status === 'Completed'\n            }\"\n            d=\"M2 7L7 12L17 2\"\n            stroke-width=\"4\"\n            stroke-linecap=\"round\"\n            stroke-linejoin=\"round\"\n          />\n        </svg>\n      </div>\n\n      <ng-container *ngIf=\"status !== 'Completed'\" [ngSwitch]=\"logo\">\n        <div *ngSwitchCase=\"'basic'\">\n          <icon-basic [status]=\"status\" />\n        </div>\n        <div *ngSwitchCase=\"'pass'\">\n          <icon-pass [status]=\"status\" />\n        </div>\n        <div *ngSwitchCase=\"'area'\">\n          <icon-area [status]=\"status\" />\n        </div>\n      </ng-container>\n    </div>\n  </div>\n  <p\n    *ngIf=\"\n      (logo === 'basic' && status !== 'Completed') ||\n      (logo === 'basic' && status === 'Completed')\n    \"\n    class=\"style-body-small\"\n  >\n    Basic data\n  </p>\n\n  <p\n    *ngIf=\"\n      (logo === 'pass' && status !== 'Completed') ||\n      (logo === 'pass' && status === 'Completed')\n    \"\n    class=\"style-body-small\"\n  >\n    Password\n  </p>\n\n  <p\n    *ngIf=\"\n      (logo === 'area' && status !== 'Completed') ||\n      (logo === 'area' && status === 'Completed')\n    \"\n    class=\"style-body-small\"\n  >\n    Area of Interest\n  </p>\n\n  <p\n    [ngClass]=\"{\n      't-progress': status === 'In Progress',\n      't-pending': status === 'Pending',\n      't-success': status === 'Completed',\n      'style-body-small': true\n    }\"\n  >\n    {{ status }}\n  </p>\n</div>\n"
+            "templateData": "<div class=\"content-global-step\">\n  <div\n    [ngClass]=\"{\n      progress: status === 'In Progress',\n      pending: status === 'Pending',\n      success: status === 'Completed',\n      'content-step': true\n    }\"\n  >\n    <div class=\"content-inner-step\">\n      <div *ngIf=\"status === 'Completed'\">\n        <svg\n          width=\"19\"\n          height=\"14\"\n          viewBox=\"0 0 19 14\"\n          fill=\"none\"\n          xmlns=\"http://www.w3.org/2000/svg\"\n        >\n          <path\n            [ngClass]=\"{\n              's-success': status === 'Completed'\n            }\"\n            d=\"M2 7L7 12L17 2\"\n            stroke-width=\"4\"\n            stroke-linecap=\"round\"\n            stroke-linejoin=\"round\"\n          />\n        </svg>\n      </div>\n\n      <ng-container *ngIf=\"status !== 'Completed'\" [ngSwitch]=\"logo\">\n        <div *ngSwitchCase=\"'basic'\">\n          <icon-basic [status]=\"status\" />\n        </div>\n        <div *ngSwitchCase=\"'pass'\">\n          <icon-pass [status]=\"status\" />\n        </div>\n        <div *ngSwitchCase=\"'area'\">\n          <icon-area [status]=\"status\" />\n        </div>\n      </ng-container>\n    </div>\n  </div>\n  <p\n    *ngIf=\"\n      (logo === 'basic' && status !== 'Completed') ||\n      (logo === 'basic' && status === 'Completed')\n    \"\n    class=\"style-body-small-two\"\n  >\n    Basic data\n  </p>\n\n  <p\n    *ngIf=\"\n      (logo === 'pass' && status !== 'Completed') ||\n      (logo === 'pass' && status === 'Completed')\n    \"\n    class=\"style-body-small-two\"\n  >\n    Password\n  </p>\n\n  <p\n    *ngIf=\"\n      (logo === 'area' && status !== 'Completed') ||\n      (logo === 'area' && status === 'Completed')\n    \"\n    class=\"style-body-small-two\"\n  >\n    Area of Interest\n  </p>\n\n  <p\n    [ngClass]=\"{\n      't-progress': status === 'In Progress',\n      't-pending': status === 'Pending',\n      't-success': status === 'Completed',\n      'style-body-small': true\n    }\"\n  >\n    {{ status }}\n  </p>\n</div>\n"
+        },
+        {
+            "name": "TextAreaComponent",
+            "id": "component-TextAreaComponent-89ea1bf1567a22aa0961314845de21af44956de988495445ebe299ed6f855a961570b92f8588ab0ddb13c68a21a5b709debd13decc8d927d18a6d81cee1b1cfd",
+            "file": "frontend/ui/components/molecules/text-area/text-area.component.ts",
+            "encapsulation": [
+                "ViewEncapsulation.Emulated"
+            ],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [
+                {
+                    "name": "{\n    provide: NG_VALUE_ACCESSOR, useExisting: forwardRef(() => TextAreaComponent), multi: true,\n}",
+                    "type": "component"
+                }
+            ],
+            "selector": "c-text-area",
+            "styleUrls": [
+                "./text-area.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./text-area.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "customErrorMessages",
+                    "defaultValue": "{}",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 44,
+                    "type": "Record<string | string>",
+                    "decorators": []
+                },
+                {
+                    "name": "disabled",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 47,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "id",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 40,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "name",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 45,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "placeholder",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 42,
+                    "type": "string | undefined",
+                    "decorators": []
+                },
+                {
+                    "name": "value",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 43,
+                    "type": "string | number | undefined",
+                    "decorators": []
+                },
+                {
+                    "name": "variant",
+                    "defaultValue": "'text-area-base'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 41,
+                    "type": "",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "clearInput",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 51,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                },
+                {
+                    "name": "FormsModule",
+                    "type": "module"
+                },
+                {
+                    "name": "ReactiveFormsModule",
+                    "type": "module"
+                },
+                {
+                    "name": "ErrorInputComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "LabelComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "IconClearComponent",
+                    "type": "component"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { Component, Input, ViewEncapsulation, forwardRef } from '@angular/core';\nimport {\n  FormsModule,\n  NG_VALUE_ACCESSOR,\n  ReactiveFormsModule,\n} from '@angular/forms';\nimport { IconClearComponent } from '../..';\nimport { LabelComponent } from '../../atoms';\nimport { ErrorInputComponent } from '../../atoms/error-input/error-input.component';\nimport { ControlValueAccesorDirective } from '../../shared/directives/control-value-accesor.directive';\nimport { TextAreaType } from './text-area.interface';\n\n@Component({\n  standalone: true,\n  selector: 'c-text-area',\n  imports: [\n    CommonModule,\n    FormsModule,\n    ReactiveFormsModule,\n    ErrorInputComponent,\n    LabelComponent,\n    IconClearComponent,\n  ],\n  providers: [\n    {\n      provide: NG_VALUE_ACCESSOR,\n      useExisting: forwardRef(() => TextAreaComponent),\n      multi: true,\n    },\n  ],\n  templateUrl: './text-area.component.html',\n  styleUrls: ['./text-area.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n})\nexport class TextAreaComponent<T>\n  extends ControlValueAccesorDirective<T>\n  implements TextAreaType\n{\n  @Input() id = '';\n  @Input() variant: TextAreaType['variant'] = 'text-area-base';\n  @Input() placeholder?: string | undefined;\n  @Input() value?: string | number | undefined;\n  @Input() customErrorMessages: Record<string, string> = {};\n  @Input() name!: string;\n  @Input()\n  set disabled(value: boolean) {\n    this.setDisabledState(value);\n  }\n\n  clearInput() {\n    if (this.control) {\n      this.control.setValue('');\n    }\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".content-input {\n  @apply flex flex-col gap-1;\n}\n\n.text-area {\n  @apply outline-none rounded-md w-auto h-auto p-4 body-medium bg-white-1 dark:bg-black-2;\n}\n\n.input::placeholder {\n  @apply placeholder:text-gray-2 placeholder:text-body-2 placeholder:font-normal;\n}\n\n.text-area-base {\n  @apply focus:placeholder-transparent h-9 border-2 text-black-1 dark:text-white-1 focus:outline-none focus:border-primary dark:focus:border-primary-darkMode transition-all w-auto;\n}\n\n.position-relative {\n  position: relative;\n}\n\n.b-success {\n  @apply border-success dark:border-success-darkMode;\n}\n\n.b-error {\n  @apply border-error dark:border-error-darkMode;\n}\n\n.b-neutral {\n  @apply border-black-1 dark:border-black-2;\n}\n\n.b-disabled {\n  @apply border-gray-2;\n}\n\n/* .clear-button,\n.icon-pass {\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n  background-color: transparent;\n  border: none;\n  cursor: pointer;\n} */\n\n/* .clear-button {\n  right: 16px;\n} */\n\n/* .r-4 {\n  @apply right-4;\n}\n\n.r-10 {\n  @apply right-10;\n}\n */\n",
+                    "styleUrl": "./text-area.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "extends": [
+                "ControlValueAccesorDirective"
+            ],
+            "implements": [
+                "TextAreaType"
+            ],
+            "accessors": {
+                "disabled": {
+                    "name": "disabled",
+                    "setSignature": {
+                        "name": "disabled",
+                        "type": "void",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "args": [
+                            {
+                                "name": "value",
+                                "type": "boolean",
+                                "deprecated": false,
+                                "deprecationMessage": ""
+                            }
+                        ],
+                        "returnType": "void",
+                        "line": 47,
+                        "jsdoctags": [
+                            {
+                                "name": "value",
+                                "type": "boolean",
+                                "deprecated": false,
+                                "deprecationMessage": "",
+                                "tagName": {
+                                    "text": "param"
+                                }
+                            }
+                        ]
+                    }
+                }
+            },
+            "templateData": "<div *ngIf=\"control\" class=\"content-input\">\n  <div class=\"content-input relative\">\n    <textarea\n      [ngClass]=\"{\n        'text-area': true,\n        'text-area-base': variant === 'text-area-base',\n        'b-success': isValid() && !isUntouched() && !control!.disabled,\n        'b-error': !isValid() && !isUntouched() && !control!.disabled,\n        'b-neutral': isUntouched() && !control!.disabled,\n        'b-disabled': control!.disabled\n      }\"\n      [placeholder]=\"placeholder\"\n      [attr.value]=\"value || null\"\n      [attr.id]=\"id || null\"\n      [formControl]=\"control\"\n      [disabled]=\"control!.disabled\"\n    ></textarea>\n    <!-- <button\n      *ngIf=\"control.value !== ''\"\n      (click)=\"clearInput()\"\n      class=\"clear-button\"\n    >\n      <icon-clear />\n    </button> -->\n  </div>\n  <c-error-input\n    *ngIf=\"!isValid() && !control!.disabled && control!.touched\"\n    [formContained]=\"control\"\n    [controlName]=\"name\"\n  ></c-error-input>\n</div>\n"
         },
         {
             "name": "TitleComponent",
-            "id": "component-TitleComponent-3fc6b8744a92d103e7e019cc98fd283dc30bf1d7e8ef120d5adcbd4a089cea6c9ab2f3daa13d023e477fe2ee1e9140373f6a4b229453d3266ad3eeb25f091547",
+            "id": "component-TitleComponent-5f95f2b867f240c61534461891a7c064dbeb75949008c37217a57b345a0207d04217481e5cfc6c23abf9b3c3d43cd428f9cb677315098c12e1fae5151a7d5912",
             "file": "frontend/ui/components/atoms/title/title.component.ts",
             "changeDetection": "ChangeDetectionStrategy.OnPush",
             "encapsulation": [
@@ -1736,10 +3017,9 @@
                 {
                     "required": true,
                     "name": "color",
-                    "defaultValue": "'black'",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "optional": false,
+                    "optional": true,
                     "line": 21,
                     "type": "",
                     "decorators": []
@@ -1772,11 +3052,11 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  ViewEncapsulation,\n} from '@angular/core';\nimport { TitleType } from './title.interface';\n\n@Component({\n  standalone: true,\n  selector: 'c-title',\n  imports: [CommonModule],\n  templateUrl: './title.component.html',\n  styleUrls: ['./title.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class TitleComponent implements TitleType {\n  @Input({ required: true }) variant!: TitleType['variant'];\n  @Input({ required: true }) color: TitleType['color'] = 'black';\n}\n",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  ViewEncapsulation,\n} from '@angular/core';\nimport { TitleType } from './title.interface';\n\n@Component({\n  standalone: true,\n  selector: 'c-title',\n  imports: [CommonModule],\n  templateUrl: './title.component.html',\n  styleUrls: ['./title.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class TitleComponent implements TitleType {\n  @Input({ required: true }) variant!: TitleType['variant'];\n  @Input({ required: false }) color!: TitleType['color'];\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".color-black {\r\n  @apply text-black-1;\r\n}\r\n\r\n.color-white {\r\n  @apply text-white-1;\r\n}\r\n\r\n.color-primary {\r\n  @apply text-primary;\r\n}\r\n\r\n.color-disabled {\r\n  @apply text-gray-2;\r\n}\r\n\r\n.color-gradient {\r\n  background: linear-gradient(\r\n    90deg,\r\n    #8c44cc 0%,\r\n    #fa4a86 52.27%,\r\n    #ffc107 94.74%\r\n  );\r\n  -webkit-background-clip: text;\r\n  background-clip: text;\r\n  color: transparent;\r\n  /* Para navegadores que no soporten background-clip: text */\r\n  -webkit-text-fill-color: transparent;\r\n}\r\n\r\n.style-h1 {\r\n  @apply title-h1;\r\n}\r\n\r\n.style-h2 {\r\n  @apply title-h2;\r\n}\r\n\r\n.style-h3 {\r\n  @apply title-h3;\r\n}\r\n\r\n.style-h4 {\r\n  @apply title-h4;\r\n}\r\n\r\n.style-h5 {\r\n  @apply title-h5;\r\n}\r\n\r\n.style-h6 {\r\n  @apply title-h6;\r\n}\r\n\r\n.style-body-bigger {\r\n  @apply body-bigger;\r\n}\r\n\r\n.style-body-medium {\r\n  @apply body-medium;\r\n}\r\n\r\n.style-body-medium-accent {\r\n  @apply body-medium-accent;\r\n}\r\n\r\n.style-body-small {\r\n  @apply body-small;\r\n}\r\n\r\n.style-body-smaller {\r\n  @apply body-smaller;\r\n}\r\n",
+                    "data": ".color-black {\r\n  @apply text-black-1 dark:text-white-1;\r\n}\r\n\r\n.color-white {\r\n  @apply text-white-1 dark:text-black-1;\r\n}\r\n\r\n.color-primary {\r\n  @apply text-primary dark:text-primary-darkMode;\r\n}\r\n\r\n.color-disabled {\r\n  @apply text-gray-2;\r\n}\r\n\r\n.color-gradient {\r\n  background: linear-gradient(\r\n    90deg,\r\n    #8c44cc 0%,\r\n    #fa4a86 52.27%,\r\n    #ffc107 94.74%\r\n  );\r\n  -webkit-background-clip: text;\r\n  background-clip: text;\r\n  color: transparent;\r\n  /* Para navegadores que no soporten background-clip: text */\r\n  -webkit-text-fill-color: transparent;\r\n}\r\n\r\n.style-h1 {\r\n  @apply title-h1;\r\n}\r\n\r\n.style-h2 {\r\n  @apply title-h2;\r\n}\r\n\r\n.style-h3 {\r\n  @apply title-h3;\r\n}\r\n\r\n.style-h4 {\r\n  @apply title-h4;\r\n}\r\n\r\n.style-h5 {\r\n  @apply title-h5;\r\n}\r\n\r\n.style-h6 {\r\n  @apply title-h6;\r\n}\r\n\r\n.style-body-bigger {\r\n  @apply body-bigger;\r\n}\r\n\r\n.style-body-medium {\r\n  @apply body-medium;\r\n}\r\n\r\n.style-body-medium-accent {\r\n  @apply body-medium-accent;\r\n}\r\n\r\n.style-body-small {\r\n  @apply body-small;\r\n}\r\n\r\n.style-body-smaller {\r\n  @apply body-smaller;\r\n}\r\n",
                     "styleUrl": "./title.component.scss"
                 }
             ],
@@ -2045,16 +3325,6 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "frontend/ui/stories/molecules/select/select.component.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Meta<StoryComponent<number>>",
-                "defaultValue": "{\n  title: 'Components/Molecules/Select',\n  component: SelectComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [SelectComponent, LabelComponent, ErrorInputComponent],\n      imports: [CommonModule, FormsModule, ReactiveFormsModule],\n    }),\n  ],\n  argTypes: {\n    options: {\n      control: { type: 'select', options: numbers },\n    },\n    id: {\n      control: 'text',\n    },\n    name: {\n      control: 'text',\n    },\n    placeholder: {\n      control: 'text',\n    },\n    disabled: {\n      control: 'boolean',\n    },\n  },\n  render: (args: StoryComponent<number>) => {\n    const { label, id, name, options, placeholder, disabled } = args;\n    const { variant, ...labelProps } = label;\n\n    return {\n      props: {\n        id,\n        name,\n        options,\n        variant,\n        labelProps,\n        sharedFormControl,\n        placeholder,\n        numbers,\n        disabled,\n      },\n      template: `\n      <c-label [variant]=\"variant\" [for]=\"id\">\n        Label text\n        <c-select\n        [placeholder]=\"placeholder\"\n        [formControl]=\"sharedFormControl\"\n        [disabled]=\"disabled\"\n        [options]=\"numbers\"\n        [id]=\"id\"\n        [name]=\"name\"></c-select>\n      </c-label>\n      `,\n    };\n  },\n}"
-            },
-            {
-                "name": "meta",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -2065,11 +3335,31 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "frontend/ui/stories/molecules/select/select.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<StoryComponent<number>>",
+                "defaultValue": "{\n  title: 'Components/Molecules/Select',\n  component: SelectComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [SelectComponent, LabelComponent, ErrorInputComponent],\n      imports: [CommonModule, FormsModule, ReactiveFormsModule],\n    }),\n  ],\n  argTypes: {\n    options: {\n      control: { type: 'select', options: numbers },\n    },\n    id: {\n      control: 'text',\n    },\n    name: {\n      control: 'text',\n    },\n    placeholder: {\n      control: 'text',\n    },\n    disabled: {\n      control: 'boolean',\n    },\n  },\n  render: (args: StoryComponent<number>) => {\n    const { label, id, name, options, placeholder, disabled } = args;\n    const { variant, ...labelProps } = label;\n\n    return {\n      props: {\n        id,\n        name,\n        options,\n        variant,\n        labelProps,\n        sharedFormControl,\n        placeholder,\n        numbers,\n        disabled,\n      },\n      template: `\n      <c-label [variant]=\"variant\" [for]=\"id\">\n        Label text\n        <c-select\n        [placeholder]=\"placeholder\"\n        [formControl]=\"sharedFormControl\"\n        [disabled]=\"disabled\"\n        [options]=\"numbers\"\n        [id]=\"id\"\n        [name]=\"name\"></c-select>\n      </c-label>\n      `,\n    };\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "frontend/ui/stories/molecules/step/step.component.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<StoryComponent>",
                 "defaultValue": "{\n  title: 'Components/Molecules/Step',\n  component: StepComponent,\n  // ? Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [\n        StepComponent,\n        IconAreaComponent,\n        IconPassComponent,\n        IconBasicComponent,\n      ],\n      imports: [CommonModule],\n    }),\n    /* // ? Decorator to handle logic related to args\n    (Story, context) => {\n      // ? If the logo is 'check', set the status to 'Completed'\n      if (context.args.logo === 'check') {\n        context.args.status = 'Completed';\n      }\n\n      return Story(context);\n    }, */\n  ],\n  argTypes: {\n    status: {\n      options: ['Pending', 'In Progress', 'Completed'],\n      control: { type: 'radio' },\n    },\n    logo: {\n      options: ['basic', 'pass', 'area'],\n      control: { type: 'radio' },\n    },\n  },\n  render: (args: StoryComponent) => {\n    const { logo, status } = args;\n\n    return {\n      props: { logo, status },\n      template: `\n        <c-step\n        [status]=\"status\"\n        [logo]=\"logo\"\n        />\n      `,\n    };\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "frontend/ui/stories/molecules/text-area/text-area.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<StoryComponent>",
+                "defaultValue": "{\n  title: 'Components/Molecules/Input',\n  component: TextAreaComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [\n        TextAreaComponent,\n        LabelComponent,\n        ErrorInputComponent,\n        IconClearComponent,\n      ],\n      imports: [CommonModule, FormsModule, ReactiveFormsModule],\n    }),\n  ],\n  argTypes: {\n    variant: {\n      options: ['input-base', 'input-secondary', 'input-tertiary'],\n      control: { type: 'select' },\n    },\n    disabled: {\n      options: [true, false],\n      control: { type: 'boolean' },\n    },\n  },\n  render: (args: StoryComponent) => {\n    const { label, ...textAreaProps } = args;\n    const { variant, ...labelProps } = label;\n\n    return {\n      props: { textAreaProps, labelProps, sharedFormControl, variant },\n      template: `\n      <c-label [variant]=\"variant\" [for]=\"textAreaProps.id\">\n        Label text\n        <c-text-area\n        [variant]=\"textAreaProps.variant\"\n        [placeholder]=\"textAreaProps.placeholder\"\n        [formControl]=\"sharedFormControl\"\n        [disabled]=\"textAreaProps.disabled\"\n        [id]=\"textAreaProps.id\"\n        [name]=\"textAreaProps.name\"></c-text-area>\n      </c-label>\n\n      `,\n    };\n  },\n}"
             },
             {
                 "name": "numbers",
@@ -2132,6 +3422,26 @@
                 "defaultValue": "{\n  args: {\n    variant: 'input-base',\n    type: 'text',\n    placeholder: 'Entry text',\n    name: 'example',\n    id: 'example',\n    showPassword: false,\n    disabled: false,\n    label: {\n      variant: 'label-base',\n    },\n  },\n}"
             },
             {
+                "name": "PrimaryInput",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "frontend/ui/stories/molecules/text-area/text-area.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    variant: 'text-area-base',\n    placeholder: 'Entry text',\n    name: 'example',\n    id: 'example',\n    disabled: false,\n    label: {\n      variant: 'label-base',\n    },\n  },\n}"
+            },
+            {
+                "name": "sharedFormControl",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "new FormControl('', Validators.required)"
+            },
+            {
                 "name": "sharedFormControl",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -2145,7 +3455,7 @@
                 "name": "sharedFormControl",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
+                "file": "frontend/ui/stories/molecules/text-area/text-area.component.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -2212,6 +3522,17 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
+                "rawtype": "StoryObj<StoryComponent>",
+                "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 183
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
                 "rawtype": "StoryObj<StoryComponent<T>>",
                 "file": "frontend/ui/stories/molecules/select/select.component.stories.ts",
                 "deprecated": false,
@@ -2224,7 +3545,7 @@
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
                 "rawtype": "StoryObj<StoryComponent>",
-                "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
+                "file": "frontend/ui/stories/molecules/step/step.component.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -2235,7 +3556,7 @@
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
                 "rawtype": "StoryObj<StoryComponent>",
-                "file": "frontend/ui/stories/molecules/step/step.component.stories.ts",
+                "file": "frontend/ui/stories/molecules/text-area/text-area.component.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -2268,7 +3589,7 @@
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
                 "rawtype": "",
-                "file": "frontend/ui/stories/molecules/select/select.component.stories.ts",
+                "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -2279,7 +3600,7 @@
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
                 "rawtype": "",
-                "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
+                "file": "frontend/ui/stories/molecules/select/select.component.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -2297,6 +3618,28 @@
                 "kind": 183
             },
             {
+                "name": "StoryComponent",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "",
+                "file": "frontend/ui/stories/molecules/text-area/text-area.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 193
+            },
+            {
+                "name": "StoryDetails",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "literal type",
+                "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 187
+            },
+            {
                 "name": "StoryDetails",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
@@ -2312,7 +3655,7 @@
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
                 "rawtype": "literal type",
-                "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
+                "file": "frontend/ui/stories/molecules/text-area/text-area.component.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -2728,6 +4071,38 @@
                     "type": "",
                     "defaultValue": "new FormControl('', Validators.required)"
                 }
+            ],
+            "frontend/ui/stories/molecules/text-area/text-area.component.stories.ts": [
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "frontend/ui/stories/molecules/text-area/text-area.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<StoryComponent>",
+                    "defaultValue": "{\n  title: 'Components/Molecules/Input',\n  component: TextAreaComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [\n        TextAreaComponent,\n        LabelComponent,\n        ErrorInputComponent,\n        IconClearComponent,\n      ],\n      imports: [CommonModule, FormsModule, ReactiveFormsModule],\n    }),\n  ],\n  argTypes: {\n    variant: {\n      options: ['input-base', 'input-secondary', 'input-tertiary'],\n      control: { type: 'select' },\n    },\n    disabled: {\n      options: [true, false],\n      control: { type: 'boolean' },\n    },\n  },\n  render: (args: StoryComponent) => {\n    const { label, ...textAreaProps } = args;\n    const { variant, ...labelProps } = label;\n\n    return {\n      props: { textAreaProps, labelProps, sharedFormControl, variant },\n      template: `\n      <c-label [variant]=\"variant\" [for]=\"textAreaProps.id\">\n        Label text\n        <c-text-area\n        [variant]=\"textAreaProps.variant\"\n        [placeholder]=\"textAreaProps.placeholder\"\n        [formControl]=\"sharedFormControl\"\n        [disabled]=\"textAreaProps.disabled\"\n        [id]=\"textAreaProps.id\"\n        [name]=\"textAreaProps.name\"></c-text-area>\n      </c-label>\n\n      `,\n    };\n  },\n}"
+                },
+                {
+                    "name": "PrimaryInput",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "frontend/ui/stories/molecules/text-area/text-area.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    variant: 'text-area-base',\n    placeholder: 'Entry text',\n    name: 'example',\n    id: 'example',\n    disabled: false,\n    label: {\n      variant: 'label-base',\n    },\n  },\n}"
+                },
+                {
+                    "name": "sharedFormControl",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "frontend/ui/stories/molecules/text-area/text-area.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "new FormControl('', Validators.required)"
+                }
             ]
         },
         "groupedFunctions": {},
@@ -2829,41 +4204,6 @@
                     "kind": 183
                 }
             ],
-            "frontend/ui/stories/molecules/select/select.component.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj<StoryComponent<T>>",
-                    "file": "frontend/ui/stories/molecules/select/select.component.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 183
-                },
-                {
-                    "name": "StoryComponent",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "",
-                    "file": "frontend/ui/stories/molecules/select/select.component.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 193
-                },
-                {
-                    "name": "StoryDetails",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "literal type",
-                    "file": "frontend/ui/stories/molecules/select/select.component.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 187
-                }
-            ],
             "frontend/ui/stories/molecules/input/input.component.stories.ts": [
                 {
                     "name": "Story",
@@ -2899,6 +4239,41 @@
                     "kind": 187
                 }
             ],
+            "frontend/ui/stories/molecules/select/select.component.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<StoryComponent<T>>",
+                    "file": "frontend/ui/stories/molecules/select/select.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                },
+                {
+                    "name": "StoryComponent",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "",
+                    "file": "frontend/ui/stories/molecules/select/select.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 193
+                },
+                {
+                    "name": "StoryDetails",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "literal type",
+                    "file": "frontend/ui/stories/molecules/select/select.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 187
+                }
+            ],
             "frontend/ui/stories/molecules/step/step.component.stories.ts": [
                 {
                     "name": "Story",
@@ -2921,6 +4296,41 @@
                     "deprecationMessage": "",
                     "description": "",
                     "kind": 183
+                }
+            ],
+            "frontend/ui/stories/molecules/text-area/text-area.component.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<StoryComponent>",
+                    "file": "frontend/ui/stories/molecules/text-area/text-area.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                },
+                {
+                    "name": "StoryComponent",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "",
+                    "file": "frontend/ui/stories/molecules/text-area/text-area.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 193
+                },
+                {
+                    "name": "StoryDetails",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "literal type",
+                    "file": "frontend/ui/stories/molecules/text-area/text-area.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 187
                 }
             ]
         }
@@ -2959,12 +4369,39 @@
                 "status": "low"
             },
             {
+                "filePath": "frontend/ui/components/atoms/icons/icon-arrow-right/icon-arrow-right.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "IconArrowRightComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/components/atoms/icons/icon-badges/icon-badges.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "IconBadgesComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
                 "filePath": "frontend/ui/components/atoms/icons/icon-basic/icon-basic.component.ts",
                 "type": "component",
                 "linktype": "component",
                 "name": "IconBasicComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/components/atoms/icons/icon-circle-arrow-left/icon-circle-arrow-left.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "IconCircleArrowLeftComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
                 "status": "low"
             },
             {
@@ -2986,12 +4423,66 @@
                 "status": "low"
             },
             {
+                "filePath": "frontend/ui/components/atoms/icons/icon-communities/icon-communities.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "IconCommunitiesComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/components/atoms/icons/icon-discord/icon-discord.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "IconDiscordComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/components/atoms/icons/icon-edit/icon-edit.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "IconEditComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/components/atoms/icons/icon-events/icon-events.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "IconEventsComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/components/atoms/icons/icon-facebook-two/icon-facebook-two.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "IconFacebookTwoComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
                 "filePath": "frontend/ui/components/atoms/icons/icon-facebook/icon-facebook.component.ts",
                 "type": "component",
                 "linktype": "component",
                 "name": "IconFacebookComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/components/atoms/icons/icon-github-two/icon-github-two.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "IconGithubTwoComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
                 "status": "low"
             },
             {
@@ -3013,12 +4504,75 @@
                 "status": "low"
             },
             {
+                "filePath": "frontend/ui/components/atoms/icons/icon-groups/icon-groups.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "IconGroupsComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/components/atoms/icons/icon-hexagon-number-four/icon-hexagon-number-four.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "IconHexagonNumberFourComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/components/atoms/icons/icon-hexagon-number-one/icon-hexagon-number-one.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "IconHexagonNumberOneComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/components/atoms/icons/icon-hexagon-number-three/icon-hexagon-number-three.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "IconHexagonNumberThreeComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/components/atoms/icons/icon-hexagon-number-two/icon-hexagon-number-two.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "IconHexagonNumberTwoComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
                 "filePath": "frontend/ui/components/atoms/icons/icon-hidden-pass/icon-hidden-pass.component.ts",
                 "type": "component",
                 "linktype": "component",
                 "name": "IconHiddenPassComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/components/atoms/icons/icon-instagram-two/icon-instagram-two.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "IconInstagramTwoComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/components/atoms/icons/icon-linkedin-two/icon-linkedin-two.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "IconLinkedinTwoComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
                 "status": "low"
             },
             {
@@ -3040,6 +4594,15 @@
                 "status": "low"
             },
             {
+                "filePath": "frontend/ui/components/atoms/icons/icon-profile/icon-profile.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "IconProfileComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
                 "filePath": "frontend/ui/components/atoms/icons/icon-show-pass/icon-show-pass.component.ts",
                 "type": "component",
                 "linktype": "component",
@@ -3053,6 +4616,24 @@
                 "type": "component",
                 "linktype": "component",
                 "name": "IconUserComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/components/atoms/icons/icon-view/icon-view.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "IconViewComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/components/atoms/icons/icon-x/icon-x.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "IconXComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/2",
                 "status": "low"
@@ -3118,6 +4699,15 @@
                 "name": "StepComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/components/molecules/text-area/text-area.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "TextAreaComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/9",
                 "status": "low"
             },
             {
@@ -3476,6 +5066,36 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "PasswordStepProgess",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/stories/molecules/text-area/text-area.component.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/stories/molecules/text-area/text-area.component.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "PrimaryInput",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/stories/molecules/text-area/text-area.component.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "sharedFormControl",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"

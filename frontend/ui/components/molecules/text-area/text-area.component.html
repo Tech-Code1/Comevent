@@ -1,0 +1,46 @@
+@if(control) {
+<div class="content-text-area">
+  <div class="content-inner-text-area">
+    <textarea
+      [ngClass]="{
+        'text-area': true,
+        'text-area-base': variant === 'text-area-base',
+        'b-success': isValid() && !isUntouched() && !control!.disabled,
+        'b-error':
+          (!isValid() && !isUntouched() && !control!.disabled) ||
+          currentCharacters >= maxCharacters,
+        'b-neutral': isUntouched() && !control!.disabled,
+        'b-disabled': control!.disabled
+      }"
+      [placeholder]="placeholder"
+      [maxlength]="maxCharacters"
+      [attr.value]="value || null"
+      [attr.id]="id || null"
+      [formControl]="control"
+      [disabled]="control!.disabled"
+    ></textarea>
+    <div
+      [ngClass]="{
+        'success-characters': currentCharacters < maxCharacters / 2,
+        'warning-characters':
+          currentCharacters >= maxCharacters / 2 &&
+          currentCharacters < maxCharacters,
+        'error-characters': currentCharacters >= maxCharacters,
+        'content-max-characters': true
+      }"
+    >
+      {{ currentCharacters }} / {{ maxCharacters }}
+    </div>
+  </div>
+  @if (!isValid() && !control.disabled && control.touched) {
+  <c-error-input [formContained]="control" [controlName]="name"></c-error-input>
+  }
+</div>
+}
+<!-- <button
+      *ngIf="control.value !== ''"
+      (click)="clearInput()"
+      class="clear-button"
+    >
+      <icon-clear />
+    </button> -->
