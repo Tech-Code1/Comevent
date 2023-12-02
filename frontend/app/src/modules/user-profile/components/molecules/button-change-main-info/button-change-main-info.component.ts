@@ -4,6 +4,7 @@ import {
   Component,
   Input,
   ViewEncapsulation,
+  inject,
 } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
@@ -13,6 +14,7 @@ import {
   IconMailComponent,
   IconUserProfileComponent,
 } from '@ui/components';
+import { UserProfileStateService } from '../../..';
 
 @Component({
   standalone: true,
@@ -34,4 +36,6 @@ import {
 export class ButtonChangeMainInfoComponent {
   @Input({ required: true }) icon: string = '';
   @Input({ required: true }) title: string = '';
+
+  public userProfileStateService = inject(UserProfileStateService);
 }

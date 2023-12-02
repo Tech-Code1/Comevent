@@ -1,5 +1,19 @@
 <div class="flex flex-col h-full justify-between w-[350px]">
   @for(button of buttons; track button.id) {
-  <c-button-change-main-info [icon]="button.icon" [title]="button.title" />
+  <c-button-change-main-info
+    (click)="openModal(button.id)"
+    [icon]="button.icon"
+    [title]="button.title"
+  />
   }
 </div>
+
+<modal-change-nick
+  *ngIf="modalSwithNick"
+  [nick]="dataUserEditProfile.username"
+></modal-change-nick>
+<modal-change-email
+  *ngIf="modalSwithEmail"
+  [email]="dataUserEditProfile.email"
+></modal-change-email>
+<modal-change-password *ngIf="modalSwithPass"></modal-change-password>

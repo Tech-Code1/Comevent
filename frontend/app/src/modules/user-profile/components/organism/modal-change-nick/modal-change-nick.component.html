@@ -1,0 +1,115 @@
+<div
+  class="left-0 top-0 fixed w-full h-full modal z-20 flex justify-center items-center cursor-pointer"
+  (click)="closeModal()"
+>
+  <div
+    class="flex flex-col bg-white-whiteNormal cursor-default rounded-md h-auto w-[600px] p-4 gap-4 animate__animated animate__fadeInDown animate__faster"
+    (click)="stopPropagation($event)"
+  >
+    <header class="flex w-full justify-end">
+      <button
+        (click)="closeModal()"
+        type="button"
+        class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-accent-red hover:bg-accent-lightRed focus:outline-none focus:ring-0"
+      >
+        <span class="sr-only">Close menu</span>
+        <!-- Heroicon name: outline/x -->
+        <svg
+          class="h-6 w-6"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
+          aria-hidden="true"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </button>
+    </header>
+
+    <body class="flex items-center flex-col gap-4 w-full">
+      <h1 class="title-medium-black-bold mb-4">Cambiar apodo</h1>
+
+      <form
+        [formGroup]="changeNick"
+        class="flex flex-col gap-3 w-full"
+        action=""
+        autocomplete="off"
+      >
+        <label class="flex flex-col gap-1 title-base-black w-full" for="">
+          Apodo
+
+          <input
+            formControlName="nick"
+            [ngClass]="{
+              'input-standard h-10 w-full rounded-md': true,
+              'input-error': !isValid('nick'),
+              'input-success': isValid('nick')
+            }"
+            type="text"
+            placeholder="JonDoe"
+            autocomplete="off"
+          />
+
+          <custom-errors-message
+            *ngIf="!isValid('nick')"
+            [formGroup]="changeNick"
+            controlName="nick"
+            class="title-error-small"
+          >
+          </custom-errors-message>
+        </label>
+
+        <label
+          *ngIf="changeInput()"
+          class="flex flex-col gap-1 title-base-black w-full"
+          for=""
+        >
+          Contraseña
+
+          <input
+            formControlName="pass"
+            [ngClass]="{
+              'input-standard h-10 w-full rounded-md': true,
+              'input-error': !isValid('pass'),
+              'input-success': isValid('pass')
+            }"
+            type="password"
+            placeholder="Validar contraseña"
+            autocomplete="off"
+          />
+
+          <custom-errors-message
+            *ngIf="!isValid('pass')"
+            [formGroup]="changeNick"
+            controlName="pass"
+            class="title-error-small"
+          >
+          </custom-errors-message>
+
+          <em class="body-sm-black-normal">
+            <strong>Nota:</strong> Ingresa tu contraseña para poder cambiar tu
+            apodo
+          </em>
+        </label>
+      </form>
+    </body>
+
+    <footer class="mt-4">
+      <div *ngIf="changeInput()" class="flex flex-row gap-2 justify-center">
+        <button
+          class="btn-standar btn-solid-blue px-4 rounded-md h-10"
+          type="button"
+        >
+          <i class="bi bi-check"></i>
+          <p>Guardar</p>
+        </button>
+      </div>
+    </footer>
+  </div>
+</div>
