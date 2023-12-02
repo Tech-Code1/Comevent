@@ -11,5 +11,10 @@
         ><c-title variant="title-h6"> Guardar cambios </c-title></c-button
       >
     </header>
+
+    <main-info
+      [dataUserEditProfile]="userProfileStateService.dataUserEditProfile()"
+      [loadingProfile]="userProfileStateService.loadingProfile()"
+    />
   </section>
 </div>

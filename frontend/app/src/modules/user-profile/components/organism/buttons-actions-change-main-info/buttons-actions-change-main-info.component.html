@@ -1,0 +1,5 @@
+<div class="flex flex-col h-full justify-between w-[350px]">
+  @for(button of buttons; track button.id) {
+  <c-button-change-main-info [icon]="button.icon" [title]="button.title" />
+  }
+</div>

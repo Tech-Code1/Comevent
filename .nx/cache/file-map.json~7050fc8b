@@ -1734,7 +1734,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/index.ts",
-          "hash": "5340127441346077337"
+          "hash": "11394726984690905988"
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/molecules/button-action/button-action.component.html",
@@ -1794,7 +1794,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/molecules/index.ts",
-          "hash": "13120752199164146015"
+          "hash": "6160167502755794204"
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/card-profile/card-profile.component.html",
@@ -1862,7 +1862,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/index.ts",
-          "hash": "14351967401630390556"
+          "hash": "10278420936233418281"
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/layout-profile/layout-profile.component.html",
@@ -2176,7 +2176,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/main-info/main-info.component.html",
-          "hash": "515123985259402710"
+          "hash": "7038550239565381722"
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/main-info/main-info.component.scss",
@@ -2184,7 +2184,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/main-info/main-info.component.ts",
-          "hash": "18145417987824157260",
+          "hash": "11912309291779854418",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
@@ -2212,7 +2212,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/molecules/button-change-main-info/button-change-main-info.component.html",
-          "hash": "4918732866968826187"
+          "hash": "1590013505937429081"
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/molecules/button-change-main-info/button-change-main-info.component.scss",
@@ -2220,7 +2220,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/molecules/button-change-main-info/button-change-main-info.component.ts",
-          "hash": "2360499013013931123",
+          "hash": "999108933479939809",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
@@ -2240,28 +2240,6 @@
         {
           "file": "frontend/app/src/assets/svg/icon-key.svg",
           "hash": "6548954688482226038"
-        },
-        {
-          "file": "frontend/app/src/modules/user-profile/components/organism/buttons-actions-change-main-info/buttons-actions-change-main-info.component.html",
-          "hash": "5155505276150298783"
-        },
-        {
-          "file": "frontend/app/src/modules/user-profile/components/organism/buttons-actions-change-main-info/buttons-actions-change-main-info.component.ts",
-          "hash": "7233473536558788064",
-          "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core",
-            "npm:@ngx-translate/core",
-            "frontend-ui"
-          ]
-        },
-        {
-          "file": "frontend/app/src/modules/user-profile/components/organism/buttons-actions-change-main-info/buttons-actions-change-main-info.component.scss",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "frontend/app/src/assets/svg/icon-arrow-right-profile.svg",
-          "hash": "11856556513237150021"
         }
       ],
       "database": [
@@ -3226,11 +3204,11 @@
         },
         {
           "file": "frontend/ui/components/atoms/icons/index.ts",
-          "hash": "6876875891660391454"
+          "hash": "9677450024904603952"
         },
         {
           "file": "frontend/ui/components/atoms/index.ts",
-          "hash": "13890763580016891754"
+          "hash": "4506150060101071763"
         },
         {
           "file": "frontend/ui/components/atoms/label/label.component.html",
@@ -3238,7 +3216,7 @@
         },
         {
           "file": "frontend/ui/components/atoms/label/label.component.scss",
-          "hash": "1196927443590614603"
+          "hash": "11752029856885945133"
         },
         {
           "file": "frontend/ui/components/atoms/label/label.component.ts",
@@ -3395,7 +3373,7 @@
         },
         {
           "file": "frontend/ui/components/molecules/text-area/text-area.component.scss",
-          "hash": "11243042264526484296"
+          "hash": "12291099404288030611"
         },
         {
           "file": "frontend/ui/components/molecules/text-area/text-area.component.ts",
@@ -3534,7 +3512,7 @@
         },
         {
           "file": "frontend/ui/components/atoms/icons/icon-key/icon-key.component.scss",
-          "hash": "3244421341483603138"
+          "hash": "16045361289177456665"
         },
         {
           "file": "frontend/ui/components/atoms/icons/icon-key/icon-key.component.ts",
@@ -3545,48 +3523,16 @@
           ]
         },
         {
+          "file": "frontend/ui/components/atoms/icons/icon-mail/icon-mailcomponent.html",
+          "hash": "17370557451819354853"
+        },
+        {
           "file": "frontend/ui/components/atoms/icons/icon-mail/icon-mail.component.scss",
-          "hash": "3244421341483603138"
+          "hash": "16045361289177456665"
         },
         {
           "file": "frontend/ui/components/atoms/icons/icon-mail/icon-mail.component.ts",
-          "hash": "14683691620801432149",
-          "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core"
-          ]
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-mail/icon-mail.component.html",
-          "hash": "16229300058048865503"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-user-profile/icon-user-profile.component.html",
-          "hash": "2162885793025082039"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-user-profile/icon-user-profile.component.ts",
-          "hash": "15425848514541143835",
-          "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core"
-          ]
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-user-profile/icon-user-profile.component.scss",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-arrow-right-profile/icon-arrow-right-profile.component.html",
-          "hash": "7664632419443384777"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-arrow-right-profile/icon-arrow-right-profile.component.scss",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-arrow-right-profile/icon-arrow-right-profile.component.ts",
-          "hash": "7911095550399544919",
+          "hash": "7309785867151145847",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core"

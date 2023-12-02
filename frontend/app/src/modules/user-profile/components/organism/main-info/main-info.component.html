@@ -1,0 +1,26 @@
+<div class="p-4 bg-gray-0 shadow-neutral-level2 rounded-xl h-auto">
+  <c-title variant="title-h5">Información personal</c-title>
+  <div class="flex flex-row justify-between h-[200px] gap-4 mt-6">
+    <avatar
+      [dataUserEditProfile]="dataUserEditProfile"
+      [loadingProfile]="loadingProfile"
+    />
+    <c-label
+      class="flex h-full w-[350px]"
+      variant="label-base"
+      for="description"
+    >
+      Descripción
+      <c-text-area
+        class="flex flex-grow w-full"
+        id="description"
+        [maxCharacters]="200"
+        name="description"
+        placeholder="Write a brief description of yourself..."
+        variant="text-area-base"
+      />
+    </c-label>
+
+    <buttons-actions-change-main-info />
+  </div>
+</div>

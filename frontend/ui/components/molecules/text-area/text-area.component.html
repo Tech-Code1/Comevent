@@ -1,5 +1,11 @@
 @if(control) {
-<div class="content-text-area">
+<div
+  [ngClass]="{
+    'content-text-area-error':
+      !isValid() && !control.disabled && control.touched,
+    'content-text-area': true
+  }"
+>
   <div class="content-inner-text-area">
     <textarea
       [ngClass]="{

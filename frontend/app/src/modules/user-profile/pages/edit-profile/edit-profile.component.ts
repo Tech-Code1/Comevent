@@ -6,7 +6,7 @@ import {
   IconCircleArrowLeftComponent,
   TitleComponent,
 } from '@ui/components';
-import { UserProfileStateService } from '../..';
+import { MainInfoComponent, UserProfileStateService } from '../..';
 import { TokenService } from '../../../../common/services/token.service';
 
 @Component({
@@ -17,6 +17,7 @@ import { TokenService } from '../../../../common/services/token.service';
     ButtonComponent,
     TitleComponent,
     IconCircleArrowLeftComponent,
+    MainInfoComponent,
   ],
   selector: 'edit-profile',
   templateUrl: './edit-profile.component.html',

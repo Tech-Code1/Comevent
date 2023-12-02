@@ -51,7 +51,7 @@ export class TextAreaComponent<T>
   @Input() value?: string | number | undefined;
   @Input() customErrorMessages: Record<string, string> = {};
   @Input({ required: true }) name!: string;
-  @Input({ required: true }) maxCharacters: number = 200;
+  @Input({ required: true }) maxCharacters: number = 150;
   @Input()
   set disabled(value: boolean) {
     this.setDisabledState(value);

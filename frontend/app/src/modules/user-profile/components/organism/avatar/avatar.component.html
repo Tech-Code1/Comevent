@@ -1,0 +1,26 @@
+<div class="flex flex-col justify-between h-full">
+  <div class="flex flex-shrink-0">
+    <img
+      class="w-[136px] h-[136px] border-2 border-secondary rounded-full flex-shrink-0"
+      [src]="
+        (dataUserEditProfile && dataUserEditProfile.avatar) ||
+        'assets/png/avatar-default.png'
+      "
+      alt="avatar"
+    />
+  </div>
+
+  <div
+    [ngClass]="{
+      'gap-2': dataUserEditProfile.username && dataUserEditProfile.email,
+      'flex flex-col text-center': true
+    }"
+  >
+    <c-title variant="body-small" color="black">{{
+      '@' + dataUserEditProfile.username
+    }}</c-title>
+    <c-title variant="body-medium" color="black">{{
+      dataUserEditProfile.email
+    }}</c-title>
+  </div>
+</div>

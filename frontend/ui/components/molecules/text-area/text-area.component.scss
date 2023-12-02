@@ -1,13 +1,17 @@
-.content-text-area {
+.content-text-area-error {
   @apply flex flex-col gap-1;
 }
 
+.content-text-area {
+  @apply flex flex-grow w-full;
+}
+
 .content-inner-text-area {
-  @apply flex flex-col relative;
+  @apply flex flex-col relative h-auto w-full;
 }
 
 .text-area {
-  @apply outline-none rounded-md w-auto min-h-[90px] px-4 pt-4 pb-10 body-medium bg-white-1 dark:bg-black-2;
+  @apply outline-none rounded-md min-h-[80px] flex-grow w-full px-2 pt-2 pb-10 body-medium bg-white-1 dark:bg-black-2;
 }
 
 .content-max-characters {
@@ -31,7 +35,7 @@
 }
 
 .text-area-base {
-  @apply focus:placeholder-transparent h-9 border-x-2 border-2 text-black-1 dark:text-white-1 focus:outline-none focus:border-primary dark:focus:border-primary-darkMode transition-all w-auto;
+  @apply focus:placeholder-transparent border-x-2 border-2 text-black-1 dark:text-white-1 focus:outline-none focus:border-primary dark:focus:border-primary-darkMode transition-all w-auto;
 }
 
 .position-relative {

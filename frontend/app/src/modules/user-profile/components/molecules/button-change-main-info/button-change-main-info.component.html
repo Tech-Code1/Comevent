@@ -1,0 +1,15 @@
+<button
+  class="flex w-full rounded-md flex-row bg-white-1 cursor-pointer hover-parent border-2 border-secondary text-secondary hover:text-white-1 dark:hover:text-white-1 justify-between items-center gap-2 outline-none h-[38px] hover:bg-secondary px-4"
+>
+  <div class="flex flex-row items-center gap-2">
+    @switch (icon) { @case ('profile') {
+    <icon-user-profile class="stroke-secondary hover-child" />
+    } @case ('mail') {
+    <icon-mail class="stroke-secondary hover-child" />
+    } @case ('key') {
+    <icon-key class="stroke-secondary hover-child" />
+    } }
+    <span class="title-h6">{{ title | translate }}</span>
+  </div>
+  <icon-arrow-right-profile class="stroke-secondary hover-child" />
+</button>
