@@ -1,5 +1,19 @@
 <div class="flex flex-col justify-between h-full">
-  <div class="flex flex-shrink-0">
+  <div class="flex flex-shrink-0 relative">
+    <button
+      type="button"
+      (click)="profilePictureInput.click()"
+      class="flex click-button absolute top-0 right-0 justify-center items-center border-none outline-none rounded-full bg-secondary-light-2 w-[38px] h-[38px] hover-parent hover:bg-secondary"
+    >
+      <icon-edit class="stroke-secondary hover-child" />
+    </button>
+    <input
+      hidden
+      (change)="uploadedPicture($event)"
+      type="file"
+      #profilePictureInput
+    />
+    @if(!editingfile) {
     <img
       class="w-[136px] h-[136px] border-2 border-secondary rounded-full flex-shrink-0"
       [src]="
@@ -8,6 +22,13 @@
       "
       alt="avatar"
     />
+    } @else {
+    <img
+      class="w-[136px] h-[136px] border-2 border-secondary rounded-full flex-shrink-0"
+      [src]="editingfile"
+      alt="avatar"
+    />
+    }
   </div>
 
   <div

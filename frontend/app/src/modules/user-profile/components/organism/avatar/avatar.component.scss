@@ -1,0 +1,7 @@
+.hover-parent:hover .hover-child {
+  @apply stroke-white-1;
+}
+
+.click-button {
+  @apply duration-100 transition-shadow shadow-neutral-level1 active:transform active:scale-95;
+}

@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit, inject } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 import {
   ButtonComponent,
   IconCircleArrowLeftComponent,
@@ -18,6 +19,7 @@ import { TokenService } from '../../../../common/services/token.service';
     TitleComponent,
     IconCircleArrowLeftComponent,
     MainInfoComponent,
+    RouterModule,
   ],
   selector: 'edit-profile',
   templateUrl: './edit-profile.component.html',
