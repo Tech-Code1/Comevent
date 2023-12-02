@@ -7,11 +7,12 @@ import {
   ReactiveFormsModule,
   Validators,
 } from '@angular/forms';
-import { SwitchService, ValidatorsService } from '../../../../../utils';
+import { ValidatorsService } from '../../../../../utils';
+import { LayoutModalComponent } from '../layout-modal/layout-modal.component';
 
 @Component({
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule],
+  imports: [CommonModule, ReactiveFormsModule, LayoutModalComponent],
   selector: 'modal-change-password',
   templateUrl: './modal-change-password.component.html',
   styleUrls: ['./modal-change-password.component.scss'],
@@ -20,7 +21,6 @@ export class ModalChangePasswordComponent implements OnInit {
   changePass!: FormGroup;
 
   constructor(
-    private modalService: SwitchService,
     private formbuild: FormBuilder,
     private validatorsService: ValidatorsService
   ) {}
@@ -60,14 +60,6 @@ export class ModalChangePasswordComponent implements OnInit {
         ),
       } as AbstractControlOptions
     );
-  }
-
-  closeModal() {
-    this.modalService.$modal.emit(false);
-  }
-
-  stopPropagation(event: Event) {
-    event.stopPropagation();
   }
 
   isValid(inputName: string): boolean | undefined | void {

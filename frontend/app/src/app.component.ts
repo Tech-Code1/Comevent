@@ -1,4 +1,4 @@
-import { Component, OnInit, computed, effect, inject } from '@angular/core';
+import { Component, OnInit, computed, inject } from '@angular/core';
 import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { AuthStatus, LoginStateService } from './modules/auth';
@@ -34,50 +34,5 @@ export class AppComponent implements OnInit {
     }
 
     return true;
-  });
-
-  public authStatusChangedEffect = effect(() => {
-    const currentRoute = this.router.url;
-    const allowedPublicRoutes = [
-      '/auth/login',
-      '/auth/register',
-      '/auth/recover',
-      '/auth/identity-providers-callback',
-    ];
-
-    const isChangePasswordRoute = (route: string): boolean => {
-      const segments = route.split('/');
-      return (
-        segments.length >= 4 &&
-        segments[1] === 'auth' &&
-        segments[2] === 'reset-password'
-      );
-    };
-
-    switch (this.authService.authStatus()) {
-      case AuthStatus.AUTHENTICATED:
-        if (
-          allowedPublicRoutes.includes(currentRoute) ||
-          isChangePasswordRoute(currentRoute)
-        ) {
-          this.router.navigateByUrl('/user/profile');
-        }
-        break;
-      case AuthStatus.NOT_AUTHENTICATED:
-        if (
-          !allowedPublicRoutes.includes(currentRoute) &&
-          !isChangePasswordRoute(currentRoute)
-        ) {
-          this.router.navigateByUrl('/auth/login');
-        }
-        break;
-      case AuthStatus.RESETTING_PASSWORD:
-        if (!isChangePasswordRoute(currentRoute)) {
-          console.log('Redirecting to Reset Password...');
-        }
-        break;
-      default:
-        break;
-    }
   });
 }

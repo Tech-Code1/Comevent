@@ -1,0 +1,62 @@
+<div
+  class="left-0 top-0 fixed w-full h-full modal z-20 flex justify-center items-center cursor-pointer"
+  (click)="closeModal()"
+>
+  <div
+    class="flex flex-col bg-white-whiteNormal cursor-default rounded-md h-auto w-[600px] p-4 gap-4 animate__animated animate__fadeInDown animate__faster"
+    (click)="stopPropagation($event)"
+  >
+    <header class="flex w-full justify-end">
+      <button
+        (click)="closeModal()"
+        type="button"
+        class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-accent-red hover:bg-accent-lightRed focus:outline-none focus:ring-0"
+      >
+        <span class="sr-only">Close menu</span>
+        <!-- Heroicon name: outline/x -->
+        <svg
+          class="h-6 w-6"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
+          aria-hidden="true"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </button>
+    </header>
+
+    <body class="flex items-center flex-col gap-4 w-full">
+      @if (titleModal) {
+      <c-title variant="title-h4" color="black">{{ titleModal }}</c-title>
+      }
+      <ng-content></ng-content>
+      <!-- Aquí irá el contenido específico del modal -->
+    </body>
+
+    @if (footer) {
+    <footer
+      [ngClass]="{
+        'bg-gray-0 dark:bg-black-2': info || info !== '',
+        'gap-4': numberOfButtons > 1,
+        'flex flex-row h-12 rounded-b-xl': true
+      }"
+    >
+      <!-- Elementos comunes del pie de página, si los hay -->
+      @if (numberOfButtons > 1) {
+      <c-button variant="button-ghost">{{ titleButtonTwo }}</c-button>
+      } @if (numberOfButtons > 0) {
+      <c-button variant="button-base">{{ titleButtonOne }}</c-button>
+      } @if (info || info !== '') {
+      <p class="title-h6 text-secondary dark:text-white-1">{{ info }}</p>
+      }
+    </footer>
+    }
+  </div>
+</div>

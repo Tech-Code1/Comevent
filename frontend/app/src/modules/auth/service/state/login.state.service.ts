@@ -1,6 +1,6 @@
 import { Injectable, computed, inject, signal } from '@angular/core';
 import { AbstractControl } from '@angular/forms';
-import { NavigationEnd, Router } from '@angular/router';
+import { Router } from '@angular/router';
 import { Swal } from '@utils';
 import { take } from 'rxjs';
 import { RegisterUtilsService } from '..';
@@ -24,6 +24,10 @@ export class LoginStateService {
   private _currentUser = signal<ILogin | object>({});
   private _authStatus = signal<AuthStatus>(AuthStatus.CHECKING);
   BASE_API: string = environment.baseUrl;
+  private authInitializedResolve: Function | null = null;
+  private authInitialized = new Promise<void>((resolve) => {
+    this.authInitializedResolve = resolve;
+  });
 
   public currentUser = computed(() => this._currentUser());
   public authStatus = computed(() => this._authStatus());
@@ -60,30 +64,35 @@ export class LoginStateService {
   }
 
   public initialize(): void {
-    this.router.events.subscribe((event) => {
-      if (event instanceof NavigationEnd) {
-        const currentRoute = event.url;
+    const token = localStorage.getItem('token');
+    if (token) {
+      // Configurar estado inicial como 'CHECKING' mientras se verifica el token
+      this._authStatus.set(AuthStatus.CHECKING);
 
-        if (currentRoute.includes('/auth/reset-password')) {
-          this._authStatus.set(AuthStatus.RESETTING_PASSWORD);
-        } else if (localStorage.getItem('token')) {
-          this.loginService.checkAuthStatus().subscribe({
-            next: ({ data }) => {
-              this.setAuthtication(data);
-            },
-            error: ({ response }) => {
-              if (response?.message === 'Token not found') {
-                this.logout();
-              } else {
-                this._authStatus.set(AuthStatus.NOT_AUTHENTICATED);
-              }
-            },
-          });
-        } else {
-          this._authStatus.set(AuthStatus.NOT_AUTHENTICATED);
-        }
-      }
-    });
+      // Verificación asincrónica del token
+      this.loginService.checkAuthStatus().subscribe({
+        next: ({ data }) => {
+          this.setAuthtication(data);
+          this.authInitializedResolve?.();
+        },
+        error: ({ response }) => {
+          if (response?.message === 'Token not found') {
+            this.logout();
+          } else {
+            this._authStatus.set(AuthStatus.NOT_AUTHENTICATED);
+          }
+
+          this.authInitializedResolve?.();
+        },
+      });
+    } else {
+      this._authStatus.set(AuthStatus.NOT_AUTHENTICATED);
+      this.authInitializedResolve?.();
+    }
+  }
+
+  public waitForInitialization(): Promise<void> {
+    return this.authInitialized;
   }
 
   loginProvider(code: string, id: string, provider: string): void {
@@ -96,8 +105,8 @@ export class LoginStateService {
         this.registerUtils.isLoadingProviderGoogle.set(false);
         this.registerUtils.isLoadingProviderGithub.set(false);
       },
-      error: (err: any) => {
-        console.error('Error during claimToken:', err);
+      error: ({ response }) => {
+        console.error('Error during claimToken:', response?.message);
         this.router.navigateByUrl('/auth/login');
       },
     });
@@ -107,5 +116,6 @@ export class LoginStateService {
     localStorage.removeItem('token');
     this._currentUser.set({});
     this._authStatus.set(AuthStatus.NOT_AUTHENTICATED);
+    this.router.navigateByUrl('/auth/login');
   }
 }
