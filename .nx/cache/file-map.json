@@ -2086,7 +2086,7 @@
         },
         {
           "file": "frontend/app/src/index.html",
-          "hash": "2665949246925175347"
+          "hash": "5094594641314845099"
         },
         {
           "file": "frontend/app/src/main.ts",
@@ -2891,7 +2891,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/buttons-actions-change-main-info/buttons-actions-change-main-info.component.html",
-          "hash": "15167112420946671426"
+          "hash": "16373550025094241320"
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/buttons-actions-change-main-info/buttons-actions-change-main-info.component.scss",
@@ -2899,7 +2899,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/buttons-actions-change-main-info/buttons-actions-change-main-info.component.ts",
-          "hash": "13354118923753636431",
+          "hash": "8415336016957436874",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
@@ -2977,7 +2977,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/layout-modal/layout-modal.component.html",
-          "hash": "10910802939452367602"
+          "hash": "3332024123822389069"
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/layout-modal/layout-modal.component.scss",
@@ -2985,10 +2985,11 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/layout-modal/layout-modal.component.ts",
-          "hash": "17611783382590791863",
+          "hash": "7717545516147080359",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
+            "npm:@angular/forms",
             "npm:@ngx-translate/core",
             "frontend-ui"
           ]
@@ -3039,7 +3040,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/modal-change-email/modal-change-email.component.ts",
-          "hash": "13981701568724162754",
+          "hash": "3747781469586985963",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
@@ -3056,7 +3057,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/modal-change-nick/modal-change-nick.component.ts",
-          "hash": "16670544230899290561",
+          "hash": "7086876684730249293",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
@@ -3065,7 +3066,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/modal-change-password/modal-change-password.component.html",
-          "hash": "10404544240640840539"
+          "hash": "8579483766572459798"
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/modal-change-password/modal-change-password.component.scss",
@@ -3073,11 +3074,12 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/modal-change-password/modal-change-password.component.ts",
-          "hash": "18310074811015039583",
+          "hash": "1068656337557859332",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
-            "npm:@angular/forms"
+            "npm:@angular/forms",
+            "frontend-ui"
           ]
         },
         {
@@ -3242,7 +3244,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/service/state/index.ts",
-          "hash": "16420873669876597979"
+          "hash": "2318722536349599440"
         },
         {
           "file": "frontend/app/src/modules/user-profile/service/state/reset.state.service.ts",
@@ -3330,14 +3332,7 @@
         },
         {
           "file": "frontend/app/src/utils/service/index.ts",
-          "hash": "7168189228117461941"
-        },
-        {
-          "file": "frontend/app/src/utils/service/switch.service.ts",
-          "hash": "13534628119642022736",
-          "deps": [
-            "npm:@angular/core"
-          ]
+          "hash": "14292297366977032053"
         },
         {
           "file": "frontend/app/src/utils/validators/index.ts",
@@ -3379,6 +3374,29 @@
         {
           "file": "frontend/app/tsconfig.spec.json",
           "hash": "2927375835638640771"
+        },
+        {
+          "file": "frontend/app/src/modules/user-profile/service/state/form-change-pass.state.service.ts",
+          "hash": "6187078965406896547",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/forms"
+          ]
+        },
+        {
+          "file": "frontend/app/src/utils/service/modalManager.service.ts",
+          "hash": "1986037500064809821",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "frontend/app/src/common/constants/modals.ts",
+          "hash": "6512921849236772126"
+        },
+        {
+          "file": "frontend/app/src/common/constants/index.ts",
+          "hash": "10288950877944569153"
         }
       ],
       "api-e2e": [
@@ -3911,7 +3929,7 @@
         },
         {
           "file": "frontend/ui/components/atoms/icons/icon-clear/icon-clear.component.html",
-          "hash": "17399731041153996358"
+          "hash": "6770272960769043133"
         },
         {
           "file": "frontend/ui/components/atoms/icons/icon-clear/icon-clear.component.scss",
@@ -4407,7 +4425,7 @@
         },
         {
           "file": "frontend/ui/components/atoms/icons/index.ts",
-          "hash": "6876875891660391454"
+          "hash": "11414614684993292204"
         },
         {
           "file": "frontend/ui/components/atoms/index.ts",
@@ -4459,11 +4477,11 @@
         },
         {
           "file": "frontend/ui/components/molecules/button/button.component.html",
-          "hash": "15390766340752000650"
+          "hash": "3328642064411666296"
         },
         {
           "file": "frontend/ui/components/molecules/button/button.component.scss",
-          "hash": "17459338913738828823"
+          "hash": "9729706349937980215"
         },
         {
           "file": "frontend/ui/components/molecules/button/button.component.ts",
@@ -4475,19 +4493,19 @@
         },
         {
           "file": "frontend/ui/components/molecules/button/button.interface.ts",
-          "hash": "4015553770548294595"
+          "hash": "11158105168245477499"
         },
         {
           "file": "frontend/ui/components/molecules/chip/chip.component.html",
-          "hash": "2182495629770133802"
+          "hash": "1914846248737050214"
         },
         {
           "file": "frontend/ui/components/molecules/chip/chip.component.scss",
-          "hash": "12068583089558522854"
+          "hash": "15871482274716848027"
         },
         {
           "file": "frontend/ui/components/molecules/chip/chip.component.ts",
-          "hash": "7450650462378642000",
+          "hash": "14226237403719627899",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core"
@@ -4503,7 +4521,7 @@
         },
         {
           "file": "frontend/ui/components/molecules/input/input.component.html",
-          "hash": "3544028645871894270"
+          "hash": "5481890696418226814"
         },
         {
           "file": "frontend/ui/components/molecules/input/input.component.scss",
@@ -4511,7 +4529,7 @@
         },
         {
           "file": "frontend/ui/components/molecules/input/input.component.ts",
-          "hash": "8325072540919809706",
+          "hash": "12781355078231456609",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
@@ -4597,7 +4615,7 @@
         },
         {
           "file": "frontend/ui/components/shared/directives/control-value-accesor.directive.ts",
-          "hash": "6567193939437562211",
+          "hash": "14561037868462765780",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/forms",
@@ -4708,6 +4726,26 @@
         {
           "file": "frontend/ui/tsconfig.spec.json",
           "hash": "8246693900492800589"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-clear-input/icon-clear.interface.ts",
+          "hash": "8184958948452365991"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-clear-input/icon-clear-input.component.html",
+          "hash": "17399731041153996358"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-clear-input/icon-clear-input.component.scss",
+          "hash": "4839494193965889411"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-clear-input/icon-clear-input.component.ts",
+          "hash": "15329855836713502133",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
         }
       ],
       "tailwind-preset": [

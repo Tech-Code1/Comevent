@@ -7,7 +7,7 @@ import {
   ReactiveFormsModule,
   Validators,
 } from '@angular/forms';
-import { SwitchService, ValidatorsService } from '../../../../../utils';
+import { ValidatorsService } from '../../../../../utils';
 
 @Component({
   standalone: true,
@@ -24,7 +24,6 @@ export class ModalChangeEmailComponent implements OnInit {
   changeEmail!: FormGroup;
 
   constructor(
-    private modalService: SwitchService,
     private formbuild: FormBuilder,
     private validatorsService: ValidatorsService
   ) {}
@@ -52,9 +51,7 @@ export class ModalChangeEmailComponent implements OnInit {
     this.initialValue = this.changeEmail.get('email')?.value;
   }
 
-  closeModal() {
-    this.modalService.$modal.emit(false);
-  }
+  closeModal() {}
 
   stopPropagation(event: Event) {
     event.stopPropagation();

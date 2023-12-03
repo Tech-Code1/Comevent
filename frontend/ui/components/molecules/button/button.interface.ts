@@ -3,7 +3,12 @@ type OptionalInputType = {
   disabled: boolean;
   loading: boolean;
   colorLoading: 'white' | 'disabled';
-  variant: 'button-base' | 'button-disabled' | 'button-ghost' | 'button-accent';
+  variant:
+    | 'button-base'
+    | 'button-disabled'
+    | 'button-ghost'
+    | 'button-ghost-error'
+    | 'button-accent';
 };
 
 export type ButtonType = Partial<OptionalInputType>;

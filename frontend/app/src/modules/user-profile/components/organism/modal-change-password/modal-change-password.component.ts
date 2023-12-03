@@ -1,71 +1,56 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
-import {
-  AbstractControlOptions,
-  FormBuilder,
-  FormGroup,
-  ReactiveFormsModule,
-  Validators,
-} from '@angular/forms';
-import { ValidatorsService } from '../../../../../utils';
+import { Component, OnInit, ViewEncapsulation, inject } from '@angular/core';
+import { FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { InputComponent, LabelComponent } from '@ui/components';
+import { FormChnagePassService } from '../../..';
+import { FormUtilitiesService } from '../../../../../utils';
 import { LayoutModalComponent } from '../layout-modal/layout-modal.component';
 
 @Component({
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule, LayoutModalComponent],
+  imports: [
+    CommonModule,
+    ReactiveFormsModule,
+    LayoutModalComponent,
+    LabelComponent,
+    InputComponent,
+  ],
   selector: 'modal-change-password',
   templateUrl: './modal-change-password.component.html',
   styleUrls: ['./modal-change-password.component.scss'],
+  encapsulation: ViewEncapsulation.Emulated,
 })
 export class ModalChangePasswordComponent implements OnInit {
+  protected formUtilities = inject(FormUtilitiesService);
+  protected formChnagePassService = inject(FormChnagePassService);
   changePass!: FormGroup;
 
-  constructor(
-    private formbuild: FormBuilder,
-    private validatorsService: ValidatorsService
-  ) {}
+  ngOnInit(): void {
+    this.changePass = this.formChnagePassService.getChangePasswordForm();
+  }
+
+  /* protected formUtilities = inject(FormUtilitiesService);
+  private formBuilder = inject(FormBuilder);
+  private validatorsService = inject(ValidatorsService);
+  changePass!: FormGroup;
+
+  customValidator!: ValidatorFn;
 
   ngOnInit(): void {
-    this.changePass = this.formbuild.group(
+    this.customValidator = this.validatorsService.similarInputs(
+      'password',
+      'passRepeat'
+    );
+
+    this.changePass = this.formBuilder.group(
       {
-        pass: [
-          '',
-          [
-            Validators.required,
-            Validators.minLength(6),
-            Validators.maxLength(50),
-          ],
-        ],
-        repeatPass: [
-          '',
-          [
-            Validators.required,
-            Validators.minLength(6),
-            Validators.maxLength(50),
-          ],
-        ],
-        repeatPassNew: [
-          '',
-          [
-            Validators.required,
-            Validators.minLength(6),
-            Validators.maxLength(50),
-          ],
-        ],
+        pass: [''],
+        password: [''],
+        passRepeat: [''],
       },
       {
-        validator: this.validatorsService.similarInputs(
-          'repeatPass',
-          'repeatPassNew'
-        ),
-      } as AbstractControlOptions
+        validators: this.customValidator,
+      }
     );
-  }
-
-  isValid(inputName: string): boolean | undefined | void {
-    if (this.changePass.get(inputName)?.touched) {
-      return this.changePass.get(inputName)?.valid;
-    }
-    return true;
-  }
+  } */
 }

@@ -5,6 +5,8 @@ export * from './icon-badges/icon-badges.component';
 export * from './icon-basic/icon-basic.component';
 export * from './icon-circle-arrow-left/icon-circle-arrow-left.component';
 export * from './icon-clear';
+export * from './icon-clear-input/icon-clear-input.component';
+export * from './icon-clear-input/icon-clear.interface';
 export * from './icon-comevent/icon-comevent.component';
 export * from './icon-communities/icon-communities.component';
 export * from './icon-discord/icon-discord.component';

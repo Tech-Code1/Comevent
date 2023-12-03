@@ -104,7 +104,7 @@ export class ControlValueAccesorDirective<T>
           break;
       }
     } catch (err) {
-      this.control = new FormControl();
+      this.control = undefined;
     }
 
     this.setDisabledState(this._isDisabled);
@@ -113,10 +113,8 @@ export class ControlValueAccesorDirective<T>
   }
 
   writeValue(value: T): void {
-    if (this.control?.value !== value) {
-      this.control
-        ? this.control.setValue(value, { emitEvent: false })
-        : (this.control = new FormControl(value));
+    if (this.control && this.control.value !== value) {
+      this.control.setValue(value, { emitEvent: false });
     }
   }
 

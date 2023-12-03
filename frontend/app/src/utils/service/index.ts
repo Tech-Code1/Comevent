@@ -1,2 +1,2 @@
 export * from './formUtilities.service';
-export * from './switch.service';
+export * from './modalManager.service';

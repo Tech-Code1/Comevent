@@ -8,14 +8,14 @@ import {
 } from '@angular/core';
 import { ChipType } from '.';
 import { TitleComponent } from '../../atoms';
-import { IconClearComponent, IconUserComponent } from '../../atoms/icons';
+import { IconClearInputComponent, IconUserComponent } from '../../atoms/icons';
 
 @Component({
   standalone: true,
   selector: 'c-chip',
   imports: [
     CommonModule,
-    IconClearComponent,
+    IconClearInputComponent,
     TitleComponent,
     IconUserComponent,
   ],

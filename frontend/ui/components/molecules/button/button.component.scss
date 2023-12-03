@@ -22,8 +22,16 @@
   @apply border-solid border-2 border-primary dark:border-primary-darkMode bg-transparent;
 }
 
+.button-ghost-error {
+  @apply border-solid border-2 border-error dark:border-error-darkMode bg-transparent;
+}
+
 .button-ghost:hover {
   @apply bg-primary-light-2;
+}
+
+.button-ghost-error:hover {
+  @apply bg-error-light;
 }
 
 .button-ghost:disabled {
@@ -43,6 +51,18 @@
 }
 
 .button-ghost:disabled ::ng-deep p {
+  @apply text-gray-2;
+}
+
+.button-ghost-error ::ng-deep {
+  @apply text-error dark:text-error-darkMode;
+}
+
+.button-ghost-error:hover ::ng-deep p {
+  @apply text-error-darkMode;
+}
+
+.button-ghost-error:disabled ::ng-deep p {
   @apply text-gray-2;
 }
 

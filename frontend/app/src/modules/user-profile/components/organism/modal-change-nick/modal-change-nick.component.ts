@@ -7,7 +7,6 @@ import {
   ReactiveFormsModule,
   Validators,
 } from '@angular/forms';
-import { SwitchService } from '../../../../../utils';
 
 @Component({
   standalone: true,
@@ -24,10 +23,7 @@ export class ModalChangeNickComponent implements OnInit {
 
   changeNick!: FormGroup;
 
-  constructor(
-    private modalService: SwitchService,
-    private formbuild: FormBuilder
-  ) {}
+  constructor(private formbuild: FormBuilder) {}
 
   ngOnInit(): void {
     this.changeNick = this.formbuild.group({
@@ -52,9 +48,7 @@ export class ModalChangeNickComponent implements OnInit {
     this.initialValue = this.changeNick.get('nick')?.value;
   }
 
-  closeModal() {
-    this.modalService.$modal.emit(false);
-  }
+  closeModal() {}
 
   stopPropagation(event: Event) {
     event.stopPropagation();

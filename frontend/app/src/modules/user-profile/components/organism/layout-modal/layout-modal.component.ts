@@ -8,13 +8,23 @@ import {
   ViewEncapsulation,
   inject,
 } from '@angular/core';
+import { FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
 import { ButtonComponent, TitleComponent } from '@ui/components';
-import { SwitchService } from '../../../../../utils';
+import { FormChnagePassService } from '../../..';
+import { IconClearComponent } from '../../../../../../../ui/components/atoms/icons/icon-clear/icon-clear.component';
+import { ModalManagerService } from '../../../../../utils';
 
 @Component({
   standalone: true,
-  imports: [CommonModule, TranslateModule, ButtonComponent, TitleComponent],
+  imports: [
+    CommonModule,
+    TranslateModule,
+    ReactiveFormsModule,
+    ButtonComponent,
+    TitleComponent,
+    IconClearComponent,
+  ],
   selector: 'layout-modal',
   templateUrl: './layout-modal.component.html',
   styleUrls: ['./layout-modal.component.scss'],
@@ -28,13 +38,17 @@ export class LayoutModalComponent {
   @Input() titleButtonOne: string = '';
   @Input() titleButtonTwo: string = '';
   @Input() info: string = '';
+  @Input() form!: FormGroup;
   @Output() buttonOneClick = new EventEmitter<void>();
-  @Output() buttonTwoClick = new EventEmitter<void>();
 
-  private modalService = inject(SwitchService);
+  protected modalManagerService = inject(ModalManagerService);
+  protected formChnagePassService = inject(FormChnagePassService);
 
   closeModal() {
-    this.modalService.$modal.emit(false);
+    if (this.form) {
+      this.form.reset();
+    }
+    this.modalManagerService.closeModal();
   }
 
   stopPropagation(event: Event) {
@@ -42,10 +56,9 @@ export class LayoutModalComponent {
   }
 
   onButtonOneClick() {
+    if (this.form) {
+      this.form.reset();
+    }
     this.buttonOneClick.emit();
-  }
-
-  onButtonTwoClick() {
-    this.buttonTwoClick.emit();
   }
 }
