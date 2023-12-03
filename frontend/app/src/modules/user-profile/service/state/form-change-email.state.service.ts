@@ -6,14 +6,14 @@ import { MODALS } from '../../../../common/constants';
 import { ModalManagerService } from '../../../../utils';
 
 @Injectable({ providedIn: 'root' })
-export class FormChangeUserNameService implements OnDestroy {
+export class FormChangeEmailService implements OnDestroy {
   private formBuilder = inject(FormBuilder);
   public userProfileStateService = inject(UserProfileStateService);
   private modalManagerService = inject(ModalManagerService);
   private destroy$ = new Subject<void>();
 
   inputChanged = false;
-  changeUserNameForm!: FormGroup;
+  changeEmailForm!: FormGroup;
   private originalValues!: any;
   private initialValue: string | null | undefined;
 
@@ -23,17 +23,15 @@ export class FormChangeUserNameService implements OnDestroy {
   }
 
   private initializeForm() {
-    this.changeUserNameForm = this.formBuilder.group({
-      userName: [
-        this.userProfileStateService.dataUserEditProfile().username || '',
-      ],
+    this.changeEmailForm = this.formBuilder.group({
+      email: [this.userProfileStateService.dataUserEditProfile().email || ''],
       pass: [''],
     });
 
     // Almacenar los valores originales
-    this.originalValues = this.changeUserNameForm.value;
+    this.originalValues = this.changeEmailForm.value;
     this.initialValue =
-      this.userProfileStateService.dataUserEditProfile().username || '';
+      this.userProfileStateService.dataUserEditProfile().email || '';
   }
 
   get isInputChanged(): boolean {
@@ -41,16 +39,16 @@ export class FormChangeUserNameService implements OnDestroy {
   }
 
   openChangeUserNameModal() {
-    this.modalManagerService.openModal(MODALS.USER_NAME_MODAL);
+    this.modalManagerService.openModal(MODALS.EMAIL_MODAL);
   }
 
-  getChangeUserNameForm(): FormGroup {
-    return this.changeUserNameForm;
+  getChangeEmailForm(): FormGroup {
+    return this.changeEmailForm;
   }
 
   changeInput(): void {
-    this.changeUserNameForm
-      .get('userName')
+    this.changeEmailForm
+      .get('email')
       ?.valueChanges.pipe(takeUntil(this.destroy$))
       .subscribe((value) => {
         this.inputChanged = value !== this.initialValue;
@@ -58,8 +56,8 @@ export class FormChangeUserNameService implements OnDestroy {
   }
 
   resetToOriginalValues() {
-    this.changeUserNameForm.reset(this.originalValues);
-    this.initialValue = this.originalValues.userName;
+    this.changeEmailForm.reset(this.originalValues);
+    this.initialValue = this.originalValues.email;
   }
 
   ngOnDestroy(): void {

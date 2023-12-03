@@ -1,7 +1,7 @@
 chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 237 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
 webpack compiled [1m[32msuccessfully[39m[22m (b1676646832e2b8b)
-[1m[31mDebugger listening on ws://[39m[22m
-[1m[31mlocalhost:9229/4a8d1b64-ae09-450c-90d4-bec7adb59acb[39m[22m
-[1m[31mDebugger listening on ws://localhost:9229/4a8d1b64-ae09-450c-90d4-bec7adb59acb[39m[22m
+[1m[31mDebugger listening on ws://l[39m[22m
+[1m[31mocalhost:9229/651a92f1-d246-4c90-8c60-7a88c95b5a86[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/651a92f1-d246-4c90-8c60-7a88c95b5a86[39m[22m
 [1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
 [1m[31m[39m[22m
