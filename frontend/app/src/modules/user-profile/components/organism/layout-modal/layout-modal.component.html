@@ -41,7 +41,7 @@
       }}</c-button>
       } @if (numberOfButtons > 0) {
       <c-button
-        [disabled]="form ? !form.valid : false"
+        [disabled]="isButtonDisabled()"
         (click)="onButtonOneClick()"
         variant="button-base"
         >{{ titleButtonOne }}</c-button

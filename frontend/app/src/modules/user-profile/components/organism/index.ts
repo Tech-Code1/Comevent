@@ -8,5 +8,5 @@ export * from './layout-modal/layout-modal.component';
 export * from './layout-profile/layout-profile.component';
 export * from './main-info/main-info.component';
 export * from './modal-change-email/modal-change-email.component';
-export * from './modal-change-nick/modal-change-nick.component';
 export * from './modal-change-password/modal-change-password.component';
+export * from './modal-change-user-name/modal-change-user-name.component';

@@ -15,6 +15,7 @@
       [attr.id]="id || null"
       [formControl]="control"
       [disabled]="control!.disabled"
+      autocomplete="off"
     />
     <button
       *ngIf="type === 'password' && !control!.disabled"

@@ -4,9 +4,10 @@ import { MODALS } from '../../../../common/constants';
 import { ModalManagerService, ValidatorsService } from '../../../../utils';
 
 @Injectable({ providedIn: 'root' })
-export class FormChnagePassService {
+export class FormChangePassService {
   private formBuilder = inject(FormBuilder);
   private validatorsService = inject(ValidatorsService);
+  private modalManagerService = inject(ModalManagerService);
 
   customValidator: ValidatorFn = this.validatorsService.similarInputs(
     'password',
@@ -24,13 +25,19 @@ export class FormChnagePassService {
     }
   );
 
-  private modalManagerService = inject(ModalManagerService);
-
   openChangePasswordModal() {
     this.modalManagerService.openModal(MODALS.PASSWORD_MODAL);
   }
 
   getChangePasswordForm(): FormGroup {
     return this.changePasswordForm;
+  }
+
+  resetChangePasswordForm() {
+    this.changePasswordForm.reset({
+      pass: '',
+      password: '',
+      passRepeat: '',
+    });
   }
 }

@@ -2891,7 +2891,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/buttons-actions-change-main-info/buttons-actions-change-main-info.component.html",
-          "hash": "16373550025094241320"
+          "hash": "3670349480396655696"
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/buttons-actions-change-main-info/buttons-actions-change-main-info.component.scss",
@@ -2899,7 +2899,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/buttons-actions-change-main-info/buttons-actions-change-main-info.component.ts",
-          "hash": "8415336016957436874",
+          "hash": "2644117582715669040",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
@@ -2973,7 +2973,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/index.ts",
-          "hash": "5221770587730799663"
+          "hash": "3635086426913168724"
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/layout-modal/layout-modal.component.html",
@@ -3048,23 +3048,6 @@
           ]
         },
         {
-          "file": "frontend/app/src/modules/user-profile/components/organism/modal-change-nick/modal-change-nick.component.html",
-          "hash": "4159088482156017559"
-        },
-        {
-          "file": "frontend/app/src/modules/user-profile/components/organism/modal-change-nick/modal-change-nick.component.scss",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "frontend/app/src/modules/user-profile/components/organism/modal-change-nick/modal-change-nick.component.ts",
-          "hash": "7086876684730249293",
-          "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core",
-            "npm:@angular/forms"
-          ]
-        },
-        {
           "file": "frontend/app/src/modules/user-profile/components/organism/modal-change-password/modal-change-password.component.html",
           "hash": "8579483766572459798"
         },
@@ -3074,7 +3057,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/modal-change-password/modal-change-password.component.ts",
-          "hash": "1068656337557859332",
+          "hash": "9443437970511829532",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
@@ -3244,7 +3227,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/service/state/index.ts",
-          "hash": "2318722536349599440"
+          "hash": "6956613297871071070"
         },
         {
           "file": "frontend/app/src/modules/user-profile/service/state/reset.state.service.ts",
@@ -3397,6 +3380,32 @@
         {
           "file": "frontend/app/src/common/constants/index.ts",
           "hash": "10288950877944569153"
+        },
+        {
+          "file": "frontend/app/src/modules/user-profile/service/state/form-change-user-name.state.service.ts",
+          "hash": "7977991614778919613",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/forms"
+          ]
+        },
+        {
+          "file": "frontend/app/src/modules/user-profile/components/organism/modal-change-nick/modal-change-user-name.component.ts",
+          "hash": "6534046628608765700",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "frontend-ui"
+          ]
+        },
+        {
+          "file": "frontend/app/src/modules/user-profile/components/organism/modal-change-nick/modal-change-user-name.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "frontend/app/src/modules/user-profile/components/organism/modal-change-nick/modal-change-user-name.component.html",
+          "hash": "2113998621168274176"
         }
       ],
       "api-e2e": [

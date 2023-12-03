@@ -1,0 +1,43 @@
+<layout-modal
+  titleModal="Cambiar apodo"
+  [numberOfButtons]="2"
+  [footer]="true"
+  titleButtonOne="Aceptar"
+  titleButtonTwo="Cancelar"
+  [form]="changeUserName"
+  [resetFormFunction]="
+    formChangeUserNameService.resetToOriginalValues.bind(
+      formChangeUserNameService
+    )
+  "
+  [isInputChanged]="!formChangeUserNameService.isInputChanged"
+>
+  <form
+    [formGroup]="changeUserName"
+    class="flex flex-col gap-3 w-full"
+    action=""
+    autocomplete="off"
+  >
+    <c-label>
+      Username
+      <c-input
+        css="input-primary"
+        type="text"
+        placeholder="jhonDoe"
+        formControlName="userName"
+        name="userName"
+      />
+    </c-label>
+
+    <c-label>
+      Password
+      <c-input
+        css="input-primary"
+        type="password"
+        placeholder="*******"
+        formControlName="pass"
+        name="pass"
+      />
+    </c-label>
+  </form>
+</layout-modal>

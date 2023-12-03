@@ -13,8 +13,8 @@ import { ISimplifiedUserEditProfile } from '../../..';
 import { MODALS } from '../../../../../common/constants';
 import { ModalManagerService } from '../../../../../utils';
 import { ModalChangeEmailComponent } from '../modal-change-email/modal-change-email.component';
-import { ModalChangeNickComponent } from '../modal-change-nick/modal-change-nick.component';
 import { ModalChangePasswordComponent } from '../modal-change-password/modal-change-password.component';
+import { ModalChangeUserNameComponent } from '../modal-change-user-name/modal-change-user-name.component';
 
 @Component({
   standalone: true,
@@ -25,7 +25,7 @@ import { ModalChangePasswordComponent } from '../modal-change-password/modal-cha
     TranslateModule,
     ButtonChangeMainInfoComponent,
     ModalChangePasswordComponent,
-    ModalChangeNickComponent,
+    ModalChangeUserNameComponent,
     ModalChangeEmailComponent,
   ],
   selector: 'buttons-actions-change-main-info',
@@ -43,7 +43,7 @@ export class ButtonsActionsChangeMainInfoComponent {
   buttons = [
     {
       id: 1,
-      title: 'Cambiar username',
+      title: 'Cambiar apodo',
       icon: 'profile',
       modal: MODALS.USER_NAME_MODAL,
     },

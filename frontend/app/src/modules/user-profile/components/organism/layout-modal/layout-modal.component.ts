@@ -11,7 +11,6 @@ import {
 import { FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
 import { ButtonComponent, TitleComponent } from '@ui/components';
-import { FormChnagePassService } from '../../..';
 import { IconClearComponent } from '../../../../../../../ui/components/atoms/icons/icon-clear/icon-clear.component';
 import { ModalManagerService } from '../../../../../utils';
 
@@ -40,13 +39,14 @@ export class LayoutModalComponent {
   @Input() info: string = '';
   @Input() form!: FormGroup;
   @Output() buttonOneClick = new EventEmitter<void>();
+  @Input() resetFormFunction!: () => void;
+  @Input() isInputChanged = false;
 
   protected modalManagerService = inject(ModalManagerService);
-  protected formChnagePassService = inject(FormChnagePassService);
 
   closeModal() {
     if (this.form) {
-      this.form.reset();
+      this.resetFormFunction();
     }
     this.modalManagerService.closeModal();
   }
@@ -57,8 +57,24 @@ export class LayoutModalComponent {
 
   onButtonOneClick() {
     if (this.form) {
-      this.form.reset();
+      this.resetFormFunction();
     }
     this.buttonOneClick.emit();
+  }
+
+  isButtonDisabled(): boolean {
+    if (this.form && this.isInputChanged !== undefined) {
+      return !this.form.valid || this.isInputChanged;
+    }
+
+    if (this.form) {
+      return !this.form.valid;
+    }
+
+    if (this.isInputChanged !== undefined) {
+      return this.isInputChanged;
+    }
+
+    return false;
   }
 }
