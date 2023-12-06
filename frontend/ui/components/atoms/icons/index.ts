@@ -4,6 +4,7 @@ export * from './icon-arrow-right/icon-arrow-right.component';
 export * from './icon-badges/icon-badges.component';
 export * from './icon-basic/icon-basic.component';
 export * from './icon-circle-arrow-left/icon-circle-arrow-left.component';
+export * from './icon-circle-check/icon-circle-check.component';
 export * from './icon-clear';
 export * from './icon-clear-input/icon-clear-input.component';
 export * from './icon-clear-input/icon-clear.interface';

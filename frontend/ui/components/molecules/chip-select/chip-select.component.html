@@ -1,0 +1,15 @@
+<div
+  [ngClass]="{
+    'content-chip-disabled': disabled,
+    'content-chip-hover': hover,
+    'with-left-padding': select,
+    'content-chip': true
+  }"
+>
+  @if(select) {
+  <icon-circle-check />
+  }
+  <c-title variant="body-medium" [color]="!disabled ? 'primary' : 'white'">
+    {{ title }}
+  </c-title>
+</div>

@@ -24597,3 +24597,923 @@ Error: Failed to process project dependencies with "nx-js-graph-plugin".
 [NX Daemon Server] - 2023-12-05T23:33:43.358Z - Closed a connection. Number of open connections: 0
 [NX Daemon Server] - 2023-12-05T23:33:43.358Z - Established a connection. Number of open connections: 1
 [NX Daemon Server] - 2023-12-05T23:33:43.360Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2023-12-05T23:33:43.825Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-05T23:33:43.826Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-05T23:33:43.826Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-05T23:33:43.910Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2023-12-05T23:33:43.912Z - Time taken for 'total for creating and serializing project graph' 550.2075999975204ms
+[NX Daemon Server] - 2023-12-05T23:33:43.913Z - Done responding to the client project-graph
+[NX Daemon Server] - 2023-12-05T23:33:43.913Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 550. Response time: 3.
+[NX Daemon Server] - 2023-12-05T23:33:43.920Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2023-12-05T23:33:43.921Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-12-05T23:33:43.921Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2023-12-05T23:33:43.921Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-12-05T23:33:43.926Z - [REQUEST]: Responding to the client. handleRequestFileData
+[NX Daemon Server] - 2023-12-05T23:33:43.926Z - Done responding to the client handleRequestFileData
+[NX Daemon Server] - 2023-12-05T23:33:43.926Z - Handled REQUEST_FILE_DATA. Handling time: 2. Response time: 0.
+[NX Daemon Server] - 2023-12-05T23:46:51.465Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-05T23:46:51.467Z - [WATCHER]: frontend/app/src/modules/user-profile/service/state/form-social-networks.state.service.ts was modified
+[NX Daemon Server] - 2023-12-05T23:46:51.595Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-05T23:46:51.595Z - [REQUEST]: frontend/app/src/modules/user-profile/service/state/form-social-networks.state.service.ts
+[NX Daemon Server] - 2023-12-05T23:46:51.595Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-05T23:46:51.897Z - Time taken for 'hash changed files from watcher' 1.1518000364303589ms
+[NX Daemon Server] - 2023-12-05T23:48:15.521Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-05T23:48:15.523Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.ts was modified
+[NX Daemon Server] - 2023-12-05T23:48:15.751Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-05T23:48:15.751Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.ts
+[NX Daemon Server] - 2023-12-05T23:48:15.751Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-05T23:48:15.852Z - Time taken for 'hash changed files from watcher' 1.8387000560760498ms
+[NX Daemon Server] - 2023-12-05T23:48:32.328Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-05T23:48:32.329Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.ts was modified
+[NX Daemon Server] - 2023-12-05T23:48:32.759Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-05T23:48:32.759Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.ts
+[NX Daemon Server] - 2023-12-05T23:48:32.759Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-05T23:48:32.853Z - Time taken for 'hash changed files from watcher' 1.8615000247955322ms
+[NX Daemon Server] - 2023-12-05T23:49:25.301Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2023-12-05T23:49:25.303Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-12-05T23:49:25.303Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2023-12-05T23:49:25.305Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2023-12-05T23:49:25.305Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2023-12-05T23:49:25.308Z - Time taken for 'total for creating and serializing project graph' 0.2766000032424927ms
+[NX Daemon Server] - 2023-12-05T23:49:25.308Z - Done responding to the client project-graph
+[NX Daemon Server] - 2023-12-05T23:49:25.308Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 3.
+[NX Daemon Server] - 2023-12-05T23:49:25.407Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX Daemon Server] - 2023-12-05T23:49:25.407Z - Done responding to the client handleHashTasks
+[NX Daemon Server] - 2023-12-05T23:49:25.407Z - Handled HASH_TASKS. Handling time: 57. Response time: 0.
+[NX Daemon Server] - 2023-12-05T23:49:29.097Z - Established a connection. Number of open connections: 3
+[NX Daemon Server] - 2023-12-05T23:49:29.098Z - Closed a connection. Number of open connections: 2
+[NX Daemon Server] - 2023-12-05T23:49:29.099Z - Established a connection. Number of open connections: 3
+[NX Daemon Server] - 2023-12-05T23:49:29.101Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2023-12-05T23:49:29.101Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2023-12-05T23:49:29.103Z - Time taken for 'total for creating and serializing project graph' 0.1408998966217041ms
+[NX Daemon Server] - 2023-12-05T23:49:29.103Z - Done responding to the client project-graph
+[NX Daemon Server] - 2023-12-05T23:49:29.103Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 2.
+[NX Daemon Server] - 2023-12-05T23:49:30.727Z - Established a connection. Number of open connections: 4
+[NX Daemon Server] - 2023-12-05T23:49:30.727Z - Closed a connection. Number of open connections: 3
+[NX Daemon Server] - 2023-12-05T23:49:30.728Z - Established a connection. Number of open connections: 4
+[NX Daemon Server] - 2023-12-05T23:49:30.730Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2023-12-05T23:49:30.730Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2023-12-05T23:49:30.732Z - Time taken for 'total for creating and serializing project graph' 0.15160000324249268ms
+[NX Daemon Server] - 2023-12-05T23:49:30.732Z - Done responding to the client project-graph
+[NX Daemon Server] - 2023-12-05T23:49:30.732Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 2.
+[NX Daemon Server] - 2023-12-05T23:49:30.770Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX Daemon Server] - 2023-12-05T23:49:30.770Z - Done responding to the client handleHashTasks
+[NX Daemon Server] - 2023-12-05T23:49:30.771Z - Handled HASH_TASKS. Handling time: 4. Response time: 1.
+[NX Daemon Server] - 2023-12-05T23:49:35.234Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-05T23:49:46.440Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-05T23:49:47.034Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.ts was modified
+[NX Daemon Server] - 2023-12-05T23:49:47.035Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-05T23:49:47.170Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-05T23:49:47.170Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.ts
+[NX Daemon Server] - 2023-12-05T23:49:47.170Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-05T23:49:47.326Z - Time taken for 'hash changed files from watcher' 1.6445000171661377ms
+[NX Daemon Server] - 2023-12-05T23:49:53.937Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-05T23:49:56.787Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-05T23:49:58.347Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-05T23:49:58.412Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-05T23:53:08.251Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.ts was modified
+[NX Daemon Server] - 2023-12-05T23:53:08.251Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-05T23:53:08.488Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-05T23:53:08.488Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.ts
+[NX Daemon Server] - 2023-12-05T23:53:08.488Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-05T23:53:08.608Z - Time taken for 'hash changed files from watcher' 1.4936000108718872ms
+[NX Daemon Server] - 2023-12-05T23:53:09.268Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-05T23:53:10.660Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-05T23:53:10.724Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T00:46:28.850Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T00:46:28.863Z - [WATCHER]: 2 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2023-12-06T00:46:28.926Z - [WATCHER]: 2 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2023-12-06T00:46:28.927Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T00:46:29.096Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T00:46:29.096Z - [REQUEST]: frontend/ui/components/molecules/chip-select/chip.component.html,frontend/ui/components/molecules/chip-select/chip.component.scss,frontend/ui/components/molecules/chip-select/chip.component.ts,frontend/ui/components/molecules/chip-select/chip.interface.ts
+[NX Daemon Server] - 2023-12-06T00:46:29.096Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T00:46:29.647Z - Time taken for 'hash changed files from watcher' 10.747599959373474ms
+[NX Daemon Server] - 2023-12-06T00:46:40.134Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-06T00:46:40.134Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T00:46:40.265Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T00:46:40.265Z - [REQUEST]: frontend/ui/components/molecules/chip-select/chip-select.component.html
+[NX Daemon Server] - 2023-12-06T00:46:40.265Z - [REQUEST]: frontend/ui/components/molecules/chip-select/chip.component.html
+[NX Daemon Server] - 2023-12-06T00:46:40.355Z - Time taken for 'hash changed files from watcher' 1.228600025177002ms
+[NX Daemon Server] - 2023-12-06T00:46:45.936Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T00:46:45.937Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-06T00:46:46.063Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T00:46:46.063Z - [REQUEST]: frontend/ui/components/molecules/chip-select/chip-select.component.scss
+[NX Daemon Server] - 2023-12-06T00:46:46.063Z - [REQUEST]: frontend/ui/components/molecules/chip-select/chip.component.scss
+[NX Daemon Server] - 2023-12-06T00:46:46.159Z - Time taken for 'hash changed files from watcher' 1.2733999490737915ms
+[NX Daemon Server] - 2023-12-06T00:46:58.559Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-06T00:46:58.559Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T00:46:58.689Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T00:46:58.689Z - [REQUEST]: frontend/ui/components/molecules/chip-select/chip-select.component.ts
+[NX Daemon Server] - 2023-12-06T00:46:58.689Z - [REQUEST]: frontend/ui/components/molecules/chip-select/chip.component.ts
+[NX Daemon Server] - 2023-12-06T00:46:58.789Z - Time taken for 'hash changed files from watcher' 1.2571001052856445ms
+[NX Daemon Server] - 2023-12-06T00:47:09.479Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-06T00:47:09.480Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T00:47:09.609Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T00:47:09.609Z - [REQUEST]: frontend/ui/components/molecules/chip-select/chip-select.interface.ts
+[NX Daemon Server] - 2023-12-06T00:47:09.609Z - [REQUEST]: frontend/ui/components/molecules/chip-select/chip.interface.ts
+[NX Daemon Server] - 2023-12-06T00:47:09.710Z - Time taken for 'hash changed files from watcher' 1.6878000497817993ms
+[NX Daemon Server] - 2023-12-06T00:47:49.009Z - [WATCHER]: frontend/ui/components/molecules/chip-select/chip-select.interface.ts was modified
+[NX Daemon Server] - 2023-12-06T00:47:49.009Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T00:47:49.232Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T00:47:49.232Z - [REQUEST]: frontend/ui/components/molecules/chip-select/chip-select.interface.ts
+[NX Daemon Server] - 2023-12-06T00:47:49.232Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T00:47:49.336Z - Time taken for 'hash changed files from watcher' 1.2555999755859375ms
+[NX Daemon Server] - 2023-12-06T00:48:04.288Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T00:48:04.289Z - [WATCHER]: frontend/ui/components/molecules/chip-select/chip-select.component.ts was modified
+[NX Daemon Server] - 2023-12-06T00:48:04.715Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T00:48:04.715Z - [REQUEST]: frontend/ui/components/molecules/chip-select/chip-select.component.ts
+[NX Daemon Server] - 2023-12-06T00:48:04.715Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T00:48:04.815Z - Time taken for 'hash changed files from watcher' 1.0976999998092651ms
+[NX Daemon Server] - 2023-12-06T00:48:11.780Z - [WATCHER]: frontend/ui/components/molecules/chip-select/chip-select.component.ts was modified
+[NX Daemon Server] - 2023-12-06T00:48:11.780Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T00:48:12.616Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T00:48:12.617Z - [REQUEST]: frontend/ui/components/molecules/chip-select/chip-select.component.ts
+[NX Daemon Server] - 2023-12-06T00:48:12.617Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T00:48:12.713Z - Time taken for 'hash changed files from watcher' 1.372999906539917ms
+[NX Daemon Server] - 2023-12-06T00:50:12.613Z - [WATCHER]: 3 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2023-12-06T00:50:12.613Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T00:50:12.741Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T00:50:12.741Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-circle-check/icon-circle-arrow-left.component.html,frontend/ui/components/atoms/icons/icon-circle-check/icon-circle-arrow-left.component.ts,frontend/ui/components/atoms/icons/icon-circle-check/icon-circle-arrow-left.component.scss
+[NX Daemon Server] - 2023-12-06T00:50:12.741Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T00:50:12.834Z - Time taken for 'hash changed files from watcher' 1.4455000162124634ms
+[NX Daemon Server] - 2023-12-06T00:50:23.005Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-06T00:50:23.005Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T00:50:23.136Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T00:50:23.137Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-circle-check/icon-circle-check.component.html
+[NX Daemon Server] - 2023-12-06T00:50:23.137Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-circle-check/icon-circle-arrow-left.component.html
+[NX Daemon Server] - 2023-12-06T00:50:23.230Z - Time taken for 'hash changed files from watcher' 1.606600046157837ms
+[NX Daemon Server] - 2023-12-06T00:50:29.219Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T00:50:29.220Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-06T00:50:29.349Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T00:50:29.349Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-circle-check/icon-circle-check.component.scss
+[NX Daemon Server] - 2023-12-06T00:50:29.349Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-circle-check/icon-circle-arrow-left.component.scss
+[NX Daemon Server] - 2023-12-06T00:50:29.436Z - Time taken for 'hash changed files from watcher' 1.552899956703186ms
+[NX Daemon Server] - 2023-12-06T00:50:35.583Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-06T00:50:35.584Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T00:50:35.712Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T00:50:35.712Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-circle-check/icon-circle-check.component.ts
+[NX Daemon Server] - 2023-12-06T00:50:35.712Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-circle-check/icon-circle-arrow-left.component.ts
+[NX Daemon Server] - 2023-12-06T00:50:35.800Z - Time taken for 'hash changed files from watcher' 1.2984999418258667ms
+[NX Daemon Server] - 2023-12-06T00:50:56.406Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T00:50:56.407Z - [WATCHER]: frontend/ui/components/atoms/icons/icon-circle-check/icon-circle-check.component.ts was modified
+[NX Daemon Server] - 2023-12-06T00:50:56.630Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T00:50:56.631Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-circle-check/icon-circle-check.component.ts
+[NX Daemon Server] - 2023-12-06T00:50:56.631Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T00:50:56.728Z - Time taken for 'hash changed files from watcher' 1.4244999885559082ms
+[NX Daemon Server] - 2023-12-06T00:51:07.032Z - [WATCHER]: frontend/ui/components/atoms/icons/icon-circle-check/icon-circle-check.component.ts was modified
+[NX Daemon Server] - 2023-12-06T00:51:07.033Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T00:51:07.455Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T00:51:07.455Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-circle-check/icon-circle-check.component.ts
+[NX Daemon Server] - 2023-12-06T00:51:07.455Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T00:51:07.537Z - Time taken for 'hash changed files from watcher' 1.6044000387191772ms
+[NX Daemon Server] - 2023-12-06T00:51:37.057Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T00:51:37.059Z - [WATCHER]: frontend/app/src/assets/svg/icon-circle-check.svg was deleted
+[NX Daemon Server] - 2023-12-06T00:51:37.152Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T00:51:37.153Z - [WATCHER]: frontend/app/src/assets/svg/icon-circle-check.svg was created or restored
+[NX Daemon Server] - 2023-12-06T00:51:37.894Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T00:51:37.894Z - [REQUEST]: frontend/app/src/assets/svg/icon-circle-check.svg
+[NX Daemon Server] - 2023-12-06T00:51:37.894Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T00:51:37.999Z - Time taken for 'hash changed files from watcher' 1.5435999631881714ms
+[NX Daemon Server] - 2023-12-06T00:51:39.740Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T00:51:39.804Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T00:52:46.374Z - [WATCHER]: frontend/ui/components/atoms/icons/icon-circle-check/icon-circle-check.component.html was modified
+[NX Daemon Server] - 2023-12-06T00:52:46.374Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T00:52:46.610Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T00:52:46.610Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-circle-check/icon-circle-check.component.html
+[NX Daemon Server] - 2023-12-06T00:52:46.610Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T00:52:46.707Z - Time taken for 'hash changed files from watcher' 1.3108000755310059ms
+[NX Daemon Server] - 2023-12-06T00:53:15.336Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T00:53:15.337Z - [WATCHER]: frontend/ui/components/atoms/icons/icon-circle-check/icon-circle-check.component.scss was modified
+[NX Daemon Server] - 2023-12-06T00:53:15.767Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T00:53:15.767Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-circle-check/icon-circle-check.component.scss
+[NX Daemon Server] - 2023-12-06T00:53:15.767Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T00:53:15.867Z - Time taken for 'hash changed files from watcher' 2.2417999505996704ms
+[NX Daemon Server] - 2023-12-06T00:53:31.913Z - [WATCHER]: frontend/ui/components/atoms/icons/icon-circle-check/icon-circle-check.component.html was modified
+[NX Daemon Server] - 2023-12-06T00:53:31.914Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T00:53:32.749Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T00:53:32.749Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-circle-check/icon-circle-check.component.html
+[NX Daemon Server] - 2023-12-06T00:53:32.749Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T00:53:32.837Z - Time taken for 'hash changed files from watcher' 1.9424000978469849ms
+[NX Daemon Server] - 2023-12-06T00:53:36.063Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T00:53:36.064Z - [WATCHER]: frontend/ui/components/atoms/icons/icon-circle-check/icon-circle-check.component.scss was modified
+[NX Daemon Server] - 2023-12-06T00:53:37.688Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T00:53:37.688Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-circle-check/icon-circle-check.component.scss
+[NX Daemon Server] - 2023-12-06T00:53:37.688Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T00:53:37.745Z - Time taken for 'hash changed files from watcher' 1.420300006866455ms
+[NX Daemon Server] - 2023-12-06T00:54:03.424Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T00:54:03.426Z - [WATCHER]: frontend/ui/components/atoms/icons/index.ts was modified
+[NX Daemon Server] - 2023-12-06T00:54:05.686Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T00:54:05.761Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T00:54:06.670Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T00:54:06.670Z - [REQUEST]: frontend/ui/components/atoms/icons/index.ts
+[NX Daemon Server] - 2023-12-06T00:54:06.670Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T00:54:06.815Z - Time taken for 'hash changed files from watcher' 2.035199999809265ms
+[NX Daemon Server] - 2023-12-06T00:54:07.151Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T00:54:18.515Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T00:54:18.517Z - [WATCHER]: frontend/ui/components/molecules/chip-select/chip-select.component.ts was modified
+[NX Daemon Server] - 2023-12-06T00:54:24.427Z - [WATCHER]: frontend/ui/components/molecules/chip-select/chip-select.component.ts was modified
+[NX Daemon Server] - 2023-12-06T00:54:24.427Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T00:54:24.949Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T00:54:24.949Z - [REQUEST]: frontend/ui/components/molecules/chip-select/chip-select.component.ts
+[NX Daemon Server] - 2023-12-06T00:54:24.949Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T00:54:25.039Z - Time taken for 'hash changed files from watcher' 1.5501999855041504ms
+[NX Daemon Server] - 2023-12-06T00:54:37.139Z - [WATCHER]: frontend/ui/components/molecules/chip-select/chip-select.interface.ts was modified
+[NX Daemon Server] - 2023-12-06T00:54:37.139Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T00:54:43.565Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T00:54:43.565Z - [REQUEST]: frontend/ui/components/molecules/chip-select/chip-select.interface.ts
+[NX Daemon Server] - 2023-12-06T00:54:43.565Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T00:54:43.655Z - Time taken for 'hash changed files from watcher' 1.4945999383926392ms
+[NX Daemon Server] - 2023-12-06T00:54:44.603Z - [WATCHER]: frontend/ui/components/molecules/chip-select/chip-select.component.ts was modified
+[NX Daemon Server] - 2023-12-06T00:54:44.603Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T00:54:51.031Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T00:54:51.031Z - [REQUEST]: frontend/ui/components/molecules/chip-select/chip-select.component.ts
+[NX Daemon Server] - 2023-12-06T00:54:51.031Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T00:54:51.126Z - Time taken for 'hash changed files from watcher' 1.354099988937378ms
+[NX Daemon Server] - 2023-12-06T00:55:32.772Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T00:55:32.774Z - [WATCHER]: frontend/ui/components/molecules/chip-select/chip-select.component.html was modified
+[NX Daemon Server] - 2023-12-06T00:55:39.199Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T00:55:39.199Z - [REQUEST]: frontend/ui/components/molecules/chip-select/chip-select.component.html
+[NX Daemon Server] - 2023-12-06T00:55:39.199Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T00:55:39.293Z - Time taken for 'hash changed files from watcher' 1.2659999132156372ms
+[NX Daemon Server] - 2023-12-06T00:55:40.580Z - [WATCHER]: frontend/ui/components/molecules/chip-select/chip-select.component.scss was modified
+[NX Daemon Server] - 2023-12-06T00:55:40.580Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T00:55:47.007Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T00:55:47.007Z - [REQUEST]: frontend/ui/components/molecules/chip-select/chip-select.component.scss
+[NX Daemon Server] - 2023-12-06T00:55:47.007Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T00:55:47.099Z - Time taken for 'hash changed files from watcher' 1.1880000829696655ms
+[NX Daemon Server] - 2023-12-06T00:55:56.372Z - [WATCHER]: frontend/ui/components/molecules/chip-select/chip-select.component.scss was modified
+[NX Daemon Server] - 2023-12-06T00:55:56.373Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T00:56:02.799Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T00:56:02.799Z - [REQUEST]: frontend/ui/components/molecules/chip-select/chip-select.component.scss
+[NX Daemon Server] - 2023-12-06T00:56:02.799Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T00:56:02.884Z - Time taken for 'hash changed files from watcher' 1.9086999893188477ms
+[NX Daemon Server] - 2023-12-06T00:56:05.638Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T00:56:05.639Z - [WATCHER]: frontend/ui/components/molecules/chip-select/chip-select.component.scss was modified
+[NX Daemon Server] - 2023-12-06T00:56:12.065Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T00:56:12.065Z - [REQUEST]: frontend/ui/components/molecules/chip-select/chip-select.component.scss
+[NX Daemon Server] - 2023-12-06T00:56:12.065Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T00:56:12.149Z - Time taken for 'hash changed files from watcher' 1.9995999336242676ms
+[NX Daemon Server] - 2023-12-06T00:58:11.743Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T00:58:11.744Z - [WATCHER]: frontend/ui/components/molecules/chip-select/chip-select.component.html was modified
+[NX Daemon Server] - 2023-12-06T00:58:18.175Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T00:58:18.175Z - [REQUEST]: frontend/ui/components/molecules/chip-select/chip-select.component.html
+[NX Daemon Server] - 2023-12-06T00:58:18.175Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T00:58:18.257Z - Time taken for 'hash changed files from watcher' 1.5128999948501587ms
+[NX Daemon Server] - 2023-12-06T00:59:59.056Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T00:59:59.057Z - [WATCHER]: frontend/ui/components/molecules/chip-select/chip-select.component.ts was modified
+[NX Daemon Server] - 2023-12-06T01:00:05.483Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T01:00:05.483Z - [REQUEST]: frontend/ui/components/molecules/chip-select/chip-select.component.ts
+[NX Daemon Server] - 2023-12-06T01:00:05.483Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T01:00:05.577Z - Time taken for 'hash changed files from watcher' 1.1771000623703003ms
+[NX Daemon Server] - 2023-12-06T01:00:07.848Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:00:07.849Z - [WATCHER]: frontend/ui/components/molecules/chip-select/chip-select.interface.ts was modified
+[NX Daemon Server] - 2023-12-06T01:00:14.288Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T01:00:14.288Z - [REQUEST]: frontend/ui/components/molecules/chip-select/chip-select.interface.ts
+[NX Daemon Server] - 2023-12-06T01:00:14.288Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T01:00:14.374Z - Time taken for 'hash changed files from watcher' 2.037899971008301ms
+[NX Daemon Server] - 2023-12-06T01:01:49.072Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:01:49.074Z - [WATCHER]: frontend/ui/components/molecules/chip-select/chip-select.component.html was modified
+[NX Daemon Server] - 2023-12-06T01:01:55.508Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T01:01:55.508Z - [REQUEST]: frontend/ui/components/molecules/chip-select/chip-select.component.html
+[NX Daemon Server] - 2023-12-06T01:01:55.508Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T01:01:55.587Z - Time taken for 'hash changed files from watcher' 2.038800001144409ms
+[NX Daemon Server] - 2023-12-06T01:05:17.093Z - [WATCHER]: frontend/ui/components/molecules/chip-select/chip-select.component.ts was modified
+[NX Daemon Server] - 2023-12-06T01:05:17.093Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:05:23.183Z - [WATCHER]: frontend/ui/components/molecules/chip-select/chip-select.interface.ts was modified
+[NX Daemon Server] - 2023-12-06T01:05:23.183Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:05:23.516Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T01:05:23.516Z - [REQUEST]: frontend/ui/components/molecules/chip-select/chip-select.component.ts,frontend/ui/components/molecules/chip-select/chip-select.interface.ts
+[NX Daemon Server] - 2023-12-06T01:05:23.516Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T01:05:23.608Z - Time taken for 'hash changed files from watcher' 1.5987000465393066ms
+[NX Daemon Server] - 2023-12-06T01:05:51.368Z - [WATCHER]: frontend/ui/components/molecules/chip-select/chip-select.interface.ts was modified
+[NX Daemon Server] - 2023-12-06T01:05:51.368Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:05:57.803Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T01:05:57.803Z - [REQUEST]: frontend/ui/components/molecules/chip-select/chip-select.interface.ts
+[NX Daemon Server] - 2023-12-06T01:05:57.803Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T01:05:57.893Z - Time taken for 'hash changed files from watcher' 1.9844000339508057ms
+[NX Daemon Server] - 2023-12-06T01:22:58.860Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:22:58.862Z - [WATCHER]: 3 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2023-12-06T01:22:58.998Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T01:22:58.998Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/social-networks.component.html,frontend/app/src/modules/user-profile/components/organism/areas/social-networks.component.scss,frontend/app/src/modules/user-profile/components/organism/areas/social-networks.component.ts
+[NX Daemon Server] - 2023-12-06T01:22:58.998Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T01:22:59.111Z - Time taken for 'hash changed files from watcher' 2.1345999240875244ms
+[NX Daemon Server] - 2023-12-06T01:23:01.249Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:23:01.311Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:23:07.799Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:23:07.800Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-06T01:23:07.931Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T01:23:07.931Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.html
+[NX Daemon Server] - 2023-12-06T01:23:07.932Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/social-networks.component.html
+[NX Daemon Server] - 2023-12-06T01:23:08.015Z - Time taken for 'hash changed files from watcher' 1.1861000061035156ms
+[NX Daemon Server] - 2023-12-06T01:23:15.975Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:23:15.976Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-06T01:23:16.103Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T01:23:16.103Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.scss
+[NX Daemon Server] - 2023-12-06T01:23:16.103Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/social-networks.component.scss
+[NX Daemon Server] - 2023-12-06T01:23:16.183Z - Time taken for 'hash changed files from watcher' 1.3106000423431396ms
+[NX Daemon Server] - 2023-12-06T01:23:17.542Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:23:30.263Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-06T01:23:30.263Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:23:30.394Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T01:23:30.394Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts
+[NX Daemon Server] - 2023-12-06T01:23:30.394Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/social-networks.component.ts
+[NX Daemon Server] - 2023-12-06T01:23:30.487Z - Time taken for 'hash changed files from watcher' 1.9275000095367432ms
+[NX Daemon Server] - 2023-12-06T01:24:21.704Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts was modified
+[NX Daemon Server] - 2023-12-06T01:24:21.704Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:24:21.923Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T01:24:21.923Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts
+[NX Daemon Server] - 2023-12-06T01:24:21.923Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T01:24:22.020Z - Time taken for 'hash changed files from watcher' 1.3172999620437622ms
+[NX Daemon Server] - 2023-12-06T01:24:23.542Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:25:15.947Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:25:15.949Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.html was modified
+[NX Daemon Server] - 2023-12-06T01:25:16.372Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T01:25:16.372Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.html
+[NX Daemon Server] - 2023-12-06T01:25:16.372Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T01:25:16.477Z - Time taken for 'hash changed files from watcher' 1.3324999809265137ms
+[NX Daemon Server] - 2023-12-06T01:25:17.742Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:25:34.357Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:25:34.358Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.html was modified
+[NX Daemon Server] - 2023-12-06T01:25:35.193Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T01:25:35.193Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.html
+[NX Daemon Server] - 2023-12-06T01:25:35.193Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T01:25:35.282Z - Time taken for 'hash changed files from watcher' 1.2081999778747559ms
+[NX Daemon Server] - 2023-12-06T01:25:36.133Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:41:05.302Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:41:09.934Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:41:09.935Z - [WATCHER]: frontend/app/src/modules/user-profile/constants/areas.ts was created or restored
+[NX Daemon Server] - 2023-12-06T01:41:10.067Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T01:41:10.067Z - [REQUEST]: frontend/app/src/modules/user-profile/constants/areas.ts
+[NX Daemon Server] - 2023-12-06T01:41:10.067Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T01:41:10.200Z - Time taken for 'hash changed files from watcher' 1.6929000616073608ms
+[NX Daemon Server] - 2023-12-06T01:41:11.650Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:41:13.146Z - [WATCHER]: frontend/app/src/modules/user-profile/constants/areas.ts was modified
+[NX Daemon Server] - 2023-12-06T01:41:13.146Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:41:13.368Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T01:41:13.369Z - [REQUEST]: frontend/app/src/modules/user-profile/constants/areas.ts
+[NX Daemon Server] - 2023-12-06T01:41:13.369Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T01:41:13.466Z - Time taken for 'hash changed files from watcher' 1.9987000226974487ms
+[NX Daemon Server] - 2023-12-06T01:41:14.795Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:41:19.953Z - [WATCHER]: frontend/app/src/modules/user-profile/constants/areas.ts was modified
+[NX Daemon Server] - 2023-12-06T01:41:19.953Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:41:20.379Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T01:41:20.379Z - [REQUEST]: frontend/app/src/modules/user-profile/constants/areas.ts
+[NX Daemon Server] - 2023-12-06T01:41:20.379Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T01:41:20.465Z - Time taken for 'hash changed files from watcher' 1.2954000234603882ms
+[NX Daemon Server] - 2023-12-06T01:41:21.548Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:41:34.068Z - [WATCHER]: frontend/app/src/modules/user-profile/constants/index.ts was created or restored
+[NX Daemon Server] - 2023-12-06T01:41:34.068Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:41:34.208Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T01:41:34.208Z - [REQUEST]: frontend/app/src/modules/user-profile/constants/index.ts
+[NX Daemon Server] - 2023-12-06T01:41:34.208Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T01:41:34.315Z - Time taken for 'hash changed files from watcher' 2.4836000204086304ms
+[NX Daemon Server] - 2023-12-06T01:41:35.801Z - [WATCHER]: frontend/app/src/modules/user-profile/constants/index.ts was modified
+[NX Daemon Server] - 2023-12-06T01:41:35.801Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:41:36.034Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T01:41:36.034Z - [REQUEST]: frontend/app/src/modules/user-profile/constants/index.ts
+[NX Daemon Server] - 2023-12-06T01:41:36.034Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T01:41:36.122Z - Time taken for 'hash changed files from watcher' 1.3680999279022217ms
+[NX Daemon Server] - 2023-12-06T01:41:37.444Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:43:23.749Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:43:23.750Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts was modified
+[NX Daemon Server] - 2023-12-06T01:43:24.173Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T01:43:24.173Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts
+[NX Daemon Server] - 2023-12-06T01:43:24.173Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T01:43:24.262Z - Time taken for 'hash changed files from watcher' 1.517899990081787ms
+[NX Daemon Server] - 2023-12-06T01:43:25.561Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:47:00.508Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:47:00.509Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts was modified
+[NX Daemon Server] - 2023-12-06T01:47:01.344Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T01:47:01.344Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts
+[NX Daemon Server] - 2023-12-06T01:47:01.344Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T01:47:01.455Z - Time taken for 'hash changed files from watcher' 1.7994999885559082ms
+[NX Daemon Server] - 2023-12-06T01:47:03.933Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:47:11.213Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:47:11.214Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts was modified
+[NX Daemon Server] - 2023-12-06T01:47:12.851Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T01:47:12.851Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts
+[NX Daemon Server] - 2023-12-06T01:47:12.851Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T01:47:12.921Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:47:12.921Z - Time taken for 'hash changed files from watcher' 1.3411999940872192ms
+[NX Daemon Server] - 2023-12-06T01:48:53.627Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts was modified
+[NX Daemon Server] - 2023-12-06T01:48:53.627Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:48:55.437Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:48:56.857Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T01:48:56.857Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts
+[NX Daemon Server] - 2023-12-06T01:48:56.857Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T01:48:56.942Z - Time taken for 'hash changed files from watcher' 1.4864000082015991ms
+[NX Daemon Server] - 2023-12-06T01:52:00.923Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:52:02.453Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:52:02.454Z - [WATCHER]: 3 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2023-12-06T01:52:02.516Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:52:02.517Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/area-select/areas.component.ts was modified
+[NX Daemon Server] - 2023-12-06T01:52:02.586Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T01:52:02.586Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/area-select/areas.component.scss,frontend/app/src/modules/user-profile/components/organism/area-select/areas.component.ts,frontend/app/src/modules/user-profile/components/organism/area-select/areas.component.html
+[NX Daemon Server] - 2023-12-06T01:52:02.586Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T01:52:02.685Z - Time taken for 'hash changed files from watcher' 1.9257999658584595ms
+[NX Daemon Server] - 2023-12-06T01:52:04.143Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:52:12.195Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-06T01:52:12.195Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:52:12.322Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T01:52:12.322Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.html
+[NX Daemon Server] - 2023-12-06T01:52:12.322Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/area-select/areas.component.html
+[NX Daemon Server] - 2023-12-06T01:52:12.407Z - Time taken for 'hash changed files from watcher' 1.3212000131607056ms
+[NX Daemon Server] - 2023-12-06T01:52:13.767Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:52:16.563Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:52:16.564Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-06T01:52:16.695Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T01:52:16.695Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.scss
+[NX Daemon Server] - 2023-12-06T01:52:16.695Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/area-select/areas.component.scss
+[NX Daemon Server] - 2023-12-06T01:52:16.779Z - Time taken for 'hash changed files from watcher' 1.6746999025344849ms
+[NX Daemon Server] - 2023-12-06T01:52:18.109Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:52:21.336Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:52:21.337Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-06T01:52:21.473Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T01:52:21.473Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.ts
+[NX Daemon Server] - 2023-12-06T01:52:21.473Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/area-select/areas.component.ts
+[NX Daemon Server] - 2023-12-06T01:52:21.582Z - Time taken for 'hash changed files from watcher' 1.3873000144958496ms
+[NX Daemon Server] - 2023-12-06T01:52:22.951Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:53:36.774Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts was modified
+[NX Daemon Server] - 2023-12-06T01:53:36.774Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:53:36.996Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T01:53:36.996Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts
+[NX Daemon Server] - 2023-12-06T01:53:36.996Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T01:53:37.077Z - Time taken for 'hash changed files from watcher' 1.3693000078201294ms
+[NX Daemon Server] - 2023-12-06T01:53:38.544Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:53:43.537Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:53:43.539Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.ts was modified
+[NX Daemon Server] - 2023-12-06T01:53:43.971Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T01:53:43.972Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.ts
+[NX Daemon Server] - 2023-12-06T01:53:43.972Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T01:53:44.070Z - Time taken for 'hash changed files from watcher' 1.6823999881744385ms
+[NX Daemon Server] - 2023-12-06T01:53:45.196Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:53:56.508Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:53:56.509Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.ts was modified
+[NX Daemon Server] - 2023-12-06T01:53:57.328Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T01:53:57.328Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.ts
+[NX Daemon Server] - 2023-12-06T01:53:57.328Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T01:53:57.413Z - Time taken for 'hash changed files from watcher' 1.3605999946594238ms
+[NX Daemon Server] - 2023-12-06T01:53:58.265Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:55:14.206Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.ts was modified
+[NX Daemon Server] - 2023-12-06T01:55:14.206Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:55:15.827Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T01:55:15.827Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.ts
+[NX Daemon Server] - 2023-12-06T01:55:15.827Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T01:55:15.924Z - Time taken for 'hash changed files from watcher' 1.4528000354766846ms
+[NX Daemon Server] - 2023-12-06T01:55:15.997Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:57:31.438Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.ts was modified
+[NX Daemon Server] - 2023-12-06T01:57:31.438Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:57:32.524Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.html was modified
+[NX Daemon Server] - 2023-12-06T01:57:32.524Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:57:34.227Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:57:34.675Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T01:57:34.675Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.ts,frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.html
+[NX Daemon Server] - 2023-12-06T01:57:34.675Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T01:57:34.786Z - Time taken for 'hash changed files from watcher' 2.170300006866455ms
+[NX Daemon Server] - 2023-12-06T01:58:39.607Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:58:39.608Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts was modified
+[NX Daemon Server] - 2023-12-06T01:58:41.431Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:58:46.038Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T01:58:46.038Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts
+[NX Daemon Server] - 2023-12-06T01:58:46.038Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T01:58:46.128Z - Time taken for 'hash changed files from watcher' 1.3395999670028687ms
+[NX Daemon Server] - 2023-12-06T01:58:46.291Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:58:46.292Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.ts was modified
+[NX Daemon Server] - 2023-12-06T01:58:47.965Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T01:58:52.748Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T01:58:52.749Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.ts
+[NX Daemon Server] - 2023-12-06T01:58:52.749Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T01:58:52.855Z - Time taken for 'hash changed files from watcher' 2.596100091934204ms
+[NX Daemon Server] - 2023-12-06T02:00:30.671Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T02:00:30.672Z - [WATCHER]: frontend/ui/components/molecules/chip-select/chip-select.component.ts was modified
+[NX Daemon Server] - 2023-12-06T02:00:37.106Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T02:00:37.106Z - [REQUEST]: frontend/ui/components/molecules/chip-select/chip-select.component.ts
+[NX Daemon Server] - 2023-12-06T02:00:37.106Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T02:00:37.195Z - Time taken for 'hash changed files from watcher' 1.9460999965667725ms
+[NX Daemon Server] - 2023-12-06T02:01:07.591Z - [WATCHER]: frontend/ui/components/index.ts was modified
+[NX Daemon Server] - 2023-12-06T02:01:07.591Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T02:01:09.981Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T02:01:10.044Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T02:01:11.433Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T02:01:14.025Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T02:01:14.025Z - [REQUEST]: frontend/ui/components/index.ts
+[NX Daemon Server] - 2023-12-06T02:01:14.025Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T02:01:14.115Z - Time taken for 'hash changed files from watcher' 1.1899000406265259ms
+[NX Daemon Server] - 2023-12-06T02:01:28.047Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.ts was modified
+[NX Daemon Server] - 2023-12-06T02:01:28.047Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T02:01:30.011Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T02:01:34.481Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T02:01:34.481Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.ts
+[NX Daemon Server] - 2023-12-06T02:01:34.481Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T02:01:34.569Z - Time taken for 'hash changed files from watcher' 1.261299967765808ms
+[NX Daemon Server] - 2023-12-06T02:04:58.865Z - [WATCHER]: frontend/ui/components/molecules/chip-select/chip-select.component.ts was modified
+[NX Daemon Server] - 2023-12-06T02:04:58.865Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T02:04:59.537Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T02:05:00.828Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T02:05:05.296Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T02:05:05.296Z - [REQUEST]: frontend/ui/components/molecules/chip-select/chip-select.component.ts
+[NX Daemon Server] - 2023-12-06T02:05:05.296Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T02:05:05.385Z - Time taken for 'hash changed files from watcher' 1.4473000764846802ms
+[NX Daemon Server] - 2023-12-06T02:07:30.531Z - [WATCHER]: frontend/ui/components/molecules/chip-select/chip-select.interface.ts was modified
+[NX Daemon Server] - 2023-12-06T02:07:30.531Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T02:07:31.548Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T02:07:32.821Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T02:07:36.963Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T02:07:36.964Z - [REQUEST]: frontend/ui/components/molecules/chip-select/chip-select.interface.ts
+[NX Daemon Server] - 2023-12-06T02:07:36.964Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T02:07:37.045Z - Time taken for 'hash changed files from watcher' 2.16349995136261ms
+[NX Daemon Server] - 2023-12-06T02:07:53.265Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T02:07:53.266Z - [WATCHER]: frontend/ui/components/molecules/chip-select/chip-select.component.html was modified
+[NX Daemon Server] - 2023-12-06T02:07:53.860Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T02:07:55.145Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T02:07:55.204Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T02:07:59.702Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T02:07:59.702Z - [REQUEST]: frontend/ui/components/molecules/chip-select/chip-select.component.html
+[NX Daemon Server] - 2023-12-06T02:07:59.702Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T02:07:59.787Z - Time taken for 'hash changed files from watcher' 1.6656999588012695ms
+[NX Daemon Server] - 2023-12-06T02:08:12.844Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T02:08:12.845Z - [WATCHER]: frontend/ui/components/molecules/chip-select/chip-select.component.ts was modified
+[NX Daemon Server] - 2023-12-06T02:08:13.690Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T02:08:15.088Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T02:08:19.279Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T02:08:19.279Z - [REQUEST]: frontend/ui/components/molecules/chip-select/chip-select.component.ts
+[NX Daemon Server] - 2023-12-06T02:08:19.279Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T02:08:19.364Z - Time taken for 'hash changed files from watcher' 2.3391000032424927ms
+[NX Daemon Server] - 2023-12-06T02:08:39.746Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T02:08:39.748Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.html was modified
+[NX Daemon Server] - 2023-12-06T02:08:41.605Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T02:08:46.179Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T02:08:46.179Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.html
+[NX Daemon Server] - 2023-12-06T02:08:46.179Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T02:08:46.265Z - Time taken for 'hash changed files from watcher' 1.3321000337600708ms
+[NX Daemon Server] - 2023-12-06T02:10:11.159Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T02:10:11.160Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.ts was modified
+[NX Daemon Server] - 2023-12-06T02:10:13.042Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T02:10:17.590Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T02:10:17.590Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.ts
+[NX Daemon Server] - 2023-12-06T02:10:17.590Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T02:10:17.684Z - Time taken for 'hash changed files from watcher' 1.2062000036239624ms
+[NX Daemon Server] - 2023-12-06T02:11:32.658Z - [WATCHER]: frontend/app/src/modules/user-profile/constants/areas.ts was modified
+[NX Daemon Server] - 2023-12-06T02:11:32.658Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T02:11:34.451Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T02:11:39.083Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T02:11:39.083Z - [REQUEST]: frontend/app/src/modules/user-profile/constants/areas.ts
+[NX Daemon Server] - 2023-12-06T02:11:39.083Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T02:11:39.174Z - Time taken for 'hash changed files from watcher' 1.204300045967102ms
+[NX Daemon Server] - 2023-12-06T02:22:03.555Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T02:22:03.557Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.html was modified
+[NX Daemon Server] - 2023-12-06T02:22:05.309Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T02:22:10.009Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T02:22:10.009Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.html
+[NX Daemon Server] - 2023-12-06T02:22:10.009Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T02:22:10.165Z - Time taken for 'hash changed files from watcher' 2.6604000329971313ms
+[NX Daemon Server] - 2023-12-06T02:26:13.557Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.ts was modified
+[NX Daemon Server] - 2023-12-06T02:26:13.557Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T02:26:15.422Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T02:26:19.986Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T02:26:19.986Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.ts
+[NX Daemon Server] - 2023-12-06T02:26:19.986Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T02:26:20.071Z - Time taken for 'hash changed files from watcher' 1.2633999586105347ms
+[NX Daemon Server] - 2023-12-06T02:29:19.742Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T02:29:19.743Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.ts was modified
+[NX Daemon Server] - 2023-12-06T02:29:21.585Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T02:29:26.168Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T02:29:26.168Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.ts
+[NX Daemon Server] - 2023-12-06T02:29:26.168Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T02:29:26.252Z - Time taken for 'hash changed files from watcher' 1.2767000198364258ms
+[NX Daemon Server] - 2023-12-06T02:31:04.509Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T02:31:04.510Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.ts was modified
+[NX Daemon Server] - 2023-12-06T02:31:06.282Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T02:31:10.937Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T02:31:10.937Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.ts
+[NX Daemon Server] - 2023-12-06T02:31:10.937Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T02:31:11.026Z - Time taken for 'hash changed files from watcher' 1.6711000204086304ms
+[NX Daemon Server] - 2023-12-06T02:35:05.128Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.ts was modified
+[NX Daemon Server] - 2023-12-06T02:35:05.128Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T02:35:06.883Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T02:35:11.551Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T02:35:11.551Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.ts
+[NX Daemon Server] - 2023-12-06T02:35:11.551Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T02:35:11.640Z - Time taken for 'hash changed files from watcher' 1.3695999383926392ms
+[NX Daemon Server] - 2023-12-06T02:35:22.762Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T02:35:22.763Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.html was modified
+[NX Daemon Server] - 2023-12-06T02:35:24.470Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T02:35:29.193Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T02:35:29.193Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.html
+[NX Daemon Server] - 2023-12-06T02:35:29.193Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T02:35:29.275Z - Time taken for 'hash changed files from watcher' 2.2655999660491943ms
+[NX Daemon Server] - 2023-12-06T02:36:00.667Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.html was modified
+[NX Daemon Server] - 2023-12-06T02:36:00.667Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T02:36:02.882Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T02:36:07.091Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T02:36:07.091Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.html
+[NX Daemon Server] - 2023-12-06T02:36:07.091Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T02:36:07.173Z - Time taken for 'hash changed files from watcher' 1.269700050354004ms
+[NX Daemon Server] - 2023-12-06T02:36:27.781Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T02:36:27.782Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.html was modified
+[NX Daemon Server] - 2023-12-06T02:36:29.536Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T02:36:34.203Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T02:36:34.203Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.html
+[NX Daemon Server] - 2023-12-06T02:36:34.203Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T02:36:34.288Z - Time taken for 'hash changed files from watcher' 1.4188998937606812ms
+[NX Daemon Server] - 2023-12-06T02:39:46.988Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.ts was modified
+[NX Daemon Server] - 2023-12-06T02:39:46.989Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T02:39:48.727Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T02:39:53.420Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T02:39:53.420Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.ts
+[NX Daemon Server] - 2023-12-06T02:39:53.420Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T02:39:53.501Z - Time taken for 'hash changed files from watcher' 1.9694000482559204ms
+[NX Daemon Server] - 2023-12-06T02:40:37.378Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T02:40:37.379Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.html was modified
+[NX Daemon Server] - 2023-12-06T02:40:39.097Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T02:40:43.811Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T02:40:43.811Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.html
+[NX Daemon Server] - 2023-12-06T02:40:43.811Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T02:40:43.896Z - Time taken for 'hash changed files from watcher' 1.1657999753952026ms
+[NX Daemon Server] - 2023-12-06T02:41:36.595Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts was modified
+[NX Daemon Server] - 2023-12-06T02:41:36.595Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T02:41:38.320Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T02:41:43.022Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T02:41:43.022Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts
+[NX Daemon Server] - 2023-12-06T02:41:43.022Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T02:41:43.107Z - Time taken for 'hash changed files from watcher' 1.8489999771118164ms
+[NX Daemon Server] - 2023-12-06T02:42:22.582Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T02:42:22.583Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts was modified
+[NX Daemon Server] - 2023-12-06T02:42:24.407Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T02:42:29.022Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T02:42:29.022Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts
+[NX Daemon Server] - 2023-12-06T02:42:29.022Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T02:42:29.128Z - Time taken for 'hash changed files from watcher' 2.3014999628067017ms
+[NX Daemon Server] - 2023-12-06T02:44:40.257Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T02:44:40.258Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.html was modified
+[NX Daemon Server] - 2023-12-06T02:44:42.219Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T02:44:46.686Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T02:44:46.686Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.html
+[NX Daemon Server] - 2023-12-06T02:44:46.686Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T02:44:46.772Z - Time taken for 'hash changed files from watcher' 1.1798999309539795ms
+[NX Daemon Server] - 2023-12-06T02:54:36.558Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.ts was modified
+[NX Daemon Server] - 2023-12-06T02:54:36.558Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T02:54:40.213Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T02:54:42.982Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T02:54:42.982Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.ts
+[NX Daemon Server] - 2023-12-06T02:54:42.982Z - [REQUEST]: 
+ERROR (1) when writing 
+EPERM: operation not permitted, rename 'c:\projects\Comevent\.nx\cache\project-graph.json~3672553c' -> 'c:\projects\Comevent\.nx\cache\project-graph.json'
+Error: EPERM: operation not permitted, rename 'c:\projects\Comevent\.nx\cache\project-graph.json~3672553c' -> 'c:\projects\Comevent\.nx\cache\project-graph.json'
+    at renameSync (node:fs:1042:3)
+    at writeCache (c:\projects\Comevent\node_modules\nx\src\project-graph\nx-deps-cache.js:102:39)
+    at buildProjectGraphUsingProjectFileMap (c:\projects\Comevent\node_modules\nx\src\project-graph\build-project-graph.js:65:40)
+    at async createAndSerializeProjectGraph (c:\projects\Comevent\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:171:55)
+    at async Timeout._onTimeout (c:\projects\Comevent\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:79:13)
+[NX Daemon Server] - 2023-12-06T02:54:43.106Z - Time taken for 'hash changed files from watcher' 1.4703999757766724ms
+[NX Daemon Server] - 2023-12-06T03:00:43.417Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:00:43.418Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.ts was modified
+[NX Daemon Server] - 2023-12-06T03:00:45.338Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:00:49.848Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T03:00:49.848Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.ts
+[NX Daemon Server] - 2023-12-06T03:00:49.848Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T03:00:49.936Z - Time taken for 'hash changed files from watcher' 1.3144999742507935ms
+[NX Daemon Server] - 2023-12-06T03:01:30.350Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:01:30.351Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.ts was modified
+[NX Daemon Server] - 2023-12-06T03:01:32.139Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:01:36.784Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T03:01:36.784Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.ts
+[NX Daemon Server] - 2023-12-06T03:01:36.784Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T03:01:36.855Z - Time taken for 'hash changed files from watcher' 1.3661000728607178ms
+[NX Daemon Server] - 2023-12-06T03:02:05.189Z - [WATCHER]: frontend/app/src/modules/user-profile/components/index.ts was modified
+[NX Daemon Server] - 2023-12-06T03:02:05.189Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:02:06.725Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:02:06.796Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:02:06.865Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:02:08.315Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:02:08.372Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:02:11.616Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T03:02:11.616Z - [REQUEST]: frontend/app/src/modules/user-profile/components/index.ts
+[NX Daemon Server] - 2023-12-06T03:02:11.616Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T03:02:11.713Z - Time taken for 'hash changed files from watcher' 1.6967999935150146ms
+[NX Daemon Server] - 2023-12-06T03:02:27.843Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:02:27.844Z - [WATCHER]: frontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.ts was modified
+[NX Daemon Server] - 2023-12-06T03:02:28.670Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:02:30.275Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:02:30.339Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:02:34.269Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T03:02:34.269Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.ts
+[NX Daemon Server] - 2023-12-06T03:02:34.269Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T03:02:34.355Z - Time taken for 'hash changed files from watcher' 1.6028000116348267ms
+[NX Daemon Server] - 2023-12-06T03:02:43.486Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:02:43.487Z - [WATCHER]: frontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.html was modified
+[NX Daemon Server] - 2023-12-06T03:02:44.238Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:02:45.566Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:02:49.924Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T03:02:49.924Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.html
+[NX Daemon Server] - 2023-12-06T03:02:49.924Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T03:02:50.016Z - Time taken for 'hash changed files from watcher' 2.281899929046631ms
+[NX Daemon Server] - 2023-12-06T03:04:00.977Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.html was modified
+[NX Daemon Server] - 2023-12-06T03:04:00.977Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:04:01.739Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:04:03.153Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:04:03.208Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:04:07.407Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T03:04:07.407Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.html
+[NX Daemon Server] - 2023-12-06T03:04:07.407Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T03:04:07.501Z - Time taken for 'hash changed files from watcher' 1.5057998895645142ms
+[NX Daemon Server] - 2023-12-06T03:05:23.153Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:05:23.155Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts was modified
+[NX Daemon Server] - 2023-12-06T03:05:24.186Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:05:25.582Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:05:25.646Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:05:29.591Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T03:05:29.591Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts
+[NX Daemon Server] - 2023-12-06T03:05:29.591Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T03:05:29.681Z - Time taken for 'hash changed files from watcher' 1.8068000078201294ms
+[NX Daemon Server] - 2023-12-06T03:05:30.460Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:05:30.461Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.html was modified
+[NX Daemon Server] - 2023-12-06T03:05:31.299Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:05:32.699Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:05:36.889Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T03:05:36.889Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.html
+[NX Daemon Server] - 2023-12-06T03:05:36.889Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T03:05:36.980Z - Time taken for 'hash changed files from watcher' 1.403899908065796ms
+[NX Daemon Server] - 2023-12-06T03:06:17.503Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.html was modified
+[NX Daemon Server] - 2023-12-06T03:06:17.504Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:06:18.144Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:06:19.508Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:06:19.560Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:06:23.936Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T03:06:23.936Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.html
+[NX Daemon Server] - 2023-12-06T03:06:23.936Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T03:06:24.020Z - Time taken for 'hash changed files from watcher' 2.1789000034332275ms
+[NX Daemon Server] - 2023-12-06T03:06:58.097Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:06:58.098Z - [WATCHER]: frontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.html was modified
+[NX Daemon Server] - 2023-12-06T03:06:58.959Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:07:00.282Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:07:00.345Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:07:04.526Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T03:07:04.526Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.html
+[NX Daemon Server] - 2023-12-06T03:07:04.526Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T03:07:04.618Z - Time taken for 'hash changed files from watcher' 1.549299955368042ms
+[NX Daemon Server] - 2023-12-06T03:07:13.649Z - [WATCHER]: frontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.html was modified
+[NX Daemon Server] - 2023-12-06T03:07:13.649Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:07:15.602Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:07:20.085Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T03:07:20.085Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.html
+[NX Daemon Server] - 2023-12-06T03:07:20.085Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T03:07:20.178Z - Time taken for 'hash changed files from watcher' 2.154699921607971ms
+[NX Daemon Server] - 2023-12-06T03:08:40.606Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:08:40.607Z - [WATCHER]: frontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.ts was modified
+[NX Daemon Server] - 2023-12-06T03:08:41.640Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:08:42.938Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:08:47.044Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T03:08:47.044Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.ts
+[NX Daemon Server] - 2023-12-06T03:08:47.044Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T03:08:47.136Z - Time taken for 'hash changed files from watcher' 2.311400055885315ms
+[NX Daemon Server] - 2023-12-06T03:08:50.128Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:08:50.129Z - [WATCHER]: frontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.ts was modified
+[NX Daemon Server] - 2023-12-06T03:08:52.096Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:08:56.554Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T03:08:56.554Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.ts
+[NX Daemon Server] - 2023-12-06T03:08:56.554Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T03:08:56.639Z - Time taken for 'hash changed files from watcher' 1.944700002670288ms
+[NX Daemon Server] - 2023-12-06T03:09:49.525Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts was modified
+[NX Daemon Server] - 2023-12-06T03:09:49.525Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:09:50.163Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:09:51.572Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:09:55.950Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T03:09:55.950Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts
+[NX Daemon Server] - 2023-12-06T03:09:55.950Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T03:09:56.036Z - Time taken for 'hash changed files from watcher' 1.2120999097824097ms
+[NX Daemon Server] - 2023-12-06T03:11:34.588Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:11:34.589Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.html was modified
+[NX Daemon Server] - 2023-12-06T03:11:35.232Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:11:36.719Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:11:41.013Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T03:11:41.013Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.html
+[NX Daemon Server] - 2023-12-06T03:11:41.013Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T03:11:41.118Z - Time taken for 'hash changed files from watcher' 1.631500005722046ms
+[NX Daemon Server] - 2023-12-06T03:12:01.033Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.html was modified
+[NX Daemon Server] - 2023-12-06T03:12:01.034Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:12:02.927Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:12:07.461Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T03:12:07.461Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.html
+[NX Daemon Server] - 2023-12-06T03:12:07.461Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T03:12:07.550Z - Time taken for 'hash changed files from watcher' 1.1942999362945557ms
+[NX Daemon Server] - 2023-12-06T03:12:39.586Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.html was modified
+[NX Daemon Server] - 2023-12-06T03:12:39.587Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:12:40.496Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:12:41.852Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:12:46.013Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T03:12:46.013Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.html
+[NX Daemon Server] - 2023-12-06T03:12:46.013Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T03:12:46.108Z - Time taken for 'hash changed files from watcher' 1.7064999341964722ms
+[NX Daemon Server] - 2023-12-06T03:14:41.385Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:14:41.386Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.html was modified
+[NX Daemon Server] - 2023-12-06T03:14:42.380Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:14:43.720Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:14:47.823Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T03:14:47.823Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.html
+[NX Daemon Server] - 2023-12-06T03:14:47.823Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T03:14:47.926Z - Time taken for 'hash changed files from watcher' 2.2941999435424805ms
+[NX Daemon Server] - 2023-12-06T03:14:48.178Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:14:48.179Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.ts was modified
+[NX Daemon Server] - 2023-12-06T03:14:49.114Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:14:50.394Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:14:54.606Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T03:14:54.606Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.ts
+[NX Daemon Server] - 2023-12-06T03:14:54.606Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T03:14:54.696Z - Time taken for 'hash changed files from watcher' 1.9839999675750732ms
+[NX Daemon Server] - 2023-12-06T03:15:12.875Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.ts was modified
+[NX Daemon Server] - 2023-12-06T03:15:12.875Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:15:14.895Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:15:19.296Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T03:15:19.296Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.ts
+[NX Daemon Server] - 2023-12-06T03:15:19.296Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T03:15:19.350Z - Time taken for 'hash changed files from watcher' 1.2231999635696411ms
+[NX Daemon Server] - 2023-12-06T03:30:37.089Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:30:37.091Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.html was modified
+[NX Daemon Server] - 2023-12-06T03:30:37.824Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:30:39.078Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:30:39.131Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:30:43.514Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T03:30:43.514Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.html
+[NX Daemon Server] - 2023-12-06T03:30:43.514Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T03:30:43.601Z - Time taken for 'hash changed files from watcher' 1.2558000087738037ms
+[NX Daemon Server] - 2023-12-06T03:33:20.484Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:33:20.486Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.html was modified
+[NX Daemon Server] - 2023-12-06T03:33:21.230Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:33:22.580Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:33:22.644Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.ts was modified
+[NX Daemon Server] - 2023-12-06T03:33:22.645Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:33:23.530Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:33:24.964Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:33:26.920Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T03:33:26.920Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.html,frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.ts
+[NX Daemon Server] - 2023-12-06T03:33:26.920Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T03:33:27.016Z - Time taken for 'hash changed files from watcher' 2.1865999698638916ms
+[NX Daemon Server] - 2023-12-06T03:36:30.905Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:36:30.907Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.html was modified
+[NX Daemon Server] - 2023-12-06T03:36:32.767Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:36:37.343Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T03:36:37.343Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.html
+[NX Daemon Server] - 2023-12-06T03:36:37.343Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T03:36:37.416Z - Time taken for 'hash changed files from watcher' 2.2520999908447266ms
+[NX Daemon Server] - 2023-12-06T03:37:42.310Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.html was modified
+[NX Daemon Server] - 2023-12-06T03:37:42.310Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:37:43.104Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:37:44.466Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:37:48.769Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T03:37:48.769Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.html
+[NX Daemon Server] - 2023-12-06T03:37:48.769Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T03:37:48.861Z - Time taken for 'hash changed files from watcher' 1.2096999883651733ms
+[NX Daemon Server] - 2023-12-06T03:38:40.795Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.ts was modified
+[NX Daemon Server] - 2023-12-06T03:38:40.795Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:38:41.698Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:38:43.074Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:38:44.977Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:38:44.979Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.html was modified
+[NX Daemon Server] - 2023-12-06T03:38:45.494Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:38:46.887Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:38:47.220Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T03:38:47.220Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.ts,frontend/app/src/modules/user-profile/components/organism/areas/areas.component.html
+[NX Daemon Server] - 2023-12-06T03:38:47.220Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T03:38:47.316Z - Time taken for 'hash changed files from watcher' 1.3936001062393188ms
+[NX Daemon Server] - 2023-12-06T03:38:53.068Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.html was modified
+[NX Daemon Server] - 2023-12-06T03:38:53.069Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:38:53.555Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:38:54.823Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:38:59.493Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T03:38:59.493Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.html
+[NX Daemon Server] - 2023-12-06T03:38:59.493Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T03:38:59.583Z - Time taken for 'hash changed files from watcher' 1.305899977684021ms
+[NX Daemon Server] - 2023-12-06T03:39:02.510Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:39:02.512Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.html was modified
+[NX Daemon Server] - 2023-12-06T03:39:04.272Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:39:08.945Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T03:39:08.945Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.html
+[NX Daemon Server] - 2023-12-06T03:39:08.945Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T03:39:09.034Z - Time taken for 'hash changed files from watcher' 1.9646000862121582ms
+[NX Daemon Server] - 2023-12-06T03:39:29.249Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.html was modified
+[NX Daemon Server] - 2023-12-06T03:39:29.249Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:39:29.951Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:39:31.359Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:39:31.411Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:39:35.682Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T03:39:35.682Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.html
+[NX Daemon Server] - 2023-12-06T03:39:35.682Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T03:39:35.776Z - Time taken for 'hash changed files from watcher' 2.146399974822998ms
+[NX Daemon Server] - 2023-12-06T03:39:38.393Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:39:38.394Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.html was modified
+[NX Daemon Server] - 2023-12-06T03:39:38.976Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:39:40.265Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-06T03:39:44.824Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-06T03:39:44.824Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.html
+[NX Daemon Server] - 2023-12-06T03:39:44.824Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-06T03:39:44.915Z - Time taken for 'hash changed files from watcher' 1.2506999969482422ms
+[NX Daemon Server] - 2023-12-06T03:40:03.398Z - Closed a connection. Number of open connections: 3
+[NX Daemon Server] - 2023-12-06T03:40:03.411Z - Closed a connection. Number of open connections: 2
+[NX Daemon Server] - 2023-12-06T03:40:04.528Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-12-06T16:22:49.160Z - Started listening on: \\.\pipe\nx\C:\Users\David\AppData\Local\Temp\1333570d747707fc9927\d.sock
+[NX Daemon Server] - 2023-12-06T16:22:49.170Z - [WATCHER]: Subscribed to changes within: c:\projects\Comevent (native)
+[NX Daemon Server] - 2023-12-06T16:22:49.171Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-12-06T16:22:49.173Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2023-12-06T16:22:49.173Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-12-06T16:22:49.174Z - [REQUEST]: Client Request for Project Graph Received

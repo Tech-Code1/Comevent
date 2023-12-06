@@ -8,6 +8,7 @@ import {
   TitleComponent,
 } from '@ui/components';
 import {
+  AreasComponent,
   MainInfoComponent,
   SocialNetworksComponent,
   UserProfileStateService,
@@ -25,6 +26,7 @@ import { TokenService } from '../../../../common/services/token.service';
     MainInfoComponent,
     RouterModule,
     SocialNetworksComponent,
+    AreasComponent,
   ],
   selector: 'edit-profile',
   templateUrl: './edit-profile.component.html',

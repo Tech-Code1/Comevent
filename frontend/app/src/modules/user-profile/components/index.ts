@@ -4,6 +4,8 @@ export * from './molecules/button-change-main-info/button-change-main-info.compo
 export * from './molecules/button-header-profile/button-header-profile.component';
 export * from './molecules/card-without-notifications/card-without-notifications.component';
 export * from './organism';
+export * from './organism/area-select/area-select.component';
+export * from './organism/areas/areas.component';
 export * from './organism/avatar/avatar.component';
 export * from './organism/buttons-actions-change-main-info/buttons-actions-change-main-info.component';
 export * from './organism/card-profile/card-profile.component';
