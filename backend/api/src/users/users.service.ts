@@ -241,7 +241,9 @@ export class UsersService {
     }
   }
 
-  public async findUserEditProfileById(id: string): Promise<UserProfileDTO> {
+  public async findUserEditProfileById(
+    id: string
+  ): Promise<UserEditProfileDTO> {
     try {
       const userWithAreas = await this.userRepository
         .createQueryBuilder('user')
@@ -274,9 +276,9 @@ export class UsersService {
         username: userWithAreas.username,
         email: userWithAreas.email,
         description: userWithAreas.description,
-        socialNetworks: userWithAreas.socialNetworks.map(
-          (social) => social.platform
-        ),
+        socialNetworks: userWithAreas.socialNetworks.map((social) => {
+          return { platform: social.platform, link: social.link };
+        }),
         areaOfExpertise: userWithAreas.userAreas
           .filter((ua) => ua.type === TYPE_AREA.EXPERTISE)
           .map((ua) => (ua.area ? ua.area.name : null)),

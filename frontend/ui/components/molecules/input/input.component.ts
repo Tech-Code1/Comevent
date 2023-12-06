@@ -41,7 +41,7 @@ export class InputComponent<T>
 {
   @Input() id = '';
   @Input() variant: InputType['variant'] = 'input-base';
-  @Input() placeholder?: string | undefined;
+  @Input() placeholder: string = 'Enter your text...';
   @Input() value?: string | number | undefined;
   @Input() customErrorMessages: Record<string, string> = {};
   @Input() name!: string;

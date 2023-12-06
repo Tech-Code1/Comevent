@@ -1,11 +1,16 @@
 import { Country, Specialty } from '@db/entities';
 
+export interface ISocialNetworks {
+  platform: string;
+  link: string;
+}
+
 export interface IUserEditProfile {
   avatar: string;
   username: string;
   email: string;
   description: string;
-  socialNetworks: string[];
+  socialNetworks: ISocialNetworks[];
   userAreas: string[];
   firstName: string;
   lastName: string;
@@ -21,7 +26,7 @@ export interface ISimplifiedUserEditProfile {
   username: string;
   email: string;
   description: string;
-  socialNetworks: string[];
+  socialNetworks: ISocialNetworks[];
   areaOfInteres: string[];
   areaOfExpertise: string[];
   firstName: string;

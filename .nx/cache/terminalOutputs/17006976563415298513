@@ -5,3 +5,295 @@ webpack compiled [1m[32msuccessfully[39m[22m (b1676646832e2b8b)
 [1m[31mDebugger listening on ws://localhost:9229/651a92f1-d246-4c90-8c60-7a88c95b5a86[39m[22m
 [1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
 [1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 237 KiB [1m[33m[entry][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (b1676646832e2b8b)
+[1m[31mDebugger listening on ws://localhos[39m[22m
+[1m[31mt:9229/c4c009b8-6d30-4724-b2a1-4ecd8209bddd[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/c4c009b8-6d30-4724-b2a1-4ecd8209bddd[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 237 KiB [1m[33m[entry][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/dto/userEditProfile.dto.ts:[32m[1m76:3[22m[39m[1m[39m[22m
+[90mTS2416: [39mProperty 'socialNetworks' in type 'UserEditProfileDTO' is not assignable to the same property in base type 'ISimplifiedUserEditProfile'.
+  Type 'string[]' is not assignable to type 'ISocialNetworks[]'.
+    Type 'string' is not assignable to type 'ISocialNetworks'.
+  [0m [90m 74 |[39m   [33m@[39m[33mIsArray[39m()[0m
+  [0m [90m 75 |[39m   [33m@[39m[33mIsString[39m({ each[33m:[39m [36mtrue[39m })[0m
+  [0m[31m[1m>[22m[39m[90m 76 |[39m   socialNetworks[33m![39m[33m:[39m string[][33m;[39m[0m
+  [0m [90m    |[39m   [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 77 |[39m[0m
+  [0m [90m 78 |[39m   [33m@[39m[33mApiProperty[39m({[0m
+  [0m [90m 79 |[39m     description[33m:[39m [32m'First name of the user'[39m[33m,[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.service.ts:[32m[1m277:9[22m[39m[1m[39m[22m
+[90mTS2322: [39mType 'SocialPlatform[]' is not assignable to type 'ISocialNetworks[]'.
+  Type 'import("C:/projects/Comevent/backend/database/src/constants/interfaces.entities").SocialPlatform' is not assignable to type 'ISocialNetworks'.
+  [0m [90m 275 |[39m         email[33m:[39m userWithAreas[33m.[39memail[33m,[39m[0m
+  [0m [90m 276 |[39m         description[33m:[39m userWithAreas[33m.[39mdescription[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 277 |[39m         socialNetworks[33m:[39m userWithAreas[33m.[39msocialNetworks[33m.[39mmap([0m
+  [0m [90m     |[39m         [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 278 |[39m           (social) [33m=>[39m social[33m.[39mplatform[0m
+  [0m [90m 279 |[39m         )[33m,[39m[0m
+  [0m [90m 280 |[39m         areaOfExpertise[33m:[39m userWithAreas[33m.[39muserAreas[0m
+
+webpack compiled with [1m[31m2 errors[39m[22m (b1676646832e2b8b)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 237 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.service.ts:[32m[1m277:9[22m[39m[1m[39m[22m
+[90mTS2322: [39mType 'SocialPlatform[]' is not assignable to type 'ISocialNetworks[]'.
+  Type 'import("C:/projects/Comevent/backend/database/src/constants/interfaces.entities").SocialPlatform' is not assignable to type 'ISocialNetworks'.
+  [0m [90m 275 |[39m         email[33m:[39m userWithAreas[33m.[39memail[33m,[39m[0m
+  [0m [90m 276 |[39m         description[33m:[39m userWithAreas[33m.[39mdescription[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 277 |[39m         socialNetworks[33m:[39m userWithAreas[33m.[39msocialNetworks[33m.[39mmap([0m
+  [0m [90m     |[39m         [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 278 |[39m           (social) [33m=>[39m social[33m.[39mplatform[0m
+  [0m [90m 279 |[39m         )[33m,[39m[0m
+  [0m [90m 280 |[39m         areaOfExpertise[33m:[39m userWithAreas[33m.[39muserAreas[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.service.ts:[32m[1m302:7[22m[39m[1m[39m[22m
+[90mTS2322: [39mType 'UserEditProfileDTO & ISimplifiedUserEditProfile' is not assignable to type 'UserProfileDTO'.
+  Types of property 'socialNetworks' are incompatible.
+    Type 'ISocialNetworks[]' is not assignable to type 'string[]'.
+      Type 'ISocialNetworks' is not assignable to type 'string'.
+  [0m [90m 300 |[39m       )[33m;[39m[0m
+  [0m [90m 301 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 302 |[39m       [36mreturn[39m userProfile[33m;[39m[0m
+  [0m [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 303 |[39m     } [36mcatch[39m (error) {[0m
+  [0m [90m 304 |[39m       [36mthrow[39m [33mResp[39m[33m.[39m[33mError[39m(error)[33m;[39m[0m
+  [0m [90m 305 |[39m     }[0m
+
+webpack compiled with [1m[31m2 errors[39m[22m (d5324aa9a28169a5)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 237 KiB [1m[33m[entry][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.service.ts:[32m[1m277:9[22m[39m[1m[39m[22m
+[90mTS2322: [39mType 'SocialPlatform[]' is not assignable to type 'ISocialNetworks[]'.
+  Type 'import("C:/projects/Comevent/backend/database/src/constants/interfaces.entities").SocialPlatform' is not assignable to type 'ISocialNetworks'.
+  [0m [90m 275 |[39m         email[33m:[39m userWithAreas[33m.[39memail[33m,[39m[0m
+  [0m [90m 276 |[39m         description[33m:[39m userWithAreas[33m.[39mdescription[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 277 |[39m         socialNetworks[33m:[39m userWithAreas[33m.[39msocialNetworks[33m.[39mmap([0m
+  [0m [90m     |[39m         [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 278 |[39m           (social) [33m=>[39m social[33m.[39mplatform[0m
+  [0m [90m 279 |[39m         )[33m,[39m[0m
+  [0m [90m 280 |[39m         areaOfExpertise[33m:[39m userWithAreas[33m.[39muserAreas[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.service.ts:[32m[1m302:7[22m[39m[1m[39m[22m
+[90mTS2322: [39mType 'UserEditProfileDTO & ISimplifiedUserEditProfile' is not assignable to type 'UserProfileDTO'.
+  Types of property 'socialNetworks' are incompatible.
+    Type 'ISocialNetworks[]' is not assignable to type 'string[]'.
+      Type 'ISocialNetworks' is not assignable to type 'string'.
+  [0m [90m 300 |[39m       )[33m;[39m[0m
+  [0m [90m 301 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 302 |[39m       [36mreturn[39m userProfile[33m;[39m[0m
+  [0m [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 303 |[39m     } [36mcatch[39m (error) {[0m
+  [0m [90m 304 |[39m       [36mthrow[39m [33mResp[39m[33m.[39m[33mError[39m(error)[33m;[39m[0m
+  [0m [90m 305 |[39m     }[0m
+
+webpack compiled with [1m[31m2 errors[39m[22m (d5324aa9a28169a5)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 237 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.service.ts:[32m[1m302:7[22m[39m[1m[39m[22m
+[90mTS2322: [39mType 'UserEditProfileDTO & ISimplifiedUserEditProfile' is not assignable to type 'UserProfileDTO'.
+  Types of property 'socialNetworks' are incompatible.
+    Type 'ISocialNetworks[]' is not assignable to type 'string[]'.
+      Type 'ISocialNetworks' is not assignable to type 'string'.
+  [0m [90m 300 |[39m       )[33m;[39m[0m
+  [0m [90m 301 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 302 |[39m       [36mreturn[39m userProfile[33m;[39m[0m
+  [0m [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 303 |[39m     } [36mcatch[39m (error) {[0m
+  [0m [90m 304 |[39m       [36mthrow[39m [33mResp[39m[33m.[39m[33mError[39m(error)[33m;[39m[0m
+  [0m [90m 305 |[39m     }[0m
+
+webpack compiled with [1m[31m1 error[39m[22m (c8bb5a41d2dbfb2b)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 237 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.controller.ts:[32m[1m110:43[22m[39m[1m[39m[22m
+[90mTS2345: [39mArgument of type 'UserEditProfileDTO' is not assignable to parameter of type 'UserProfileDTO'.
+  Types of property 'socialNetworks' are incompatible.
+    Type 'ISocialNetworks[]' is not assignable to type 'string[]'.
+      Type 'ISocialNetworks' is not assignable to type 'string'.
+  [0m [90m 108 |[39m       console[33m.[39mlog([32m'Controller user:'[39m[33m,[39m user)[33m;[39m[0m
+  [0m [90m 109 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 110 |[39m       [36mreturn[39m [33mResp[39m[33m.[39m[33mSuccess[39m[33m<[39m[33mUserProfileDTO[39m[33m>[39m(user[33m,[39m [32m'OK'[39m)[33m;[39m[0m
+  [0m [90m     |[39m                                           [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 111 |[39m     } [36mcatch[39m (error) {[0m
+  [0m [90m 112 |[39m       [36mthrow[39m [33mResp[39m[33m.[39m[33mError[39m([32m'NOT_FOUND'[39m[33m,[39m [32m'User not found'[39m)[33m;[39m[0m
+  [0m [90m 113 |[39m     }[0m
+
+webpack compiled with [1m[31m1 error[39m[22m (807a4bddadfc007c)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 237 KiB [1m[33m[entry][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.controller.ts:[32m[1m110:43[22m[39m[1m[39m[22m
+[90mTS2345: [39mArgument of type 'UserEditProfileDTO' is not assignable to parameter of type 'UserProfileDTO'.
+  Types of property 'socialNetworks' are incompatible.
+    Type 'ISocialNetworks[]' is not assignable to type 'string[]'.
+      Type 'ISocialNetworks' is not assignable to type 'string'.
+  [0m [90m 108 |[39m       console[33m.[39mlog([32m'Controller user:'[39m[33m,[39m user)[33m;[39m[0m
+  [0m [90m 109 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 110 |[39m       [36mreturn[39m [33mResp[39m[33m.[39m[33mSuccess[39m[33m<[39m[33mUserProfileDTO[39m[33m>[39m(user[33m,[39m [32m'OK'[39m)[33m;[39m[0m
+  [0m [90m     |[39m                                           [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 111 |[39m     } [36mcatch[39m (error) {[0m
+  [0m [90m 112 |[39m       [36mthrow[39m [33mResp[39m[33m.[39m[33mError[39m([32m'NOT_FOUND'[39m[33m,[39m [32m'User not found'[39m)[33m;[39m[0m
+  [0m [90m 113 |[39m     }[0m
+
+webpack compiled with [1m[31m1 error[39m[22m (807a4bddadfc007c)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 237 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (f9ba33cedfbe3554)
+[1m[31mDebugger listening on ws://localhost:9229[39m[22m
+[1m[31m/4fb6f932-2ca1-4e25-8a75-d91cff73f0fd[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/4fb6f932-2ca1-4e25-8a75-d91cff73f0fd[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 237 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (a28f83cddae44f8f)
+[1m[31mDebugger listening on ws:/[39m[22m
+[1m[31m/localhost:9229/0c619fad-7dd8-40db-a003-0018462060f3[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/0c619fad-7dd8-40db-a003-0018462060f3[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31m[Nest] 49340  - [39m[31m03/12/2023, 5:28:49 p. m. [31m  ERROR[39m[31m [38;5;3m[TypeOrmModule] [39m[31m[31mUnable to connect to the database. Retrying (1)...[39m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31mQueryFailedError: la sintaxis de entrada no es válida para el enum social_networks_platform_enum: «x»[39m[22m
+[1m[31m    at PostgresQueryRunner.query (C:\projects\Comevent\src\driver\postgres\PostgresQueryRunner.ts:299:19)[39m[22m
+[1m[31m    at processTicksAndRejections (node:internal/process/task_queues:95:5)[39m[22m
+[1m[31m    at PostgresQueryRunner.executeQueries (C:\projects\Comevent\src\query-runner\BaseQueryRunner.ts:659:13)[39m[22m
+[1m[31m    at PostgresQueryRunner.changeColumn (C:\projects\Comevent\src\driver\postgres\PostgresQueryRunner.ts:2237:9)[39m[22m
+[1m[31m    at PostgresQueryRunner.changeColumns (C:\projects\Comevent\src\driver\postgres\PostgresQueryRunner.ts:2249:13)[39m[22m
+[1m[31m    at RdbmsSchemaBuilder.updateExistColumns (C:\projects\Comevent\src\schema-builder\RdbmsSchemaBuilder.ts:947:13)[39m[22m
+[1m[31m    at RdbmsSchemaBuilder.executeSchemaSyncOperationsInProperOrder (C:\projects\Comevent\src\schema-builder\RdbmsSchemaBuilder.ts:228:9)[39m[22m
+[1m[31m    at RdbmsSchemaBuilder.build (C:\projects\Comevent\src\schema-builder\RdbmsSchemaBuilder.ts:95:13)[39m[22m
+[1m[31m    at DataSource.synchronize (C:\projects\Comevent\src\data-source\DataSource.ts:335:9)[39m[22m
+[1m[31m    at DataSource.initialize (C:\projects\Comevent\src\data-source\DataSource.ts:273:43)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31m[Nest] 49340  - [39m[31m03/12/2023, 5:28:52 p. m. [31m  ERROR[39m[31m [38;5;3m[TypeOrmModule] [39m[31m[31mUnable to connect to the database. Retrying (2)...[39m[31m[39m[22m
+[1m[31mQueryFailedError: la sintaxis de entrada no es válida para el enum social_networks_platform_enum: «x»[39m[22m
+[1m[31m    at PostgresQueryRunner.query (C:\projects\Comevent\src\driver\postgres\PostgresQueryRunner.ts:299:19)[39m[22m
+[1m[31m    at processTicksAndRejections (node:internal/process/task_queues:95:5)[39m[22m
+[1m[31m    at PostgresQueryRunner.executeQueries (C:\projects\Comevent\src\query-runner\BaseQueryRunner.ts:659:13)[39m[22m
+[1m[31m    at PostgresQueryRunner.changeColumn (C:\projects\Comevent\src\driver\postgres\PostgresQueryRunner.ts:2237:9)[39m[22m
+[1m[31m    at PostgresQueryRunner.changeColumns (C:\projects\Comevent\src\driver\postgres\PostgresQueryRunner.ts:2249:13)[39m[22m
+[1m[31m    at RdbmsSchemaBuilder.updateExistColumns (C:\projects\Comevent\src\schema-builder\RdbmsSchemaBuilder.ts:947:13)[39m[22m
+[1m[31m    at RdbmsSchemaBuilder.executeSchemaSyncOperationsInProperOrder (C:\projects\Comevent\src\schema-builder\RdbmsSchemaBuilder.ts:228:9)[39m[22m
+[1m[31m    at RdbmsSchemaBuilder.build (C:\projects\Comevent\src\schema-builder\RdbmsSchemaBuilder.ts:95:13)[39m[22m
+[1m[31m    at DataSource.synchronize (C:\projects\Comevent\src\data-source\DataSource.ts:335:9)[39m[22m
+[1m[31m    at DataSource.initialize (C:\projects\Comevent\src\data-source\DataSource.ts:273:43)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31m[Nest] 49340  - [39m[31m03/12/2023, 5:28:55 p. m. [31m  ERROR[39m[31m [38;5;3m[TypeOrmModule] [39m[31m[31mUnable to connect to the database. Retrying (3)...[39m[31m[39m[22m
+[1m[31mQueryFailedError: la sintaxis de entrada no es válida para el enum social_networks_platform_enum: «x»[39m[22m
+[1m[31m    at PostgresQueryRunner.query (C:\projects\Comevent\src\driver\postgres\PostgresQueryRunner.ts:299:19)[39m[22m
+[1m[31m    at processTicksAndRejections (node:internal/process/task_queues:95:5)[39m[22m
+[1m[31m    at PostgresQueryRunner.executeQueries (C:\projects\Comevent\src\query-runner\BaseQueryRunner.ts:659:13)[39m[22m
+[1m[31m    at PostgresQueryRunner.changeColumn (C:\projects\Comevent\src\driver\postgres\PostgresQueryRunner.ts:2237:9)[39m[22m
+[1m[31m    at PostgresQueryRunner.changeColumns (C:\projects\Comevent\src\driver\postgres\PostgresQueryRunner.ts:2249:13)[39m[22m
+[1m[31m    at RdbmsSchemaBuilder.updateExistColumns (C:\projects\Comevent\src\schema-builder\RdbmsSchemaBuilder.ts:947:13)[39m[22m
+[1m[31m    at RdbmsSchemaBuilder.executeSchemaSyncOperationsInProperOrder (C:\projects\Comevent\src\schema-builder\RdbmsSchemaBuilder.ts:228:9)[39m[22m
+[1m[31m    at RdbmsSchemaBuilder.build (C:\projects\Comevent\src\schema-builder\RdbmsSchemaBuilder.ts:95:13)[39m[22m
+[1m[31m    at DataSource.synchronize (C:\projects\Comevent\src\data-source\DataSource.ts:335:9)[39m[22m
+[1m[31m    at DataSource.initialize (C:\projects\Comevent\src\data-source\DataSource.ts:273:43)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31m[Nest] 49340  - [39m[31m03/12/2023, 5:28:58 p. m. [31m  ERROR[39m[31m [38;5;3m[TypeOrmModule] [39m[31m[31mUnable to connect to the database. Retrying (4)...[39m[31m[39m[22m
+[1m[31mQueryFailedError: la sintaxis de entrada no es válida para el enum social_networks_platform_enum: «x»[39m[22m
+[1m[31m    at PostgresQueryRunner.query (C:\projects\Comevent\src\driver\postgres\PostgresQueryRunner.ts:299:19)[39m[22m
+[1m[31m    at processTicksAndRejections (node:internal/process/task_queues:95:5)[39m[22m
+[1m[31m    at PostgresQueryRunner.executeQueries (C:\projects\Comevent\src\query-runner\BaseQueryRunner.ts:659:13)[39m[22m
+[1m[31m    at PostgresQueryRunner.changeColumn (C:\projects\Comevent\src\driver\postgres\PostgresQueryRunner.ts:2237:9)[39m[22m
+[1m[31m    at PostgresQueryRunner.changeColumns (C:\projects\Comevent\src\driver\postgres\PostgresQueryRunner.ts:2249:13)[39m[22m
+[1m[31m    at RdbmsSchemaBuilder.updateExistColumns (C:\projects\Comevent\src\schema-builder\RdbmsSchemaBuilder.ts:947:13)[39m[22m
+[1m[31m    at RdbmsSchemaBuilder.executeSchemaSyncOperationsInProperOrder (C:\projects\Comevent\src\schema-builder\RdbmsSchemaBuilder.ts:228:9)[39m[22m
+[1m[31m    at RdbmsSchemaBuilder.build (C:\projects\Comevent\src\schema-builder\RdbmsSchemaBuilder.ts:95:13)[39m[22m
+[1m[31m    at DataSource.synchronize (C:\projects\Comevent\src\data-source\DataSource.ts:335:9)[39m[22m
+[1m[31m    at DataSource.initialize (C:\projects\Comevent\src\data-source\DataSource.ts:273:43)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31m[Nest] 49340  - [39m[31m03/12/2023, 5:29:01 p. m. [31m  ERROR[39m[31m [38;5;3m[TypeOrmModule] [39m[31m[31mUnable to connect to the database. Retrying (5)...[39m[31m[39m[22m
+[1m[31mQueryFailedError: la sintaxis de entrada no es válida para el enum social_networks_platform_enum: «x»[39m[22m
+[1m[31m    at PostgresQueryRunner.query (C:\projects\Comevent\src\driver\postgres\PostgresQueryRunner.ts:299:19)[39m[22m
+[1m[31m    at processTicksAndRejections (node:internal/process/task_queues:95:5)[39m[22m
+[1m[31m    at PostgresQueryRunner.executeQueries (C:\projects\Comevent\src\query-runner\BaseQueryRunner.ts:659:13)[39m[22m
+[1m[31m    at PostgresQueryRunner.changeColumn (C:\projects\Comevent\src\driver\postgres\PostgresQueryRunner.ts:2237:9)[39m[22m
+[1m[31m    at PostgresQueryRunner.changeColumns (C:\projects\Comevent\src\driver\postgres\PostgresQueryRunner.ts:2249:13)[39m[22m
+[1m[31m    at RdbmsSchemaBuilder.updateExistColumns (C:\projects\Comevent\src\schema-builder\RdbmsSchemaBuilder.ts:947:13)[39m[22m
+[1m[31m    at RdbmsSchemaBuilder.executeSchemaSyncOperationsInProperOrder (C:\projects\Comevent\src\schema-builder\RdbmsSchemaBuilder.ts:228:9)[39m[22m
+[1m[31m    at RdbmsSchemaBuilder.build (C:\projects\Comevent\src\schema-builder\RdbmsSchemaBuilder.ts:95:13)[39m[22m
+[1m[31m    at DataSource.synchronize (C:\projects\Comevent\src\data-source\DataSource.ts:335:9)[39m[22m
+[1m[31m    at DataSource.initialize (C:\projects\Comevent\src\data-source\DataSource.ts:273:43)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31m[Nest] 49340  - [39m[31m03/12/2023, 5:29:04 p. m. [31m  ERROR[39m[31m [38;5;3m[TypeOrmModule] [39m[31m[31mUnable to connect to the database. Retrying (6)...[39m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31mQueryFailedError: la sintaxis de entrada no es válida para el enum social_networks_platform_enum: «x»[39m[22m
+[1m[31m    at PostgresQueryRunner.query (C:\projects\Comevent\src\driver\postgres\PostgresQueryRunner.ts:299:19)[39m[22m
+[1m[31m    at processTicksAndRejections (node:internal/process/task_queues:95:5)[39m[22m
+[1m[31m    at PostgresQueryRunner.executeQueries (C:\projects\Comevent\src\query-runner\BaseQueryRunner.ts:659:13)[39m[22m
+[1m[31m    at PostgresQueryRunner.changeColumn (C:\projects\Comevent\src\driver\postgres\PostgresQueryRunner.ts:2237:9)[39m[22m
+[1m[31m    at PostgresQueryRunner.changeColumns (C:\projects\Comevent\src\driver\postgres\PostgresQueryRunner.ts:2249:13)[39m[22m
+[1m[31m    at RdbmsSchemaBuilder.updateExistColumns (C:\projects\Comevent\src\schema-builder\RdbmsSchemaBuilder.ts:947:13)[39m[22m
+[1m[31m    at RdbmsSchemaBuilder.executeSchemaSyncOperationsInProperOrder (C:\projects\Comevent\src\schema-builder\RdbmsSchemaBuilder.ts:228:9)[39m[22m
+[1m[31m    at RdbmsSchemaBuilder.build (C:\projects\Comevent\src\schema-builder\RdbmsSchemaBuilder.ts:95:13)[39m[22m
+[1m[31m    at DataSource.synchronize (C:\projects\Comevent\src\data-source\DataSource.ts:335:9)[39m[22m
+[1m[31m    at DataSource.initialize (C:\projects\Comevent\src\data-source\DataSource.ts:273:43)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31m[Nest] 49340  - [39m[31m03/12/2023, 5:29:07 p. m. [31m  ERROR[39m[31m [38;5;3m[TypeOrmModule] [39m[31m[31mUnable to connect to the database. Retrying (7)...[39m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31mQueryFailedError: la sintaxis de entrada no es válida para el enum social_networks_platform_enum: «x»[39m[22m
+[1m[31m    at PostgresQueryRunner.query (C:\projects\Comevent\src\driver\postgres\PostgresQueryRunner.ts:299:19)[39m[22m
+[1m[31m    at processTicksAndRejections (node:internal/process/task_queues:95:5)[39m[22m
+[1m[31m    at PostgresQueryRunner.executeQueries (C:\projects\Comevent\src\query-runner\BaseQueryRunner.ts:659:13)[39m[22m
+[1m[31m    at PostgresQueryRunner.changeColumn (C:\projects\Comevent\src\driver\postgres\PostgresQueryRunner.ts:2237:9)[39m[22m
+[1m[31m    at PostgresQueryRunner.changeColumns (C:\projects\Comevent\src\driver\postgres\PostgresQueryRunner.ts:2249:13)[39m[22m
+[1m[31m    at RdbmsSchemaBuilder.updateExistColumns (C:\projects\Comevent\src\schema-builder\RdbmsSchemaBuilder.ts:947:13)[39m[22m
+[1m[31m    at RdbmsSchemaBuilder.executeSchemaSyncOperationsInProperOrder (C:\projects\Comevent\src\schema-builder\RdbmsSchemaBuilder.ts:228:9)[39m[22m
+[1m[31m    at RdbmsSchemaBuilder.build (C:\projects\Comevent\src\schema-builder\RdbmsSchemaBuilder.ts:95:13)[39m[22m
+[1m[31m    at DataSource.synchronize (C:\projects\Comevent\src\data-source\DataSource.ts:335:9)[39m[22m
+[1m[31m    at DataSource.initialize (C:\projects\Comevent\src\data-source\DataSource.ts:273:43)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31m[Nest] 49340  - [39m[31m03/12/2023, 5:29:10 p. m. [31m  ERROR[39m[31m [38;5;3m[TypeOrmModule] [39m[31m[31mUnable to connect to the database. Retrying (8)...[39m[31m[39m[22m
+[1m[31mQueryFailedError: la sintaxis de entrada no es válida para el enum social_networks_platform_enum: «x»[39m[22m
+[1m[31m    at PostgresQueryRunner.query (C:\projects\Comevent\src\driver\postgres\PostgresQueryRunner.ts:299:19)[39m[22m
+[1m[31m    at processTicksAndRejections (node:internal/process/task_queues:95:5)[39m[22m
+[1m[31m    at PostgresQueryRunner.executeQueries (C:\projects\Comevent\src\query-runner\BaseQueryRunner.ts:659:13)[39m[22m
+[1m[31m    at PostgresQueryRunner.changeColumn (C:\projects\Comevent\src\driver\postgres\PostgresQueryRunner.ts:2237:9)[39m[22m
+[1m[31m    at PostgresQueryRunner.changeColumns (C:\projects\Comevent\src\driver\postgres\PostgresQueryRunner.ts:2249:13)[39m[22m
+[1m[31m    at RdbmsSchemaBuilder.updateExistColumns (C:\projects\Comevent\src\schema-builder\RdbmsSchemaBuilder.ts:947:13)[39m[22m
+[1m[31m    at RdbmsSchemaBuilder.executeSchemaSyncOperationsInProperOrder (C:\projects\Comevent\src\schema-builder\RdbmsSchemaBuilder.ts:228:9)[39m[22m
+[1m[31m    at RdbmsSchemaBuilder.build (C:\projects\Comevent\src\schema-builder\RdbmsSchemaBuilder.ts:95:13)[39m[22m
+[1m[31m    at DataSource.synchronize (C:\projects\Comevent\src\data-source\DataSource.ts:335:9)[39m[22m
+[1m[31m    at DataSource.initialize (C:\projects\Comevent\src\data-source\DataSource.ts:273:43)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31m[Nest] 49340  - [39m[31m03/12/2023, 5:29:14 p. m. [31m  ERROR[39m[31m [38;5;3m[TypeOrmModule] [39m[31m[31mUnable to connect to the database. Retrying (9)...[39m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31mQueryFailedError: la sintaxis de entrada no es válida para el enum social_networks_platform_enum: «x»[39m[22m
+[1m[31m    at PostgresQueryRunner.query (C:\projects\Comevent\src\driver\postgres\PostgresQueryRunner.ts:299:19)[39m[22m
+[1m[31m    at processTicksAndRejections (node:internal/process/task_queues:95:5)[39m[22m
+[1m[31m    at PostgresQueryRunner.executeQueries (C:\projects\Comevent\src\query-runner\BaseQueryRunner.ts:659:13)[39m[22m
+[1m[31m    at PostgresQueryRunner.changeColumn (C:\projects\Comevent\src\driver\postgres\PostgresQueryRunner.ts:2237:9)[39m[22m
+[1m[31m    at PostgresQueryRunner.changeColumns (C:\projects\Comevent\src\driver\postgres\PostgresQueryRunner.ts:2249:13)[39m[22m
+[1m[31m    at RdbmsSchemaBuilder.updateExistColumns (C:\projects\Comevent\src\schema-builder\RdbmsSchemaBuilder.ts:947:13)[39m[22m
+[1m[31m    at RdbmsSchemaBuilder.executeSchemaSyncOperationsInProperOrder (C:\projects\Comevent\src\schema-builder\RdbmsSchemaBuilder.ts:228:9)[39m[22m
+[1m[31m    at RdbmsSchemaBuilder.build (C:\projects\Comevent\src\schema-builder\RdbmsSchemaBuilder.ts:95:13)[39m[22m
+[1m[31m    at DataSource.synchronize (C:\projects\Comevent\src\data-source\DataSource.ts:335:9)[39m[22m
+[1m[31m    at DataSource.initialize (C:\projects\Comevent\src\data-source\DataSource.ts:273:43)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31m[Nest] 49340  - [39m[31m03/12/2023, 5:29:14 p. m. [31m  ERROR[39m[31m [38;5;3m[ExceptionHandler] [39m[31m[31mla sintaxis de entrada no es válida para el enum social_networks_platform_enum: «x»[39m[31m[39m[22m
+[1m[31mQueryFailedError: la sintaxis de entrada no es válida para el enum social_networks_platform_enum: «x»[39m[22m
+[1m[31m    at PostgresQueryRunner.query (C:\projects\Comevent\src\driver\postgres\PostgresQueryRunner.ts:299:19)[39m[22m
+[1m[31m    at processTicksAndRejections (node:internal/process/task_queues:95:5)[39m[22m
+[1m[31m    at PostgresQueryRunner.executeQueries (C:\projects\Comevent\src\query-runner\BaseQueryRunner.ts:659:13)[39m[22m
+[1m[31m    at PostgresQueryRunner.changeColumn (C:\projects\Comevent\src\driver\postgres\PostgresQueryRunner.ts:2237:9)[39m[22m
+[1m[31m    at PostgresQueryRunner.changeColumns (C:\projects\Comevent\src\driver\postgres\PostgresQueryRunner.ts:2249:13)[39m[22m
+[1m[31m    at RdbmsSchemaBuilder.updateExistColumns (C:\projects\Comevent\src\schema-builder\RdbmsSchemaBuilder.ts:947:13)[39m[22m
+[1m[31m    at RdbmsSchemaBuilder.executeSchemaSyncOperationsInProperOrder (C:\projects\Comevent\src\schema-builder\RdbmsSchemaBuilder.ts:228:9)[39m[22m
+[1m[31m    at RdbmsSchemaBuilder.build (C:\projects\Comevent\src\schema-builder\RdbmsSchemaBuilder.ts:95:13)[39m[22m
+[1m[31m    at DataSource.synchronize (C:\projects\Comevent\src\data-source\DataSource.ts:335:9)[39m[22m
+[1m[31m    at DataSource.initialize (C:\projects\Comevent\src\data-source\DataSource.ts:273:43)[39m[22m
+[1m[31m[39m[22m
+
+[36m>[39m [7m[1m[36m NX [39m[22m[27m [1mProcess exited with code 1, waiting for changes to restart...[22m
+

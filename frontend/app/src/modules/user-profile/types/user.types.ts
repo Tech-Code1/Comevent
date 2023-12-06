@@ -13,12 +13,17 @@ export interface IUserProfile {
   events?: string[];
 }
 
+export interface ISocialNetworks {
+  platform: string;
+  link: string;
+}
+
 export interface ISimplifiedUserEditProfile {
   avatar: string;
   username: string;
   email: string;
   description: string;
-  socialNetworks: string[];
+  socialNetworks: ISocialNetworks[];
   areaOfInteres: string[];
   areaOfExpertise: string[];
   firstName: string;

@@ -10,3 +10,4 @@ export * from './main-info/main-info.component';
 export * from './modal-change-email/modal-change-email.component';
 export * from './modal-change-password/modal-change-password.component';
 export * from './modal-change-user-name/modal-change-user-name.component';
+export * from './social-networks/social-networks.component';

@@ -29,6 +29,7 @@ import {
 import {
   CreateUserDTO,
   UpdateUserDTO,
+  UserEditProfileDTO,
   UserToProjectDTO,
   ValidRolesDTO,
 } from './dto';
@@ -107,7 +108,7 @@ export class UsersController {
       const user = await this.usersService.findUserEditProfileById(id);
       console.log('Controller user:', user);
 
-      return Resp.Success<UserProfileDTO>(user, 'OK');
+      return Resp.Success<UserEditProfileDTO>(user, 'OK');
     } catch (error) {
       throw Resp.Error('NOT_FOUND', 'User not found');
     }

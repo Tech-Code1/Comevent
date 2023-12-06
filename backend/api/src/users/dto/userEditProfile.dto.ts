@@ -9,7 +9,10 @@ import {
   IsString,
   MaxLength,
 } from 'class-validator';
-import { ISimplifiedUserEditProfile } from '../types/userEditProfile.dto';
+import {
+  ISimplifiedUserEditProfile,
+  ISocialNetworks,
+} from '../types/userEditProfile.dto';
 
 export class UserEditProfileDTO implements ISimplifiedUserEditProfile {
   @ApiProperty({
@@ -73,7 +76,7 @@ export class UserEditProfileDTO implements ISimplifiedUserEditProfile {
   })
   @IsArray()
   @IsString({ each: true })
-  socialNetworks!: string[];
+  socialNetworks!: ISocialNetworks[];
 
   @ApiProperty({
     description: 'First name of the user',

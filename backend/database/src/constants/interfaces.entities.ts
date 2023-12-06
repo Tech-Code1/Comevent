@@ -51,7 +51,7 @@ export enum AreaName {
 }
 
 export enum SocialPlatform {
-  X = 'x',
+  X = 'X',
   DISCORD = 'Discord',
   FACEBOOK = 'Facebook',
   GITHUB = 'Github',

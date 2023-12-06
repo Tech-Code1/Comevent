@@ -20,7 +20,7 @@ export class UserProfileStateService {
     username: '',
     email: '',
     description: '',
-    socialNetworks: [],
+    socialNetworks: [{ link: '', platform: '' }],
     areaOfExpertise: [],
     areaOfInteres: [],
     firstName: '',
@@ -32,9 +32,11 @@ export class UserProfileStateService {
     country: '',
   });
   private _loading = signal<boolean>(false);
+  private _dataLoaded = signal<boolean>(false);
   public dataUserEditProfile = computed(() => this._dataUserEditProfile());
   public dataUserProfile = computed(() => this._dataUserProfile());
   public loadingProfile = computed(() => this._loading());
+  public dataLoaded = computed(() => this._dataLoaded());
 
   onDataUserProfile(id: string): void {
     this._loading.set(true);
@@ -74,12 +76,14 @@ export class UserProfileStateService {
 
           this._dataUserEditProfile.set(data as ISimplifiedUserEditProfile);
           this._loading.set(false);
+          this._dataLoaded.set(true);
 
           console.log('loading', this._loading());
         },
         error: ({ response }) => {
           Swal.error(response.message);
           this._loading.set(false);
+          this._dataLoaded.set(false);
         },
       });
   }
