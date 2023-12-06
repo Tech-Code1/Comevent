@@ -3237,7 +3237,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.html",
-          "hash": "18152998272158857273"
+          "hash": "9580638531759365041"
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.scss",
@@ -3245,7 +3245,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.ts",
-          "hash": "592565869814914506",
+          "hash": "16258954658614808174",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
@@ -3711,7 +3711,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/service/state/index.ts",
-          "hash": "2129635318706864861"
+          "hash": "15473846143033949899"
         },
         {
           "file": "frontend/app/src/modules/user-profile/service/state/reset.state.service.ts",
@@ -3848,6 +3848,15 @@
         {
           "file": "frontend/app/tsconfig.spec.json",
           "hash": "2927375835638640771"
+        },
+        {
+          "file": "frontend/app/src/modules/user-profile/service/state/form-areas.state.service.ts",
+          "hash": "8172599450053075726",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "npm:rxjs"
+          ]
         }
       ],
       "frontend-ui": [

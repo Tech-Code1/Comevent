@@ -3,9 +3,18 @@ import {
   ChangeDetectionStrategy,
   Component,
   Input,
+  OnChanges,
+  OnInit,
+  SimpleChanges,
   ViewEncapsulation,
+  inject,
 } from '@angular/core';
-import { ReactiveFormsModule } from '@angular/forms';
+import {
+  FormArray,
+  FormControl,
+  FormGroup,
+  ReactiveFormsModule,
+} from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
 import {
   ChipSelectComponent,
@@ -13,12 +22,13 @@ import {
   InputComponent,
   TitleComponent,
 } from '@ui/components';
-import { ISimplifiedUserEditProfile } from '../../..';
+import { FormChangeAreasService, ISimplifiedUserEditProfile } from '../../..';
 import { AREAS, TYPE_AREA } from '../../../constants';
 
 interface ISelectArea {
   id: number;
-  name: string;
+  name: AREAS;
+  type?: TYPE_AREA;
 }
 
 interface ISelectAreaWithType extends ISelectArea {
@@ -42,7 +52,7 @@ interface ISelectAreaWithType extends ISelectArea {
   encapsulation: ViewEncapsulation.Emulated,
   changeDetection: ChangeDetectionStrategy.Default,
 })
-export class AreaSelectComponent {
+export class AreaSelectComponent implements OnInit, OnChanges {
   @Input({ required: true }) dataUserEditProfile!: ISimplifiedUserEditProfile;
   @Input({ required: true }) loadingProfile!: boolean;
 
@@ -51,7 +61,7 @@ export class AreaSelectComponent {
 
   TYPE_AREA = TYPE_AREA;
 
-  areas = [
+  areas: ISelectArea[] = [
     {
       id: 1,
       name: AREAS.DEVELOPMENT,
@@ -95,7 +105,6 @@ export class AreaSelectComponent {
     {
       id: 11,
       name: AREAS.PUBLIC_RELATIONS,
-      type: TYPE_AREA,
     },
     {
       id: 12,
@@ -103,29 +112,124 @@ export class AreaSelectComponent {
     },
   ];
 
+  protected formChangeAreasService = inject(FormChangeAreasService);
+  changeAreas!: FormGroup;
+
+  ngOnInit(): void {
+    this.changeAreas = this.formChangeAreasService.getchangeAreasForm();
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    if (changes['dataUserEditProfile']) {
+      const currentData = changes['dataUserEditProfile'].currentValue;
+      this.formChangeAreasService.updateFormWithNewData(currentData);
+      this.initializeSelectedAreas();
+    }
+  }
+
+  initializeSelectedAreas() {
+    const expertiseArray = this.changeAreas.get('areaOfExpertise') as FormArray;
+    const interestArray = this.changeAreas.get('areaOfInteres') as FormArray;
+
+    console.log('expertiseArray values:', expertiseArray.value);
+    console.log('interestArray values:', interestArray.value);
+
+    this.areasSelectTypeExpertise = expertiseArray.value
+      .map((areaName: string) => {
+        const foundArea = this.areas.find(
+          (area: ISelectArea) => area.name === areaName
+        );
+        console.log(`Mapping ${areaName}:`, foundArea);
+        return foundArea;
+      })
+      .filter((area: ISelectArea | undefined): area is ISelectArea => !!area)
+      .map((area: ISelectArea) => ({
+        id: area.id,
+        name: area.name,
+        type: TYPE_AREA.EXPERTISE,
+      }));
+
+    console.log(
+      'Final areasSelectTypeExpertise:',
+      this.areasSelectTypeExpertise
+    );
+
+    this.areasSelectTypeInteres = interestArray.value
+      .map((areaName: string) =>
+        this.areas.find((area: ISelectArea) => area.name === areaName)
+      )
+      .filter((area: ISelectArea | undefined): area is ISelectArea => !!area)
+      .map((area: ISelectArea) => ({
+        id: area.id,
+        name: area.name,
+        type: TYPE_AREA.INTEREST,
+      }));
+
+    console.log('areasSelectTypeInteres', this.areasSelectTypeInteres);
+
+    const expertiseControl = this.changeAreas.get(
+      'areaOfExpertise'
+    ) as FormArray;
+    this.areasSelectTypeExpertise.forEach((area) => {
+      expertiseControl.push(new FormControl(area.id));
+    });
+
+    const interestControl = this.changeAreas.get('areaOfInteres') as FormArray;
+    this.areasSelectTypeInteres.forEach((area) => {
+      interestControl.push(new FormControl(area.id));
+    });
+  }
+
   toggleAreaSelection(area: ISelectArea, type: TYPE_AREA) {
-    const selectionArray =
-      type === TYPE_AREA.EXPERTISE
-        ? this.areasSelectTypeExpertise
-        : this.areasSelectTypeInteres;
-    const index = selectionArray.findIndex(
-      (selectedArea) => selectedArea.id === area.id
+    const control = this.changeAreas.get(
+      type === TYPE_AREA.EXPERTISE ? 'areaOfExpertise' : 'areaOfInteres'
+    ) as FormArray;
+
+    const index = control.value.findIndex(
+      (selectedAreaId: number) => selectedAreaId === area.id
     );
 
     if (index > -1) {
-      // Si el área ya está seleccionada, deselecciónala
-      selectionArray.splice(index, 1);
+      control.removeAt(index);
+      // También eliminar de areasSelectTypeExpertise o areasSelectTypeInteres
+      this.removeFromSelectedAreas(area.id, type);
     } else {
-      // Si el área no está seleccionada, selecciónala
-      selectionArray.push({ ...area, type });
+      control.push(new FormControl(area.id));
+      // También agregar a areasSelectTypeExpertise o areasSelectTypeInteres
+      this.addToSelectedAreas(area, type);
+    }
+  }
+
+  addToSelectedAreas(area: ISelectArea, type: TYPE_AREA) {
+    const selectedArray =
+      type === TYPE_AREA.EXPERTISE
+        ? this.areasSelectTypeExpertise
+        : this.areasSelectTypeInteres;
+    selectedArray.push({ ...area, type });
+  }
+
+  removeFromSelectedAreas(areaId: number, type: TYPE_AREA) {
+    const selectedArray =
+      type === TYPE_AREA.EXPERTISE
+        ? this.areasSelectTypeExpertise
+        : this.areasSelectTypeInteres;
+    const index = selectedArray.findIndex(
+      (selectedArea) => selectedArea.id === areaId
+    );
+    if (index > -1) {
+      selectedArray.splice(index, 1);
     }
   }
 
   isAreaSelected(area: ISelectArea, type: TYPE_AREA): boolean {
-    const selectionArray =
-      type === TYPE_AREA.EXPERTISE
-        ? this.areasSelectTypeExpertise
-        : this.areasSelectTypeInteres;
-    return selectionArray.some((selectedArea) => selectedArea.id === area.id);
+    if (type === TYPE_AREA.EXPERTISE) {
+      return this.areasSelectTypeExpertise.some(
+        (selectedArea) => selectedArea.id === area.id
+      );
+    } else {
+      return this.areasSelectTypeInteres.some(
+        (selectedArea) => selectedArea.id === area.id
+      );
+    }
   }
 }

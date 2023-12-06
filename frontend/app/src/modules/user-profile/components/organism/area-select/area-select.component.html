@@ -1,4 +1,8 @@
-<div class="flex flex-row gap-2 w-full">
+<form
+  [formGroup]="changeAreas"
+  autocomplete="off"
+  class="flex flex-row gap-2 w-full"
+>
   <div
     class="flex gap-4 justify-center items-center flex-1 p-4 flex-wrap h-auto bg-white-1 dark:bg-black-1 rounded-md shadow-neutral-level1"
   >
@@ -7,8 +11,6 @@
     >
 
     @for(area of areas; track area.id) {
-
-    <!-- Botón para EXPERTISE -->
     <button
       (click)="toggleAreaSelection(area, TYPE_AREA.EXPERTISE)"
       [ngClass]="{
@@ -53,10 +55,11 @@
         'flex flex-row justify-center items-center w-fit px-2 h-[38px] outline-none border-none rounded-2xl': true
       }"
     >
-      {{ area.name }} @if(isAreaSelected(area, TYPE_AREA.INTEREST)) {
+      @if(isAreaSelected(area, TYPE_AREA.INTEREST)) {
       <icon-circle-check />
       }
+      {{ area.name }}
     </button>
     }
   </div>
-</div>
+</form>
