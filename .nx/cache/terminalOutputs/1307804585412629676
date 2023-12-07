@@ -1,0 +1,21 @@
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 244 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (a1f3078df898ea20)
+[1m[31mDebugger listening on ws:/[39m[22m
+[1m[31m/localhost:9229/e3a451e6-58e3-42b2-ac44-53b75a4cfe20[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/e3a451e6-58e3-42b2-ac44-53b75a4cfe20[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 244 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (1043e6d084fd1724)
+[1m[31mDebugger listening on ws:[39m[22m
+[1m[31m//localhost:9229/0f116b5c-506f-4544-bcaa-b57a93027b9e[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/0f116b5c-506f-4544-bcaa-b57a93027b9e[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 244 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (af318335091ea0bd)
+[1m[31mDebugger listening o[39m[22m
+[1m[31mn ws://localhost:9229/dec006b6-23b4-42a2-ade7-f93c00fdfbe2[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/dec006b6-23b4-42a2-ade7-f93c00fdfbe2[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m

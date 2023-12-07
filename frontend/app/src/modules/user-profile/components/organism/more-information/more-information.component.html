@@ -1,0 +1,74 @@
+<form
+  [formGroup]="changeMoreInformation"
+  autocomplete="off"
+  class="p-4 bg-gray-0 shadow-neutral-level2 rounded-xl h-auto"
+>
+  <c-title variant="title-h5">Conociéndote mejor</c-title>
+  <div class="grid grid-cols-2 gap-x-4 gap-y-6 mt-6">
+    <c-label variant="label-base" for="firstName">
+      Nombre
+      <c-input
+        class="flex-grow"
+        css="input-primary"
+        type="text"
+        placeholder="Enter your first name"
+        formControlName="firstName"
+        name="firstName"
+      />
+    </c-label>
+    <c-label variant="label-base" for="lastName">
+      Apellidos
+      <c-input
+        class="flex-grow"
+        css="input-primary"
+        type="text"
+        placeholder="Enter your last name"
+        formControlName="lastName"
+        name="lastName"
+      />
+    </c-label>
+    <c-label variant="label-base" for="gender">
+      Genero
+      <c-select
+        variant="select-base"
+        [options]="genders"
+        placeholder="Select your gender"
+        formControlName="gender"
+        name="gender"
+        id="gender"
+      />
+    </c-label>
+    <c-label variant="label-base" for="bornDate">
+      Fecha de nacimiento
+      <c-input
+        class="flex-grow"
+        css="input-primary"
+        type="date"
+        formControlName="bornDate"
+        name="bornDate"
+      />
+    </c-label>
+    <c-label variant="label-base" for="specialty">
+      Especialidad
+      <c-select
+        variant="select-base"
+        [options]="specialtiesOptions"
+        placeholder="Select your specialty"
+        formControlName="specialty"
+        name="specialty"
+        id="specialty"
+      />
+    </c-label>
+    <c-label variant="label-base" for="country">
+      País
+      <c-select
+        variant="select-base"
+        [options]="countriesOptions"
+        placeholder="Select your country"
+        formControlName="country"
+        name="country"
+        id="country"
+      />
+    </c-label>
+  </div>
+</form>

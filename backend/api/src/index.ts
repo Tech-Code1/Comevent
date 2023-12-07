@@ -1,7 +1,9 @@
 export * from './app.module';
 export * from './area/area.module';
 export * from './auth/auth.module';
+export * from './countries/countries.module';
 export * from './projects/projects.module';
+export * from './specialties/specialties.module';
 export * from './tasks/tasks.module';
 export * from './users/users.module';
 export * from './usersProjects/users-projects.module';
@@ -9,7 +11,9 @@ export * from './usersProjects/users-projects.module';
 import {
   AreaModule,
   AuthModule,
+  CountriesModule,
   ProjectsModule,
+  SpecialtiesModule,
   TasksModule,
   UsersModule,
   UsersProjectsModule,
@@ -22,4 +26,6 @@ export const Modules = [
   TasksModule,
   UsersProjectsModule,
   AreaModule,
+  SpecialtiesModule,
+  CountriesModule,
 ];

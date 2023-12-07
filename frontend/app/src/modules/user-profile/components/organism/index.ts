@@ -1,3 +1,5 @@
+export * from './area-select/area-select.component';
+export * from './areas/areas.component';
 export * from './avatar/avatar.component';
 export * from './buttons-actions-change-main-info/buttons-actions-change-main-info.component';
 export * from './card-profile/card-profile.component';
@@ -10,4 +12,5 @@ export * from './main-info/main-info.component';
 export * from './modal-change-email/modal-change-email.component';
 export * from './modal-change-password/modal-change-password.component';
 export * from './modal-change-user-name/modal-change-user-name.component';
+export * from './more-information/more-information.component';
 export * from './social-networks/social-networks.component';

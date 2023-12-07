@@ -2,7 +2,12 @@ import { Injectable, computed, inject, signal } from '@angular/core';
 import { Router } from '@angular/router';
 import { Swal } from '@utils';
 import { take } from 'rxjs';
-import { ISimplifiedUserEditProfile, IUserProfile } from '../..';
+import {
+  ICountries,
+  ISimplifiedUserEditProfile,
+  ISpecialties,
+  IUserProfile,
+} from '../..';
 import { environment } from '../../../../environments/environment';
 import { UserProfileApiService } from '../api';
 
@@ -31,12 +36,14 @@ export class UserProfileStateService {
     specialty: '',
     country: '',
   });
+  private _dataCountries = signal<ICountries[]>([{ id: 0, name: '' }]);
+  private _dataSpecialties = signal<ISpecialties[]>([{ id: 0, name: '' }]);
   private _loading = signal<boolean>(false);
-  private _dataLoaded = signal<boolean>(false);
+  public dataCountries = computed(() => this._dataCountries());
+  public dataSpecialties = computed(() => this._dataSpecialties());
   public dataUserEditProfile = computed(() => this._dataUserEditProfile());
   public dataUserProfile = computed(() => this._dataUserProfile());
   public loadingProfile = computed(() => this._loading());
-  public dataLoaded = computed(() => this._dataLoaded());
 
   onDataUserProfile(id: string): void {
     this._loading.set(true);
@@ -64,8 +71,6 @@ export class UserProfileStateService {
 
   onDataUserEditProfile(id: string): void {
     this._loading.set(true);
-    console.log('loading', this._loading());
-    console.log('entro a onDataUserProfile', id);
 
     this.userProfileService
       .dataUserEditProfile(id)
@@ -76,14 +81,46 @@ export class UserProfileStateService {
 
           this._dataUserEditProfile.set(data as ISimplifiedUserEditProfile);
           this._loading.set(false);
-          this._dataLoaded.set(true);
-
-          console.log('loading', this._loading());
         },
         error: ({ response }) => {
           Swal.error(response.message);
           this._loading.set(false);
-          this._dataLoaded.set(false);
+        },
+      });
+  }
+
+  onDataCountries(): void {
+    this._loading.set(true);
+
+    this.userProfileService
+      .allCountries()
+      .pipe(take(1))
+      .subscribe({
+        next: ({ data }) => {
+          this._dataCountries.set(data as ICountries[]);
+          this._loading.set(false);
+        },
+        error: ({ response }) => {
+          Swal.error(response.message);
+          this._loading.set(false);
+        },
+      });
+  }
+
+  onDataSpecialties(): void {
+    this._loading.set(true);
+
+    this.userProfileService
+      .allSpecialties()
+      .pipe(take(1))
+      .subscribe({
+        next: ({ data }) => {
+          this._dataSpecialties.set(data as ISpecialties[]);
+          this._loading.set(false);
+        },
+        error: ({ response }) => {
+          Swal.error(response.message);
+          this._loading.set(false);
         },
       });
   }

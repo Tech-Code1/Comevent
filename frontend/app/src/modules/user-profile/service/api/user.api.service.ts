@@ -4,9 +4,19 @@ import { Router } from '@angular/router';
 import { Observable, catchError, of, switchMap } from 'rxjs';
 import { BaseResponse } from '../../../../common';
 import { environment } from '../../../../environments/environment';
-import { DataUserAdapter, DataUserEditProfileAdapter } from '../../adapters';
+import {
+  DataCountriesAdapter,
+  DataSpecialtiesAdapter,
+  DataUserAdapter,
+  DataUserEditProfileAdapter,
+} from '../../adapters';
 
-import { ISimplifiedUserEditProfile, IUserProfile } from '../../types';
+import {
+  ICountries,
+  ISimplifiedUserEditProfile,
+  ISpecialties,
+  IUserProfile,
+} from '../../types';
 
 @Injectable({
   providedIn: 'root',
@@ -50,6 +60,30 @@ export class UserProfileApiService {
       )
       .pipe(
         switchMap((res) => of(DataUserEditProfileAdapter(res))),
+        catchError(({ error }) => {
+          throw error;
+        })
+      );
+  }
+
+  allCountries(): Observable<BaseResponse<ICountries[] | undefined>> {
+    return this.http
+      .get<BaseResponse<ICountries[] | undefined>>(`${this.BASE_API}/countries`)
+      .pipe(
+        switchMap((res) => of(DataCountriesAdapter(res))),
+        catchError(({ error }) => {
+          throw error;
+        })
+      );
+  }
+
+  allSpecialties(): Observable<BaseResponse<ISpecialties[] | undefined>> {
+    return this.http
+      .get<BaseResponse<ISpecialties[] | undefined>>(
+        `${this.BASE_API}/specialties`
+      )
+      .pipe(
+        switchMap((res) => of(DataSpecialtiesAdapter(res))),
         catchError(({ error }) => {
           throw error;
         })

@@ -1,4 +1,5 @@
-<div *ngIf="control" class="content-input">
+@if(control) {
+<div class="content-input">
   <div class="content-input relative">
     <input
       [ngClass]="{
@@ -26,20 +27,21 @@
         'r-10': control.value !== ''
       }"
     >
-      <icon-hidden-pass *ngIf="showPassword" />
-      <icon-show-pass *ngIf="!showPassword" />
+      @if(showPassword) {
+      <icon-hidden-pass />
+      } @else {
+      <icon-show-pass />
+      }
     </button>
-    <button
-      *ngIf="control.value !== ''"
-      (click)="clearInput()"
-      class="clear-button"
-    >
+
+    @if (control.value !== '' && inputType !== 'date') {
+    <button (click)="clearInput()" class="clear-button">
       <icon-clear-input />
     </button>
+    }
   </div>
-  <c-error-input
-    *ngIf="!isValid() && !control!.disabled && control!.touched"
-    [formContained]="control"
-    [controlName]="name"
-  ></c-error-input>
+  @if(!isValid() && !control!.disabled && control!.touched) {
+  <c-error-input [formContained]="control" [controlName]="name"></c-error-input>
+  }
 </div>
+}

@@ -230,15 +230,15 @@
       },
       {
         "file": ".nx/cache/d/daemon.log",
-        "hash": "9758133211520574722"
+        "hash": "10651747551460658960"
       },
       {
         "file": ".nx/cache/d/server-process.json",
-        "hash": "3664457021432443740"
+        "hash": "14383431590872465798"
       },
       {
         "file": ".nx/cache/file-map.json",
-        "hash": "2043601809369441094"
+        "hash": "5074527361783382911"
       },
       {
         "file": ".nx/cache/file-map.json~7050fc8b",
@@ -261,6 +261,10 @@
         "hash": "10220311230790957895"
       },
       {
+        "file": ".nx/cache/file-map.json~faf1786d",
+        "hash": "7853024616914436098"
+      },
+      {
         "file": ".nx/cache/lockfile.hash",
         "hash": "11681234816929326142"
       },
@@ -270,7 +274,7 @@
       },
       {
         "file": ".nx/cache/project-graph.json",
-        "hash": "8739326744221784191"
+        "hash": "15521399041336839320"
       },
       {
         "file": ".nx/cache/project-graph.json~23d1c17d",
@@ -357,6 +361,10 @@
         "hash": "107055761576977861"
       },
       {
+        "file": ".nx/cache/terminalOutputs/1307804585412629676",
+        "hash": "9696591764456991238"
+      },
+      {
         "file": ".nx/cache/terminalOutputs/13844363471664053394",
         "hash": "730061711187443785"
       },
@@ -371,6 +379,10 @@
       {
         "file": ".nx/cache/terminalOutputs/14220389634770460009",
         "hash": "10041791102124746888"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/15113196810980034879",
+        "hash": "14618093672095372936"
       },
       {
         "file": ".nx/cache/terminalOutputs/15240892652495236976",
@@ -466,7 +478,7 @@
       },
       {
         "file": ".nx/cache/terminalOutputs/9696018590133355535",
-        "hash": "5006778888022286911"
+        "hash": "10616029713888303849"
       },
       {
         "file": ".prettierignore",
@@ -622,50 +634,6 @@
       }
     ],
     "projectFileMap": {
-      "api-e2e": [
-        {
-          "file": "backend/api-e2e/.eslintrc.json",
-          "hash": "915344961052474398"
-        },
-        {
-          "file": "backend/api-e2e/jest.config.ts",
-          "hash": "2076893759250098545"
-        },
-        {
-          "file": "backend/api-e2e/project.json",
-          "hash": "1785820208333181515"
-        },
-        {
-          "file": "backend/api-e2e/src/api/api.spec.ts",
-          "hash": "110394728024017389",
-          "deps": [
-            "npm:axios"
-          ]
-        },
-        {
-          "file": "backend/api-e2e/src/support/global-setup.ts",
-          "hash": "2568409276037275290"
-        },
-        {
-          "file": "backend/api-e2e/src/support/global-teardown.ts",
-          "hash": "5275447082211835490"
-        },
-        {
-          "file": "backend/api-e2e/src/support/test-setup.ts",
-          "hash": "10984585515912236441",
-          "deps": [
-            "npm:axios"
-          ]
-        },
-        {
-          "file": "backend/api-e2e/tsconfig.json",
-          "hash": "15443990093475294480"
-        },
-        {
-          "file": "backend/api-e2e/tsconfig.spec.json",
-          "hash": "14226830188665428950"
-        }
-      ],
       "database": [
         {
           "file": "backend/database/.eslintrc.json",
@@ -937,1025 +905,48 @@
           "hash": "17313551537729802733"
         }
       ],
-      "api": [
+      "api-e2e": [
         {
-          "file": "backend/api/.eslintrc.json",
-          "hash": "11808533155536463924"
+          "file": "backend/api-e2e/.eslintrc.json",
+          "hash": "915344961052474398"
         },
         {
-          "file": "backend/api/jest.config.ts",
-          "hash": "10410655590686536064"
+          "file": "backend/api-e2e/jest.config.ts",
+          "hash": "2076893759250098545"
         },
         {
-          "file": "backend/api/project.json",
-          "hash": "14561998618801452623"
+          "file": "backend/api-e2e/project.json",
+          "hash": "1785820208333181515"
         },
         {
-          "file": "backend/api/src/app.module.ts",
-          "hash": "3563919450486913460",
+          "file": "backend/api-e2e/src/api/api.spec.ts",
+          "hash": "110394728024017389",
           "deps": [
-            "npm:@config",
-            "npm:@nestjs/common",
-            "npm:@nestjs/config",
-            "npm:@nestjs/core",
-            "npm:@nestjs/passport",
-            "database"
+            "npm:axios"
           ]
         },
         {
-          "file": "backend/api/src/app.swagger.ts",
-          "hash": "10504308339016107310",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:@nestjs/swagger"
-          ]
-        },
-        {
-          "file": "backend/api/src/area/area.controller.ts",
-          "hash": "16125121437747420412",
-          "deps": [
-            "database",
-            "npm:@nestjs/common",
-            "npm:@nestjs/swagger"
-          ]
-        },
-        {
-          "file": "backend/api/src/area/area.module.ts",
-          "hash": "15370726037198224021",
-          "deps": [
-            "database",
-            "npm:@nestjs/common",
-            "npm:@nestjs/typeorm"
-          ]
-        },
-        {
-          "file": "backend/api/src/area/area.service.ts",
-          "hash": "12655759358342578881",
-          "deps": [
-            "database",
-            "npm:@nestjs/common",
-            "npm:@nestjs/typeorm",
-            "npm:typeorm"
-          ]
-        },
-        {
-          "file": "backend/api/src/assets/.gitkeep",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "backend/api/src/auth/auth.controller.ts",
-          "hash": "185111740481742478",
-          "deps": [
-            "database",
-            "npm:@nestjs/common",
-            "npm:@nestjs/passport",
-            "npm:@nestjs/swagger",
-            "npm:express"
-          ]
-        },
-        {
-          "file": "backend/api/src/auth/auth.module.ts",
-          "hash": "16651922779206095902",
-          "deps": [
-            "database",
-            "npm:@environments",
-            "npm:@nestjs/common",
-            "npm:@nestjs/config",
-            "npm:@nestjs/jwt",
-            "npm:@nestjs/passport",
-            "npm:@nestjs/typeorm"
-          ]
-        },
-        {
-          "file": "backend/api/src/auth/auth.service.ts",
-          "hash": "15749669764384698902",
-          "deps": [
-            "database",
-            "npm:@environments",
-            "npm:@nestjs/common",
-            "npm:@nestjs/jwt",
-            "npm:@nestjs/typeorm",
-            "npm:bcrypt",
-            "npm:crypto",
-            "npm:dayjs",
-            "npm:express",
-            "npm:jsonwebtoken",
-            "npm:typeorm"
-          ]
-        },
-        {
-          "file": "backend/api/src/auth/decorators/acces-level.decorator.ts",
-          "hash": "10529209302442514045",
-          "deps": [
-            "npm:@nestjs/common"
-          ]
-        },
-        {
-          "file": "backend/api/src/auth/decorators/admin.decorator.ts",
-          "hash": "7548823918736944556",
-          "deps": [
-            "npm:@nestjs/common",
-            "database"
-          ]
-        },
-        {
-          "file": "backend/api/src/auth/decorators/current-user.decorator.ts",
-          "hash": "6811982820780507150",
-          "deps": [
-            "database",
-            "npm:@nestjs/common"
-          ]
-        },
-        {
-          "file": "backend/api/src/auth/decorators/index.ts",
-          "hash": "558347427463686194"
-        },
-        {
-          "file": "backend/api/src/auth/decorators/public.decorator.ts",
-          "hash": "6581443707803336431",
-          "deps": [
-            "npm:@nestjs/common"
-          ]
-        },
-        {
-          "file": "backend/api/src/auth/decorators/roles.decorator.ts",
-          "hash": "11841690213369684511",
-          "deps": [
-            "database",
-            "npm:@nestjs/common"
-          ]
-        },
-        {
-          "file": "backend/api/src/auth/decorators/swagger/change-pass-doc.decorator.ts",
-          "hash": "17823072929519557499",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:@nestjs/swagger"
-          ]
-        },
-        {
-          "file": "backend/api/src/auth/decorators/swagger/login-doc.decorator.ts",
-          "hash": "1859001547180751817",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:@nestjs/swagger"
-          ]
-        },
-        {
-          "file": "backend/api/src/auth/decorators/swagger/reset-pass-doc.decorator.ts",
-          "hash": "16421643038082706334",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:@nestjs/swagger"
-          ]
-        },
-        {
-          "file": "backend/api/src/auth/decorators/swagger/revalidate-doc.decorator.ts",
-          "hash": "5831767998717753483",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:@nestjs/swagger"
-          ]
-        },
-        {
-          "file": "backend/api/src/auth/decorators/swagger/signup-doc.decorator.ts",
-          "hash": "6482758399604328382",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:@nestjs/swagger"
-          ]
-        },
-        {
-          "file": "backend/api/src/auth/dto/change-pass.dto.ts",
-          "hash": "17195861199042371287",
-          "deps": [
-            "npm:@nestjs/swagger",
-            "npm:class-validator"
-          ]
-        },
-        {
-          "file": "backend/api/src/auth/dto/index.ts",
-          "hash": "12462325666176038947"
-        },
-        {
-          "file": "backend/api/src/auth/dto/login.dto.ts",
-          "hash": "17198059859859239512",
-          "deps": [
-            "npm:@nestjs/swagger",
-            "npm:class-validator"
-          ]
-        },
-        {
-          "file": "backend/api/src/auth/dto/requestPassword.dto.ts",
-          "hash": "11706996441944336583",
-          "deps": [
-            "npm:class-validator"
-          ]
-        },
-        {
-          "file": "backend/api/src/auth/dto/requestPasswordChange.dto.ts",
-          "hash": "11481739332745009425",
-          "deps": [
-            "npm:class-validator"
-          ]
-        },
-        {
-          "file": "backend/api/src/auth/dto/signup.dto.ts",
-          "hash": "13760903086670607864",
-          "deps": [
-            "npm:@nestjs/swagger",
-            "npm:class-validator"
-          ]
-        },
-        {
-          "file": "backend/api/src/auth/guards/acces-level.guard.ts",
-          "hash": "4748263177417957218",
-          "deps": [
-            "database",
-            "npm:@nestjs/common",
-            "npm:@nestjs/core",
-            "npm:express"
-          ]
-        },
-        {
-          "file": "backend/api/src/auth/guards/auth.guard.ts",
-          "hash": "9195726171493065161",
-          "deps": [
-            "npm:@config",
-            "npm:@nestjs/common",
-            "npm:@nestjs/jwt"
-          ]
-        },
-        {
-          "file": "backend/api/src/auth/guards/facebook.guard.ts",
-          "hash": "16449027789597406484",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:@nestjs/passport"
-          ]
-        },
-        {
-          "file": "backend/api/src/auth/guards/github.guard.ts",
-          "hash": "15870358279194370973",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:@nestjs/passport"
-          ]
-        },
-        {
-          "file": "backend/api/src/auth/guards/google.guard.ts",
-          "hash": "4130515499937017839",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:@nestjs/passport"
-          ]
-        },
-        {
-          "file": "backend/api/src/auth/guards/index.ts",
-          "hash": "3663959007995301117"
-        },
-        {
-          "file": "backend/api/src/auth/guards/jwt-auth.guard.ts",
-          "hash": "15060078834846822999",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:@nestjs/core",
-            "npm:@nestjs/passport"
-          ]
-        },
-        {
-          "file": "backend/api/src/auth/guards/pkce.guard.ts",
-          "hash": "5455328229169374721",
-          "deps": [
-            "npm:@environments",
-            "npm:@nestjs/common",
-            "npm:rxjs"
-          ]
-        },
-        {
-          "file": "backend/api/src/auth/guards/roles.guard.ts",
-          "hash": "5237044417080243310",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:@nestjs/core",
-            "npm:express",
-            "database"
-          ]
-        },
-        {
-          "file": "backend/api/src/auth/interface/auth.interface.ts",
-          "hash": "14541380455406616353",
-          "deps": [
-            "database"
-          ]
-        },
-        {
-          "file": "backend/api/src/auth/interface/index.ts",
-          "hash": "673765648508111900"
-        },
-        {
-          "file": "backend/api/src/auth/interface/jwt-payload.interface.ts",
-          "hash": "663874955167850530"
-        },
-        {
-          "file": "backend/api/src/auth/strategies/facebook.strategy.ts",
-          "hash": "17983891930110734175",
-          "deps": [
-            "npm:@config",
-            "npm:@nestjs/common",
-            "npm:@nestjs/passport",
-            "npm:passport-facebook",
-            "database"
-          ]
-        },
-        {
-          "file": "backend/api/src/auth/strategies/github.strategy.ts",
-          "hash": "2479104041156167215",
-          "deps": [
-            "npm:@config",
-            "npm:@nestjs/common",
-            "npm:@nestjs/passport",
-            "npm:passport-github",
-            "database"
-          ]
-        },
-        {
-          "file": "backend/api/src/auth/strategies/google.strategy.ts",
-          "hash": "1692054788631592183",
-          "deps": [
-            "npm:@config",
-            "npm:@nestjs/common",
-            "npm:@nestjs/passport",
-            "npm:passport-google-oauth20",
-            "database"
-          ]
-        },
-        {
-          "file": "backend/api/src/auth/strategies/jwt.strategy.ts",
-          "hash": "9612714382471815911",
-          "deps": [
-            "database",
-            "npm:@environments",
-            "npm:@nestjs/common",
-            "npm:@nestjs/passport",
-            "npm:passport-jwt"
-          ]
-        },
-        {
-          "file": "backend/api/src/auth/types/auth-response.type.ts",
-          "hash": "6028247423460999860",
-          "deps": [
-            "database"
-          ]
-        },
-        {
-          "file": "backend/api/src/common/dto/args/id.args.ts",
-          "hash": "2210502926357284987",
-          "deps": [
-            "npm:class-validator"
-          ]
-        },
-        {
-          "file": "backend/api/src/common/dto/args/index.ts",
-          "hash": "7788431459639943469"
-        },
-        {
-          "file": "backend/api/src/common/dto/args/pagination.args.ts",
-          "hash": "6629950796445591723",
-          "deps": [
-            "npm:class-validator"
-          ]
-        },
-        {
-          "file": "backend/api/src/common/dto/args/search.args.ts",
-          "hash": "10401169613357508930",
-          "deps": [
-            "npm:class-validator"
-          ]
-        },
-        {
-          "file": "backend/api/src/constants/cors.ts",
-          "hash": "13398220538141786153",
-          "deps": [
-            "npm:@nestjs/common"
-          ]
-        },
-        {
-          "file": "backend/api/src/constants/errors.ts",
-          "hash": "2929849685026547547",
-          "deps": [
-            "npm:@nestjs/common"
-          ]
-        },
-        {
-          "file": "backend/api/src/constants/index.ts",
-          "hash": "5229635944273220209"
-        },
-        {
-          "file": "backend/api/src/constants/key-decorators.ts",
-          "hash": "467499242283815770"
-        },
-        {
-          "file": "backend/api/src/constants/roles.ts",
-          "hash": "12344311878785014289"
-        },
-        {
-          "file": "backend/api/src/index.ts",
-          "hash": "5748356948307036234"
-        },
-        {
-          "file": "backend/api/src/interceptors/exceptions.interceptor.ts",
-          "hash": "9332761257826541926",
-          "deps": [
-            "npm:@nestjs/common"
-          ]
-        },
-        {
-          "file": "backend/api/src/interceptors/index.ts",
-          "hash": "6350708925002298062"
-        },
-        {
-          "file": "backend/api/src/interceptors/response.interceptor.ts",
-          "hash": "17145290048099861449",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:rxjs"
-          ]
-        },
-        {
-          "file": "backend/api/src/interface/claimTypes.ts",
-          "hash": "17199848774550112308"
-        },
-        {
-          "file": "backend/api/src/interface/index.ts",
-          "hash": "3062559052684587073"
-        },
-        {
-          "file": "backend/api/src/interface/queryFailedError.ts",
-          "hash": "14264912560477587355"
-        },
-        {
-          "file": "backend/api/src/interface/typeErrorCustom.ts",
-          "hash": "11828346044441010074",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:typeorm"
-          ]
-        },
-        {
-          "file": "backend/api/src/main.ts",
-          "hash": "14968384786319686850",
-          "deps": [
-            "npm:@environments",
-            "npm:@nestjs/common",
-            "npm:@nestjs/core",
-            "npm:cookie-parser",
-            "npm:express-session",
-            "npm:morgan",
-            "npm:passport"
-          ]
-        },
-        {
-          "file": "backend/api/src/projects/decorators/index.ts",
-          "hash": "458777424225743231"
-        },
-        {
-          "file": "backend/api/src/projects/decorators/swagger/create-project.decorator.ts",
-          "hash": "12606132872499653029",
-          "deps": [
-            "database",
-            "npm:@nestjs/common",
-            "npm:@nestjs/swagger"
-          ]
-        },
-        {
-          "file": "backend/api/src/projects/decorators/swagger/delete-project.decorator.ts",
-          "hash": "17296198801750140279",
-          "deps": [
-            "database",
-            "npm:@nestjs/common",
-            "npm:@nestjs/swagger"
-          ]
-        },
-        {
-          "file": "backend/api/src/projects/decorators/swagger/edit-project.decorator.ts",
-          "hash": "14690292407308202760",
-          "deps": [
-            "database",
-            "npm:@nestjs/common",
-            "npm:@nestjs/swagger"
-          ]
-        },
-        {
-          "file": "backend/api/src/projects/decorators/swagger/project.decorator.ts",
-          "hash": "7954063539859900892",
-          "deps": [
-            "database",
-            "npm:@nestjs/common",
-            "npm:@nestjs/swagger"
-          ]
-        },
-        {
-          "file": "backend/api/src/projects/decorators/swagger/projects.decorator.ts",
-          "hash": "13216124156034659566",
-          "deps": [
-            "database",
-            "npm:@nestjs/common",
-            "npm:@nestjs/swagger"
-          ]
-        },
-        {
-          "file": "backend/api/src/projects/dto/create-project.dto.ts",
-          "hash": "17602604209348004232",
-          "deps": [
-            "npm:@nestjs/swagger",
-            "npm:class-validator"
-          ]
-        },
-        {
-          "file": "backend/api/src/projects/dto/index.ts",
-          "hash": "8139777130917274963"
-        },
-        {
-          "file": "backend/api/src/projects/dto/update-project.dto.ts",
-          "hash": "16534439638400119203",
-          "deps": [
-            "npm:@nestjs/mapped-types",
-            "npm:@nestjs/swagger",
-            "npm:class-validator"
-          ]
-        },
-        {
-          "file": "backend/api/src/projects/projects.controller.ts",
-          "hash": "6437854435913221615",
-          "deps": [
-            "database",
-            "npm:@nestjs/common",
-            "npm:@nestjs/swagger"
-          ]
-        },
-        {
-          "file": "backend/api/src/projects/projects.module.ts",
-          "hash": "1682771540431308364",
-          "deps": [
-            "database",
-            "npm:@nestjs/common",
-            "npm:@nestjs/typeorm"
-          ]
-        },
-        {
-          "file": "backend/api/src/projects/projects.service.ts",
-          "hash": "8059704962546976933",
-          "deps": [
-            "database",
-            "npm:@nestjs/common",
-            "npm:@nestjs/typeorm",
-            "npm:typeorm"
-          ]
-        },
-        {
-          "file": "backend/api/src/shared/utils/validationSchema.ts",
-          "hash": "16338646587039568477",
-          "deps": [
-            "npm:joi"
-          ]
-        },
-        {
-          "file": "backend/api/src/tasks/decorators/index.ts",
-          "hash": "16421770323062636487"
-        },
-        {
-          "file": "backend/api/src/tasks/decorators/swagger/create-task-doc.decorator.ts",
-          "hash": "8404651279372037983",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:@nestjs/swagger"
-          ]
-        },
-        {
-          "file": "backend/api/src/tasks/dto/create-task.dto.ts",
-          "hash": "5465300743460021082",
-          "deps": [
-            "database",
-            "npm:@nestjs/swagger",
-            "npm:class-validator"
-          ]
-        },
-        {
-          "file": "backend/api/src/tasks/dto/index.ts",
-          "hash": "17534848797836379355"
-        },
-        {
-          "file": "backend/api/src/tasks/tasks.controller.ts",
-          "hash": "11847067988568190564",
-          "deps": [
-            "database",
-            "npm:@nestjs/common",
-            "npm:@nestjs/swagger"
-          ]
-        },
-        {
-          "file": "backend/api/src/tasks/tasks.module.ts",
-          "hash": "5668588182096111295",
-          "deps": [
-            "database",
-            "npm:@nestjs/common",
-            "npm:@nestjs/typeorm"
-          ]
-        },
-        {
-          "file": "backend/api/src/tasks/tasks.service.ts",
-          "hash": "8037748271108217749",
-          "deps": [
-            "database",
-            "npm:@nestjs/common",
-            "npm:@nestjs/typeorm",
-            "npm:typeorm"
-          ]
-        },
-        {
-          "file": "backend/api/src/template/requestResetPassword.handlebars",
-          "hash": "3501997384285900011"
-        },
-        {
-          "file": "backend/api/src/template/requestResetPasswordSuccess.handlebars",
-          "hash": "16366544097866713943"
-        },
-        {
-          "file": "backend/api/src/users/decorators/index.ts",
-          "hash": "1240840297569679014"
-        },
-        {
-          "file": "backend/api/src/users/decorators/swagger/block-user-doc.decorator.ts",
-          "hash": "11188578112625109135",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:@nestjs/swagger"
-          ]
-        },
-        {
-          "file": "backend/api/src/users/decorators/swagger/delete-user-doc.decorator.ts",
-          "hash": "2126249259982438925",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:@nestjs/swagger"
-          ]
-        },
-        {
-          "file": "backend/api/src/users/decorators/swagger/register-user-doc.decorator.ts",
-          "hash": "8764247600905394315",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:@nestjs/swagger"
-          ]
-        },
-        {
-          "file": "backend/api/src/users/decorators/swagger/update-user-doc.decorator.ts",
-          "hash": "6037855880582376599",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:@nestjs/swagger"
-          ]
-        },
-        {
-          "file": "backend/api/src/users/decorators/swagger/user-doc.decorator.ts",
-          "hash": "4861867322430552943",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:@nestjs/swagger"
-          ]
-        },
-        {
-          "file": "backend/api/src/users/decorators/swagger/user-in-project-doc.decorator.ts",
-          "hash": "10336334115752442810",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:@nestjs/swagger"
-          ]
-        },
-        {
-          "file": "backend/api/src/users/decorators/swagger/users-doc.decorator.ts",
-          "hash": "10495155347826136709",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:@nestjs/swagger"
-          ]
-        },
-        {
-          "file": "backend/api/src/users/decorators/swagger/users-projects-doc.decorator.ts",
-          "hash": "17358333568904262021",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:@nestjs/swagger"
-          ]
-        },
-        {
-          "file": "backend/api/src/users/decorators/swagger/users-rol-doc.decorator.ts",
-          "hash": "7742448169841703048",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:@nestjs/swagger"
-          ]
-        },
-        {
-          "file": "backend/api/src/users/dto/UserProfile.dto.ts",
-          "hash": "7229794658000456135",
-          "deps": [
-            "database",
-            "npm:@nestjs/swagger",
-            "npm:class-validator"
-          ]
-        },
-        {
-          "file": "backend/api/src/users/dto/baseDto.ts",
-          "hash": "11778274300452563628",
-          "deps": [
-            "npm:@nestjs/swagger",
-            "npm:class-validator"
-          ]
-        },
-        {
-          "file": "backend/api/src/users/dto/changePassword.dto.ts",
-          "hash": "9890741199117456440",
-          "deps": [
-            "npm:@nestjs/swagger",
-            "npm:class-validator"
-          ]
-        },
-        {
-          "file": "backend/api/src/users/dto/create-user.dto.ts",
-          "hash": "8466877315454397585",
-          "deps": [
-            "npm:@nestjs/swagger",
-            "npm:class-validator"
-          ]
-        },
-        {
-          "file": "backend/api/src/users/dto/createUserWithExternalProvider.dto.ts",
-          "hash": "13785275662533058985",
-          "deps": [
-            "npm:@nestjs/swagger",
-            "npm:class-validator",
-            "database"
-          ]
+          "file": "backend/api-e2e/src/support/global-setup.ts",
+          "hash": "2568409276037275290"
         },
         {
-          "file": "backend/api/src/users/dto/index.ts",
-          "hash": "3449291592476650741"
+          "file": "backend/api-e2e/src/support/global-teardown.ts",
+          "hash": "5275447082211835490"
         },
         {
-          "file": "backend/api/src/users/dto/roles.dto.ts",
-          "hash": "15384815699679766494",
+          "file": "backend/api-e2e/src/support/test-setup.ts",
+          "hash": "10984585515912236441",
           "deps": [
-            "database",
-            "npm:@nestjs/swagger",
-            "npm:class-validator"
+            "npm:axios"
           ]
         },
         {
-          "file": "backend/api/src/users/dto/update-user.dto.ts",
-          "hash": "3652724976063122597",
-          "deps": [
-            "database",
-            "npm:@nestjs/swagger",
-            "npm:class-validator"
-          ]
-        },
-        {
-          "file": "backend/api/src/users/dto/user-to-project.dto.ts",
-          "hash": "18135300579880815284",
-          "deps": [
-            "database",
-            "npm:@nestjs/swagger",
-            "npm:class-validator"
-          ]
-        },
-        {
-          "file": "backend/api/src/users/dto/user.dto.ts",
-          "hash": "17653580726129375318",
-          "deps": [
-            "database",
-            "npm:@nestjs/swagger",
-            "npm:class-validator"
-          ]
-        },
-        {
-          "file": "backend/api/src/users/dto/userEditProfile.dto.ts",
-          "hash": "14433324668163515812",
-          "deps": [
-            "database",
-            "npm:@nestjs/swagger",
-            "npm:class-validator"
-          ]
-        },
-        {
-          "file": "backend/api/src/users/dto/userEditProfilePartial.dto.ts",
-          "hash": "6268072110309570621",
-          "deps": [
-            "npm:@nestjs/swagger"
-          ]
-        },
-        {
-          "file": "backend/api/src/users/types/index.ts",
-          "hash": "16736870576183756712"
-        },
-        {
-          "file": "backend/api/src/users/types/simplifiedUser.type.ts",
-          "hash": "13612503702199313392",
-          "deps": [
-            "database"
-          ]
-        },
-        {
-          "file": "backend/api/src/users/types/userEditProfile.dto.ts",
-          "hash": "9219057067535730274",
-          "deps": [
-            "database"
-          ]
-        },
-        {
-          "file": "backend/api/src/users/users.controller.ts",
-          "hash": "1641538683626713173",
-          "deps": [
-            "database",
-            "npm:@nestjs/common",
-            "npm:@nestjs/swagger"
-          ]
-        },
-        {
-          "file": "backend/api/src/users/users.module.ts",
-          "hash": "5829391895275336412",
-          "deps": [
-            "database",
-            "npm:@nestjs/common",
-            "npm:@nestjs/typeorm"
-          ]
-        },
-        {
-          "file": "backend/api/src/users/users.service.ts",
-          "hash": "7750136780570343599",
-          "deps": [
-            "npm:@config",
-            "database",
-            "npm:@environments",
-            "npm:@nestjs/common",
-            "npm:@nestjs/typeorm",
-            "npm:bcrypt",
-            "npm:typeorm"
-          ]
-        },
-        {
-          "file": "backend/api/src/usersProjects/decorators/index.ts",
-          "hash": "17587409065106752495"
-        },
-        {
-          "file": "backend/api/src/usersProjects/decorators/swagger/project-doc.decorator.ts",
-          "hash": "16711367317518699177",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:@nestjs/swagger"
-          ]
-        },
-        {
-          "file": "backend/api/src/usersProjects/decorators/swagger/users-projects-doc.decorator.ts",
-          "hash": "8608328397468392231",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:@nestjs/swagger"
-          ]
-        },
-        {
-          "file": "backend/api/src/usersProjects/users-projects.controller.ts",
-          "hash": "11206874997879839913",
-          "deps": [
-            "database",
-            "npm:@nestjs/common",
-            "npm:@nestjs/swagger"
-          ]
-        },
-        {
-          "file": "backend/api/src/usersProjects/users-projects.module.ts",
-          "hash": "2683671775086138932",
-          "deps": [
-            "database",
-            "npm:@nestjs/common",
-            "npm:@nestjs/typeorm"
-          ]
-        },
-        {
-          "file": "backend/api/src/usersProjects/users-projects.service.ts",
-          "hash": "18116500462225389341",
-          "deps": [
-            "database",
-            "npm:@nestjs/common",
-            "npm:@nestjs/typeorm",
-            "npm:typeorm"
-          ]
-        },
-        {
-          "file": "backend/api/src/utils/dateUtils.ts",
-          "hash": "14299285373388450663"
-        },
-        {
-          "file": "backend/api/src/utils/encryptionUtils.ts",
-          "hash": "8178826962429596108",
-          "deps": [
-            "npm:bcrypt",
-            "npm:crypto"
-          ]
-        },
-        {
-          "file": "backend/api/src/utils/get-validation-error.ts",
-          "hash": "5399938835316454782"
-        },
-        {
-          "file": "backend/api/src/utils/handlebars/index.ts",
-          "hash": "12629643517189558933"
-        },
-        {
-          "file": "backend/api/src/utils/handlebars/recoverPassword.ts",
-          "hash": "8231516829238663573",
-          "deps": [
-            "npm:fs",
-            "npm:handlebars",
-            "npm:path"
-          ]
-        },
-        {
-          "file": "backend/api/src/utils/handlebars/recoverPasswordSuccess.ts",
-          "hash": "1298566985355658911",
-          "deps": [
-            "npm:fs",
-            "npm:handlebars",
-            "npm:path"
-          ]
-        },
-        {
-          "file": "backend/api/src/utils/index.ts",
-          "hash": "17187709870832330277"
-        },
-        {
-          "file": "backend/api/src/utils/linkUtils.ts",
-          "hash": "4461207399555980642",
-          "deps": [
-            "npm:@environments"
-          ]
-        },
-        {
-          "file": "backend/api/src/utils/pkceCookiesParser.ts",
-          "hash": "2990162268030485768",
-          "deps": [
-            "npm:express"
-          ]
-        },
-        {
-          "file": "backend/api/src/utils/response.manager.ts",
-          "hash": "12704021978954987323",
-          "deps": [
-            "npm:@nestjs/common"
-          ]
-        },
-        {
-          "file": "backend/api/src/utils/send-email.ts",
-          "hash": "9577635809865759582",
-          "deps": [
-            "database",
-            "npm:@environments",
-            "npm:nodemailer"
-          ]
-        },
-        {
-          "file": "backend/api/src/utils/serializer.ts",
-          "hash": "12513471382103117926",
-          "deps": [
-            "npm:@nestjs/passport"
-          ]
-        },
-        {
-          "file": "backend/api/src/utils/use.token.ts",
-          "hash": "14801796724562249551",
-          "deps": [
-            "npm:jsonwebtoken"
-          ]
+          "file": "backend/api-e2e/tsconfig.json",
+          "hash": "15443990093475294480"
         },
         {
-          "file": "backend/api/tsconfig.app.json",
-          "hash": "7918082198778055745"
-        },
-        {
-          "file": "backend/api/tsconfig.json",
-          "hash": "11973820485193176376"
-        },
-        {
-          "file": "backend/api/tsconfig.spec.json",
-          "hash": "2900418949104901599"
-        },
-        {
-          "file": "backend/api/webpack.config.js",
-          "hash": "10619490397189790225",
-          "deps": [
-            "npm:@nx/webpack"
-          ]
+          "file": "backend/api-e2e/tsconfig.spec.json",
+          "hash": "14226830188665428950"
         }
       ],
       "tailwind-preset": [
@@ -1970,6 +961,1076 @@
         {
           "file": "libs/tailwind-preset/tailwind.config.js",
           "hash": "4896745220441525489"
+        }
+      ],
+      "frontend-ui": [
+        {
+          "file": "frontend/ui/.eslintrc.json",
+          "hash": "16804247736731791500"
+        },
+        {
+          "file": "frontend/ui/.storybook/main.ts",
+          "hash": "1886933752291546919",
+          "deps": [
+            "npm:@storybook/angular"
+          ]
+        },
+        {
+          "file": "frontend/ui/.storybook/preview-head.html",
+          "hash": "12938975720104263471"
+        },
+        {
+          "file": "frontend/ui/.storybook/preview.ts",
+          "hash": "16030516816875902250",
+          "deps": [
+            "npm:!style-loader!css-loader!sass-loader!./styles.scss",
+            "npm:@storybook/addon-docs"
+          ]
+        },
+        {
+          "file": "frontend/ui/.storybook/styles.scss",
+          "hash": "18121191471002627490"
+        },
+        {
+          "file": "frontend/ui/.storybook/tsconfig.json",
+          "hash": "10468501457130384447"
+        },
+        {
+          "file": "frontend/ui/README.md",
+          "hash": "13259357061157696285"
+        },
+        {
+          "file": "frontend/ui/assets/area.svg",
+          "hash": "9390338262647682881"
+        },
+        {
+          "file": "frontend/ui/assets/avatar.png",
+          "hash": "9254388350291795050"
+        },
+        {
+          "file": "frontend/ui/assets/basic.svg",
+          "hash": "10009374895580841100"
+        },
+        {
+          "file": "frontend/ui/assets/check.svg",
+          "hash": "12227911421428477482"
+        },
+        {
+          "file": "frontend/ui/assets/clear.svg",
+          "hash": "10466281700495110564"
+        },
+        {
+          "file": "frontend/ui/assets/comevent.svg",
+          "hash": "4260238604848691843"
+        },
+        {
+          "file": "frontend/ui/assets/facebook.svg",
+          "hash": "7848868124894994214"
+        },
+        {
+          "file": "frontend/ui/assets/github.svg",
+          "hash": "15503463702874618835"
+        },
+        {
+          "file": "frontend/ui/assets/google.svg",
+          "hash": "6834765403513897565"
+        },
+        {
+          "file": "frontend/ui/assets/hidden-pass.svg",
+          "hash": "10446031626841413978"
+        },
+        {
+          "file": "frontend/ui/assets/icon-error.svg",
+          "hash": "8742814213363542166"
+        },
+        {
+          "file": "frontend/ui/assets/loading.svg",
+          "hash": "16004246192883477401"
+        },
+        {
+          "file": "frontend/ui/assets/password.svg",
+          "hash": "6696218900860450229"
+        },
+        {
+          "file": "frontend/ui/assets/show-pass.svg",
+          "hash": "6813779516544811596"
+        },
+        {
+          "file": "frontend/ui/assets/user.svg",
+          "hash": "6411869464969438134"
+        },
+        {
+          "file": "frontend/ui/components/atoms/error-input/error-input.component.html",
+          "hash": "8116914208045574340"
+        },
+        {
+          "file": "frontend/ui/components/atoms/error-input/error-input.component.scss",
+          "hash": "5740996895694091939"
+        },
+        {
+          "file": "frontend/ui/components/atoms/error-input/error-input.component.ts",
+          "hash": "5793895842075252821",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:@angular/forms"
+          ]
+        },
+        {
+          "file": "frontend/ui/components/atoms/error-input/error-input.interface.ts",
+          "hash": "10624179325921398733"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-area/icon-area.component.html",
+          "hash": "15907806043772533777"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-area/icon-area.component.scss",
+          "hash": "16045361289177456665"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-area/icon-area.component.ts",
+          "hash": "10230360628300316819",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-arrow-right/icon-arrow-right.component.html",
+          "hash": "6896285457490495323"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-arrow-right/icon-arrow-right.component.scss",
+          "hash": "3930956345753105449"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-arrow-right/icon-arrow-right.component.ts",
+          "hash": "2567141234702300815",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-arrow-right-profile/icon-arrow-right-profile.component.html",
+          "hash": "7664632419443384777"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-arrow-right-profile/icon-arrow-right-profile.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-arrow-right-profile/icon-arrow-right-profile.component.ts",
+          "hash": "7911095550399544919",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-badges/icon-badges.component.html",
+          "hash": "4857317339052089666"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-badges/icon-badges.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-badges/icon-badges.component.ts",
+          "hash": "9561470033403834179",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-basic/icon-basic.component.html",
+          "hash": "17068118369307595009"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-basic/icon-basic.component.scss",
+          "hash": "16045361289177456665"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-basic/icon-basic.component.ts",
+          "hash": "18163794134248051985",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-circle-arrow-left/icon-circle-arrow-left.component.html",
+          "hash": "5705977196106674535"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-circle-arrow-left/icon-circle-arrow-left.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-circle-arrow-left/icon-circle-arrow-left.component.ts",
+          "hash": "3054362149903018480",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-circle-check/icon-circle-check.component.html",
+          "hash": "6658053013218354382"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-circle-check/icon-circle-check.component.scss",
+          "hash": "13286960552939425249"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-circle-check/icon-circle-check.component.ts",
+          "hash": "13683084509452795622",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-clear/icon-clear.component.html",
+          "hash": "6770272960769043133"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-clear/icon-clear.component.scss",
+          "hash": "4839494193965889411"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-clear/icon-clear.component.ts",
+          "hash": "7725859329517215552",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-clear/icon-clear.interface.ts",
+          "hash": "8786166978227538918"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-clear/index.ts",
+          "hash": "9225441048193381906"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-clear-input/icon-clear-input.component.html",
+          "hash": "17399731041153996358"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-clear-input/icon-clear-input.component.scss",
+          "hash": "4839494193965889411"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-clear-input/icon-clear-input.component.ts",
+          "hash": "15329855836713502133",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-clear-input/icon-clear.interface.ts",
+          "hash": "8184958948452365991"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-comevent/icon-comevent.component.html",
+          "hash": "15241712396470146583"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-comevent/icon-comevent.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-comevent/icon-comevent.component.ts",
+          "hash": "13606335026955234185",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-communities/icon-communities.component.html",
+          "hash": "16386569043435519896"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-communities/icon-communities.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-communities/icon-communities.component.ts",
+          "hash": "2883433158991157861",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-discord/icon-discord.component.html",
+          "hash": "12668607658334734730"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-discord/icon-discord.component.scss",
+          "hash": "12041313066837131384"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-discord/icon-discord.component.ts",
+          "hash": "9908766976092651877",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-edit/icon-edit.component.html",
+          "hash": "2717374258268851366"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-edit/icon-edit.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-edit/icon-edit.component.ts",
+          "hash": "11401111879321634806",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-events/icon-events.component.html",
+          "hash": "7040807065693053422"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-events/icon-events.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-events/icon-events.component.ts",
+          "hash": "17516962996037885892",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-facebook/icon-facebook.component.html",
+          "hash": "9364747058744870678"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-facebook/icon-facebook.component.ts",
+          "hash": "14904289416712556968",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-facebook/index.ts",
+          "hash": "5431539654481109853"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-facebook-two/icon-facebook-two.component.html",
+          "hash": "8775886309308285024"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-facebook-two/icon-facebook-two.component.scss",
+          "hash": "12041313066837131384"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-facebook-two/icon-facebook-two.component.ts",
+          "hash": "2973735716155934027",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-github/icon-github.component.html",
+          "hash": "10507146097017169689"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-github/icon-github.component.ts",
+          "hash": "13036535194939993176",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-github/index.ts",
+          "hash": "17173080817001150258"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-github-two/icon-github-two.component.html",
+          "hash": "4784413321544012590"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-github-two/icon-github-two.component.scss",
+          "hash": "12041313066837131384"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-github-two/icon-github-two.component.ts",
+          "hash": "15013600126485015343",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-google/icon-google.component.html",
+          "hash": "6874664881222575221"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-google/icon-google.component.ts",
+          "hash": "14311145758492097929",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-google/index.ts",
+          "hash": "15684253021250840879"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-groups/icon-groups.component.html",
+          "hash": "2806517835489926479"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-groups/icon-groups.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-groups/icon-groups.component.ts",
+          "hash": "8816245572593828744",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-hexagon-number-four/icon-hexagon-number-four.component.html",
+          "hash": "5563964445778958558"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-hexagon-number-four/icon-hexagon-number-four.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-hexagon-number-four/icon-hexagon-number-four.component.ts",
+          "hash": "3160569069009841327",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-hexagon-number-one/icon-hexagon-number-one.component.html",
+          "hash": "10509103604112552732"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-hexagon-number-one/icon-hexagon-number-one.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-hexagon-number-one/icon-hexagon-number-one.component.ts",
+          "hash": "13528280411910297032",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-hexagon-number-three/icon-hexagon-number-three.component.html",
+          "hash": "498320963885999183"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-hexagon-number-three/icon-hexagon-number-three.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-hexagon-number-three/icon-hexagon-number-three.component.ts",
+          "hash": "12250373867647127932",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-hexagon-number-two/icon-hexagon-number-two.component.html",
+          "hash": "9249504266653524744"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-hexagon-number-two/icon-hexagon-number-two.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-hexagon-number-two/icon-hexagon-number-two.component.ts",
+          "hash": "4905249516752810982",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-hidden-pass/icon-hidden-pass.component.html",
+          "hash": "10190857936298616449"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-hidden-pass/icon-hidden-pass.component.scss",
+          "hash": "11860366637422693935"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-hidden-pass/icon-hidden-pass.component.ts",
+          "hash": "15935031719067531641",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-hidden-pass/index.ts",
+          "hash": "17133031350325182757"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-instagram-two/icon-instagram-two.component.html",
+          "hash": "5138041851479453554"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-instagram-two/icon-instagram-two.component.scss",
+          "hash": "12041313066837131384"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-instagram-two/icon-instagram-two.component.ts",
+          "hash": "2480307068508721067",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-key/icon-key.component.html",
+          "hash": "17370557451819354853"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-key/icon-key.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-key/icon-key.component.ts",
+          "hash": "7309785867151145847",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-linkedin-two/icon-linkedin-two.component.html",
+          "hash": "17137742762394809140"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-linkedin-two/icon-linkedin-two.component.scss",
+          "hash": "12041313066837131384"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-linkedin-two/icon-linkedin-two.component.ts",
+          "hash": "4097169469264653949",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-loading/icon-loading.component.html",
+          "hash": "12232771248829359782"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-loading/icon-loading.component.scss",
+          "hash": "17678027093397264850"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-loading/icon-loading.component.ts",
+          "hash": "17428510967688853178",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-loading/index.ts",
+          "hash": "16058707389175616473"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-loading/loading.type.ts",
+          "hash": "1523237625750669498"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-mail/icon-mail.component.html",
+          "hash": "16229300058048865503"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-mail/icon-mail.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-mail/icon-mail.component.ts",
+          "hash": "14683691620801432149",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-pass/icon-pass.component.html",
+          "hash": "17592450432288764575"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-pass/icon-pass.component.scss",
+          "hash": "16045361289177456665"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-pass/icon-pass.component.ts",
+          "hash": "10833041121330895006",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-profile/icon-profile.component.html",
+          "hash": "5839743598337517377"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-profile/icon-profile.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-profile/icon-profile.component.ts",
+          "hash": "12997857645586212336",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-show-pass/icon-show-pass.component.html",
+          "hash": "12556174650803386768"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-show-pass/icon-show-pass.component.scss",
+          "hash": "11860366637422693935"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-show-pass/icon-show-pass.component.ts",
+          "hash": "5729560290199566207",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-show-pass/index.ts",
+          "hash": "14272638413341465611"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-user/icon-user.component.html",
+          "hash": "13714285330708837066"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-user/icon-user.component.ts",
+          "hash": "6073468940407944883",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-user/icon-user.interface.ts",
+          "hash": "8075423339793635833"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-user/index.ts",
+          "hash": "5096773775213167312"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-user-profile/icon-user-profile.component.html",
+          "hash": "2162885793025082039"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-user-profile/icon-user-profile.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-user-profile/icon-user-profile.component.ts",
+          "hash": "15425848514541143835",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-view/icon-view.component.html",
+          "hash": "5444828049940182216"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-view/icon-view.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-view/icon-view.component.ts",
+          "hash": "1847038854167511862",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-x/icon-x.component.html",
+          "hash": "13394682967142501042"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-x/icon-x.component.scss",
+          "hash": "12041313066837131384"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-x/icon-x.component.ts",
+          "hash": "582441261784673326",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon.interface.ts",
+          "hash": "15103366284706535694"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/index.ts",
+          "hash": "1374588184007636863"
+        },
+        {
+          "file": "frontend/ui/components/atoms/index.ts",
+          "hash": "13890763580016891754"
+        },
+        {
+          "file": "frontend/ui/components/atoms/label/label.component.html",
+          "hash": "18317479047734091746"
+        },
+        {
+          "file": "frontend/ui/components/atoms/label/label.component.scss",
+          "hash": "1196927443590614603"
+        },
+        {
+          "file": "frontend/ui/components/atoms/label/label.component.ts",
+          "hash": "14714669312581934841",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "frontend/ui/components/atoms/label/label.interface.ts",
+          "hash": "5287019817421228191"
+        },
+        {
+          "file": "frontend/ui/components/atoms/title/title.component.html",
+          "hash": "18394490393575490763"
+        },
+        {
+          "file": "frontend/ui/components/atoms/title/title.component.scss",
+          "hash": "13844763222957898070"
+        },
+        {
+          "file": "frontend/ui/components/atoms/title/title.component.ts",
+          "hash": "9594718213617887892",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "frontend/ui/components/atoms/title/title.interface.ts",
+          "hash": "6083855499264636829"
+        },
+        {
+          "file": "frontend/ui/components/index.ts",
+          "hash": "3368866378614446645"
+        },
+        {
+          "file": "frontend/ui/components/molecules/button/button.component.html",
+          "hash": "3328642064411666296"
+        },
+        {
+          "file": "frontend/ui/components/molecules/button/button.component.scss",
+          "hash": "9729706349937980215"
+        },
+        {
+          "file": "frontend/ui/components/molecules/button/button.component.ts",
+          "hash": "4314562193053014047",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "frontend/ui/components/molecules/button/button.interface.ts",
+          "hash": "11158105168245477499"
+        },
+        {
+          "file": "frontend/ui/components/molecules/chip/chip.component.html",
+          "hash": "1914846248737050214"
+        },
+        {
+          "file": "frontend/ui/components/molecules/chip/chip.component.scss",
+          "hash": "15871482274716848027"
+        },
+        {
+          "file": "frontend/ui/components/molecules/chip/chip.component.ts",
+          "hash": "14226237403719627899",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "frontend/ui/components/molecules/chip/chip.interface.ts",
+          "hash": "14021120984692127937"
+        },
+        {
+          "file": "frontend/ui/components/molecules/chip/index.ts",
+          "hash": "7672992164216777836"
+        },
+        {
+          "file": "frontend/ui/components/molecules/chip-select/chip-select.component.html",
+          "hash": "10228091698651841187"
+        },
+        {
+          "file": "frontend/ui/components/molecules/chip-select/chip-select.component.scss",
+          "hash": "10475264821038739301"
+        },
+        {
+          "file": "frontend/ui/components/molecules/chip-select/chip-select.component.ts",
+          "hash": "17971109975084189800",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "frontend/ui/components/molecules/chip-select/chip-select.interface.ts",
+          "hash": "13177864561236106461"
+        },
+        {
+          "file": "frontend/ui/components/molecules/input/input.component.html",
+          "hash": "3525146392575350572"
+        },
+        {
+          "file": "frontend/ui/components/molecules/input/input.component.scss",
+          "hash": "8151875085542630380"
+        },
+        {
+          "file": "frontend/ui/components/molecules/input/input.component.ts",
+          "hash": "11963162719574223292",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:@angular/forms"
+          ]
+        },
+        {
+          "file": "frontend/ui/components/molecules/input/input.interface.ts",
+          "hash": "12133208820410075428",
+          "deps": [
+            "npm:@angular/forms"
+          ]
+        },
+        {
+          "file": "frontend/ui/components/molecules/select/index.ts",
+          "hash": "13434860279844646410"
+        },
+        {
+          "file": "frontend/ui/components/molecules/select/select.component.html",
+          "hash": "16371984519543652629"
+        },
+        {
+          "file": "frontend/ui/components/molecules/select/select.component.scss",
+          "hash": "14633437663096175877"
+        },
+        {
+          "file": "frontend/ui/components/molecules/select/select.component.ts",
+          "hash": "10473275923082177272",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:@angular/forms"
+          ]
+        },
+        {
+          "file": "frontend/ui/components/molecules/select/select.interface.ts",
+          "hash": "9078928848394495723"
+        },
+        {
+          "file": "frontend/ui/components/molecules/step/step.component.html",
+          "hash": "16451168587375798508"
+        },
+        {
+          "file": "frontend/ui/components/molecules/step/step.component.scss",
+          "hash": "13911880825188996207"
+        },
+        {
+          "file": "frontend/ui/components/molecules/step/step.component.ts",
+          "hash": "13465094226830015908",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "frontend/ui/components/molecules/step/step.interface.ts",
+          "hash": "13526244870040695461"
+        },
+        {
+          "file": "frontend/ui/components/molecules/text-area/text-area.component.html",
+          "hash": "771359987266245711"
+        },
+        {
+          "file": "frontend/ui/components/molecules/text-area/text-area.component.scss",
+          "hash": "11243042264526484296"
+        },
+        {
+          "file": "frontend/ui/components/molecules/text-area/text-area.component.ts",
+          "hash": "15018195030693602178",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "frontend/ui/components/molecules/text-area/text-area.interface.ts",
+          "hash": "5362590363818492808",
+          "deps": [
+            "npm:@angular/forms"
+          ]
+        },
+        {
+          "file": "frontend/ui/components/shared/directives/control-value-accesor.directive.ts",
+          "hash": "8423092507571647114",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "frontend/ui/documentation.json",
+          "hash": "7520795065743114637"
+        },
+        {
+          "file": "frontend/ui/jest.config.ts",
+          "hash": "5619249371785640415"
+        },
+        {
+          "file": "frontend/ui/postcss.config.js",
+          "hash": "13598591179375906364",
+          "deps": [
+            "npm:path"
+          ]
+        },
+        {
+          "file": "frontend/ui/project.json",
+          "hash": "16077682721412850176"
+        },
+        {
+          "file": "frontend/ui/stories/atoms/label/label.component.stories.ts",
+          "hash": "6661249186607700215",
+          "deps": [
+            "npm:@storybook/angular"
+          ]
+        },
+        {
+          "file": "frontend/ui/stories/atoms/title/title.component.stories.ts",
+          "hash": "4202620866983803672",
+          "deps": [
+            "npm:@storybook/angular"
+          ]
+        },
+        {
+          "file": "frontend/ui/stories/molecules/button/button.component.stories.ts",
+          "hash": "4889544630176060259",
+          "deps": [
+            "npm:@storybook/angular",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "frontend/ui/stories/molecules/chip/chip.component.stories.ts",
+          "hash": "15177209933951809940",
+          "deps": [
+            "npm:@storybook/angular",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
+          "hash": "15664727920162322430",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/forms",
+            "npm:@storybook/angular"
+          ]
+        },
+        {
+          "file": "frontend/ui/stories/molecules/select/select.component.stories.ts",
+          "hash": "12991298966866420470",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/forms",
+            "npm:@storybook/angular"
+          ]
+        },
+        {
+          "file": "frontend/ui/stories/molecules/step/step.component.stories.ts",
+          "hash": "13720812891609610802",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@storybook/angular"
+          ]
+        },
+        {
+          "file": "frontend/ui/stories/molecules/text-area/text-area.component.stories.ts",
+          "hash": "10136013264375966581",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/forms",
+            "npm:@storybook/angular"
+          ]
+        },
+        {
+          "file": "frontend/ui/tailwind.config.js",
+          "hash": "13957595403767009659",
+          "deps": [
+            "npm:@nx/angular/tailwind",
+            "npm:path",
+            "tailwind-preset"
+          ]
+        },
+        {
+          "file": "frontend/ui/tsconfig.json",
+          "hash": "16326414037910697106"
+        },
+        {
+          "file": "frontend/ui/tsconfig.lib.json",
+          "hash": "12496680018945969286"
+        },
+        {
+          "file": "frontend/ui/tsconfig.spec.json",
+          "hash": "8246693900492800589"
         }
       ],
       "frontend-app": [
@@ -3141,8 +3202,16 @@
           ]
         },
         {
+          "file": "frontend/app/src/modules/user-profile/adapters/countries-data.adapter.ts",
+          "hash": "1409737836440598264"
+        },
+        {
           "file": "frontend/app/src/modules/user-profile/adapters/index.ts",
-          "hash": "3744227077272533028"
+          "hash": "991803018826088720"
+        },
+        {
+          "file": "frontend/app/src/modules/user-profile/adapters/specialties-data.adapter.ts",
+          "hash": "5338826303439761447"
         },
         {
           "file": "frontend/app/src/modules/user-profile/adapters/user-date.adapter.ts",
@@ -3154,7 +3223,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/index.ts",
-          "hash": "5951847021930926120"
+          "hash": "12051891345819564647"
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/molecules/button-action/button-action.component.html",
@@ -3376,7 +3445,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/index.ts",
-          "hash": "6533338073108051304"
+          "hash": "9242342768381434281"
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/layout-modal/layout-modal.component.html",
@@ -3488,6 +3557,25 @@
           ]
         },
         {
+          "file": "frontend/app/src/modules/user-profile/components/organism/more-information/more-information.component.html",
+          "hash": "14718870352499566979"
+        },
+        {
+          "file": "frontend/app/src/modules/user-profile/components/organism/more-information/more-information.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "frontend/app/src/modules/user-profile/components/organism/more-information/more-information.component.ts",
+          "hash": "13859937800369499259",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "npm:@ngx-translate/core",
+            "frontend-ui"
+          ]
+        },
+        {
           "file": "frontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.html",
           "hash": "4123577585232709171"
         },
@@ -3552,7 +3640,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.html",
-          "hash": "10751571875563135530"
+          "hash": "4141933160850630881"
         },
         {
           "file": "frontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.scss",
@@ -3560,7 +3648,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.ts",
-          "hash": "14805101748795336042",
+          "hash": "2205177540361364793",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
@@ -3666,7 +3754,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/service/api/user.api.service.ts",
-          "hash": "6015912187578996806",
+          "hash": "17751369277664725639",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
@@ -3675,8 +3763,26 @@
           ]
         },
         {
+          "file": "frontend/app/src/modules/user-profile/service/state/form-areas.state.service.ts",
+          "hash": "8172599450053075726",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "npm:rxjs"
+          ]
+        },
+        {
           "file": "frontend/app/src/modules/user-profile/service/state/form-change-email.state.service.ts",
           "hash": "16965521181334803344",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "frontend/app/src/modules/user-profile/service/state/form-change-more-information.state.service.ts",
+          "hash": "3362983609568148793",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/forms",
@@ -3711,7 +3817,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/service/state/index.ts",
-          "hash": "15473846143033949899"
+          "hash": "3068981542128123742"
         },
         {
           "file": "frontend/app/src/modules/user-profile/service/state/reset.state.service.ts",
@@ -3725,7 +3831,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/service/state/user.state.service.ts",
-          "hash": "11052175514336738769",
+          "hash": "2515856389837866641",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/router",
@@ -3733,12 +3839,20 @@
           ]
         },
         {
+          "file": "frontend/app/src/modules/user-profile/types/countries.types.ts",
+          "hash": "12784393534661764490"
+        },
+        {
           "file": "frontend/app/src/modules/user-profile/types/index.ts",
-          "hash": "13541034378645202533"
+          "hash": "3756894458968163102"
         },
         {
           "file": "frontend/app/src/modules/user-profile/types/reset.types.ts",
           "hash": "8293188748355036430"
+        },
+        {
+          "file": "frontend/app/src/modules/user-profile/types/specialties.types.ts",
+          "hash": "9070916335905228144"
         },
         {
           "file": "frontend/app/src/modules/user-profile/types/user.types.ts",
@@ -3848,1085 +3962,1079 @@
         {
           "file": "frontend/app/tsconfig.spec.json",
           "hash": "2927375835638640771"
-        },
-        {
-          "file": "frontend/app/src/modules/user-profile/service/state/form-areas.state.service.ts",
-          "hash": "8172599450053075726",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/forms",
-            "npm:rxjs"
-          ]
         }
       ],
-      "frontend-ui": [
+      "api": [
         {
-          "file": "frontend/ui/.eslintrc.json",
-          "hash": "16804247736731791500"
+          "file": "backend/api/.eslintrc.json",
+          "hash": "11808533155536463924"
         },
         {
-          "file": "frontend/ui/.storybook/main.ts",
-          "hash": "1886933752291546919",
+          "file": "backend/api/jest.config.ts",
+          "hash": "10410655590686536064"
+        },
+        {
+          "file": "backend/api/project.json",
+          "hash": "14561998618801452623"
+        },
+        {
+          "file": "backend/api/src/app.module.ts",
+          "hash": "3563919450486913460",
           "deps": [
-            "npm:@storybook/angular"
+            "npm:@config",
+            "npm:@nestjs/common",
+            "npm:@nestjs/config",
+            "npm:@nestjs/core",
+            "npm:@nestjs/passport",
+            "database"
           ]
         },
         {
-          "file": "frontend/ui/.storybook/preview-head.html",
-          "hash": "12938975720104263471"
-        },
-        {
-          "file": "frontend/ui/.storybook/preview.ts",
-          "hash": "16030516816875902250",
+          "file": "backend/api/src/app.swagger.ts",
+          "hash": "10504308339016107310",
           "deps": [
-            "npm:!style-loader!css-loader!sass-loader!./styles.scss",
-            "npm:@storybook/addon-docs"
+            "npm:@nestjs/common",
+            "npm:@nestjs/swagger"
           ]
         },
         {
-          "file": "frontend/ui/.storybook/styles.scss",
-          "hash": "18121191471002627490"
-        },
-        {
-          "file": "frontend/ui/.storybook/tsconfig.json",
-          "hash": "10468501457130384447"
-        },
-        {
-          "file": "frontend/ui/README.md",
-          "hash": "13259357061157696285"
-        },
-        {
-          "file": "frontend/ui/assets/area.svg",
-          "hash": "9390338262647682881"
-        },
-        {
-          "file": "frontend/ui/assets/avatar.png",
-          "hash": "9254388350291795050"
-        },
-        {
-          "file": "frontend/ui/assets/basic.svg",
-          "hash": "10009374895580841100"
-        },
-        {
-          "file": "frontend/ui/assets/check.svg",
-          "hash": "12227911421428477482"
-        },
-        {
-          "file": "frontend/ui/assets/clear.svg",
-          "hash": "10466281700495110564"
-        },
-        {
-          "file": "frontend/ui/assets/comevent.svg",
-          "hash": "4260238604848691843"
-        },
-        {
-          "file": "frontend/ui/assets/facebook.svg",
-          "hash": "7848868124894994214"
-        },
-        {
-          "file": "frontend/ui/assets/github.svg",
-          "hash": "15503463702874618835"
-        },
-        {
-          "file": "frontend/ui/assets/google.svg",
-          "hash": "6834765403513897565"
-        },
-        {
-          "file": "frontend/ui/assets/hidden-pass.svg",
-          "hash": "10446031626841413978"
-        },
-        {
-          "file": "frontend/ui/assets/icon-error.svg",
-          "hash": "8742814213363542166"
-        },
-        {
-          "file": "frontend/ui/assets/loading.svg",
-          "hash": "16004246192883477401"
-        },
-        {
-          "file": "frontend/ui/assets/password.svg",
-          "hash": "6696218900860450229"
-        },
-        {
-          "file": "frontend/ui/assets/show-pass.svg",
-          "hash": "6813779516544811596"
-        },
-        {
-          "file": "frontend/ui/assets/user.svg",
-          "hash": "6411869464969438134"
-        },
-        {
-          "file": "frontend/ui/components/atoms/error-input/error-input.component.html",
-          "hash": "8116914208045574340"
-        },
-        {
-          "file": "frontend/ui/components/atoms/error-input/error-input.component.scss",
-          "hash": "5740996895694091939"
-        },
-        {
-          "file": "frontend/ui/components/atoms/error-input/error-input.component.ts",
-          "hash": "5793895842075252821",
+          "file": "backend/api/src/area/area.controller.ts",
+          "hash": "16125121437747420412",
           "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core",
-            "npm:@angular/forms"
+            "database",
+            "npm:@nestjs/common",
+            "npm:@nestjs/swagger"
           ]
         },
         {
-          "file": "frontend/ui/components/atoms/error-input/error-input.interface.ts",
-          "hash": "10624179325921398733"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-area/icon-area.component.html",
-          "hash": "15907806043772533777"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-area/icon-area.component.scss",
-          "hash": "16045361289177456665"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-area/icon-area.component.ts",
-          "hash": "10230360628300316819",
+          "file": "backend/api/src/area/area.module.ts",
+          "hash": "15370726037198224021",
           "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core"
+            "database",
+            "npm:@nestjs/common",
+            "npm:@nestjs/typeorm"
           ]
         },
         {
-          "file": "frontend/ui/components/atoms/icons/icon-arrow-right/icon-arrow-right.component.html",
-          "hash": "6896285457490495323"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-arrow-right/icon-arrow-right.component.scss",
-          "hash": "3930956345753105449"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-arrow-right/icon-arrow-right.component.ts",
-          "hash": "2567141234702300815",
+          "file": "backend/api/src/area/area.service.ts",
+          "hash": "12655759358342578881",
           "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core"
+            "database",
+            "npm:@nestjs/common",
+            "npm:@nestjs/typeorm",
+            "npm:typeorm"
           ]
         },
         {
-          "file": "frontend/ui/components/atoms/icons/icon-arrow-right-profile/icon-arrow-right-profile.component.html",
-          "hash": "7664632419443384777"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-arrow-right-profile/icon-arrow-right-profile.component.scss",
+          "file": "backend/api/src/assets/.gitkeep",
           "hash": "3244421341483603138"
         },
         {
-          "file": "frontend/ui/components/atoms/icons/icon-arrow-right-profile/icon-arrow-right-profile.component.ts",
-          "hash": "7911095550399544919",
+          "file": "backend/api/src/auth/auth.controller.ts",
+          "hash": "185111740481742478",
           "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core"
+            "database",
+            "npm:@nestjs/common",
+            "npm:@nestjs/passport",
+            "npm:@nestjs/swagger",
+            "npm:express"
           ]
         },
         {
-          "file": "frontend/ui/components/atoms/icons/icon-badges/icon-badges.component.html",
-          "hash": "4857317339052089666"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-badges/icon-badges.component.scss",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-badges/icon-badges.component.ts",
-          "hash": "9561470033403834179",
+          "file": "backend/api/src/auth/auth.module.ts",
+          "hash": "16651922779206095902",
           "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core"
+            "database",
+            "npm:@environments",
+            "npm:@nestjs/common",
+            "npm:@nestjs/config",
+            "npm:@nestjs/jwt",
+            "npm:@nestjs/passport",
+            "npm:@nestjs/typeorm"
           ]
         },
         {
-          "file": "frontend/ui/components/atoms/icons/icon-basic/icon-basic.component.html",
-          "hash": "17068118369307595009"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-basic/icon-basic.component.scss",
-          "hash": "16045361289177456665"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-basic/icon-basic.component.ts",
-          "hash": "18163794134248051985",
+          "file": "backend/api/src/auth/auth.service.ts",
+          "hash": "15749669764384698902",
           "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core"
+            "database",
+            "npm:@environments",
+            "npm:@nestjs/common",
+            "npm:@nestjs/jwt",
+            "npm:@nestjs/typeorm",
+            "npm:bcrypt",
+            "npm:crypto",
+            "npm:dayjs",
+            "npm:express",
+            "npm:jsonwebtoken",
+            "npm:typeorm"
           ]
         },
         {
-          "file": "frontend/ui/components/atoms/icons/icon-circle-arrow-left/icon-circle-arrow-left.component.html",
-          "hash": "5705977196106674535"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-circle-arrow-left/icon-circle-arrow-left.component.scss",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-circle-arrow-left/icon-circle-arrow-left.component.ts",
-          "hash": "3054362149903018480",
+          "file": "backend/api/src/auth/decorators/acces-level.decorator.ts",
+          "hash": "10529209302442514045",
           "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core"
+            "npm:@nestjs/common"
           ]
         },
         {
-          "file": "frontend/ui/components/atoms/icons/icon-circle-check/icon-circle-check.component.html",
-          "hash": "6658053013218354382"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-circle-check/icon-circle-check.component.scss",
-          "hash": "13286960552939425249"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-circle-check/icon-circle-check.component.ts",
-          "hash": "13683084509452795622",
+          "file": "backend/api/src/auth/decorators/admin.decorator.ts",
+          "hash": "7548823918736944556",
           "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core"
+            "npm:@nestjs/common",
+            "database"
           ]
         },
         {
-          "file": "frontend/ui/components/atoms/icons/icon-clear/icon-clear.component.html",
-          "hash": "6770272960769043133"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-clear/icon-clear.component.scss",
-          "hash": "4839494193965889411"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-clear/icon-clear.component.ts",
-          "hash": "7725859329517215552",
+          "file": "backend/api/src/auth/decorators/current-user.decorator.ts",
+          "hash": "6811982820780507150",
           "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core"
+            "database",
+            "npm:@nestjs/common"
           ]
         },
         {
-          "file": "frontend/ui/components/atoms/icons/icon-clear/icon-clear.interface.ts",
-          "hash": "8786166978227538918"
+          "file": "backend/api/src/auth/decorators/index.ts",
+          "hash": "558347427463686194"
         },
         {
-          "file": "frontend/ui/components/atoms/icons/icon-clear/index.ts",
-          "hash": "9225441048193381906"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-clear-input/icon-clear-input.component.html",
-          "hash": "17399731041153996358"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-clear-input/icon-clear-input.component.scss",
-          "hash": "4839494193965889411"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-clear-input/icon-clear-input.component.ts",
-          "hash": "15329855836713502133",
+          "file": "backend/api/src/auth/decorators/public.decorator.ts",
+          "hash": "6581443707803336431",
           "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core"
+            "npm:@nestjs/common"
           ]
         },
         {
-          "file": "frontend/ui/components/atoms/icons/icon-clear-input/icon-clear.interface.ts",
-          "hash": "8184958948452365991"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-comevent/icon-comevent.component.html",
-          "hash": "15241712396470146583"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-comevent/icon-comevent.component.scss",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-comevent/icon-comevent.component.ts",
-          "hash": "13606335026955234185",
+          "file": "backend/api/src/auth/decorators/roles.decorator.ts",
+          "hash": "11841690213369684511",
           "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core"
+            "database",
+            "npm:@nestjs/common"
           ]
         },
         {
-          "file": "frontend/ui/components/atoms/icons/icon-communities/icon-communities.component.html",
-          "hash": "16386569043435519896"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-communities/icon-communities.component.scss",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-communities/icon-communities.component.ts",
-          "hash": "2883433158991157861",
+          "file": "backend/api/src/auth/decorators/swagger/change-pass-doc.decorator.ts",
+          "hash": "17823072929519557499",
           "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core"
+            "npm:@nestjs/common",
+            "npm:@nestjs/swagger"
           ]
         },
         {
-          "file": "frontend/ui/components/atoms/icons/icon-discord/icon-discord.component.html",
-          "hash": "12668607658334734730"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-discord/icon-discord.component.scss",
-          "hash": "12041313066837131384"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-discord/icon-discord.component.ts",
-          "hash": "9908766976092651877",
+          "file": "backend/api/src/auth/decorators/swagger/login-doc.decorator.ts",
+          "hash": "1859001547180751817",
           "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core"
+            "npm:@nestjs/common",
+            "npm:@nestjs/swagger"
           ]
         },
         {
-          "file": "frontend/ui/components/atoms/icons/icon-edit/icon-edit.component.html",
-          "hash": "2717374258268851366"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-edit/icon-edit.component.scss",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-edit/icon-edit.component.ts",
-          "hash": "11401111879321634806",
+          "file": "backend/api/src/auth/decorators/swagger/reset-pass-doc.decorator.ts",
+          "hash": "16421643038082706334",
           "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core"
+            "npm:@nestjs/common",
+            "npm:@nestjs/swagger"
           ]
         },
         {
-          "file": "frontend/ui/components/atoms/icons/icon-events/icon-events.component.html",
-          "hash": "7040807065693053422"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-events/icon-events.component.scss",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-events/icon-events.component.ts",
-          "hash": "17516962996037885892",
+          "file": "backend/api/src/auth/decorators/swagger/revalidate-doc.decorator.ts",
+          "hash": "5831767998717753483",
           "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core"
+            "npm:@nestjs/common",
+            "npm:@nestjs/swagger"
           ]
         },
         {
-          "file": "frontend/ui/components/atoms/icons/icon-facebook/icon-facebook.component.html",
-          "hash": "9364747058744870678"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-facebook/icon-facebook.component.ts",
-          "hash": "14904289416712556968",
+          "file": "backend/api/src/auth/decorators/swagger/signup-doc.decorator.ts",
+          "hash": "6482758399604328382",
           "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core"
+            "npm:@nestjs/common",
+            "npm:@nestjs/swagger"
           ]
         },
         {
-          "file": "frontend/ui/components/atoms/icons/icon-facebook/index.ts",
-          "hash": "5431539654481109853"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-facebook-two/icon-facebook-two.component.html",
-          "hash": "8775886309308285024"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-facebook-two/icon-facebook-two.component.scss",
-          "hash": "12041313066837131384"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-facebook-two/icon-facebook-two.component.ts",
-          "hash": "2973735716155934027",
+          "file": "backend/api/src/auth/dto/change-pass.dto.ts",
+          "hash": "17195861199042371287",
           "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core"
+            "npm:@nestjs/swagger",
+            "npm:class-validator"
           ]
         },
         {
-          "file": "frontend/ui/components/atoms/icons/icon-github/icon-github.component.html",
-          "hash": "10507146097017169689"
+          "file": "backend/api/src/auth/dto/index.ts",
+          "hash": "12462325666176038947"
         },
         {
-          "file": "frontend/ui/components/atoms/icons/icon-github/icon-github.component.ts",
-          "hash": "13036535194939993176",
+          "file": "backend/api/src/auth/dto/login.dto.ts",
+          "hash": "17198059859859239512",
           "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core"
+            "npm:@nestjs/swagger",
+            "npm:class-validator"
           ]
         },
         {
-          "file": "frontend/ui/components/atoms/icons/icon-github/index.ts",
-          "hash": "17173080817001150258"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-github-two/icon-github-two.component.html",
-          "hash": "4784413321544012590"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-github-two/icon-github-two.component.scss",
-          "hash": "12041313066837131384"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-github-two/icon-github-two.component.ts",
-          "hash": "15013600126485015343",
+          "file": "backend/api/src/auth/dto/requestPassword.dto.ts",
+          "hash": "11706996441944336583",
           "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core"
+            "npm:class-validator"
           ]
         },
         {
-          "file": "frontend/ui/components/atoms/icons/icon-google/icon-google.component.html",
-          "hash": "6874664881222575221"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-google/icon-google.component.ts",
-          "hash": "14311145758492097929",
+          "file": "backend/api/src/auth/dto/requestPasswordChange.dto.ts",
+          "hash": "11481739332745009425",
           "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core"
+            "npm:class-validator"
           ]
         },
         {
-          "file": "frontend/ui/components/atoms/icons/icon-google/index.ts",
-          "hash": "15684253021250840879"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-groups/icon-groups.component.html",
-          "hash": "2806517835489926479"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-groups/icon-groups.component.scss",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-groups/icon-groups.component.ts",
-          "hash": "8816245572593828744",
+          "file": "backend/api/src/auth/dto/signup.dto.ts",
+          "hash": "13760903086670607864",
           "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core"
+            "npm:@nestjs/swagger",
+            "npm:class-validator"
           ]
         },
         {
-          "file": "frontend/ui/components/atoms/icons/icon-hexagon-number-four/icon-hexagon-number-four.component.html",
-          "hash": "5563964445778958558"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-hexagon-number-four/icon-hexagon-number-four.component.scss",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-hexagon-number-four/icon-hexagon-number-four.component.ts",
-          "hash": "3160569069009841327",
+          "file": "backend/api/src/auth/guards/acces-level.guard.ts",
+          "hash": "4748263177417957218",
           "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core"
+            "database",
+            "npm:@nestjs/common",
+            "npm:@nestjs/core",
+            "npm:express"
           ]
         },
         {
-          "file": "frontend/ui/components/atoms/icons/icon-hexagon-number-one/icon-hexagon-number-one.component.html",
-          "hash": "10509103604112552732"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-hexagon-number-one/icon-hexagon-number-one.component.scss",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-hexagon-number-one/icon-hexagon-number-one.component.ts",
-          "hash": "13528280411910297032",
+          "file": "backend/api/src/auth/guards/auth.guard.ts",
+          "hash": "9195726171493065161",
           "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core"
+            "npm:@config",
+            "npm:@nestjs/common",
+            "npm:@nestjs/jwt"
           ]
         },
         {
-          "file": "frontend/ui/components/atoms/icons/icon-hexagon-number-three/icon-hexagon-number-three.component.html",
-          "hash": "498320963885999183"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-hexagon-number-three/icon-hexagon-number-three.component.scss",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-hexagon-number-three/icon-hexagon-number-three.component.ts",
-          "hash": "12250373867647127932",
+          "file": "backend/api/src/auth/guards/facebook.guard.ts",
+          "hash": "16449027789597406484",
           "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core"
+            "npm:@nestjs/common",
+            "npm:@nestjs/passport"
           ]
         },
         {
-          "file": "frontend/ui/components/atoms/icons/icon-hexagon-number-two/icon-hexagon-number-two.component.html",
-          "hash": "9249504266653524744"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-hexagon-number-two/icon-hexagon-number-two.component.scss",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-hexagon-number-two/icon-hexagon-number-two.component.ts",
-          "hash": "4905249516752810982",
+          "file": "backend/api/src/auth/guards/github.guard.ts",
+          "hash": "15870358279194370973",
           "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core"
+            "npm:@nestjs/common",
+            "npm:@nestjs/passport"
           ]
         },
         {
-          "file": "frontend/ui/components/atoms/icons/icon-hidden-pass/icon-hidden-pass.component.html",
-          "hash": "10190857936298616449"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-hidden-pass/icon-hidden-pass.component.scss",
-          "hash": "11860366637422693935"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-hidden-pass/icon-hidden-pass.component.ts",
-          "hash": "15935031719067531641",
+          "file": "backend/api/src/auth/guards/google.guard.ts",
+          "hash": "4130515499937017839",
           "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core"
+            "npm:@nestjs/common",
+            "npm:@nestjs/passport"
           ]
         },
         {
-          "file": "frontend/ui/components/atoms/icons/icon-hidden-pass/index.ts",
-          "hash": "17133031350325182757"
+          "file": "backend/api/src/auth/guards/index.ts",
+          "hash": "3663959007995301117"
         },
         {
-          "file": "frontend/ui/components/atoms/icons/icon-instagram-two/icon-instagram-two.component.html",
-          "hash": "5138041851479453554"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-instagram-two/icon-instagram-two.component.scss",
-          "hash": "12041313066837131384"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-instagram-two/icon-instagram-two.component.ts",
-          "hash": "2480307068508721067",
+          "file": "backend/api/src/auth/guards/jwt-auth.guard.ts",
+          "hash": "15060078834846822999",
           "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core"
+            "npm:@nestjs/common",
+            "npm:@nestjs/core",
+            "npm:@nestjs/passport"
           ]
         },
         {
-          "file": "frontend/ui/components/atoms/icons/icon-key/icon-key.component.html",
-          "hash": "17370557451819354853"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-key/icon-key.component.scss",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-key/icon-key.component.ts",
-          "hash": "7309785867151145847",
+          "file": "backend/api/src/auth/guards/pkce.guard.ts",
+          "hash": "5455328229169374721",
           "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core"
-          ]
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-linkedin-two/icon-linkedin-two.component.html",
-          "hash": "17137742762394809140"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-linkedin-two/icon-linkedin-two.component.scss",
-          "hash": "12041313066837131384"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-linkedin-two/icon-linkedin-two.component.ts",
-          "hash": "4097169469264653949",
-          "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core"
-          ]
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-loading/icon-loading.component.html",
-          "hash": "12232771248829359782"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-loading/icon-loading.component.scss",
-          "hash": "17678027093397264850"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-loading/icon-loading.component.ts",
-          "hash": "17428510967688853178",
-          "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core"
-          ]
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-loading/index.ts",
-          "hash": "16058707389175616473"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-loading/loading.type.ts",
-          "hash": "1523237625750669498"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-mail/icon-mail.component.html",
-          "hash": "16229300058048865503"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-mail/icon-mail.component.scss",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-mail/icon-mail.component.ts",
-          "hash": "14683691620801432149",
-          "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core"
-          ]
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-pass/icon-pass.component.html",
-          "hash": "17592450432288764575"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-pass/icon-pass.component.scss",
-          "hash": "16045361289177456665"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-pass/icon-pass.component.ts",
-          "hash": "10833041121330895006",
-          "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core"
-          ]
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-profile/icon-profile.component.html",
-          "hash": "5839743598337517377"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-profile/icon-profile.component.scss",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-profile/icon-profile.component.ts",
-          "hash": "12997857645586212336",
-          "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core"
-          ]
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-show-pass/icon-show-pass.component.html",
-          "hash": "12556174650803386768"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-show-pass/icon-show-pass.component.scss",
-          "hash": "11860366637422693935"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-show-pass/icon-show-pass.component.ts",
-          "hash": "5729560290199566207",
-          "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core"
-          ]
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-show-pass/index.ts",
-          "hash": "14272638413341465611"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-user/icon-user.component.html",
-          "hash": "13714285330708837066"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-user/icon-user.component.ts",
-          "hash": "6073468940407944883",
-          "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core"
-          ]
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-user/icon-user.interface.ts",
-          "hash": "8075423339793635833"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-user/index.ts",
-          "hash": "5096773775213167312"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-user-profile/icon-user-profile.component.html",
-          "hash": "2162885793025082039"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-user-profile/icon-user-profile.component.scss",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-user-profile/icon-user-profile.component.ts",
-          "hash": "15425848514541143835",
-          "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core"
-          ]
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-view/icon-view.component.html",
-          "hash": "5444828049940182216"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-view/icon-view.component.scss",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-view/icon-view.component.ts",
-          "hash": "1847038854167511862",
-          "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core"
-          ]
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-x/icon-x.component.html",
-          "hash": "13394682967142501042"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-x/icon-x.component.scss",
-          "hash": "12041313066837131384"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-x/icon-x.component.ts",
-          "hash": "582441261784673326",
-          "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core"
-          ]
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon.interface.ts",
-          "hash": "15103366284706535694"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/index.ts",
-          "hash": "1374588184007636863"
-        },
-        {
-          "file": "frontend/ui/components/atoms/index.ts",
-          "hash": "13890763580016891754"
-        },
-        {
-          "file": "frontend/ui/components/atoms/label/label.component.html",
-          "hash": "18317479047734091746"
-        },
-        {
-          "file": "frontend/ui/components/atoms/label/label.component.scss",
-          "hash": "1196927443590614603"
-        },
-        {
-          "file": "frontend/ui/components/atoms/label/label.component.ts",
-          "hash": "14714669312581934841",
-          "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core"
-          ]
-        },
-        {
-          "file": "frontend/ui/components/atoms/label/label.interface.ts",
-          "hash": "5287019817421228191"
-        },
-        {
-          "file": "frontend/ui/components/atoms/title/title.component.html",
-          "hash": "18394490393575490763"
-        },
-        {
-          "file": "frontend/ui/components/atoms/title/title.component.scss",
-          "hash": "13844763222957898070"
-        },
-        {
-          "file": "frontend/ui/components/atoms/title/title.component.ts",
-          "hash": "9594718213617887892",
-          "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core"
-          ]
-        },
-        {
-          "file": "frontend/ui/components/atoms/title/title.interface.ts",
-          "hash": "6083855499264636829"
-        },
-        {
-          "file": "frontend/ui/components/index.ts",
-          "hash": "3368866378614446645"
-        },
-        {
-          "file": "frontend/ui/components/molecules/button/button.component.html",
-          "hash": "3328642064411666296"
-        },
-        {
-          "file": "frontend/ui/components/molecules/button/button.component.scss",
-          "hash": "9729706349937980215"
-        },
-        {
-          "file": "frontend/ui/components/molecules/button/button.component.ts",
-          "hash": "4314562193053014047",
-          "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core"
-          ]
-        },
-        {
-          "file": "frontend/ui/components/molecules/button/button.interface.ts",
-          "hash": "11158105168245477499"
-        },
-        {
-          "file": "frontend/ui/components/molecules/chip/chip.component.html",
-          "hash": "1914846248737050214"
-        },
-        {
-          "file": "frontend/ui/components/molecules/chip/chip.component.scss",
-          "hash": "15871482274716848027"
-        },
-        {
-          "file": "frontend/ui/components/molecules/chip/chip.component.ts",
-          "hash": "14226237403719627899",
-          "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core"
-          ]
-        },
-        {
-          "file": "frontend/ui/components/molecules/chip/chip.interface.ts",
-          "hash": "14021120984692127937"
-        },
-        {
-          "file": "frontend/ui/components/molecules/chip/index.ts",
-          "hash": "7672992164216777836"
-        },
-        {
-          "file": "frontend/ui/components/molecules/chip-select/chip-select.component.html",
-          "hash": "10228091698651841187"
-        },
-        {
-          "file": "frontend/ui/components/molecules/chip-select/chip-select.component.scss",
-          "hash": "10475264821038739301"
-        },
-        {
-          "file": "frontend/ui/components/molecules/chip-select/chip-select.component.ts",
-          "hash": "17971109975084189800",
-          "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core"
-          ]
-        },
-        {
-          "file": "frontend/ui/components/molecules/chip-select/chip-select.interface.ts",
-          "hash": "13177864561236106461"
-        },
-        {
-          "file": "frontend/ui/components/molecules/input/input.component.html",
-          "hash": "8756250778090608211"
-        },
-        {
-          "file": "frontend/ui/components/molecules/input/input.component.scss",
-          "hash": "8151875085542630380"
-        },
-        {
-          "file": "frontend/ui/components/molecules/input/input.component.ts",
-          "hash": "11963162719574223292",
-          "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core",
-            "npm:@angular/forms"
-          ]
-        },
-        {
-          "file": "frontend/ui/components/molecules/input/input.interface.ts",
-          "hash": "17051127010579052458",
-          "deps": [
-            "npm:@angular/forms"
-          ]
-        },
-        {
-          "file": "frontend/ui/components/molecules/select/index.ts",
-          "hash": "13434860279844646410"
-        },
-        {
-          "file": "frontend/ui/components/molecules/select/select.component.html",
-          "hash": "16371984519543652629"
-        },
-        {
-          "file": "frontend/ui/components/molecules/select/select.component.scss",
-          "hash": "14633437663096175877"
-        },
-        {
-          "file": "frontend/ui/components/molecules/select/select.component.ts",
-          "hash": "10473275923082177272",
-          "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core",
-            "npm:@angular/forms"
-          ]
-        },
-        {
-          "file": "frontend/ui/components/molecules/select/select.interface.ts",
-          "hash": "9078928848394495723"
-        },
-        {
-          "file": "frontend/ui/components/molecules/step/step.component.html",
-          "hash": "16451168587375798508"
-        },
-        {
-          "file": "frontend/ui/components/molecules/step/step.component.scss",
-          "hash": "13911880825188996207"
-        },
-        {
-          "file": "frontend/ui/components/molecules/step/step.component.ts",
-          "hash": "13465094226830015908",
-          "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core"
-          ]
-        },
-        {
-          "file": "frontend/ui/components/molecules/step/step.interface.ts",
-          "hash": "13526244870040695461"
-        },
-        {
-          "file": "frontend/ui/components/molecules/text-area/text-area.component.html",
-          "hash": "771359987266245711"
-        },
-        {
-          "file": "frontend/ui/components/molecules/text-area/text-area.component.scss",
-          "hash": "11243042264526484296"
-        },
-        {
-          "file": "frontend/ui/components/molecules/text-area/text-area.component.ts",
-          "hash": "15018195030693602178",
-          "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core",
-            "npm:@angular/forms",
+            "npm:@environments",
+            "npm:@nestjs/common",
             "npm:rxjs"
           ]
         },
         {
-          "file": "frontend/ui/components/molecules/text-area/text-area.interface.ts",
-          "hash": "5362590363818492808",
+          "file": "backend/api/src/auth/guards/roles.guard.ts",
+          "hash": "5237044417080243310",
           "deps": [
-            "npm:@angular/forms"
+            "npm:@nestjs/common",
+            "npm:@nestjs/core",
+            "npm:express",
+            "database"
           ]
         },
         {
-          "file": "frontend/ui/components/shared/directives/control-value-accesor.directive.ts",
-          "hash": "6567193939437562211",
+          "file": "backend/api/src/auth/interface/auth.interface.ts",
+          "hash": "14541380455406616353",
           "deps": [
-            "npm:@angular/core",
-            "npm:@angular/forms",
+            "database"
+          ]
+        },
+        {
+          "file": "backend/api/src/auth/interface/index.ts",
+          "hash": "673765648508111900"
+        },
+        {
+          "file": "backend/api/src/auth/interface/jwt-payload.interface.ts",
+          "hash": "663874955167850530"
+        },
+        {
+          "file": "backend/api/src/auth/strategies/facebook.strategy.ts",
+          "hash": "17983891930110734175",
+          "deps": [
+            "npm:@config",
+            "npm:@nestjs/common",
+            "npm:@nestjs/passport",
+            "npm:passport-facebook",
+            "database"
+          ]
+        },
+        {
+          "file": "backend/api/src/auth/strategies/github.strategy.ts",
+          "hash": "2479104041156167215",
+          "deps": [
+            "npm:@config",
+            "npm:@nestjs/common",
+            "npm:@nestjs/passport",
+            "npm:passport-github",
+            "database"
+          ]
+        },
+        {
+          "file": "backend/api/src/auth/strategies/google.strategy.ts",
+          "hash": "1692054788631592183",
+          "deps": [
+            "npm:@config",
+            "npm:@nestjs/common",
+            "npm:@nestjs/passport",
+            "npm:passport-google-oauth20",
+            "database"
+          ]
+        },
+        {
+          "file": "backend/api/src/auth/strategies/jwt.strategy.ts",
+          "hash": "9612714382471815911",
+          "deps": [
+            "database",
+            "npm:@environments",
+            "npm:@nestjs/common",
+            "npm:@nestjs/passport",
+            "npm:passport-jwt"
+          ]
+        },
+        {
+          "file": "backend/api/src/auth/types/auth-response.type.ts",
+          "hash": "6028247423460999860",
+          "deps": [
+            "database"
+          ]
+        },
+        {
+          "file": "backend/api/src/common/dto/args/id.args.ts",
+          "hash": "2210502926357284987",
+          "deps": [
+            "npm:class-validator"
+          ]
+        },
+        {
+          "file": "backend/api/src/common/dto/args/index.ts",
+          "hash": "7788431459639943469"
+        },
+        {
+          "file": "backend/api/src/common/dto/args/pagination.args.ts",
+          "hash": "6629950796445591723",
+          "deps": [
+            "npm:class-validator"
+          ]
+        },
+        {
+          "file": "backend/api/src/common/dto/args/search.args.ts",
+          "hash": "10401169613357508930",
+          "deps": [
+            "npm:class-validator"
+          ]
+        },
+        {
+          "file": "backend/api/src/constants/cors.ts",
+          "hash": "13398220538141786153",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "backend/api/src/constants/errors.ts",
+          "hash": "2929849685026547547",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "backend/api/src/constants/index.ts",
+          "hash": "5229635944273220209"
+        },
+        {
+          "file": "backend/api/src/constants/key-decorators.ts",
+          "hash": "467499242283815770"
+        },
+        {
+          "file": "backend/api/src/constants/roles.ts",
+          "hash": "12344311878785014289"
+        },
+        {
+          "file": "backend/api/src/countries/countries.controller.ts",
+          "hash": "12970146813970970741",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "backend/api/src/countries/countries.module.ts",
+          "hash": "15433975511792915638",
+          "deps": [
+            "database",
+            "npm:@nestjs/common",
+            "npm:@nestjs/typeorm"
+          ]
+        },
+        {
+          "file": "backend/api/src/countries/countries.service.ts",
+          "hash": "2797963842628539791",
+          "deps": [
+            "database",
+            "npm:@nestjs/common",
+            "npm:@nestjs/typeorm",
+            "npm:typeorm"
+          ]
+        },
+        {
+          "file": "backend/api/src/index.ts",
+          "hash": "11113823833724796459"
+        },
+        {
+          "file": "backend/api/src/interceptors/exceptions.interceptor.ts",
+          "hash": "9332761257826541926",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "backend/api/src/interceptors/index.ts",
+          "hash": "6350708925002298062"
+        },
+        {
+          "file": "backend/api/src/interceptors/response.interceptor.ts",
+          "hash": "17145290048099861449",
+          "deps": [
+            "npm:@nestjs/common",
             "npm:rxjs"
           ]
         },
         {
-          "file": "frontend/ui/documentation.json",
-          "hash": "7520795065743114637"
+          "file": "backend/api/src/interface/claimTypes.ts",
+          "hash": "17199848774550112308"
         },
         {
-          "file": "frontend/ui/jest.config.ts",
-          "hash": "5619249371785640415"
+          "file": "backend/api/src/interface/index.ts",
+          "hash": "3062559052684587073"
         },
         {
-          "file": "frontend/ui/postcss.config.js",
-          "hash": "13598591179375906364",
+          "file": "backend/api/src/interface/queryFailedError.ts",
+          "hash": "14264912560477587355"
+        },
+        {
+          "file": "backend/api/src/interface/typeErrorCustom.ts",
+          "hash": "11828346044441010074",
           "deps": [
+            "npm:@nestjs/common",
+            "npm:typeorm"
+          ]
+        },
+        {
+          "file": "backend/api/src/main.ts",
+          "hash": "14968384786319686850",
+          "deps": [
+            "npm:@environments",
+            "npm:@nestjs/common",
+            "npm:@nestjs/core",
+            "npm:cookie-parser",
+            "npm:express-session",
+            "npm:morgan",
+            "npm:passport"
+          ]
+        },
+        {
+          "file": "backend/api/src/projects/decorators/index.ts",
+          "hash": "458777424225743231"
+        },
+        {
+          "file": "backend/api/src/projects/decorators/swagger/create-project.decorator.ts",
+          "hash": "12606132872499653029",
+          "deps": [
+            "database",
+            "npm:@nestjs/common",
+            "npm:@nestjs/swagger"
+          ]
+        },
+        {
+          "file": "backend/api/src/projects/decorators/swagger/delete-project.decorator.ts",
+          "hash": "17296198801750140279",
+          "deps": [
+            "database",
+            "npm:@nestjs/common",
+            "npm:@nestjs/swagger"
+          ]
+        },
+        {
+          "file": "backend/api/src/projects/decorators/swagger/edit-project.decorator.ts",
+          "hash": "14690292407308202760",
+          "deps": [
+            "database",
+            "npm:@nestjs/common",
+            "npm:@nestjs/swagger"
+          ]
+        },
+        {
+          "file": "backend/api/src/projects/decorators/swagger/project.decorator.ts",
+          "hash": "7954063539859900892",
+          "deps": [
+            "database",
+            "npm:@nestjs/common",
+            "npm:@nestjs/swagger"
+          ]
+        },
+        {
+          "file": "backend/api/src/projects/decorators/swagger/projects.decorator.ts",
+          "hash": "13216124156034659566",
+          "deps": [
+            "database",
+            "npm:@nestjs/common",
+            "npm:@nestjs/swagger"
+          ]
+        },
+        {
+          "file": "backend/api/src/projects/dto/create-project.dto.ts",
+          "hash": "17602604209348004232",
+          "deps": [
+            "npm:@nestjs/swagger",
+            "npm:class-validator"
+          ]
+        },
+        {
+          "file": "backend/api/src/projects/dto/index.ts",
+          "hash": "8139777130917274963"
+        },
+        {
+          "file": "backend/api/src/projects/dto/update-project.dto.ts",
+          "hash": "16534439638400119203",
+          "deps": [
+            "npm:@nestjs/mapped-types",
+            "npm:@nestjs/swagger",
+            "npm:class-validator"
+          ]
+        },
+        {
+          "file": "backend/api/src/projects/projects.controller.ts",
+          "hash": "6437854435913221615",
+          "deps": [
+            "database",
+            "npm:@nestjs/common",
+            "npm:@nestjs/swagger"
+          ]
+        },
+        {
+          "file": "backend/api/src/projects/projects.module.ts",
+          "hash": "1682771540431308364",
+          "deps": [
+            "database",
+            "npm:@nestjs/common",
+            "npm:@nestjs/typeorm"
+          ]
+        },
+        {
+          "file": "backend/api/src/projects/projects.service.ts",
+          "hash": "8059704962546976933",
+          "deps": [
+            "database",
+            "npm:@nestjs/common",
+            "npm:@nestjs/typeorm",
+            "npm:typeorm"
+          ]
+        },
+        {
+          "file": "backend/api/src/shared/utils/validationSchema.ts",
+          "hash": "16338646587039568477",
+          "deps": [
+            "npm:joi"
+          ]
+        },
+        {
+          "file": "backend/api/src/specialties/specialties.controller.ts",
+          "hash": "10710064450277525119",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "backend/api/src/specialties/specialties.module.ts",
+          "hash": "13141785944245457061",
+          "deps": [
+            "database",
+            "npm:@nestjs/common",
+            "npm:@nestjs/typeorm"
+          ]
+        },
+        {
+          "file": "backend/api/src/specialties/specialties.service.ts",
+          "hash": "17797052303864617470",
+          "deps": [
+            "database",
+            "npm:@nestjs/common",
+            "npm:@nestjs/typeorm",
+            "npm:typeorm"
+          ]
+        },
+        {
+          "file": "backend/api/src/tasks/decorators/index.ts",
+          "hash": "16421770323062636487"
+        },
+        {
+          "file": "backend/api/src/tasks/decorators/swagger/create-task-doc.decorator.ts",
+          "hash": "8404651279372037983",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/swagger"
+          ]
+        },
+        {
+          "file": "backend/api/src/tasks/dto/create-task.dto.ts",
+          "hash": "5465300743460021082",
+          "deps": [
+            "database",
+            "npm:@nestjs/swagger",
+            "npm:class-validator"
+          ]
+        },
+        {
+          "file": "backend/api/src/tasks/dto/index.ts",
+          "hash": "17534848797836379355"
+        },
+        {
+          "file": "backend/api/src/tasks/tasks.controller.ts",
+          "hash": "11847067988568190564",
+          "deps": [
+            "database",
+            "npm:@nestjs/common",
+            "npm:@nestjs/swagger"
+          ]
+        },
+        {
+          "file": "backend/api/src/tasks/tasks.module.ts",
+          "hash": "5668588182096111295",
+          "deps": [
+            "database",
+            "npm:@nestjs/common",
+            "npm:@nestjs/typeorm"
+          ]
+        },
+        {
+          "file": "backend/api/src/tasks/tasks.service.ts",
+          "hash": "8037748271108217749",
+          "deps": [
+            "database",
+            "npm:@nestjs/common",
+            "npm:@nestjs/typeorm",
+            "npm:typeorm"
+          ]
+        },
+        {
+          "file": "backend/api/src/template/requestResetPassword.handlebars",
+          "hash": "3501997384285900011"
+        },
+        {
+          "file": "backend/api/src/template/requestResetPasswordSuccess.handlebars",
+          "hash": "16366544097866713943"
+        },
+        {
+          "file": "backend/api/src/users/decorators/index.ts",
+          "hash": "1240840297569679014"
+        },
+        {
+          "file": "backend/api/src/users/decorators/swagger/block-user-doc.decorator.ts",
+          "hash": "11188578112625109135",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/swagger"
+          ]
+        },
+        {
+          "file": "backend/api/src/users/decorators/swagger/delete-user-doc.decorator.ts",
+          "hash": "2126249259982438925",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/swagger"
+          ]
+        },
+        {
+          "file": "backend/api/src/users/decorators/swagger/register-user-doc.decorator.ts",
+          "hash": "8764247600905394315",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/swagger"
+          ]
+        },
+        {
+          "file": "backend/api/src/users/decorators/swagger/update-user-doc.decorator.ts",
+          "hash": "6037855880582376599",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/swagger"
+          ]
+        },
+        {
+          "file": "backend/api/src/users/decorators/swagger/user-doc.decorator.ts",
+          "hash": "4861867322430552943",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/swagger"
+          ]
+        },
+        {
+          "file": "backend/api/src/users/decorators/swagger/user-in-project-doc.decorator.ts",
+          "hash": "10336334115752442810",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/swagger"
+          ]
+        },
+        {
+          "file": "backend/api/src/users/decorators/swagger/users-doc.decorator.ts",
+          "hash": "10495155347826136709",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/swagger"
+          ]
+        },
+        {
+          "file": "backend/api/src/users/decorators/swagger/users-projects-doc.decorator.ts",
+          "hash": "17358333568904262021",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/swagger"
+          ]
+        },
+        {
+          "file": "backend/api/src/users/decorators/swagger/users-rol-doc.decorator.ts",
+          "hash": "7742448169841703048",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/swagger"
+          ]
+        },
+        {
+          "file": "backend/api/src/users/dto/UserProfile.dto.ts",
+          "hash": "7229794658000456135",
+          "deps": [
+            "database",
+            "npm:@nestjs/swagger",
+            "npm:class-validator"
+          ]
+        },
+        {
+          "file": "backend/api/src/users/dto/baseDto.ts",
+          "hash": "11778274300452563628",
+          "deps": [
+            "npm:@nestjs/swagger",
+            "npm:class-validator"
+          ]
+        },
+        {
+          "file": "backend/api/src/users/dto/changePassword.dto.ts",
+          "hash": "9890741199117456440",
+          "deps": [
+            "npm:@nestjs/swagger",
+            "npm:class-validator"
+          ]
+        },
+        {
+          "file": "backend/api/src/users/dto/create-user.dto.ts",
+          "hash": "8466877315454397585",
+          "deps": [
+            "npm:@nestjs/swagger",
+            "npm:class-validator"
+          ]
+        },
+        {
+          "file": "backend/api/src/users/dto/createUserWithExternalProvider.dto.ts",
+          "hash": "13785275662533058985",
+          "deps": [
+            "npm:@nestjs/swagger",
+            "npm:class-validator",
+            "database"
+          ]
+        },
+        {
+          "file": "backend/api/src/users/dto/index.ts",
+          "hash": "3449291592476650741"
+        },
+        {
+          "file": "backend/api/src/users/dto/roles.dto.ts",
+          "hash": "15384815699679766494",
+          "deps": [
+            "database",
+            "npm:@nestjs/swagger",
+            "npm:class-validator"
+          ]
+        },
+        {
+          "file": "backend/api/src/users/dto/update-user.dto.ts",
+          "hash": "3652724976063122597",
+          "deps": [
+            "database",
+            "npm:@nestjs/swagger",
+            "npm:class-validator"
+          ]
+        },
+        {
+          "file": "backend/api/src/users/dto/user-to-project.dto.ts",
+          "hash": "18135300579880815284",
+          "deps": [
+            "database",
+            "npm:@nestjs/swagger",
+            "npm:class-validator"
+          ]
+        },
+        {
+          "file": "backend/api/src/users/dto/user.dto.ts",
+          "hash": "17653580726129375318",
+          "deps": [
+            "database",
+            "npm:@nestjs/swagger",
+            "npm:class-validator"
+          ]
+        },
+        {
+          "file": "backend/api/src/users/dto/userEditProfile.dto.ts",
+          "hash": "14433324668163515812",
+          "deps": [
+            "database",
+            "npm:@nestjs/swagger",
+            "npm:class-validator"
+          ]
+        },
+        {
+          "file": "backend/api/src/users/dto/userEditProfilePartial.dto.ts",
+          "hash": "6268072110309570621",
+          "deps": [
+            "npm:@nestjs/swagger"
+          ]
+        },
+        {
+          "file": "backend/api/src/users/types/index.ts",
+          "hash": "16736870576183756712"
+        },
+        {
+          "file": "backend/api/src/users/types/simplifiedUser.type.ts",
+          "hash": "13612503702199313392",
+          "deps": [
+            "database"
+          ]
+        },
+        {
+          "file": "backend/api/src/users/types/userEditProfile.dto.ts",
+          "hash": "9219057067535730274",
+          "deps": [
+            "database"
+          ]
+        },
+        {
+          "file": "backend/api/src/users/users.controller.ts",
+          "hash": "1641538683626713173",
+          "deps": [
+            "database",
+            "npm:@nestjs/common",
+            "npm:@nestjs/swagger"
+          ]
+        },
+        {
+          "file": "backend/api/src/users/users.module.ts",
+          "hash": "5829391895275336412",
+          "deps": [
+            "database",
+            "npm:@nestjs/common",
+            "npm:@nestjs/typeorm"
+          ]
+        },
+        {
+          "file": "backend/api/src/users/users.service.ts",
+          "hash": "7750136780570343599",
+          "deps": [
+            "npm:@config",
+            "database",
+            "npm:@environments",
+            "npm:@nestjs/common",
+            "npm:@nestjs/typeorm",
+            "npm:bcrypt",
+            "npm:typeorm"
+          ]
+        },
+        {
+          "file": "backend/api/src/usersProjects/decorators/index.ts",
+          "hash": "17587409065106752495"
+        },
+        {
+          "file": "backend/api/src/usersProjects/decorators/swagger/project-doc.decorator.ts",
+          "hash": "16711367317518699177",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/swagger"
+          ]
+        },
+        {
+          "file": "backend/api/src/usersProjects/decorators/swagger/users-projects-doc.decorator.ts",
+          "hash": "8608328397468392231",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/swagger"
+          ]
+        },
+        {
+          "file": "backend/api/src/usersProjects/users-projects.controller.ts",
+          "hash": "11206874997879839913",
+          "deps": [
+            "database",
+            "npm:@nestjs/common",
+            "npm:@nestjs/swagger"
+          ]
+        },
+        {
+          "file": "backend/api/src/usersProjects/users-projects.module.ts",
+          "hash": "2683671775086138932",
+          "deps": [
+            "database",
+            "npm:@nestjs/common",
+            "npm:@nestjs/typeorm"
+          ]
+        },
+        {
+          "file": "backend/api/src/usersProjects/users-projects.service.ts",
+          "hash": "18116500462225389341",
+          "deps": [
+            "database",
+            "npm:@nestjs/common",
+            "npm:@nestjs/typeorm",
+            "npm:typeorm"
+          ]
+        },
+        {
+          "file": "backend/api/src/utils/dateUtils.ts",
+          "hash": "14299285373388450663"
+        },
+        {
+          "file": "backend/api/src/utils/encryptionUtils.ts",
+          "hash": "8178826962429596108",
+          "deps": [
+            "npm:bcrypt",
+            "npm:crypto"
+          ]
+        },
+        {
+          "file": "backend/api/src/utils/get-validation-error.ts",
+          "hash": "5399938835316454782"
+        },
+        {
+          "file": "backend/api/src/utils/handlebars/index.ts",
+          "hash": "12629643517189558933"
+        },
+        {
+          "file": "backend/api/src/utils/handlebars/recoverPassword.ts",
+          "hash": "8231516829238663573",
+          "deps": [
+            "npm:fs",
+            "npm:handlebars",
             "npm:path"
           ]
         },
         {
-          "file": "frontend/ui/project.json",
-          "hash": "16077682721412850176"
-        },
-        {
-          "file": "frontend/ui/stories/atoms/label/label.component.stories.ts",
-          "hash": "6661249186607700215",
+          "file": "backend/api/src/utils/handlebars/recoverPasswordSuccess.ts",
+          "hash": "1298566985355658911",
           "deps": [
-            "npm:@storybook/angular"
+            "npm:fs",
+            "npm:handlebars",
+            "npm:path"
           ]
         },
         {
-          "file": "frontend/ui/stories/atoms/title/title.component.stories.ts",
-          "hash": "4202620866983803672",
+          "file": "backend/api/src/utils/index.ts",
+          "hash": "17187709870832330277"
+        },
+        {
+          "file": "backend/api/src/utils/linkUtils.ts",
+          "hash": "4461207399555980642",
           "deps": [
-            "npm:@storybook/angular"
+            "npm:@environments"
           ]
         },
         {
-          "file": "frontend/ui/stories/molecules/button/button.component.stories.ts",
-          "hash": "4889544630176060259",
+          "file": "backend/api/src/utils/pkceCookiesParser.ts",
+          "hash": "2990162268030485768",
           "deps": [
-            "npm:@storybook/angular",
-            "npm:@angular/common"
+            "npm:express"
           ]
         },
         {
-          "file": "frontend/ui/stories/molecules/chip/chip.component.stories.ts",
-          "hash": "15177209933951809940",
+          "file": "backend/api/src/utils/response.manager.ts",
+          "hash": "12704021978954987323",
           "deps": [
-            "npm:@storybook/angular",
-            "npm:@angular/common"
+            "npm:@nestjs/common"
           ]
         },
         {
-          "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
-          "hash": "15664727920162322430",
+          "file": "backend/api/src/utils/send-email.ts",
+          "hash": "9577635809865759582",
           "deps": [
-            "npm:@angular/common",
-            "npm:@angular/forms",
-            "npm:@storybook/angular"
+            "database",
+            "npm:@environments",
+            "npm:nodemailer"
           ]
         },
         {
-          "file": "frontend/ui/stories/molecules/select/select.component.stories.ts",
-          "hash": "12991298966866420470",
+          "file": "backend/api/src/utils/serializer.ts",
+          "hash": "12513471382103117926",
           "deps": [
-            "npm:@angular/common",
-            "npm:@angular/forms",
-            "npm:@storybook/angular"
+            "npm:@nestjs/passport"
           ]
         },
         {
-          "file": "frontend/ui/stories/molecules/step/step.component.stories.ts",
-          "hash": "13720812891609610802",
+          "file": "backend/api/src/utils/use.token.ts",
+          "hash": "14801796724562249551",
           "deps": [
-            "npm:@angular/common",
-            "npm:@storybook/angular"
+            "npm:jsonwebtoken"
           ]
         },
         {
-          "file": "frontend/ui/stories/molecules/text-area/text-area.component.stories.ts",
-          "hash": "10136013264375966581",
+          "file": "backend/api/tsconfig.app.json",
+          "hash": "7918082198778055745"
+        },
+        {
+          "file": "backend/api/tsconfig.json",
+          "hash": "11973820485193176376"
+        },
+        {
+          "file": "backend/api/tsconfig.spec.json",
+          "hash": "2900418949104901599"
+        },
+        {
+          "file": "backend/api/webpack.config.js",
+          "hash": "10619490397189790225",
           "deps": [
-            "npm:@angular/common",
-            "npm:@angular/forms",
-            "npm:@storybook/angular"
+            "npm:@nx/webpack"
           ]
-        },
-        {
-          "file": "frontend/ui/tailwind.config.js",
-          "hash": "13957595403767009659",
-          "deps": [
-            "npm:@nx/angular/tailwind",
-            "npm:path",
-            "tailwind-preset"
-          ]
-        },
-        {
-          "file": "frontend/ui/tsconfig.json",
-          "hash": "16326414037910697106"
-        },
-        {
-          "file": "frontend/ui/tsconfig.lib.json",
-          "hash": "12496680018945969286"
-        },
-        {
-          "file": "frontend/ui/tsconfig.spec.json",
-          "hash": "8246693900492800589"
         }
       ]
     }

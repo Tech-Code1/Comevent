@@ -10,6 +10,7 @@ import {
 import {
   AreasComponent,
   MainInfoComponent,
+  MoreInformationComponent,
   SocialNetworksComponent,
   UserProfileStateService,
 } from '../..';
@@ -27,6 +28,7 @@ import { TokenService } from '../../../../common/services/token.service';
     RouterModule,
     SocialNetworksComponent,
     AreasComponent,
+    MoreInformationComponent,
   ],
   selector: 'edit-profile',
   templateUrl: './edit-profile.component.html',
@@ -42,5 +44,8 @@ export class EditProfileComponent implements OnInit {
     if (userId) {
       this.userProfileStateService.onDataUserEditProfile(userId);
     }
+
+    this.userProfileStateService.onDataCountries();
+    this.userProfileStateService.onDataSpecialties();
   }
 }

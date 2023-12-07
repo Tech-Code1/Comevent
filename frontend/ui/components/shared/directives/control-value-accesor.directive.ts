@@ -28,7 +28,7 @@ export class ControlValueAccesorDirective<T>
 {
   constructor(@Inject(Injector) private injector: Injector) {}
 
-  @Input() type: 'number' | 'text' | 'email' | 'password' = 'text';
+  @Input() type: 'number' | 'text' | 'email' | 'password' | 'date' = 'text';
   @Input() additionalValidators: ValidatorFn[] = [];
 
   control: FormControl | undefined;

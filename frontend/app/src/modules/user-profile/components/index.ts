@@ -18,4 +18,5 @@ export * from './organism/main-info/main-info.component';
 export * from './organism/modal-change-email/modal-change-email.component';
 export * from './organism/modal-change-password/modal-change-password.component';
 export * from './organism/modal-change-user-name/modal-change-user-name.component';
+export * from './organism/more-information/more-information.component';
 export * from './organism/social-networks/social-networks.component';
