@@ -1,5 +1,5 @@
 <div class="flex justify-center w-full">
-  <section class="flex flex-col gap-10 w-[1025px] my-10">
+  <section class="flex flex-col gap-6 w-[1025px] my-10">
     <header class="flex flex-row justify-between items-center">
       <button
         routerLink="/user/profile"
@@ -31,5 +31,11 @@
       [countries]="userProfileStateService.dataCountries()"
       [specialties]="userProfileStateService.dataSpecialties()"
     />
+
+    <div class="flex flex-row justify-end">
+      <c-button variant="button-base"
+        ><c-title variant="title-h6"> Guardar cambios </c-title></c-button
+      >
+    </div>
   </section>
 </div>
