@@ -4,6 +4,7 @@ import { Swal } from '@utils';
 import { take } from 'rxjs';
 import {
   ICountries,
+  IEditProfile,
   ISimplifiedUserEditProfile,
   ISpecialties,
   IUserProfile,
@@ -20,7 +21,9 @@ export class UserProfileStateService {
 
   BASE_API: string = environment.baseUrl;
   private _dataUserProfile = signal<IUserProfile>({});
-  private _dataUserEditProfile = signal<ISimplifiedUserEditProfile>({
+  private _dataUserEditProfile = signal<
+    ISimplifiedUserEditProfile | Partial<ISimplifiedUserEditProfile>
+  >({
     avatar: '',
     username: '',
     email: '',
@@ -33,7 +36,7 @@ export class UserProfileStateService {
     bornDate: null,
     gender: '',
     age: null,
-    specialty: '',
+    specialty: [''],
     country: '',
   });
   private _dataCountries = signal<ICountries[]>([{ id: 0, name: '' }]);
@@ -116,6 +119,24 @@ export class UserProfileStateService {
       .subscribe({
         next: ({ data }) => {
           this._dataSpecialties.set(data as ISpecialties[]);
+          this._loading.set(false);
+        },
+        error: ({ response }) => {
+          Swal.error(response.message);
+          this._loading.set(false);
+        },
+      });
+  }
+
+  onUpdateProfile(updateProfile: IEditProfile): void {
+    this._loading.set(true);
+
+    this.userProfileService
+      .editUserProfile(updateProfile)
+      .pipe(take(1))
+      .subscribe({
+        next: ({ data }) => {
+          this._dataUserEditProfile.set(data as IEditProfile);
           this._loading.set(false);
         },
         error: ({ response }) => {

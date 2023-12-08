@@ -6,6 +6,7 @@ import {
   Delete,
   Get,
   Param,
+  Patch,
   Post,
   Put,
   UseGuards,
@@ -30,6 +31,7 @@ import {
   CreateUserDTO,
   UpdateUserDTO,
   UserEditProfileDTO,
+  UserEditProfilePartialDTO,
   UserToProjectDTO,
   ValidRolesDTO,
 } from './dto';
@@ -111,6 +113,28 @@ export class UsersController {
       return Resp.Success<UserEditProfileDTO>(user, 'OK');
     } catch (error) {
       throw Resp.Error('NOT_FOUND', 'User not found');
+    }
+  }
+
+  @Patch('edit-profile/:id')
+  public async updateUserEditProfile(
+    @Body() updateData: UserEditProfilePartialDTO,
+    @CurrentUser([ROLES.ADMIN, ROLES.USER]) currentUser: User
+  ) {
+    try {
+      const updatedUser = await this.usersService.updateUserEditProfile(
+        currentUser.id,
+        updateData,
+        updateData.currentPassword
+      );
+
+      return Resp.Success<UserEditProfileDTO>(
+        updatedUser,
+        'OK',
+        'Profile updated successfully'
+      );
+    } catch (error) {
+      Resp.Error('BAD_REQUEST', 'Failed to update user profile');
     }
   }
 

@@ -20,6 +20,7 @@ import {
   CreateUserWithExternalProviderDTO,
   UpdateUserDTO,
   UserEditProfileDTO,
+  UserEditProfilePartialDTO,
   UserToProjectDTO,
 } from './dto';
 import { UserProfileDTO } from './dto/UserProfile.dto';
@@ -304,6 +305,67 @@ export class UsersService {
       return userProfile;
     } catch (error) {
       throw Resp.Error(error);
+    }
+  }
+
+  public async updateUserEditProfile(
+    id: string,
+    updateData: UserEditProfilePartialDTO,
+    currentPassword?: string
+  ): Promise<UserEditProfileDTO> {
+    try {
+      const user = await this.findUserById(id);
+
+      // ? Verificación de contraseña para cambiar contraseña, email o username
+      if (
+        (updateData.password || updateData.email || updateData.username) &&
+        !currentPassword
+      ) {
+        Resp.Error('BAD_REQUEST', 'CURRENT_PASSWORD_REQUIRED');
+      }
+
+      if (currentPassword) {
+        const isPasswordValid = await this.verifyPassword(
+          user.password,
+          currentPassword
+        );
+        if (!isPasswordValid) {
+          Resp.Error('BAD_REQUEST', 'INVALID_PASSWORD');
+        }
+
+        // ? Cambio de contraseña
+        if (updateData.password) {
+          updateData.password = await this.hashPassword(updateData.password);
+        }
+      }
+
+      // ? Actualiza otros campos del usuario
+      Object.assign(user, updateData);
+      await this.userRepository.save(user);
+
+      const updatedUserProfile = Object.assign(new UserEditProfileDTO(), user);
+      return updatedUserProfile;
+    } catch (error) {
+      Resp.Error(error);
+    }
+  }
+
+  private async verifyPassword(
+    hashedPassword: string,
+    plainPassword: string
+  ): Promise<boolean> {
+    try {
+      return await bcrypt.compare(plainPassword, hashedPassword);
+    } catch (error) {
+      Resp.Error('BAD_REQUEST', 'Failed to verify password.');
+    }
+  }
+
+  private async hashPassword(password: string): Promise<string> {
+    try {
+      return await bcrypt.hash(password, HASH_SALT);
+    } catch (error) {
+      Resp.Error('BAD_REQUEST', 'Password hashing error.');
     }
   }
 

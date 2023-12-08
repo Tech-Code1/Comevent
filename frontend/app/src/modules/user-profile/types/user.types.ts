@@ -31,6 +31,10 @@ export interface ISimplifiedUserEditProfile {
   gender: string;
   bornDate: Date | null;
   age: number | null;
-  specialty: string;
+  specialty: string[];
   country: string;
+  currentPassword?: string;
+  password?: string;
 }
+
+export type IEditProfile = Partial<ISimplifiedUserEditProfile>;

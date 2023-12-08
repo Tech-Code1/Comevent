@@ -3207,7 +3207,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/adapters/index.ts",
-          "hash": "991803018826088720"
+          "hash": "17260958423611445068"
         },
         {
           "file": "frontend/app/src/modules/user-profile/adapters/specialties-data.adapter.ts",
@@ -3755,7 +3755,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/service/api/user.api.service.ts",
-          "hash": "17751369277664725639",
+          "hash": "15459494641363223991",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
@@ -3832,7 +3832,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/service/state/user.state.service.ts",
-          "hash": "2515856389837866641",
+          "hash": "5685113167070810551",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/router",
@@ -3857,7 +3857,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/types/user.types.ts",
-          "hash": "8386309051816838045",
+          "hash": "1951919311019999435",
           "deps": [
             "database"
           ]
@@ -3972,6 +3972,10 @@
             "npm:@angular/forms",
             "npm:rxjs"
           ]
+        },
+        {
+          "file": "frontend/app/src/modules/user-profile/adapters/data-update-profile.adapter.ts",
+          "hash": "15818537900411495821"
         }
       ],
       "api": [
@@ -4839,9 +4843,10 @@
         },
         {
           "file": "backend/api/src/users/dto/userEditProfilePartial.dto.ts",
-          "hash": "6268072110309570621",
+          "hash": "2010226179668124982",
           "deps": [
-            "npm:@nestjs/swagger"
+            "npm:@nestjs/swagger",
+            "npm:class-validator"
           ]
         },
         {
@@ -4864,7 +4869,7 @@
         },
         {
           "file": "backend/api/src/users/users.controller.ts",
-          "hash": "1641538683626713173",
+          "hash": "17004568649046993703",
           "deps": [
             "database",
             "npm:@nestjs/common",
@@ -4882,7 +4887,7 @@
         },
         {
           "file": "backend/api/src/users/users.service.ts",
-          "hash": "7750136780570343599",
+          "hash": "12025220583227133684",
           "deps": [
             "npm:@config",
             "database",

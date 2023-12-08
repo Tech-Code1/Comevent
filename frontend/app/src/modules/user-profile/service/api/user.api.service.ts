@@ -1,18 +1,20 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
 import { Router } from '@angular/router';
-import { Observable, catchError, of, switchMap } from 'rxjs';
+import { Observable, catchError, of, switchMap, throwError } from 'rxjs';
 import { BaseResponse } from '../../../../common';
 import { environment } from '../../../../environments/environment';
 import {
   DataCountriesAdapter,
   DataSpecialtiesAdapter,
+  DataUpdateProfileAdapter,
   DataUserAdapter,
   DataUserEditProfileAdapter,
 } from '../../adapters';
 
 import {
   ICountries,
+  IEditProfile,
   ISimplifiedUserEditProfile,
   ISpecialties,
   IUserProfile,
@@ -84,6 +86,31 @@ export class UserProfileApiService {
       )
       .pipe(
         switchMap((res) => of(DataSpecialtiesAdapter(res))),
+        catchError(({ error }) => {
+          throw error;
+        })
+      );
+  }
+
+  editUserProfile(
+    updateProfile: IEditProfile
+  ): Observable<BaseResponse<IEditProfile | undefined>> {
+    const token = localStorage.getItem('token');
+
+    if (!token) {
+      return throwError(() => new Error('Token not found'));
+    }
+
+    const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
+
+    return this.http
+      .patch<BaseResponse<IEditProfile | undefined>>(
+        `${this.BASE_API}/edit-profile`,
+        updateProfile,
+        { headers }
+      )
+      .pipe(
+        switchMap((res) => of(DataUpdateProfileAdapter(res))),
         catchError(({ error }) => {
           throw error;
         })
