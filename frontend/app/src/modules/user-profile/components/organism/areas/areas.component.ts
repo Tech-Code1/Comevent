@@ -5,7 +5,7 @@ import {
   Input,
   ViewEncapsulation,
 } from '@angular/core';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
 import { InputComponent, TitleComponent } from '@ui/components';
 import { ISimplifiedUserEditProfile } from '../../..';
@@ -29,8 +29,11 @@ import { AreaSelectComponent } from '../area-select/area-select.component';
   changeDetection: ChangeDetectionStrategy.Default,
 })
 export class AreasComponent {
-  @Input({ required: true }) dataUserEditProfile!: ISimplifiedUserEditProfile;
+  @Input({ required: true }) dataUserEditProfile!:
+    | ISimplifiedUserEditProfile
+    | Partial<ISimplifiedUserEditProfile>;
   @Input({ required: true }) loadingProfile!: boolean;
+  @Input({ required: true }) formGroup!: FormGroup;
 
   TYPE_AREA = TYPE_AREA;
 }

@@ -48,16 +48,18 @@ import {
   changeDetection: ChangeDetectionStrategy.Default,
 })
 export class SocialNetworksComponent implements OnChanges, OnInit {
-  @Input({ required: true }) dataUserEditProfile!: ISimplifiedUserEditProfile;
+  @Input({ required: true }) dataUserEditProfile!:
+    | ISimplifiedUserEditProfile
+    | Partial<ISimplifiedUserEditProfile>;
   @Input({ required: true }) loadingProfile!: boolean;
+  @Input({ required: true }) formGroup!: FormGroup;
 
   protected formChangeSocialNetworksService = inject(
     FormChangeSocialNetworksService
   );
-  changeSocialNetworks!: FormGroup;
 
   ngOnInit(): void {
-    this.changeSocialNetworks =
+    this.formGroup =
       this.formChangeSocialNetworksService.getchangeSocialNetworkForm();
   }
 

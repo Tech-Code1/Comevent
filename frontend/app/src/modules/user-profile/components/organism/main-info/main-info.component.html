@@ -1,11 +1,12 @@
 <form
-  [formGroup]="changeDescription"
+  [formGroup]="formGroup"
   autocomplete="off"
   class="p-4 bg-gray-0 dark:bg-black-1 shadow-neutral-level2 rounded-xl h-auto"
 >
   <c-title variant="title-h5" color="black">Información personal</c-title>
   <div class="flex flex-row justify-between h-[200px] gap-4 mt-6">
     <avatar
+      [changeAvatar]="changeAvatar"
       [dataUserEditProfile]="dataUserEditProfile"
       [loadingProfile]="loadingProfile"
     />
@@ -27,6 +28,9 @@
     </c-label>
 
     <buttons-actions-change-main-info
+      [changeUserName]="changeUserName"
+      [changeEmail]="changeEmail"
+      [changePassword]="changePassword"
       [dataUserEditProfile]="dataUserEditProfile"
     />
   </div>

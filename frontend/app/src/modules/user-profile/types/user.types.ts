@@ -37,4 +37,43 @@ export interface ISimplifiedUserEditProfile {
   password?: string;
 }
 
+export interface IEditProfileFormData {
+  description: string;
+  socialNetworks: {
+    x: string;
+    discord: string;
+    facebook: string;
+    github: string;
+    linkedin: string;
+    instagram: string;
+  };
+  areas: {
+    areaOfExpertise: string[];
+    areaOfInteres: string[];
+  };
+  moreInformation: {
+    firstName: string;
+    lastName: string;
+    gender: string;
+    bornDate: Date | null;
+    specialty: string;
+    country: string;
+  };
+  changeUserName: {
+    userName: string;
+    pass: string;
+  };
+  changePassword: {
+    pass: string;
+    password: string;
+    passRepeat: string;
+    currentPassword?: string;
+  };
+  changeEmail: {
+    email: string;
+    pass: string;
+  };
+  avatar: File | null;
+}
+
 export type IEditProfile = Partial<ISimplifiedUserEditProfile>;

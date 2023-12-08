@@ -9,9 +9,13 @@
 </div>
 
 @if (modalManagerService.getCurrentModal() === MODALS.USER_NAME_MODAL) {
-<modal-change-user-name></modal-change-user-name>
+<modal-change-user-name
+  [changeUserName]="changeUserName"
+></modal-change-user-name>
 } @if (modalManagerService.getCurrentModal() === MODALS.EMAIL_MODAL) {
-<modal-change-email></modal-change-email>
+<modal-change-email [changeEmail]="changeEmail"></modal-change-email>
 } @if (modalManagerService.getCurrentModal() === MODALS.PASSWORD_MODAL) {
-<modal-change-password></modal-change-password>
+<modal-change-password
+  [changePassword]="changePassword"
+></modal-change-password>
 }

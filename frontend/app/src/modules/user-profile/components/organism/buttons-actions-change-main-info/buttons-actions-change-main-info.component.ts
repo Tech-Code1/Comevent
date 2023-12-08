@@ -6,6 +6,7 @@ import {
   ViewEncapsulation,
   inject,
 } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
 import { ButtonComponent, TitleComponent } from '@ui/components';
 import { ButtonChangeMainInfoComponent } from '../..';
@@ -35,7 +36,12 @@ import { ModalChangeUserNameComponent } from '../modal-change-user-name/modal-ch
   changeDetection: ChangeDetectionStrategy.Default,
 })
 export class ButtonsActionsChangeMainInfoComponent {
-  @Input({ required: true }) dataUserEditProfile!: ISimplifiedUserEditProfile;
+  @Input({ required: true }) dataUserEditProfile!:
+    | ISimplifiedUserEditProfile
+    | Partial<ISimplifiedUserEditProfile>;
+  @Input({ required: true }) changeUserName!: FormGroup;
+  @Input({ required: true }) changePassword!: FormGroup;
+  @Input({ required: true }) changeEmail!: FormGroup;
 
   protected modalManagerService = inject(ModalManagerService);
   MODALS = MODALS;

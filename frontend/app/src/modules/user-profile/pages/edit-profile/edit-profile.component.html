@@ -8,24 +8,32 @@
         <icon-circle-arrow-left class="" />
       </button>
       <c-title variant="title-h1" color="black"> Editar perfil </c-title>
-      <c-button variant="button-base"
+      <c-button variant="button-base" (click)="onSaveChanges()"
         ><c-title variant="title-h6"> Guardar cambios </c-title></c-button
       >
     </header>
 
     <main-info
+      [changeAvatar]="avatarFormControl"
+      [changeUserName]="changeUserNameFormGroup"
+      [changeEmail]="changeEmailFormGroup"
+      [changePassword]="changePasswordFormGroup"
+      [formGroup]="descriptionFormGroup"
       [dataUserEditProfile]="userProfileStateService.dataUserEditProfile()"
       [loadingProfile]="userProfileStateService.loadingProfile()"
     />
     <social-networks
+      [formGroup]="socialNetworksFormGroup"
       [dataUserEditProfile]="userProfileStateService.dataUserEditProfile()"
       [loadingProfile]="userProfileStateService.loadingProfile()"
     />
     <areas
+      [formGroup]="areasFormArray"
       [dataUserEditProfile]="userProfileStateService.dataUserEditProfile()"
       [loadingProfile]="userProfileStateService.loadingProfile()"
     />
     <more-information
+      [formGroup]="moreInformationFormGroup"
       [dataUserEditProfile]="userProfileStateService.dataUserEditProfile()"
       [loadingProfile]="userProfileStateService.loadingProfile()"
       [countries]="userProfileStateService.dataCountries()"
@@ -33,7 +41,7 @@
     />
 
     <div class="flex flex-row justify-end">
-      <c-button variant="button-base"
+      <c-button variant="button-base" (click)="onSaveChanges()"
         ><c-title variant="title-h6"> Guardar cambios </c-title></c-button
       >
     </div>

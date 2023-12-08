@@ -53,8 +53,11 @@ interface ISelectAreaWithType extends ISelectArea {
   changeDetection: ChangeDetectionStrategy.Default,
 })
 export class AreaSelectComponent implements OnInit, OnChanges {
-  @Input({ required: true }) dataUserEditProfile!: ISimplifiedUserEditProfile;
+  @Input({ required: true }) dataUserEditProfile!:
+    | ISimplifiedUserEditProfile
+    | Partial<ISimplifiedUserEditProfile>;
   @Input({ required: true }) loadingProfile!: boolean;
+  @Input({ required: true }) formGroup!: FormGroup;
 
   areasSelectTypeExpertise: ISelectAreaWithType[] = [];
   areasSelectTypeInteres: ISelectAreaWithType[] = [];
@@ -113,10 +116,9 @@ export class AreaSelectComponent implements OnInit, OnChanges {
   ];
 
   protected formChangeAreasService = inject(FormChangeAreasService);
-  changeAreas!: FormGroup;
 
   ngOnInit(): void {
-    this.changeAreas = this.formChangeAreasService.getchangeAreasForm();
+    this.formGroup = this.formChangeAreasService.getchangeAreasForm();
   }
 
   ngOnChanges(changes: SimpleChanges): void {
@@ -128,9 +130,9 @@ export class AreaSelectComponent implements OnInit, OnChanges {
   }
 
   initializeSelectedAreas() {
-    if (!this.changeAreas) return;
-    const expertiseArray = this.changeAreas.get('areaOfExpertise') as FormArray;
-    const interestArray = this.changeAreas.get('areaOfInteres') as FormArray;
+    if (!this.formGroup) return;
+    const expertiseArray = this.formGroup.get('areaOfExpertise') as FormArray;
+    const interestArray = this.formGroup.get('areaOfInteres') as FormArray;
 
     this.areasSelectTypeExpertise = expertiseArray.value
       .map((areaName: string) => {
@@ -158,21 +160,19 @@ export class AreaSelectComponent implements OnInit, OnChanges {
         type: TYPE_AREA.INTEREST,
       }));
 
-    const expertiseControl = this.changeAreas.get(
-      'areaOfExpertise'
-    ) as FormArray;
+    const expertiseControl = this.formGroup.get('areaOfExpertise') as FormArray;
     this.areasSelectTypeExpertise.forEach((area) => {
       expertiseControl.push(new FormControl(area.id));
     });
 
-    const interestControl = this.changeAreas.get('areaOfInteres') as FormArray;
+    const interestControl = this.formGroup.get('areaOfInteres') as FormArray;
     this.areasSelectTypeInteres.forEach((area) => {
       interestControl.push(new FormControl(area.id));
     });
   }
 
   toggleAreaSelection(area: ISelectArea, type: TYPE_AREA) {
-    const control = this.changeAreas.get(
+    const control = this.formGroup.get(
       type === TYPE_AREA.EXPERTISE ? 'areaOfExpertise' : 'areaOfInteres'
     ) as FormArray;
 

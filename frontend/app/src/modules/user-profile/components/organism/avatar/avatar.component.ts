@@ -31,10 +31,13 @@ import { Swal } from '../../../../../utils';
   changeDetection: ChangeDetectionStrategy.Default,
 })
 export class AvatarComponent {
-  @Input({ required: true }) dataUserEditProfile!: ISimplifiedUserEditProfile;
+  @Input({ required: true }) dataUserEditProfile!:
+    | ISimplifiedUserEditProfile
+    | Partial<ISimplifiedUserEditProfile>;
   @Input({ required: true }) loadingProfile!: boolean;
+  @Input({ required: true }) changeAvatar: FormControl =
+    new FormControl<File | null>(null);
 
-  public profilePictureField = new FormControl<File | null>(null);
   editingfile: any = undefined;
 
   uploadedPicture(event: any) {
@@ -56,7 +59,7 @@ export class AvatarComponent {
         return;
       }
 
-      this.profilePictureField.setValue(file);
+      this.changeAvatar.setValue(file);
       const reader = new FileReader();
 
       reader.onload = (e) => {

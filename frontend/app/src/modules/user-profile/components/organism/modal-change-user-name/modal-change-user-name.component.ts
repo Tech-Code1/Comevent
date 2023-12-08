@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit, inject } from '@angular/core';
+import { Component, Input, OnInit, inject } from '@angular/core';
 import { FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { InputComponent, LabelComponent } from '@ui/components';
 import { FormChangeUserNameService } from '../../../service/state';
@@ -20,7 +20,7 @@ import { LayoutModalComponent } from '../layout-modal/layout-modal.component';
 })
 export class ModalChangeUserNameComponent implements OnInit {
   protected formChangeUserNameService = inject(FormChangeUserNameService);
-  changeUserName!: FormGroup;
+  @Input({ required: true }) changeUserName!: FormGroup;
 
   ngOnInit(): void {
     this.changeUserName =

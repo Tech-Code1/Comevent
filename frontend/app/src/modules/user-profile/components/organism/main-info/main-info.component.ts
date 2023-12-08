@@ -9,7 +9,7 @@ import {
   ViewEncapsulation,
   inject,
 } from '@angular/core';
-import { FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
 import {
   ButtonComponent,
@@ -43,14 +43,20 @@ import {
   changeDetection: ChangeDetectionStrategy.Default,
 })
 export class MainInfoComponent implements OnChanges, OnInit {
-  @Input({ required: true }) dataUserEditProfile!: ISimplifiedUserEditProfile;
+  @Input({ required: true }) dataUserEditProfile!:
+    | ISimplifiedUserEditProfile
+    | Partial<ISimplifiedUserEditProfile>;
   @Input({ required: true }) loadingProfile!: boolean;
+  @Input({ required: true }) formGroup!: FormGroup;
+  @Input({ required: true }) changeUserName!: FormGroup;
+  @Input({ required: true }) changePassword!: FormGroup;
+  @Input({ required: true }) changeEmail!: FormGroup;
+  @Input({ required: true }) changeAvatar!: FormControl;
 
   protected formchangeDescriptionService = inject(FormChangeDescriptionService);
-  changeDescription!: FormGroup;
 
   ngOnInit(): void {
-    this.changeDescription =
+    this.formGroup =
       this.formchangeDescriptionService.getchangeDescriptionForm();
   }
 

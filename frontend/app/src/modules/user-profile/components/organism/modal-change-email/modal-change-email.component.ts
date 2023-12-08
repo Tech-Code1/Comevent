@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit, inject } from '@angular/core';
+import { Component, Input, OnInit, inject } from '@angular/core';
 import { FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { InputComponent, LabelComponent } from '@ui/components';
 import { FormChangeEmailService } from '../../../service/state';
@@ -20,7 +20,7 @@ import { LayoutModalComponent } from '../layout-modal/layout-modal.component';
 })
 export class ModalChangeEmailComponent implements OnInit {
   protected formChangeEmailService = inject(FormChangeEmailService);
-  changeEmail!: FormGroup;
+  @Input({ required: true }) changeEmail!: FormGroup;
 
   ngOnInit(): void {
     this.changeEmail = this.formChangeEmailService.getChangeEmailForm();

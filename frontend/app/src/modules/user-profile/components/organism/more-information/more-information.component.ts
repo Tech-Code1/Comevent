@@ -42,10 +42,13 @@ import {
   changeDetection: ChangeDetectionStrategy.Default,
 })
 export class MoreInformationComponent implements OnChanges, OnInit {
-  @Input({ required: true }) dataUserEditProfile!: ISimplifiedUserEditProfile;
+  @Input({ required: true }) dataUserEditProfile!:
+    | ISimplifiedUserEditProfile
+    | Partial<ISimplifiedUserEditProfile>;
   @Input({ required: true }) loadingProfile!: boolean;
   @Input({ required: true }) countries!: ICountries[];
   @Input({ required: true }) specialties!: ISpecialties[];
+  @Input({ required: true }) formGroup!: FormGroup;
 
   genders: string[] = ['hombre', 'mujer'];
   countriesOptions: string[] = [];
@@ -54,10 +57,9 @@ export class MoreInformationComponent implements OnChanges, OnInit {
   protected formchangeMoreInformationService = inject(
     FormChangeMoreInformationsService
   );
-  changeMoreInformation!: FormGroup;
 
   ngOnInit(): void {
-    this.changeMoreInformation =
+    this.formGroup =
       this.formchangeMoreInformationService.getchangeMoreInformationForm();
   }
 

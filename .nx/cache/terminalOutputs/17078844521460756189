@@ -5,3 +5,1063 @@ webpack compiled [1m[32msuccessfully[39m[22m (0d187631d1594dbf)
 [1m[31mDebugger listening on ws://localhost:9229/96f01cba-a59e-43c4-b787-483747153263[39m[22m
 [1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
 [1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 245 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.service.ts:[32m[1m312:17[22m[39m[1m[39m[22m
+[90mTS2552: [39mCannot find name 'UserEditProfilePartialDTO'. Did you mean 'UserEditProfileDTO'?
+  [0m [90m 310 |[39m   [36mpublic[39m [36masync[39m updateUserEditProfile([0m
+  [0m [90m 311 |[39m     id[33m:[39m string[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 312 |[39m     updateData[33m:[39m [33mUserEditProfilePartialDTO[39m[33m,[39m[0m
+  [0m [90m     |[39m                 [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 313 |[39m     currentPassword[33m?[39m[33m:[39m string[0m
+  [0m [90m 314 |[39m   )[33m:[39m [33mPromise[39m[33m<[39m[33mUserEditProfileDTO[39m[33m>[39m {[0m
+  [0m [90m 315 |[39m     [36mtry[39m {[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.service.ts:[32m[1m316:54[22m[39m[1m[39m[22m
+[90mTS2559: [39mType 'string' has no properties in common with type 'FindOneOptions<User>'.
+  [0m [90m 314 |[39m   )[33m:[39m [33mPromise[39m[33m<[39m[33mUserEditProfileDTO[39m[33m>[39m {[0m
+  [0m [90m 315 |[39m     [36mtry[39m {[0m
+  [0m[31m[1m>[22m[39m[90m 316 |[39m       [36mconst[39m user [33m=[39m [36mawait[39m [36mthis[39m[33m.[39muserRepository[33m.[39mfindOne(id)[33m;[39m[0m
+  [0m [90m     |[39m                                                      [31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 317 |[39m[0m
+  [0m [90m 318 |[39m       [36mif[39m ([33m![39muser) {[0m
+  [0m [90m 319 |[39m         [36mthrow[39m [33mResp[39m[33m.[39m[33mError[39m([32m'NOT_FOUND'[39m)[33m;[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.service.ts:[32m[1m327:26[22m[39m[1m[39m[22m
+[90mTS2345: [39mArgument of type '"CURRENT_PASSWORD_REQUIRED"' is not assignable to parameter of type '"CONTINUE" | "SWITCHING_PROTOCOLS" | "PROCESSING" | "EARLYHINTS" | "OK" | "CREATED" | "ACCEPTED" | "NON_AUTHORITATIVE_INFORMATION" | "NO_CONTENT" | "RESET_CONTENT" | "PARTIAL_CONTENT" | ... 36 more ... | "HTTP_VERSION_NOT_SUPPORTED"'.
+  [0m [90m 325 |[39m         [33m![39mcurrentPassword[0m
+  [0m [90m 326 |[39m       ) {[0m
+  [0m[31m[1m>[22m[39m[90m 327 |[39m         [36mthrow[39m [33mResp[39m[33m.[39m[33mError[39m([32m'CURRENT_PASSWORD_REQUIRED'[39m)[33m;[39m[0m
+  [0m [90m     |[39m                          [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 328 |[39m       }[0m
+  [0m [90m 329 |[39m[0m
+  [0m [90m 330 |[39m       [36mif[39m (currentPassword) {[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.service.ts:[32m[1m336:28[22m[39m[1m[39m[22m
+[90mTS2345: [39mArgument of type '"INVALID_PASSWORD"' is not assignable to parameter of type '"CONTINUE" | "SWITCHING_PROTOCOLS" | "PROCESSING" | "EARLYHINTS" | "OK" | "CREATED" | "ACCEPTED" | "NON_AUTHORITATIVE_INFORMATION" | "NO_CONTENT" | "RESET_CONTENT" | "PARTIAL_CONTENT" | ... 36 more ... | "HTTP_VERSION_NOT_SUPPORTED"'.
+  [0m [90m 334 |[39m         )[33m;[39m[0m
+  [0m [90m 335 |[39m         [36mif[39m ([33m![39misPasswordValid) {[0m
+  [0m[31m[1m>[22m[39m[90m 336 |[39m           [36mthrow[39m [33mResp[39m[33m.[39m[33mError[39m([32m'INVALID_PASSWORD'[39m)[33m;[39m[0m
+  [0m [90m     |[39m                            [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 337 |[39m         }[0m
+  [0m [90m 338 |[39m[0m
+  [0m [90m 339 |[39m         [90m// Cambio de contraseña[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.service.ts:[32m[1m367:49[22m[39m[1m[39m[22m
+[90mTS2355: [39mA function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.
+  [0m [90m 365 |[39m   }[0m
+  [0m [90m 366 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 367 |[39m   [36mprivate[39m [36masync[39m hashPassword(password[33m:[39m string)[33m:[39m [33mPromise[39m[33m<[39m[33mstring[39m[33m>[39m {[0m
+  [0m [90m     |[39m                                                 [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 368 |[39m     [90m// Implementa la lógica para hashear la contraseña[39m[0m
+  [0m [90m 369 |[39m   }[0m
+  [0m [90m 370 |[39m[0m
+
+webpack compiled with [1m[31m5 errors[39m[22m (ebd5c45ae7f73b6a)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 246 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.service.ts:[32m[1m312:17[22m[39m[1m[39m[22m
+[90mTS2552: [39mCannot find name 'UserEditProfilePartialDTO'. Did you mean 'UserEditProfileDTO'?
+  [0m [90m 310 |[39m   [36mpublic[39m [36masync[39m updateUserEditProfile([0m
+  [0m [90m 311 |[39m     id[33m:[39m string[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 312 |[39m     updateData[33m:[39m [33mUserEditProfilePartialDTO[39m[33m,[39m[0m
+  [0m [90m     |[39m                 [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 313 |[39m     currentPassword[33m?[39m[33m:[39m string[0m
+  [0m [90m 314 |[39m   )[33m:[39m [33mPromise[39m[33m<[39m[33mUserEditProfileDTO[39m[33m>[39m {[0m
+  [0m [90m 315 |[39m     [36mtry[39m {[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.service.ts:[32m[1m316:54[22m[39m[1m[39m[22m
+[90mTS2559: [39mType 'string' has no properties in common with type 'FindOneOptions<User>'.
+  [0m [90m 314 |[39m   )[33m:[39m [33mPromise[39m[33m<[39m[33mUserEditProfileDTO[39m[33m>[39m {[0m
+  [0m [90m 315 |[39m     [36mtry[39m {[0m
+  [0m[31m[1m>[22m[39m[90m 316 |[39m       [36mconst[39m user [33m=[39m [36mawait[39m [36mthis[39m[33m.[39muserRepository[33m.[39mfindOne(id)[33m;[39m[0m
+  [0m [90m     |[39m                                                      [31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 317 |[39m[0m
+  [0m [90m 318 |[39m       [36mif[39m ([33m![39muser) {[0m
+  [0m [90m 319 |[39m         [36mthrow[39m [33mResp[39m[33m.[39m[33mError[39m([32m'NOT_FOUND'[39m)[33m;[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.service.ts:[32m[1m327:26[22m[39m[1m[39m[22m
+[90mTS2345: [39mArgument of type '"CURRENT_PASSWORD_REQUIRED"' is not assignable to parameter of type '"CONTINUE" | "SWITCHING_PROTOCOLS" | "PROCESSING" | "EARLYHINTS" | "OK" | "CREATED" | "ACCEPTED" | "NON_AUTHORITATIVE_INFORMATION" | "NO_CONTENT" | "RESET_CONTENT" | "PARTIAL_CONTENT" | ... 36 more ... | "HTTP_VERSION_NOT_SUPPORTED"'.
+  [0m [90m 325 |[39m         [33m![39mcurrentPassword[0m
+  [0m [90m 326 |[39m       ) {[0m
+  [0m[31m[1m>[22m[39m[90m 327 |[39m         [36mthrow[39m [33mResp[39m[33m.[39m[33mError[39m([32m'CURRENT_PASSWORD_REQUIRED'[39m)[33m;[39m[0m
+  [0m [90m     |[39m                          [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 328 |[39m       }[0m
+  [0m [90m 329 |[39m[0m
+  [0m [90m 330 |[39m       [36mif[39m (currentPassword) {[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.service.ts:[32m[1m336:28[22m[39m[1m[39m[22m
+[90mTS2345: [39mArgument of type '"INVALID_PASSWORD"' is not assignable to parameter of type '"CONTINUE" | "SWITCHING_PROTOCOLS" | "PROCESSING" | "EARLYHINTS" | "OK" | "CREATED" | "ACCEPTED" | "NON_AUTHORITATIVE_INFORMATION" | "NO_CONTENT" | "RESET_CONTENT" | "PARTIAL_CONTENT" | ... 36 more ... | "HTTP_VERSION_NOT_SUPPORTED"'.
+  [0m [90m 334 |[39m         )[33m;[39m[0m
+  [0m [90m 335 |[39m         [36mif[39m ([33m![39misPasswordValid) {[0m
+  [0m[31m[1m>[22m[39m[90m 336 |[39m           [36mthrow[39m [33mResp[39m[33m.[39m[33mError[39m([32m'INVALID_PASSWORD'[39m)[33m;[39m[0m
+  [0m [90m     |[39m                            [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 337 |[39m         }[0m
+  [0m [90m 338 |[39m[0m
+  [0m [90m 339 |[39m         [90m// Cambio de contraseña[39m[0m
+
+webpack compiled with [1m[31m4 errors[39m[22m (6fd00634b094619a)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 246 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.service.ts:[32m[1m312:17[22m[39m[1m[39m[22m
+[90mTS2552: [39mCannot find name 'UserEditProfilePartialDTO'. Did you mean 'UserEditProfileDTO'?
+  [0m [90m 310 |[39m   [36mpublic[39m [36masync[39m updateUserEditProfile([0m
+  [0m [90m 311 |[39m     id[33m:[39m string[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 312 |[39m     updateData[33m:[39m [33mUserEditProfilePartialDTO[39m[33m,[39m[0m
+  [0m [90m     |[39m                 [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 313 |[39m     currentPassword[33m?[39m[33m:[39m string[0m
+  [0m [90m 314 |[39m   )[33m:[39m [33mPromise[39m[33m<[39m[33mUserEditProfileDTO[39m[33m>[39m {[0m
+  [0m [90m 315 |[39m     [36mtry[39m {[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.service.ts:[32m[1m316:54[22m[39m[1m[39m[22m
+[90mTS2559: [39mType 'string' has no properties in common with type 'FindOneOptions<User>'.
+  [0m [90m 314 |[39m   )[33m:[39m [33mPromise[39m[33m<[39m[33mUserEditProfileDTO[39m[33m>[39m {[0m
+  [0m [90m 315 |[39m     [36mtry[39m {[0m
+  [0m[31m[1m>[22m[39m[90m 316 |[39m       [36mconst[39m user [33m=[39m [36mawait[39m [36mthis[39m[33m.[39muserRepository[33m.[39mfindOne(id)[33m;[39m[0m
+  [0m [90m     |[39m                                                      [31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 317 |[39m[0m
+  [0m [90m 318 |[39m       [36mif[39m ([33m![39muser) {[0m
+  [0m [90m 319 |[39m         [36mthrow[39m [33mResp[39m[33m.[39m[33mError[39m([32m'NOT_FOUND'[39m)[33m;[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.service.ts:[32m[1m327:26[22m[39m[1m[39m[22m
+[90mTS2345: [39mArgument of type '"CURRENT_PASSWORD_REQUIRED"' is not assignable to parameter of type '"CONTINUE" | "SWITCHING_PROTOCOLS" | "PROCESSING" | "EARLYHINTS" | "OK" | "CREATED" | "ACCEPTED" | "NON_AUTHORITATIVE_INFORMATION" | "NO_CONTENT" | "RESET_CONTENT" | "PARTIAL_CONTENT" | ... 36 more ... | "HTTP_VERSION_NOT_SUPPORTED"'.
+  [0m [90m 325 |[39m         [33m![39mcurrentPassword[0m
+  [0m [90m 326 |[39m       ) {[0m
+  [0m[31m[1m>[22m[39m[90m 327 |[39m         [36mthrow[39m [33mResp[39m[33m.[39m[33mError[39m([32m'CURRENT_PASSWORD_REQUIRED'[39m)[33m;[39m[0m
+  [0m [90m     |[39m                          [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 328 |[39m       }[0m
+  [0m [90m 329 |[39m[0m
+  [0m [90m 330 |[39m       [36mif[39m (currentPassword) {[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.service.ts:[32m[1m336:28[22m[39m[1m[39m[22m
+[90mTS2345: [39mArgument of type '"INVALID_PASSWORD"' is not assignable to parameter of type '"CONTINUE" | "SWITCHING_PROTOCOLS" | "PROCESSING" | "EARLYHINTS" | "OK" | "CREATED" | "ACCEPTED" | "NON_AUTHORITATIVE_INFORMATION" | "NO_CONTENT" | "RESET_CONTENT" | "PARTIAL_CONTENT" | ... 36 more ... | "HTTP_VERSION_NOT_SUPPORTED"'.
+  [0m [90m 334 |[39m         )[33m;[39m[0m
+  [0m [90m 335 |[39m         [36mif[39m ([33m![39misPasswordValid) {[0m
+  [0m[31m[1m>[22m[39m[90m 336 |[39m           [36mthrow[39m [33mResp[39m[33m.[39m[33mError[39m([32m'INVALID_PASSWORD'[39m)[33m;[39m[0m
+  [0m [90m     |[39m                            [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 337 |[39m         }[0m
+  [0m [90m 338 |[39m[0m
+  [0m [90m 339 |[39m         [90m// Cambio de contraseña[39m[0m
+
+webpack compiled with [1m[31m4 errors[39m[22m (db3453feb47da535)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 246 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (869b672466db8ab6)
+[1m[31mDebugger listening on ws://localhost:9229/[39m[22m
+[1m[31m9bcc03ec-38c0-44b7-a74e-c557e000464a[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/9bcc03ec-38c0-44b7-a74e-c557e000464a[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 246 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (0cf46e58777e4677)
+[1m[31mDebugger listening o[39m[22m
+[1m[31mn ws://localhost:9229/05b6f143-1eb0-49f7-8e78-e95e13578e06[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/05b6f143-1eb0-49f7-8e78-e95e13578e06[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 246 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (ba23fcef92829602)
+[1m[31mDebugger listenin[39m[22m
+[1m[31mg on ws://localhost:9229/06b28c1e-1685-4903-a7b2-561e72ac32cd[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/06b28c1e-1685-4903-a7b2-561e72ac32cd[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 238 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m142:14[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(142,15)[39m[22m
+[1m[31m      TS1146: Declaration expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m142:35[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(142,36)[39m[22m
+[1m[31m      TS1109: Expression expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m142:36-48[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(142,37)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m142:48-49[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(142,49)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m142:65-66[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(142,66)[39m[22m
+[1m[31m      TS1005: ';' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m148:14[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(148,15)[39m[22m
+[1m[31m      TS1146: Declaration expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m149:11[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(149,12)[39m[22m
+[1m[31m      TS1109: Expression expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m149:12-16[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(149,13)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m149:16-17[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(149,17)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m150:33[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(150,34)[39m[22m
+[1m[31m      TS1109: Expression expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m150:34-38[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(150,35)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m150:38-39[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(150,39)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m151:3-4[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(151,4)[39m[22m
+[1m[31m      TS1005: ';' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m152:11-16[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(152,12)[39m[22m
+[1m[31m      TS1005: ':' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m152:58-59[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(152,59)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./src/users/users.controller.ts[39m[22m [1m[32m153:13[39m[22m
+[1mModule parse [1m[31mfailed[39m[22m[1m: [1m[31mUnexpected[39m[22m[1m token (153:13)
+File was processed with these loaders:
+ * ../../node_modules/ts-loader/index.js
+You may need an additional loader to handle the result of these loaders.
+|     tslib_1.__metadata("design:paramtypes", [typeof (_a = typeof users_service_1.UsersService !== "undefined" && users_service_1.UsersService) === "function" ? _a : Object])
+| ], UsersController);
+> registerUser(, registerUser, dto_1.CreateUserDTO);
+| {
+|     return await this.usersService.registerUser(registerUser);[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m157:14[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(157,15)[39m[22m
+[1m[31m      TS1146: Declaration expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m158:11[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(158,12)[39m[22m
+[1m[31m      TS1109: Expression expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m158:12-27[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(158,13)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m158:27-28[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(158,28)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m159:31[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(159,32)[39m[22m
+[1m[31m      TS1109: Expression expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m159:32-36[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(159,33)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m159:36-37[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(159,37)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m160:3-4[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(160,4)[39m[22m
+[1m[31m      TS1005: ';' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m161:11-16[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(161,12)[39m[22m
+[1m[31m      TS1005: ':' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m161:68-69[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(161,69)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m166:14[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(166,15)[39m[22m
+[1m[31m      TS1146: Declaration expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m167:16[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(167,17)[39m[22m
+[1m[31m      TS1109: Expression expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m167:17-19[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(167,18)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m167:19-20[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(167,20)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m168:30[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(168,31)[39m[22m
+[1m[31m      TS1109: Expression expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m168:31-35[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(168,32)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m168:35-36[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(168,36)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m169:3-4[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(169,4)[39m[22m
+[1m[31m      TS1005: ';' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m170:11-16[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(170,12)[39m[22m
+[1m[31m      TS1005: ':' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m170:49-50[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(170,50)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m175:14[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(175,15)[39m[22m
+[1m[31m      TS1146: Declaration expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m176:16[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(176,17)[39m[22m
+[1m[31m      TS1109: Expression expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m176:17-19[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(176,18)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m176:19-20[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(176,20)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m177:24[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(177,25)[39m[22m
+[1m[31m      TS1109: Expression expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m177:25-36[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(177,26)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m177:36-37[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(177,37)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m178:31[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(178,32)[39m[22m
+[1m[31m      TS1109: Expression expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m178:32-36[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(178,33)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m178:36-37[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(178,37)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m179:3-4[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(179,4)[39m[22m
+[1m[31m      TS1005: ';' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m180:11-16[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(180,12)[39m[22m
+[1m[31m      TS1005: ':' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m180:67-68[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(180,68)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m185:7[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(185,8)[39m[22m
+[1m[31m      TS1146: Declaration expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m186:18[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(186,19)[39m[22m
+[1m[31m      TS1109: Expression expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m186:19-20[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(186,20)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m186:25-26[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(186,26)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m187:11[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(187,12)[39m[22m
+[1m[31m      TS1109: Expression expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m187:12-13[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(187,13)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m187:44-45[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(187,45)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m188:3-4[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(188,4)[39m[22m
+[1m[31m      TS1005: ';' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m189:10-14[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(189,11)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m189:14-15[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(189,15)[39m[22m
+[1m[31m      TS1005: ':' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m193:5-6[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(193,6)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m194:11-15[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(194,12)[39m[22m
+[1m[31m      TS1005: ':' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m194:75-76[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(194,76)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\projects\Comevent\backend\api\src\users\users.controller.ts[39m[22m
+[1m./src/users/users.controller.ts[39m[22m [1m[32m196:0-1[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\projects\Comevent\backend\api\src\users\users.controller.ts(196,1)[39m[22m
+[1m[31m      TS1128: Declaration or statement expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.controller.ts:[32m[1m142:16[22m[39m[1m[39m[22m
+[90mTS2552: [39mCannot find name 'registerUser'. Did you mean 'RegisterUserDoc'?
+  [0m [90m 140 |[39m   [33m@[39m[33mPost[39m([32m'register'[39m)[0m
+  [0m [90m 141 |[39m   [33m@[39m[33mRegisterUserDoc[39m()[0m
+  [0m[31m[1m>[22m[39m[90m 142 |[39m   [36mpublic[39m [36masync[39m registerUser([33m@[39m[33mBody[39m() registerUser[33m:[39m [33mCreateUserDTO[39m) {[0m
+  [0m [90m     |[39m                [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 143 |[39m     [36mreturn[39m [36mawait[39m [36mthis[39m[33m.[39musersService[33m.[39mregisterUser(registerUser)[33m;[39m[0m
+  [0m [90m 144 |[39m   }[0m
+  [0m [90m 145 |[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.controller.ts:[32m[1m142:37[22m[39m[1m[39m[22m
+[90mTS2552: [39mCannot find name 'registerUser'. Did you mean 'RegisterUserDoc'?
+  [0m [90m 140 |[39m   [33m@[39m[33mPost[39m([32m'register'[39m)[0m
+  [0m [90m 141 |[39m   [33m@[39m[33mRegisterUserDoc[39m()[0m
+  [0m[31m[1m>[22m[39m[90m 142 |[39m   [36mpublic[39m [36masync[39m registerUser([33m@[39m[33mBody[39m() registerUser[33m:[39m [33mCreateUserDTO[39m) {[0m
+  [0m [90m     |[39m                                     [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 143 |[39m     [36mreturn[39m [36mawait[39m [36mthis[39m[33m.[39musersService[33m.[39mregisterUser(registerUser)[33m;[39m[0m
+  [0m [90m 144 |[39m   }[0m
+  [0m [90m 145 |[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.controller.ts:[32m[1m148:16[22m[39m[1m[39m[22m
+[90mTS2552: [39mCannot find name 'userInProject'. Did you mean 'UserInProjectDoc'?
+  [0m [90m 146 |[39m   [33m@[39m[33mPost[39m([32m'project'[39m)[0m
+  [0m [90m 147 |[39m   [33m@[39m[33mUserInProjectDoc[39m()[0m
+  [0m[31m[1m>[22m[39m[90m 148 |[39m   [36mpublic[39m [36masync[39m userInProject([0m
+  [0m [90m     |[39m                [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 149 |[39m     [33m@[39m[33mBody[39m() body[33m:[39m [33mUserToProjectDTO[39m[33m,[39m[0m
+  [0m [90m 150 |[39m     [33m@[39m[33mCurrentUser[39m([[33mROLES[39m[33m.[39m[33mCREATOR[39m]) user[33m:[39m [33mUser[39m[0m
+  [0m [90m 151 |[39m   )[33m:[39m [33mPromise[39m[33m<[39m[33mUserToProjectDTO[39m [33m&[39m [33mUsersCommunities[39m[33m>[39m {[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.controller.ts:[32m[1m149:13[22m[39m[1m[39m[22m
+[90mTS2552: [39mCannot find name 'body'. Did you mean 'Body'?
+  [0m [90m 147 |[39m   [33m@[39m[33mUserInProjectDoc[39m()[0m
+  [0m [90m 148 |[39m   [36mpublic[39m [36masync[39m userInProject([0m
+  [0m[31m[1m>[22m[39m[90m 149 |[39m     [33m@[39m[33mBody[39m() body[33m:[39m [33mUserToProjectDTO[39m[33m,[39m[0m
+  [0m [90m     |[39m             [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 150 |[39m     [33m@[39m[33mCurrentUser[39m([[33mROLES[39m[33m.[39m[33mCREATOR[39m]) user[33m:[39m [33mUser[39m[0m
+  [0m [90m 151 |[39m   )[33m:[39m [33mPromise[39m[33m<[39m[33mUserToProjectDTO[39m [33m&[39m [33mUsersCommunities[39m[33m>[39m {[0m
+  [0m [90m 152 |[39m     [36mreturn[39m [36mawait[39m [36mthis[39m[33m.[39musersService[33m.[39mrelationToProject(body)[33m;[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.controller.ts:[32m[1m150:35[22m[39m[1m[39m[22m
+[90mTS2552: [39mCannot find name 'user'. Did you mean 'User'?
+  [0m [90m 148 |[39m   [36mpublic[39m [36masync[39m userInProject([0m
+  [0m [90m 149 |[39m     [33m@[39m[33mBody[39m() body[33m:[39m [33mUserToProjectDTO[39m[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 150 |[39m     [33m@[39m[33mCurrentUser[39m([[33mROLES[39m[33m.[39m[33mCREATOR[39m]) user[33m:[39m [33mUser[39m[0m
+  [0m [90m     |[39m                                   [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 151 |[39m   )[33m:[39m [33mPromise[39m[33m<[39m[33mUserToProjectDTO[39m [33m&[39m [33mUsersCommunities[39m[33m>[39m {[0m
+  [0m [90m 152 |[39m     [36mreturn[39m [36mawait[39m [36mthis[39m[33m.[39musersService[33m.[39mrelationToProject(body)[33m;[39m[0m
+  [0m [90m 153 |[39m   }[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.controller.ts:[32m[1m151:6[22m[39m[1m[39m[22m
+[90mTS2365: [39mOperator '<' cannot be applied to types 'PromiseConstructor' and 'typeof UserToProjectDTO'.
+  [0m [90m 149 |[39m     [33m@[39m[33mBody[39m() body[33m:[39m [33mUserToProjectDTO[39m[33m,[39m[0m
+  [0m [90m 150 |[39m     [33m@[39m[33mCurrentUser[39m([[33mROLES[39m[33m.[39m[33mCREATOR[39m]) user[33m:[39m [33mUser[39m[0m
+  [0m[31m[1m>[22m[39m[90m 151 |[39m   )[33m:[39m [33mPromise[39m[33m<[39m[33mUserToProjectDTO[39m [33m&[39m [33mUsersCommunities[39m[33m>[39m {[0m
+  [0m [90m     |[39m      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 152 |[39m     [36mreturn[39m [36mawait[39m [36mthis[39m[33m.[39musersService[33m.[39mrelationToProject(body)[33m;[39m[0m
+  [0m [90m 153 |[39m   }[0m
+  [0m [90m 154 |[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.controller.ts:[32m[1m151:6[22m[39m[1m[39m[22m
+[90mTS2447: [39mThe '&' operator is not allowed for boolean types. Consider using '&&' instead.
+  [0m [90m 149 |[39m     [33m@[39m[33mBody[39m() body[33m:[39m [33mUserToProjectDTO[39m[33m,[39m[0m
+  [0m [90m 150 |[39m     [33m@[39m[33mCurrentUser[39m([[33mROLES[39m[33m.[39m[33mCREATOR[39m]) user[33m:[39m [33mUser[39m[0m
+  [0m[31m[1m>[22m[39m[90m 151 |[39m   )[33m:[39m [33mPromise[39m[33m<[39m[33mUserToProjectDTO[39m [33m&[39m [33mUsersCommunities[39m[33m>[39m {[0m
+  [0m [90m     |[39m      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m[31m[1m>[22m[39m[90m 152 |[39m     [36mreturn[39m [36mawait[39m [36mthis[39m[33m.[39musersService[33m.[39mrelationToProject(body)[33m;[39m[0m
+  [0m [90m     |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m[31m[1m>[22m[39m[90m 153 |[39m   }[0m
+  [0m [90m     |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 154 |[39m[0m
+  [0m [90m 155 |[39m   [33m@[39m[33mPut[39m()[0m
+  [0m [90m 156 |[39m   [33m@[39m[33mUpdateUserDoc[39m()[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.controller.ts:[32m[1m151:33[22m[39m[1m[39m[22m
+[90mTS2365: [39mOperator '>' cannot be applied to types 'typeof UsersCommunities' and '{ return: any; }'.
+  [0m [90m 149 |[39m     [33m@[39m[33mBody[39m() body[33m:[39m [33mUserToProjectDTO[39m[33m,[39m[0m
+  [0m [90m 150 |[39m     [33m@[39m[33mCurrentUser[39m([[33mROLES[39m[33m.[39m[33mCREATOR[39m]) user[33m:[39m [33mUser[39m[0m
+  [0m[31m[1m>[22m[39m[90m 151 |[39m   )[33m:[39m [33mPromise[39m[33m<[39m[33mUserToProjectDTO[39m [33m&[39m [33mUsersCommunities[39m[33m>[39m {[0m
+  [0m [90m     |[39m                                 [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m[31m[1m>[22m[39m[90m 152 |[39m     [36mreturn[39m [36mawait[39m [36mthis[39m[33m.[39musersService[33m.[39mrelationToProject(body)[33m;[39m[0m
+  [0m [90m     |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m[31m[1m>[22m[39m[90m 153 |[39m   }[0m
+  [0m [90m     |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 154 |[39m[0m
+  [0m [90m 155 |[39m   [33m@[39m[33mPut[39m()[0m
+  [0m [90m 156 |[39m   [33m@[39m[33mUpdateUserDoc[39m()[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.controller.ts:[32m[1m152:18[22m[39m[1m[39m[22m
+[90mTS2532: [39mObject is possibly 'undefined'.
+  [0m [90m 150 |[39m     [33m@[39m[33mCurrentUser[39m([[33mROLES[39m[33m.[39m[33mCREATOR[39m]) user[33m:[39m [33mUser[39m[0m
+  [0m [90m 151 |[39m   )[33m:[39m [33mPromise[39m[33m<[39m[33mUserToProjectDTO[39m [33m&[39m [33mUsersCommunities[39m[33m>[39m {[0m
+  [0m[31m[1m>[22m[39m[90m 152 |[39m     [36mreturn[39m [36mawait[39m [36mthis[39m[33m.[39musersService[33m.[39mrelationToProject(body)[33m;[39m[0m
+  [0m [90m     |[39m                  [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 153 |[39m   }[0m
+  [0m [90m 154 |[39m[0m
+  [0m [90m 155 |[39m   [33m@[39m[33mPut[39m()[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.controller.ts:[32m[1m152:54[22m[39m[1m[39m[22m
+[90mTS2552: [39mCannot find name 'body'. Did you mean 'Body'?
+  [0m [90m 150 |[39m     [33m@[39m[33mCurrentUser[39m([[33mROLES[39m[33m.[39m[33mCREATOR[39m]) user[33m:[39m [33mUser[39m[0m
+  [0m [90m 151 |[39m   )[33m:[39m [33mPromise[39m[33m<[39m[33mUserToProjectDTO[39m [33m&[39m [33mUsersCommunities[39m[33m>[39m {[0m
+  [0m[31m[1m>[22m[39m[90m 152 |[39m     [36mreturn[39m [36mawait[39m [36mthis[39m[33m.[39musersService[33m.[39mrelationToProject(body)[33m;[39m[0m
+  [0m [90m     |[39m                                                      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 153 |[39m   }[0m
+  [0m [90m 154 |[39m[0m
+  [0m [90m 155 |[39m   [33m@[39m[33mPut[39m()[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.controller.ts:[32m[1m157:16[22m[39m[1m[39m[22m
+[90mTS2552: [39mCannot find name 'updateUser'. Did you mean 'UpdateUserDoc'?
+  [0m [90m 155 |[39m   [33m@[39m[33mPut[39m()[0m
+  [0m [90m 156 |[39m   [33m@[39m[33mUpdateUserDoc[39m()[0m
+  [0m[31m[1m>[22m[39m[90m 157 |[39m   [36mpublic[39m [36masync[39m updateUser([0m
+  [0m [90m     |[39m                [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 158 |[39m     [33m@[39m[33mBody[39m() updateUserInput[33m:[39m [33mUpdateUserDTO[39m[33m,[39m[0m
+  [0m [90m 159 |[39m     [33m@[39m[33mCurrentUser[39m([[33mROLES[39m[33m.[39m[33mADMIN[39m]) user[33m:[39m [33mUser[39m[0m
+  [0m [90m 160 |[39m   )[33m:[39m [33mPromise[39m[33m<[39m[33mUser[39m[33m>[39m {[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.controller.ts:[32m[1m158:13[22m[39m[1m[39m[22m
+[90mTS2552: [39mCannot find name 'updateUserInput'. Did you mean 'UpdateUserDTO'?
+  [0m [90m 156 |[39m   [33m@[39m[33mUpdateUserDoc[39m()[0m
+  [0m [90m 157 |[39m   [36mpublic[39m [36masync[39m updateUser([0m
+  [0m[31m[1m>[22m[39m[90m 158 |[39m     [33m@[39m[33mBody[39m() updateUserInput[33m:[39m [33mUpdateUserDTO[39m[33m,[39m[0m
+  [0m [90m     |[39m             [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 159 |[39m     [33m@[39m[33mCurrentUser[39m([[33mROLES[39m[33m.[39m[33mADMIN[39m]) user[33m:[39m [33mUser[39m[0m
+  [0m [90m 160 |[39m   )[33m:[39m [33mPromise[39m[33m<[39m[33mUser[39m[33m>[39m {[0m
+  [0m [90m 161 |[39m     [36mreturn[39m [36mawait[39m [36mthis[39m[33m.[39musersService[33m.[39mupdateUser(updateUserInput[33m,[39m user)[33m;[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.controller.ts:[32m[1m159:33[22m[39m[1m[39m[22m
+[90mTS2552: [39mCannot find name 'user'. Did you mean 'User'?
+  [0m [90m 157 |[39m   [36mpublic[39m [36masync[39m updateUser([0m
+  [0m [90m 158 |[39m     [33m@[39m[33mBody[39m() updateUserInput[33m:[39m [33mUpdateUserDTO[39m[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 159 |[39m     [33m@[39m[33mCurrentUser[39m([[33mROLES[39m[33m.[39m[33mADMIN[39m]) user[33m:[39m [33mUser[39m[0m
+  [0m [90m     |[39m                                 [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 160 |[39m   )[33m:[39m [33mPromise[39m[33m<[39m[33mUser[39m[33m>[39m {[0m
+  [0m [90m 161 |[39m     [36mreturn[39m [36mawait[39m [36mthis[39m[33m.[39musersService[33m.[39mupdateUser(updateUserInput[33m,[39m user)[33m;[39m[0m
+  [0m [90m 162 |[39m   }[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.controller.ts:[32m[1m160:6[22m[39m[1m[39m[22m
+[90mTS2365: [39mOperator '<' cannot be applied to types 'PromiseConstructor' and 'typeof User'.
+  [0m [90m 158 |[39m     [33m@[39m[33mBody[39m() updateUserInput[33m:[39m [33mUpdateUserDTO[39m[33m,[39m[0m
+  [0m [90m 159 |[39m     [33m@[39m[33mCurrentUser[39m([[33mROLES[39m[33m.[39m[33mADMIN[39m]) user[33m:[39m [33mUser[39m[0m
+  [0m[31m[1m>[22m[39m[90m 160 |[39m   )[33m:[39m [33mPromise[39m[33m<[39m[33mUser[39m[33m>[39m {[0m
+  [0m [90m     |[39m      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 161 |[39m     [36mreturn[39m [36mawait[39m [36mthis[39m[33m.[39musersService[33m.[39mupdateUser(updateUserInput[33m,[39m user)[33m;[39m[0m
+  [0m [90m 162 |[39m   }[0m
+  [0m [90m 163 |[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.controller.ts:[32m[1m160:6[22m[39m[1m[39m[22m
+[90mTS2365: [39mOperator '>' cannot be applied to types 'boolean' and '{ return: any; }'.
+  [0m [90m 158 |[39m     [33m@[39m[33mBody[39m() updateUserInput[33m:[39m [33mUpdateUserDTO[39m[33m,[39m[0m
+  [0m [90m 159 |[39m     [33m@[39m[33mCurrentUser[39m([[33mROLES[39m[33m.[39m[33mADMIN[39m]) user[33m:[39m [33mUser[39m[0m
+  [0m[31m[1m>[22m[39m[90m 160 |[39m   )[33m:[39m [33mPromise[39m[33m<[39m[33mUser[39m[33m>[39m {[0m
+  [0m [90m     |[39m      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m[31m[1m>[22m[39m[90m 161 |[39m     [36mreturn[39m [36mawait[39m [36mthis[39m[33m.[39musersService[33m.[39mupdateUser(updateUserInput[33m,[39m user)[33m;[39m[0m
+  [0m [90m     |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m[31m[1m>[22m[39m[90m 162 |[39m   }[0m
+  [0m [90m     |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 163 |[39m[0m
+  [0m [90m 164 |[39m   [33m@[39m[33mDelete[39m([32m':id'[39m)[0m
+  [0m [90m 165 |[39m   [33m@[39m[33mDeleteUserDoc[39m()[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.controller.ts:[32m[1m161:18[22m[39m[1m[39m[22m
+[90mTS2532: [39mObject is possibly 'undefined'.
+  [0m [90m 159 |[39m     [33m@[39m[33mCurrentUser[39m([[33mROLES[39m[33m.[39m[33mADMIN[39m]) user[33m:[39m [33mUser[39m[0m
+  [0m [90m 160 |[39m   )[33m:[39m [33mPromise[39m[33m<[39m[33mUser[39m[33m>[39m {[0m
+  [0m[31m[1m>[22m[39m[90m 161 |[39m     [36mreturn[39m [36mawait[39m [36mthis[39m[33m.[39musersService[33m.[39mupdateUser(updateUserInput[33m,[39m user)[33m;[39m[0m
+  [0m [90m     |[39m                  [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 162 |[39m   }[0m
+  [0m [90m 163 |[39m[0m
+  [0m [90m 164 |[39m   [33m@[39m[33mDelete[39m([32m':id'[39m)[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.controller.ts:[32m[1m161:47[22m[39m[1m[39m[22m
+[90mTS2552: [39mCannot find name 'updateUserInput'. Did you mean 'UpdateUserDTO'?
+  [0m [90m 159 |[39m     [33m@[39m[33mCurrentUser[39m([[33mROLES[39m[33m.[39m[33mADMIN[39m]) user[33m:[39m [33mUser[39m[0m
+  [0m [90m 160 |[39m   )[33m:[39m [33mPromise[39m[33m<[39m[33mUser[39m[33m>[39m {[0m
+  [0m[31m[1m>[22m[39m[90m 161 |[39m     [36mreturn[39m [36mawait[39m [36mthis[39m[33m.[39musersService[33m.[39mupdateUser(updateUserInput[33m,[39m user)[33m;[39m[0m
+  [0m [90m     |[39m                                               [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 162 |[39m   }[0m
+  [0m [90m 163 |[39m[0m
+  [0m [90m 164 |[39m   [33m@[39m[33mDelete[39m([32m':id'[39m)[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.controller.ts:[32m[1m161:64[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'user'.
+  [0m [90m 159 |[39m     [33m@[39m[33mCurrentUser[39m([[33mROLES[39m[33m.[39m[33mADMIN[39m]) user[33m:[39m [33mUser[39m[0m
+  [0m [90m 160 |[39m   )[33m:[39m [33mPromise[39m[33m<[39m[33mUser[39m[33m>[39m {[0m
+  [0m[31m[1m>[22m[39m[90m 161 |[39m     [36mreturn[39m [36mawait[39m [36mthis[39m[33m.[39musersService[33m.[39mupdateUser(updateUserInput[33m,[39m user)[33m;[39m[0m
+  [0m [90m     |[39m                                                                [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 162 |[39m   }[0m
+  [0m [90m 163 |[39m[0m
+  [0m [90m 164 |[39m   [33m@[39m[33mDelete[39m([32m':id'[39m)[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.controller.ts:[32m[1m166:16[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'deleteUser'.
+  [0m [90m 164 |[39m   [33m@[39m[33mDelete[39m([32m':id'[39m)[0m
+  [0m [90m 165 |[39m   [33m@[39m[33mDeleteUserDoc[39m()[0m
+  [0m[31m[1m>[22m[39m[90m 166 |[39m   [36mpublic[39m [36masync[39m deleteUser([0m
+  [0m [90m     |[39m                [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 167 |[39m     [33m@[39m[33mParam[39m([32m'id'[39m) id[33m:[39m string[33m,[39m[0m
+  [0m [90m 168 |[39m     [33m@[39m[33mCurrentUser[39m([[33mROLES[39m[33m.[39m[33mUSER[39m]) user[33m:[39m [33mUser[39m[0m
+  [0m [90m 169 |[39m   )[33m:[39m [33mPromise[39m[33m<[39m[33mUser[39m[33m>[39m {[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.controller.ts:[32m[1m167:18[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'id'.
+  [0m [90m 165 |[39m   [33m@[39m[33mDeleteUserDoc[39m()[0m
+  [0m [90m 166 |[39m   [36mpublic[39m [36masync[39m deleteUser([0m
+  [0m[31m[1m>[22m[39m[90m 167 |[39m     [33m@[39m[33mParam[39m([32m'id'[39m) id[33m:[39m string[33m,[39m[0m
+  [0m [90m     |[39m                  [31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 168 |[39m     [33m@[39m[33mCurrentUser[39m([[33mROLES[39m[33m.[39m[33mUSER[39m]) user[33m:[39m [33mUser[39m[0m
+  [0m [90m 169 |[39m   )[33m:[39m [33mPromise[39m[33m<[39m[33mUser[39m[33m>[39m {[0m
+  [0m [90m 170 |[39m     [36mreturn[39m [36mawait[39m [36mthis[39m[33m.[39musersService[33m.[39mdeleteUser(id)[33m;[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.controller.ts:[32m[1m167:22[22m[39m[1m[39m[22m
+[90mTS2693: [39m'string' only refers to a type, but is being used as a value here.
+  [0m [90m 165 |[39m   [33m@[39m[33mDeleteUserDoc[39m()[0m
+  [0m [90m 166 |[39m   [36mpublic[39m [36masync[39m deleteUser([0m
+  [0m[31m[1m>[22m[39m[90m 167 |[39m     [33m@[39m[33mParam[39m([32m'id'[39m) id[33m:[39m string[33m,[39m[0m
+  [0m [90m     |[39m                      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 168 |[39m     [33m@[39m[33mCurrentUser[39m([[33mROLES[39m[33m.[39m[33mUSER[39m]) user[33m:[39m [33mUser[39m[0m
+  [0m [90m 169 |[39m   )[33m:[39m [33mPromise[39m[33m<[39m[33mUser[39m[33m>[39m {[0m
+  [0m [90m 170 |[39m     [36mreturn[39m [36mawait[39m [36mthis[39m[33m.[39musersService[33m.[39mdeleteUser(id)[33m;[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.controller.ts:[32m[1m168:32[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'user'.
+  [0m [90m 166 |[39m   [36mpublic[39m [36masync[39m deleteUser([0m
+  [0m [90m 167 |[39m     [33m@[39m[33mParam[39m([32m'id'[39m) id[33m:[39m string[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 168 |[39m     [33m@[39m[33mCurrentUser[39m([[33mROLES[39m[33m.[39m[33mUSER[39m]) user[33m:[39m [33mUser[39m[0m
+  [0m [90m     |[39m                                [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 169 |[39m   )[33m:[39m [33mPromise[39m[33m<[39m[33mUser[39m[33m>[39m {[0m
+  [0m [90m 170 |[39m     [36mreturn[39m [36mawait[39m [36mthis[39m[33m.[39musersService[33m.[39mdeleteUser(id)[33m;[39m[0m
+  [0m [90m 171 |[39m   }[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.controller.ts:[32m[1m169:6[22m[39m[1m[39m[22m
+[90mTS2365: [39mOperator '<' cannot be applied to types 'PromiseConstructor' and 'typeof User'.
+  [0m [90m 167 |[39m     [33m@[39m[33mParam[39m([32m'id'[39m) id[33m:[39m string[33m,[39m[0m
+  [0m [90m 168 |[39m     [33m@[39m[33mCurrentUser[39m([[33mROLES[39m[33m.[39m[33mUSER[39m]) user[33m:[39m [33mUser[39m[0m
+  [0m[31m[1m>[22m[39m[90m 169 |[39m   )[33m:[39m [33mPromise[39m[33m<[39m[33mUser[39m[33m>[39m {[0m
+  [0m [90m     |[39m      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 170 |[39m     [36mreturn[39m [36mawait[39m [36mthis[39m[33m.[39musersService[33m.[39mdeleteUser(id)[33m;[39m[0m
+  [0m [90m 171 |[39m   }[0m
+  [0m [90m 172 |[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.controller.ts:[32m[1m169:6[22m[39m[1m[39m[22m
+[90mTS2365: [39mOperator '>' cannot be applied to types 'boolean' and '{ return: any; }'.
+  [0m [90m 167 |[39m     [33m@[39m[33mParam[39m([32m'id'[39m) id[33m:[39m string[33m,[39m[0m
+  [0m [90m 168 |[39m     [33m@[39m[33mCurrentUser[39m([[33mROLES[39m[33m.[39m[33mUSER[39m]) user[33m:[39m [33mUser[39m[0m
+  [0m[31m[1m>[22m[39m[90m 169 |[39m   )[33m:[39m [33mPromise[39m[33m<[39m[33mUser[39m[33m>[39m {[0m
+  [0m [90m     |[39m      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m[31m[1m>[22m[39m[90m 170 |[39m     [36mreturn[39m [36mawait[39m [36mthis[39m[33m.[39musersService[33m.[39mdeleteUser(id)[33m;[39m[0m
+  [0m [90m     |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m[31m[1m>[22m[39m[90m 171 |[39m   }[0m
+  [0m [90m     |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 172 |[39m[0m
+  [0m [90m 173 |[39m   [33m@[39m[33mPut[39m([32m'block/:id'[39m)[0m
+  [0m [90m 174 |[39m   [33m@[39m[33mBlockUserDoc[39m()[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.controller.ts:[32m[1m170:18[22m[39m[1m[39m[22m
+[90mTS2532: [39mObject is possibly 'undefined'.
+  [0m [90m 168 |[39m     [33m@[39m[33mCurrentUser[39m([[33mROLES[39m[33m.[39m[33mUSER[39m]) user[33m:[39m [33mUser[39m[0m
+  [0m [90m 169 |[39m   )[33m:[39m [33mPromise[39m[33m<[39m[33mUser[39m[33m>[39m {[0m
+  [0m[31m[1m>[22m[39m[90m 170 |[39m     [36mreturn[39m [36mawait[39m [36mthis[39m[33m.[39musersService[33m.[39mdeleteUser(id)[33m;[39m[0m
+  [0m [90m     |[39m                  [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 171 |[39m   }[0m
+  [0m [90m 172 |[39m[0m
+  [0m [90m 173 |[39m   [33m@[39m[33mPut[39m([32m'block/:id'[39m)[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.controller.ts:[32m[1m170:47[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'id'.
+  [0m [90m 168 |[39m     [33m@[39m[33mCurrentUser[39m([[33mROLES[39m[33m.[39m[33mUSER[39m]) user[33m:[39m [33mUser[39m[0m
+  [0m [90m 169 |[39m   )[33m:[39m [33mPromise[39m[33m<[39m[33mUser[39m[33m>[39m {[0m
+  [0m[31m[1m>[22m[39m[90m 170 |[39m     [36mreturn[39m [36mawait[39m [36mthis[39m[33m.[39musersService[33m.[39mdeleteUser(id)[33m;[39m[0m
+  [0m [90m     |[39m                                               [31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 171 |[39m   }[0m
+  [0m [90m 172 |[39m[0m
+  [0m [90m 173 |[39m   [33m@[39m[33mPut[39m([32m'block/:id'[39m)[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.controller.ts:[32m[1m175:16[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'blockUser'.
+  [0m [90m 173 |[39m   [33m@[39m[33mPut[39m([32m'block/:id'[39m)[0m
+  [0m [90m 174 |[39m   [33m@[39m[33mBlockUserDoc[39m()[0m
+  [0m[31m[1m>[22m[39m[90m 175 |[39m   [36mpublic[39m [36masync[39m blockUser([0m
+  [0m [90m     |[39m                [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 176 |[39m     [33m@[39m[33mParam[39m([32m'id'[39m) id[33m:[39m string[33m,[39m[0m
+  [0m [90m 177 |[39m     [33m@[39m[33mBody[39m([32m'timeBlocked'[39m) timeBlocked[33m:[39m number[33m,[39m[0m
+  [0m [90m 178 |[39m     [33m@[39m[33mCurrentUser[39m([[33mROLES[39m[33m.[39m[33mADMIN[39m]) user[33m:[39m [33mUser[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.controller.ts:[32m[1m176:18[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'id'.
+  [0m [90m 174 |[39m   [33m@[39m[33mBlockUserDoc[39m()[0m
+  [0m [90m 175 |[39m   [36mpublic[39m [36masync[39m blockUser([0m
+  [0m[31m[1m>[22m[39m[90m 176 |[39m     [33m@[39m[33mParam[39m([32m'id'[39m) id[33m:[39m string[33m,[39m[0m
+  [0m [90m     |[39m                  [31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 177 |[39m     [33m@[39m[33mBody[39m([32m'timeBlocked'[39m) timeBlocked[33m:[39m number[33m,[39m[0m
+  [0m [90m 178 |[39m     [33m@[39m[33mCurrentUser[39m([[33mROLES[39m[33m.[39m[33mADMIN[39m]) user[33m:[39m [33mUser[39m[0m
+  [0m [90m 179 |[39m   )[33m:[39m [33mPromise[39m[33m<[39m[33mUser[39m[33m>[39m {[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.controller.ts:[32m[1m176:22[22m[39m[1m[39m[22m
+[90mTS2693: [39m'string' only refers to a type, but is being used as a value here.
+  [0m [90m 174 |[39m   [33m@[39m[33mBlockUserDoc[39m()[0m
+  [0m [90m 175 |[39m   [36mpublic[39m [36masync[39m blockUser([0m
+  [0m[31m[1m>[22m[39m[90m 176 |[39m     [33m@[39m[33mParam[39m([32m'id'[39m) id[33m:[39m string[33m,[39m[0m
+  [0m [90m     |[39m                      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 177 |[39m     [33m@[39m[33mBody[39m([32m'timeBlocked'[39m) timeBlocked[33m:[39m number[33m,[39m[0m
+  [0m [90m 178 |[39m     [33m@[39m[33mCurrentUser[39m([[33mROLES[39m[33m.[39m[33mADMIN[39m]) user[33m:[39m [33mUser[39m[0m
+  [0m [90m 179 |[39m   )[33m:[39m [33mPromise[39m[33m<[39m[33mUser[39m[33m>[39m {[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.controller.ts:[32m[1m177:26[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'timeBlocked'.
+  [0m [90m 175 |[39m   [36mpublic[39m [36masync[39m blockUser([0m
+  [0m [90m 176 |[39m     [33m@[39m[33mParam[39m([32m'id'[39m) id[33m:[39m string[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 177 |[39m     [33m@[39m[33mBody[39m([32m'timeBlocked'[39m) timeBlocked[33m:[39m number[33m,[39m[0m
+  [0m [90m     |[39m                          [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 178 |[39m     [33m@[39m[33mCurrentUser[39m([[33mROLES[39m[33m.[39m[33mADMIN[39m]) user[33m:[39m [33mUser[39m[0m
+  [0m [90m 179 |[39m   )[33m:[39m [33mPromise[39m[33m<[39m[33mUser[39m[33m>[39m {[0m
+  [0m [90m 180 |[39m     [36mreturn[39m [36mawait[39m [36mthis[39m[33m.[39musersService[33m.[39mblockUser(id[33m,[39m timeBlocked[33m,[39m user)[33m;[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.controller.ts:[32m[1m177:39[22m[39m[1m[39m[22m
+[90mTS2693: [39m'number' only refers to a type, but is being used as a value here.
+  [0m [90m 175 |[39m   [36mpublic[39m [36masync[39m blockUser([0m
+  [0m [90m 176 |[39m     [33m@[39m[33mParam[39m([32m'id'[39m) id[33m:[39m string[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 177 |[39m     [33m@[39m[33mBody[39m([32m'timeBlocked'[39m) timeBlocked[33m:[39m number[33m,[39m[0m
+  [0m [90m     |[39m                                       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 178 |[39m     [33m@[39m[33mCurrentUser[39m([[33mROLES[39m[33m.[39m[33mADMIN[39m]) user[33m:[39m [33mUser[39m[0m
+  [0m [90m 179 |[39m   )[33m:[39m [33mPromise[39m[33m<[39m[33mUser[39m[33m>[39m {[0m
+  [0m [90m 180 |[39m     [36mreturn[39m [36mawait[39m [36mthis[39m[33m.[39musersService[33m.[39mblockUser(id[33m,[39m timeBlocked[33m,[39m user)[33m;[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.controller.ts:[32m[1m178:33[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'user'.
+  [0m [90m 176 |[39m     [33m@[39m[33mParam[39m([32m'id'[39m) id[33m:[39m string[33m,[39m[0m
+  [0m [90m 177 |[39m     [33m@[39m[33mBody[39m([32m'timeBlocked'[39m) timeBlocked[33m:[39m number[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 178 |[39m     [33m@[39m[33mCurrentUser[39m([[33mROLES[39m[33m.[39m[33mADMIN[39m]) user[33m:[39m [33mUser[39m[0m
+  [0m [90m     |[39m                                 [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 179 |[39m   )[33m:[39m [33mPromise[39m[33m<[39m[33mUser[39m[33m>[39m {[0m
+  [0m [90m 180 |[39m     [36mreturn[39m [36mawait[39m [36mthis[39m[33m.[39musersService[33m.[39mblockUser(id[33m,[39m timeBlocked[33m,[39m user)[33m;[39m[0m
+  [0m [90m 181 |[39m   }[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.controller.ts:[32m[1m179:6[22m[39m[1m[39m[22m
+[90mTS2365: [39mOperator '<' cannot be applied to types 'PromiseConstructor' and 'typeof User'.
+  [0m [90m 177 |[39m     [33m@[39m[33mBody[39m([32m'timeBlocked'[39m) timeBlocked[33m:[39m number[33m,[39m[0m
+  [0m [90m 178 |[39m     [33m@[39m[33mCurrentUser[39m([[33mROLES[39m[33m.[39m[33mADMIN[39m]) user[33m:[39m [33mUser[39m[0m
+  [0m[31m[1m>[22m[39m[90m 179 |[39m   )[33m:[39m [33mPromise[39m[33m<[39m[33mUser[39m[33m>[39m {[0m
+  [0m [90m     |[39m      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 180 |[39m     [36mreturn[39m [36mawait[39m [36mthis[39m[33m.[39musersService[33m.[39mblockUser(id[33m,[39m timeBlocked[33m,[39m user)[33m;[39m[0m
+  [0m [90m 181 |[39m   }[0m
+  [0m [90m 182 |[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.controller.ts:[32m[1m179:6[22m[39m[1m[39m[22m
+[90mTS2365: [39mOperator '>' cannot be applied to types 'boolean' and '{ return: any; }'.
+  [0m [90m 177 |[39m     [33m@[39m[33mBody[39m([32m'timeBlocked'[39m) timeBlocked[33m:[39m number[33m,[39m[0m
+  [0m [90m 178 |[39m     [33m@[39m[33mCurrentUser[39m([[33mROLES[39m[33m.[39m[33mADMIN[39m]) user[33m:[39m [33mUser[39m[0m
+  [0m[31m[1m>[22m[39m[90m 179 |[39m   )[33m:[39m [33mPromise[39m[33m<[39m[33mUser[39m[33m>[39m {[0m
+  [0m [90m     |[39m      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m[31m[1m>[22m[39m[90m 180 |[39m     [36mreturn[39m [36mawait[39m [36mthis[39m[33m.[39musersService[33m.[39mblockUser(id[33m,[39m timeBlocked[33m,[39m user)[33m;[39m[0m
+  [0m [90m     |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m[31m[1m>[22m[39m[90m 181 |[39m   }[0m
+  [0m [90m     |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 182 |[39m[0m
+  [0m [90m 183 |[39m   [33m@[39m[33mPost[39m([32m'change-password'[39m)[0m
+  [0m [90m 184 |[39m   [33m@[39m[33mUseGuards[39m([33mJwtAuthGuard[39m)[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.controller.ts:[32m[1m180:18[22m[39m[1m[39m[22m
+[90mTS2532: [39mObject is possibly 'undefined'.
+  [0m [90m 178 |[39m     [33m@[39m[33mCurrentUser[39m([[33mROLES[39m[33m.[39m[33mADMIN[39m]) user[33m:[39m [33mUser[39m[0m
+  [0m [90m 179 |[39m   )[33m:[39m [33mPromise[39m[33m<[39m[33mUser[39m[33m>[39m {[0m
+  [0m[31m[1m>[22m[39m[90m 180 |[39m     [36mreturn[39m [36mawait[39m [36mthis[39m[33m.[39musersService[33m.[39mblockUser(id[33m,[39m timeBlocked[33m,[39m user)[33m;[39m[0m
+  [0m [90m     |[39m                  [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 181 |[39m   }[0m
+  [0m [90m 182 |[39m[0m
+  [0m [90m 183 |[39m   [33m@[39m[33mPost[39m([32m'change-password'[39m)[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.controller.ts:[32m[1m180:46[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'id'.
+  [0m [90m 178 |[39m     [33m@[39m[33mCurrentUser[39m([[33mROLES[39m[33m.[39m[33mADMIN[39m]) user[33m:[39m [33mUser[39m[0m
+  [0m [90m 179 |[39m   )[33m:[39m [33mPromise[39m[33m<[39m[33mUser[39m[33m>[39m {[0m
+  [0m[31m[1m>[22m[39m[90m 180 |[39m     [36mreturn[39m [36mawait[39m [36mthis[39m[33m.[39musersService[33m.[39mblockUser(id[33m,[39m timeBlocked[33m,[39m user)[33m;[39m[0m
+  [0m [90m     |[39m                                              [31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 181 |[39m   }[0m
+  [0m [90m 182 |[39m[0m
+  [0m [90m 183 |[39m   [33m@[39m[33mPost[39m([32m'change-password'[39m)[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.controller.ts:[32m[1m180:50[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'timeBlocked'.
+  [0m [90m 178 |[39m     [33m@[39m[33mCurrentUser[39m([[33mROLES[39m[33m.[39m[33mADMIN[39m]) user[33m:[39m [33mUser[39m[0m
+  [0m [90m 179 |[39m   )[33m:[39m [33mPromise[39m[33m<[39m[33mUser[39m[33m>[39m {[0m
+  [0m[31m[1m>[22m[39m[90m 180 |[39m     [36mreturn[39m [36mawait[39m [36mthis[39m[33m.[39musersService[33m.[39mblockUser(id[33m,[39m timeBlocked[33m,[39m user)[33m;[39m[0m
+  [0m [90m     |[39m                                                  [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 181 |[39m   }[0m
+  [0m [90m 182 |[39m[0m
+  [0m [90m 183 |[39m   [33m@[39m[33mPost[39m([32m'change-password'[39m)[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.controller.ts:[32m[1m180:63[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'user'.
+  [0m [90m 178 |[39m     [33m@[39m[33mCurrentUser[39m([[33mROLES[39m[33m.[39m[33mADMIN[39m]) user[33m:[39m [33mUser[39m[0m
+  [0m [90m 179 |[39m   )[33m:[39m [33mPromise[39m[33m<[39m[33mUser[39m[33m>[39m {[0m
+  [0m[31m[1m>[22m[39m[90m 180 |[39m     [36mreturn[39m [36mawait[39m [36mthis[39m[33m.[39musersService[33m.[39mblockUser(id[33m,[39m timeBlocked[33m,[39m user)[33m;[39m[0m
+  [0m [90m     |[39m                                                               [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 181 |[39m   }[0m
+  [0m [90m 182 |[39m[0m
+  [0m [90m 183 |[39m   [33m@[39m[33mPost[39m([32m'change-password'[39m)[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.controller.ts:[32m[1m185:9[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'changePassword'.
+  [0m [90m 183 |[39m   [33m@[39m[33mPost[39m([32m'change-password'[39m)[0m
+  [0m [90m 184 |[39m   [33m@[39m[33mUseGuards[39m([33mJwtAuthGuard[39m)[0m
+  [0m[31m[1m>[22m[39m[90m 185 |[39m   [36masync[39m changePassword([0m
+  [0m [90m     |[39m         [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 186 |[39m     [33m@[39m[33mCurrentUser[39m() { id }[33m:[39m [33mUser[39m[33m,[39m[0m
+  [0m [90m 187 |[39m     [33m@[39m[33mBody[39m() { currentPassword[33m,[39m newPassword }[33m:[39m [33mChangePasswordDTO[39m[0m
+  [0m [90m 188 |[39m   )[33m:[39m [33mPromise[39m[33m<[39m{ message[33m:[39m string }[33m>[39m {[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.controller.ts:[32m[1m186:22[22m[39m[1m[39m[22m
+[90mTS18004: [39mNo value exists in scope for the shorthand property 'id'. Either declare one or provide an initializer.
+  [0m [90m 184 |[39m   [33m@[39m[33mUseGuards[39m([33mJwtAuthGuard[39m)[0m
+  [0m [90m 185 |[39m   [36masync[39m changePassword([0m
+  [0m[31m[1m>[22m[39m[90m 186 |[39m     [33m@[39m[33mCurrentUser[39m() { id }[33m:[39m [33mUser[39m[33m,[39m[0m
+  [0m [90m     |[39m                      [31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 187 |[39m     [33m@[39m[33mBody[39m() { currentPassword[33m,[39m newPassword }[33m:[39m [33mChangePasswordDTO[39m[0m
+  [0m [90m 188 |[39m   )[33m:[39m [33mPromise[39m[33m<[39m{ message[33m:[39m string }[33m>[39m {[0m
+  [0m [90m 189 |[39m     [36mawait[39m [36mthis[39m[33m.[39musersService[33m.[39mchangeKnownPassword([0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.controller.ts:[32m[1m187:15[22m[39m[1m[39m[22m
+[90mTS18004: [39mNo value exists in scope for the shorthand property 'currentPassword'. Either declare one or provide an initializer.
+  [0m [90m 185 |[39m   [36masync[39m changePassword([0m
+  [0m [90m 186 |[39m     [33m@[39m[33mCurrentUser[39m() { id }[33m:[39m [33mUser[39m[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 187 |[39m     [33m@[39m[33mBody[39m() { currentPassword[33m,[39m newPassword }[33m:[39m [33mChangePasswordDTO[39m[0m
+  [0m [90m     |[39m               [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 188 |[39m   )[33m:[39m [33mPromise[39m[33m<[39m{ message[33m:[39m string }[33m>[39m {[0m
+  [0m [90m 189 |[39m     [36mawait[39m [36mthis[39m[33m.[39musersService[33m.[39mchangeKnownPassword([0m
+  [0m [90m 190 |[39m       id[33m,[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.controller.ts:[32m[1m187:32[22m[39m[1m[39m[22m
+[90mTS18004: [39mNo value exists in scope for the shorthand property 'newPassword'. Either declare one or provide an initializer.
+  [0m [90m 185 |[39m   [36masync[39m changePassword([0m
+  [0m [90m 186 |[39m     [33m@[39m[33mCurrentUser[39m() { id }[33m:[39m [33mUser[39m[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 187 |[39m     [33m@[39m[33mBody[39m() { currentPassword[33m,[39m newPassword }[33m:[39m [33mChangePasswordDTO[39m[0m
+  [0m [90m     |[39m                                [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 188 |[39m   )[33m:[39m [33mPromise[39m[33m<[39m{ message[33m:[39m string }[33m>[39m {[0m
+  [0m [90m 189 |[39m     [36mawait[39m [36mthis[39m[33m.[39musersService[33m.[39mchangeKnownPassword([0m
+  [0m [90m 190 |[39m       id[33m,[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.controller.ts:[32m[1m188:6[22m[39m[1m[39m[22m
+[90mTS2365: [39mOperator '<' cannot be applied to types 'PromiseConstructor' and '{ message: any; }'.
+  [0m [90m 186 |[39m     [33m@[39m[33mCurrentUser[39m() { id }[33m:[39m [33mUser[39m[33m,[39m[0m
+  [0m [90m 187 |[39m     [33m@[39m[33mBody[39m() { currentPassword[33m,[39m newPassword }[33m:[39m [33mChangePasswordDTO[39m[0m
+  [0m[31m[1m>[22m[39m[90m 188 |[39m   )[33m:[39m [33mPromise[39m[33m<[39m{ message[33m:[39m string }[33m>[39m {[0m
+  [0m [90m     |[39m      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 189 |[39m     [36mawait[39m [36mthis[39m[33m.[39musersService[33m.[39mchangeKnownPassword([0m
+  [0m [90m 190 |[39m       id[33m,[39m[0m
+  [0m [90m 191 |[39m       currentPassword[33m,[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.controller.ts:[32m[1m188:6[22m[39m[1m[39m[22m
+[90mTS2365: [39mOperator '>' cannot be applied to types 'boolean' and '{ await: any; this: any; return: { cause: Error; name: string; message: string; stack?: string; data: object; } | { status: HttpStatus; message: string; code: "CONTINUE" | "SWITCHING_PROTOCOLS" | ... 45 more ... | "HTTP_VERSION_NOT_SUPPORTED"; success: boolean; data: {}; }; }'.
+  [0m [90m 186 |[39m     [33m@[39m[33mCurrentUser[39m() { id }[33m:[39m [33mUser[39m[33m,[39m[0m
+  [0m [90m 187 |[39m     [33m@[39m[33mBody[39m() { currentPassword[33m,[39m newPassword }[33m:[39m [33mChangePasswordDTO[39m[0m
+  [0m[31m[1m>[22m[39m[90m 188 |[39m   )[33m:[39m [33mPromise[39m[33m<[39m{ message[33m:[39m string }[33m>[39m {[0m
+  [0m [90m     |[39m      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m[31m[1m>[22m[39m[90m 189 |[39m     [36mawait[39m [36mthis[39m[33m.[39musersService[33m.[39mchangeKnownPassword([0m
+  [0m [90m     |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m[31m[1m>[22m[39m[90m 190 |[39m       id[33m,[39m[0m
+  [0m [90m     |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m[31m[1m>[22m[39m[90m 191 |[39m       currentPassword[33m,[39m[0m
+  [0m [90m     |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m[31m[1m>[22m[39m[90m 192 |[39m       newPassword[0m
+  [0m [90m     |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m[31m[1m>[22m[39m[90m 193 |[39m     )[33m;[39m[0m
+  [0m [90m     |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m[31m[1m>[22m[39m[90m 194 |[39m     [36mreturn[39m [33mResp[39m[33m.[39m[33mSuccess[39m[33m<[39m[33mobject[39m[33m>[39m({}[33m,[39m [32m'OK'[39m[33m,[39m [32m'Password changed successfully!'[39m)[33m;[39m[0m
+  [0m [90m     |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m[31m[1m>[22m[39m[90m 195 |[39m   }[0m
+  [0m [90m     |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 196 |[39m }[0m
+  [0m [90m 197 |[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.controller.ts:[32m[1m188:25[22m[39m[1m[39m[22m
+[90mTS2693: [39m'string' only refers to a type, but is being used as a value here.
+  [0m [90m 186 |[39m     [33m@[39m[33mCurrentUser[39m() { id }[33m:[39m [33mUser[39m[33m,[39m[0m
+  [0m [90m 187 |[39m     [33m@[39m[33mBody[39m() { currentPassword[33m,[39m newPassword }[33m:[39m [33mChangePasswordDTO[39m[0m
+  [0m[31m[1m>[22m[39m[90m 188 |[39m   )[33m:[39m [33mPromise[39m[33m<[39m{ message[33m:[39m string }[33m>[39m {[0m
+  [0m [90m     |[39m                         [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 189 |[39m     [36mawait[39m [36mthis[39m[33m.[39musersService[33m.[39mchangeKnownPassword([0m
+  [0m [90m 190 |[39m       id[33m,[39m[0m
+  [0m [90m 191 |[39m       currentPassword[33m,[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.controller.ts:[32m[1m189:5[22m[39m[1m[39m[22m
+[90mTS18004: [39mNo value exists in scope for the shorthand property 'await'. Either declare one or provide an initializer.
+  [0m [90m 187 |[39m     [33m@[39m[33mBody[39m() { currentPassword[33m,[39m newPassword }[33m:[39m [33mChangePasswordDTO[39m[0m
+  [0m [90m 188 |[39m   )[33m:[39m [33mPromise[39m[33m<[39m{ message[33m:[39m string }[33m>[39m {[0m
+  [0m[31m[1m>[22m[39m[90m 189 |[39m     [36mawait[39m [36mthis[39m[33m.[39musersService[33m.[39mchangeKnownPassword([0m
+  [0m [90m     |[39m     [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 190 |[39m       id[33m,[39m[0m
+  [0m [90m 191 |[39m       currentPassword[33m,[39m[0m
+  [0m [90m 192 |[39m       newPassword[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.controller.ts:[32m[1m190:7[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'id'.
+  [0m [90m 188 |[39m   )[33m:[39m [33mPromise[39m[33m<[39m{ message[33m:[39m string }[33m>[39m {[0m
+  [0m [90m 189 |[39m     [36mawait[39m [36mthis[39m[33m.[39musersService[33m.[39mchangeKnownPassword([0m
+  [0m[31m[1m>[22m[39m[90m 190 |[39m       id[33m,[39m[0m
+  [0m [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 191 |[39m       currentPassword[33m,[39m[0m
+  [0m [90m 192 |[39m       newPassword[0m
+  [0m [90m 193 |[39m     )[33m;[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.controller.ts:[32m[1m191:7[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'currentPassword'.
+  [0m [90m 189 |[39m     [36mawait[39m [36mthis[39m[33m.[39musersService[33m.[39mchangeKnownPassword([0m
+  [0m [90m 190 |[39m       id[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 191 |[39m       currentPassword[33m,[39m[0m
+  [0m [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 192 |[39m       newPassword[0m
+  [0m [90m 193 |[39m     )[33m;[39m[0m
+  [0m [90m 194 |[39m     [36mreturn[39m [33mResp[39m[33m.[39m[33mSuccess[39m[33m<[39m[33mobject[39m[33m>[39m({}[33m,[39m [32m'OK'[39m[33m,[39m [32m'Password changed successfully!'[39m)[33m;[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.controller.ts:[32m[1m192:7[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'newPassword'.
+  [0m [90m 190 |[39m       id[33m,[39m[0m
+  [0m [90m 191 |[39m       currentPassword[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 192 |[39m       newPassword[0m
+  [0m [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 193 |[39m     )[33m;[39m[0m
+  [0m [90m 194 |[39m     [36mreturn[39m [33mResp[39m[33m.[39m[33mSuccess[39m[33m<[39m[33mobject[39m[33m>[39m({}[33m,[39m [32m'OK'[39m[33m,[39m [32m'Password changed successfully!'[39m)[33m;[39m[0m
+  [0m [90m 195 |[39m   }[0m
+
+webpack compiled with [1m[31m112 errors[39m[22m (b7748be8e5d14286)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 247 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (0bca97820fb23f53)
+[1m[31mDebugger listening on ws://loca[39m[22m
+[1m[31mlhost:9229/14ca3b7e-a788-4dcd-9072-495d292029e5[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/14ca3b7e-a788-4dcd-9072-495d292029e5[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 247 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (be86bbe735492c8b)
+[1m[31mDebugger listening on ws://lo[39m[22m
+[1m[31mcalhost:9229/2ea55319-395c-4ac8-9795-9f1d03f86453[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/2ea55319-395c-4ac8-9795-9f1d03f86453[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 247 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (bd423408abf364ef)
+[1m[31mDebugger listening on ws://local[39m[22m
+[1m[31mhost:9229/c2d0b522-583c-4920-9704-6e9c29caae8a[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/c2d0b522-583c-4920-9704-6e9c29caae8a[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 247 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (b2d5874b3c2a98c2)
+[1m[31mDebugger listeni[39m[22m
+[1m[31mng on ws://localhost:9229/6a3381fd-9fac-4f2a-b5c3-2345c30238c4[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/6a3381fd-9fac-4f2a-b5c3-2345c30238c4[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 247 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (053e3fd73a08abfa)
+[1m[31mDebugger listening on ws:/[39m[22m
+[1m[31m/localhost:9229/3452bc9e-f089-4feb-bd7b-dc533aeee618[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/3452bc9e-f089-4feb-bd7b-dc533aeee618[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 248 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (c295bc5acc240329)
+[1m[31mDebugger listening on ws://localhost:9229/6a15ca62-f[39m[22m
+[1m[31m99e-484e-839c-22b3b92c0c5b[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/6a15ca62-f99e-484e-839c-22b3b92c0c5b[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 248 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (8b1449d84b23537c)
+[1m[31mDebugger listening on ws://localhost:9229/30519[39m[22m
+[1m[31ma0f-cba9-401b-9cf5-49911d88e878[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/30519a0f-cba9-401b-9cf5-49911d88e878[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
