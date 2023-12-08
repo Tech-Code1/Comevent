@@ -3314,7 +3314,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.ts",
-          "hash": "16258954658614808174",
+          "hash": "17875187161633828618",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
@@ -3486,7 +3486,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/main-info/main-info.component.html",
-          "hash": "9040369235963740812"
+          "hash": "8611706186199599863"
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/main-info/main-info.component.scss",
@@ -3494,10 +3494,11 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/main-info/main-info.component.ts",
-          "hash": "18145417987824157260",
+          "hash": "8692158115554211208",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
+            "npm:@angular/forms",
             "npm:@ngx-translate/core",
             "frontend-ui"
           ]
@@ -3817,7 +3818,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/service/state/index.ts",
-          "hash": "3068981542128123742"
+          "hash": "15282777852410159458"
         },
         {
           "file": "frontend/app/src/modules/user-profile/service/state/reset.state.service.ts",
@@ -3962,6 +3963,15 @@
         {
           "file": "frontend/app/tsconfig.spec.json",
           "hash": "2927375835638640771"
+        },
+        {
+          "file": "frontend/app/src/modules/user-profile/service/state/form-change-description.state.service.ts",
+          "hash": "13427412100280719557",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "npm:rxjs"
+          ]
         }
       ],
       "api": [

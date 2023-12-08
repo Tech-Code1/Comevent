@@ -3,8 +3,13 @@ import {
   ChangeDetectionStrategy,
   Component,
   Input,
+  OnChanges,
+  OnInit,
+  SimpleChanges,
   ViewEncapsulation,
+  inject,
 } from '@angular/core';
+import { FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
 import {
   ButtonComponent,
@@ -13,7 +18,10 @@ import {
   TitleComponent,
 } from '@ui/components';
 import { AvatarComponent, ButtonsActionsChangeMainInfoComponent } from '..';
-import { ISimplifiedUserEditProfile } from '../../..';
+import {
+  FormChangeDescriptionService,
+  ISimplifiedUserEditProfile,
+} from '../../..';
 
 @Component({
   standalone: true,
@@ -26,6 +34,7 @@ import { ISimplifiedUserEditProfile } from '../../..';
     TextAreaComponent,
     LabelComponent,
     ButtonsActionsChangeMainInfoComponent,
+    ReactiveFormsModule,
   ],
   selector: 'main-info',
   templateUrl: './main-info.component.html',
@@ -33,7 +42,22 @@ import { ISimplifiedUserEditProfile } from '../../..';
   encapsulation: ViewEncapsulation.Emulated,
   changeDetection: ChangeDetectionStrategy.Default,
 })
-export class MainInfoComponent {
+export class MainInfoComponent implements OnChanges, OnInit {
   @Input({ required: true }) dataUserEditProfile!: ISimplifiedUserEditProfile;
   @Input({ required: true }) loadingProfile!: boolean;
+
+  protected formchangeDescriptionService = inject(FormChangeDescriptionService);
+  changeDescription!: FormGroup;
+
+  ngOnInit(): void {
+    this.changeDescription =
+      this.formchangeDescriptionService.getchangeDescriptionForm();
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    if (changes['dataUserEditProfile']) {
+      const currentData = changes['dataUserEditProfile'].currentValue;
+      this.formchangeDescriptionService.updateFormWithNewData(currentData);
+    }
+  }
 }

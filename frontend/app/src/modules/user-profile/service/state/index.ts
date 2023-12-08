@@ -1,4 +1,5 @@
 export * from './form-areas.state.service';
+export * from './form-change-description.state.service';
 export * from './form-change-email.state.service';
 export * from './form-change-more-information.state.service';
 export * from './form-change-pass.state.service';

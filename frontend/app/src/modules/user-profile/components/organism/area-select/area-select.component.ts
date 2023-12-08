@@ -128,11 +128,9 @@ export class AreaSelectComponent implements OnInit, OnChanges {
   }
 
   initializeSelectedAreas() {
+    if (!this.changeAreas) return;
     const expertiseArray = this.changeAreas.get('areaOfExpertise') as FormArray;
     const interestArray = this.changeAreas.get('areaOfInteres') as FormArray;
-
-    console.log('expertiseArray values:', expertiseArray.value);
-    console.log('interestArray values:', interestArray.value);
 
     this.areasSelectTypeExpertise = expertiseArray.value
       .map((areaName: string) => {
@@ -149,11 +147,6 @@ export class AreaSelectComponent implements OnInit, OnChanges {
         type: TYPE_AREA.EXPERTISE,
       }));
 
-    console.log(
-      'Final areasSelectTypeExpertise:',
-      this.areasSelectTypeExpertise
-    );
-
     this.areasSelectTypeInteres = interestArray.value
       .map((areaName: string) =>
         this.areas.find((area: ISelectArea) => area.name === areaName)
@@ -164,8 +157,6 @@ export class AreaSelectComponent implements OnInit, OnChanges {
         name: area.name,
         type: TYPE_AREA.INTEREST,
       }));
-
-    console.log('areasSelectTypeInteres', this.areasSelectTypeInteres);
 
     const expertiseControl = this.changeAreas.get(
       'areaOfExpertise'
@@ -191,11 +182,9 @@ export class AreaSelectComponent implements OnInit, OnChanges {
 
     if (index > -1) {
       control.removeAt(index);
-      // También eliminar de areasSelectTypeExpertise o areasSelectTypeInteres
       this.removeFromSelectedAreas(area.id, type);
     } else {
       control.push(new FormControl(area.id));
-      // También agregar a areasSelectTypeExpertise o areasSelectTypeInteres
       this.addToSelectedAreas(area, type);
     }
   }

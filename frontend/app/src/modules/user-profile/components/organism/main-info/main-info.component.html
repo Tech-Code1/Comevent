@@ -1,4 +1,6 @@
-<div
+<form
+  [formGroup]="changeDescription"
+  autocomplete="off"
   class="p-4 bg-gray-0 dark:bg-black-1 shadow-neutral-level2 rounded-xl h-auto"
 >
   <c-title variant="title-h5" color="black">Información personal</c-title>
@@ -20,6 +22,7 @@
         name="description"
         placeholder="Write a brief description of yourself..."
         variant="text-area-base"
+        formControlName="description"
       />
     </c-label>
 
@@ -27,4 +30,4 @@
       [dataUserEditProfile]="dataUserEditProfile"
     />
   </div>
-</div>
+</form>
