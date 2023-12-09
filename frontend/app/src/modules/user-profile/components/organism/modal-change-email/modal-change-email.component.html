@@ -4,10 +4,8 @@
   [footer]="true"
   titleButtonOne="Aceptar"
   titleButtonTwo="Cancelar"
-  [resetFormFunction]="
-    formChangeEmailService.resetToOriginalValues.bind(formChangeEmailService)
-  "
-  [isInputChanged]="!formChangeEmailService.isInputChanged"
+  [resetFormFunction]="resetForm"
+  [isInputChanged]="isInputChanged()"
   [form]="emailControl"
 >
   <form

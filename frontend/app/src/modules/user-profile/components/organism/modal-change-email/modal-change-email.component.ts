@@ -3,11 +3,12 @@ import {
   ChangeDetectionStrategy,
   Component,
   Input,
+  OnInit,
   inject,
 } from '@angular/core';
 import { FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { FormChangeTrackingService } from '@services';
 import { InputComponent, LabelComponent } from '@ui/components';
-import { FormChangeEmailService } from '../../../service/state';
 import { LayoutModalComponent } from '../layout-modal/layout-modal.component';
 
 @Component({
@@ -24,7 +25,18 @@ import { LayoutModalComponent } from '../layout-modal/layout-modal.component';
   styleUrls: ['./modal-change-email.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ModalChangeEmailComponent {
+export class ModalChangeEmailComponent implements OnInit {
   @Input({ required: true }) emailControl!: FormGroup;
-  protected formChangeEmailService = inject(FormChangeEmailService);
+  protected formChangeTrackingService = inject(FormChangeTrackingService);
+
+  ngOnInit(): void {
+    this.formChangeTrackingService.monitorInputChanges(this.emailControl, [
+      'email',
+    ]);
+    this.formChangeTrackingService.setOriginalValues(this.emailControl);
+  }
+
+  resetForm = () =>
+    this.formChangeTrackingService.resetToOriginalValues(this.emailControl);
+  isInputChanged = () => !this.formChangeTrackingService.isInputChanged;
 }

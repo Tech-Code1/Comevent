@@ -4136,7 +4136,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/buttons-actions-change-main-info/buttons-actions-change-main-info.component.html",
-          "hash": "541608351586894789"
+          "hash": "8794142140158383488"
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/buttons-actions-change-main-info/buttons-actions-change-main-info.component.scss",
@@ -4144,7 +4144,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/buttons-actions-change-main-info/buttons-actions-change-main-info.component.ts",
-          "hash": "15089672603551695980",
+          "hash": "3624563617407816112",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
@@ -4260,7 +4260,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/main-info/main-info.component.html",
-          "hash": "15478725251860009316"
+          "hash": "18295648392591009368"
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/main-info/main-info.component.scss",
@@ -4268,7 +4268,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/main-info/main-info.component.ts",
-          "hash": "17564801577228941595",
+          "hash": "17388734389434461733",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
@@ -4279,7 +4279,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/modal-change-email/modal-change-email.component.html",
-          "hash": "4469500007933279666"
+          "hash": "7722390156170245038"
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/modal-change-email/modal-change-email.component.scss",
@@ -4287,7 +4287,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/modal-change-email/modal-change-email.component.ts",
-          "hash": "2031557690882819708",
+          "hash": "15413446936137964700",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
@@ -4323,7 +4323,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/modal-change-user-name/modal-change-user-name.component.ts",
-          "hash": "4830062204819940354",
+          "hash": "7256509105406247577",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",

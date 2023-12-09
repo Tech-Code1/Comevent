@@ -35,13 +35,9 @@ import { ModalChangeUserNameComponent } from '../modal-change-user-name/modal-ch
   changeDetection: ChangeDetectionStrategy.Default,
 })
 export class ButtonsActionsChangeMainInfoComponent {
-  /* @Input({ required: true }) dataUserEditProfile!:
-    | ISimplifiedUserEditProfile
-    | Partial<ISimplifiedUserEditProfile>; */
   @Input({ required: true }) userNameControl!: FormGroup;
   @Input({ required: true }) emailControl!: FormGroup;
   @Input({ required: true }) passwordControl!: FormGroup;
-  @Input({ required: true }) originalUserName!: string;
 
   protected modalManagerService = inject(ModalManagerService);
   MODALS = MODALS;

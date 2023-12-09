@@ -10,7 +10,6 @@
 
 @if (modalManagerService.getCurrentModal() === MODALS.USER_NAME_MODAL) {
 <modal-change-user-name
-  [originalUserName]="originalUserName"
   [userNameControl]="userNameControl"
 ></modal-change-user-name>
 } @if (modalManagerService.getCurrentModal() === MODALS.EMAIL_MODAL) {

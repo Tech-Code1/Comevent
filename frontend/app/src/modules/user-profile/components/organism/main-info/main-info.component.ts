@@ -86,7 +86,6 @@ export class MainInfoComponent implements OnInit, OnChanges {
   currentAvatarUrl!: string | undefined;
   currentUserName: string | undefined = '';
   currentEmail: string | undefined = '';
-  originalUserNameValue!: any;
 
   get parentFormGroup(): FormGroup {
     return this.parentContainer.control as FormGroup;
@@ -113,10 +112,6 @@ export class MainInfoComponent implements OnInit, OnChanges {
         }),
       })
     );
-
-    this.originalUserNameValue = this.parentFormGroup.get(
-      `${this.controlKey}.changeUserName.userName`
-    )?.value;
   }
 
   ngOnChanges(changes: SimpleChanges): void {

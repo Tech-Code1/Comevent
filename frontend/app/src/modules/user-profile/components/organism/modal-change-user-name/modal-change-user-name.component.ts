@@ -26,9 +26,8 @@ import { LayoutModalComponent } from '../layout-modal/layout-modal.component';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ModalChangeUserNameComponent implements OnInit {
-  protected formChangeTrackingService = inject(FormChangeTrackingService);
   @Input({ required: true }) userNameControl!: FormGroup;
-  @Input({ required: true }) originalUserName!: string;
+  protected formChangeTrackingService = inject(FormChangeTrackingService);
 
   ngOnInit(): void {
     this.formChangeTrackingService.monitorInputChanges(this.userNameControl, [
