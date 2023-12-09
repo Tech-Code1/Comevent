@@ -10,8 +10,14 @@
     )
   "
   [isInputChanged]="!formChangeUserNameService.isInputChanged"
+  [form]="userNameControl"
 >
-  <form class="flex flex-col gap-3 w-full" action="" autocomplete="off">
+  <form
+    [formGroup]="userNameControl"
+    class="flex flex-col gap-3 w-full"
+    action=""
+    autocomplete="off"
+  >
     <c-label>
       Username
       <c-input

@@ -2,9 +2,11 @@ import { CommonModule } from '@angular/common';
 import {
   ChangeDetectionStrategy,
   Component,
+  Input,
   ViewEncapsulation,
   inject,
 } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
 import { ButtonComponent, TitleComponent } from '@ui/components';
 import { ButtonChangeMainInfoComponent } from '../..';
@@ -36,6 +38,9 @@ export class ButtonsActionsChangeMainInfoComponent {
   /* @Input({ required: true }) dataUserEditProfile!:
     | ISimplifiedUserEditProfile
     | Partial<ISimplifiedUserEditProfile>; */
+  @Input({ required: true }) userNameControl!: FormGroup;
+  @Input({ required: true }) emailControl!: FormGroup;
+  @Input({ required: true }) passwordControl!: FormGroup;
 
   protected modalManagerService = inject(ModalManagerService);
   MODALS = MODALS;
@@ -61,7 +66,7 @@ export class ButtonsActionsChangeMainInfoComponent {
     },
   ];
 
-  openModal(modalId: string): void {
-    this.modalManagerService.openModal(modalId);
+  openModal(modalName: string): void {
+    this.modalManagerService.openModal(modalName);
   }
 }

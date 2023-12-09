@@ -26,9 +26,28 @@ import {
 import { AvatarComponent, ButtonsActionsChangeMainInfoComponent } from '..';
 import { ISimplifiedUserEditProfile } from '../../..';
 
+export interface IUserName {
+  userName: FormControl<string>;
+  pass: FormControl<string>;
+}
+
+export interface IEmail {
+  email: FormControl<string>;
+  pass: FormControl<string>;
+}
+
+export interface IPassword {
+  pass: FormControl<string>;
+  password: FormControl<string>;
+  passRepeat: FormControl<string>;
+}
+
 export interface IFormPartialPersonalInformation {
   avatar: FormControl<string | null>;
   description: FormControl<string>;
+  changeUserName: FormGroup<IUserName>;
+  changeEmail: FormGroup<IEmail>;
+  changePassword: FormGroup<IPassword>;
 }
 
 @Component({
@@ -78,6 +97,19 @@ export class MainInfoComponent implements OnInit, OnChanges {
       this.formBuilder.group<IFormPartialPersonalInformation>({
         description: this.formBuilder.control(''),
         avatar: this.formBuilder.control(null),
+        changeEmail: this.formBuilder.group({
+          email: this.formBuilder.control(''),
+          pass: this.formBuilder.control(''),
+        }),
+        changeUserName: this.formBuilder.group({
+          userName: this.formBuilder.control(''),
+          pass: this.formBuilder.control(''),
+        }),
+        changePassword: this.formBuilder.group({
+          pass: this.formBuilder.control(''),
+          password: this.formBuilder.control(''),
+          passRepeat: this.formBuilder.control(''),
+        }),
       })
     );
   }
@@ -93,6 +125,12 @@ export class MainInfoComponent implements OnInit, OnChanges {
       this.parentFormGroup.patchValue({
         [this.controlKey]: {
           description: this.dataUserEditProfile.description,
+          changeEmail: {
+            email: this.dataUserEditProfile.email,
+          },
+          changeUserName: {
+            userName: this.dataUserEditProfile.username,
+          },
         },
       });
 
@@ -105,5 +143,24 @@ export class MainInfoComponent implements OnInit, OnChanges {
   get avatarControl(): FormControl {
     const control = this.parentFormGroup.get(this.controlKey)?.get('avatar');
     return control as FormControl;
+  }
+
+  get userNameControl(): FormGroup {
+    const control = this.parentFormGroup.get(
+      `${this.controlKey}.changeUserName`
+    );
+    return control as FormGroup;
+  }
+
+  get emailControl(): FormGroup {
+    const control = this.parentFormGroup.get(`${this.controlKey}.changeEmail`);
+    return control as FormGroup;
+  }
+
+  get passwordControl(): FormGroup {
+    const control = this.parentFormGroup.get(
+      `${this.controlKey}.changePassword`
+    );
+    return control as FormGroup;
   }
 }

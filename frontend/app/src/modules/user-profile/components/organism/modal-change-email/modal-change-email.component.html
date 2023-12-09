@@ -1,5 +1,5 @@
 <layout-modal
-  titleModal="Cambiar apodo"
+  titleModal="Cambiar email"
   [numberOfButtons]="2"
   [footer]="true"
   titleButtonOne="Aceptar"
@@ -8,8 +8,14 @@
     formChangeEmailService.resetToOriginalValues.bind(formChangeEmailService)
   "
   [isInputChanged]="!formChangeEmailService.isInputChanged"
+  [form]="emailControl"
 >
-  <form class="flex flex-col gap-3 w-full" action="" autocomplete="off">
+  <form
+    [formGroup]="emailControl"
+    class="flex flex-col gap-3 w-full"
+    action=""
+    autocomplete="off"
+  >
     <c-label>
       Email
       <c-input
