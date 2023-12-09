@@ -1,7 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit, inject } from '@angular/core';
 import {
-  FormControl,
   FormGroup,
   NonNullableFormBuilder,
   ReactiveFormsModule,
@@ -14,6 +13,7 @@ import {
 } from '@ui/components';
 import {
   AreasComponent,
+  IUserUpdateForm,
   MainInfoComponent,
   MoreInformationComponent,
   SocialNetworksComponent,
@@ -23,33 +23,6 @@ import {
 } from '../..';
 import { TokenService } from '../../../../common/services/token.service';
 import { ValidatorsService } from '../../../../utils';
-
-export interface IUserName {
-  userName: FormControl<string>;
-  pass: FormControl<string>;
-}
-
-export interface IEmail {
-  email: FormControl<string>;
-  pass: FormControl<string>;
-}
-
-export interface IPassword {
-  pass: FormControl<string>;
-  password: FormControl<string>;
-  passRepeat: FormControl<string>;
-}
-
-export interface IFormPersonalInformation {
-  avatar: FormControl<string>;
-  description: FormControl<string>;
-  changeUserName: FormControl<IUserName>;
-  changeEmail: FormControl<IEmail>;
-  changePassword: FormControl<IPassword>;
-}
-
-export type IUserUpdateForm = IFormPersonalInformation;
-
 @Component({
   standalone: true,
   imports: [
@@ -109,6 +82,12 @@ export class EditProfileComponent implements OnInit {
       this.editProfileForm,
       'mainInfo'
     );
+
+    const dataNetwork = this.getFormControlValueAsType<IUserUpdateForm>(
+      this.editProfileForm,
+      'socialNetworkInfo'
+    );
     console.log('data:', data);
+    console.log('dataNetwork:', dataNetwork);
   }
 }

@@ -31793,3 +31793,55 @@ Error: EPERM: operation not permitted, rename 'C:\projects\Comevent\.nx\cache\pr
 [NX Daemon Server] - 2023-12-09T20:28:15.744Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/modal-change-email/modal-change-email.component.ts
 [NX Daemon Server] - 2023-12-09T20:28:15.744Z - [REQUEST]: 
 [NX Daemon Server] - 2023-12-09T20:28:15.846Z - Time taken for 'hash changed files from watcher' 1.2024999856948853ms
+[NX Daemon Server] - 2023-12-09T20:49:39.915Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T20:49:39.917Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/modal-change-password/modal-change-password.component.ts was modified
+[NX Daemon Server] - 2023-12-09T20:49:41.811Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T20:49:43.149Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T20:49:43.211Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T20:49:46.355Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T20:49:46.355Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/modal-change-password/modal-change-password.component.ts
+[NX Daemon Server] - 2023-12-09T20:49:46.355Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T20:49:46.473Z - Time taken for 'hash changed files from watcher' 1.694700002670288ms
+[NX Daemon Server] - 2023-12-09T20:49:56.324Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T20:49:56.326Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/modal-change-password/modal-change-password.component.ts was modified
+[NX Daemon Server] - 2023-12-09T20:49:57.409Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T20:49:58.782Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T20:50:02.758Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T20:50:02.758Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/modal-change-password/modal-change-password.component.ts
+[NX Daemon Server] - 2023-12-09T20:50:02.758Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T20:50:02.851Z - Time taken for 'hash changed files from watcher' 1.214900016784668ms
+[NX Daemon Server] - 2023-12-09T20:50:21.951Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T20:50:21.952Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/modal-change-password/modal-change-password.component.html was modified
+[NX Daemon Server] - 2023-12-09T20:50:22.909Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T20:50:24.362Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T20:50:24.425Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T20:50:28.383Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T20:50:28.383Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/modal-change-password/modal-change-password.component.html
+[NX Daemon Server] - 2023-12-09T20:50:28.383Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T20:50:28.480Z - Time taken for 'hash changed files from watcher' 2.2256999909877777ms
+[NX Daemon Server] - 2023-12-09T20:50:47.972Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T20:50:47.974Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/modal-change-password/modal-change-password.component.ts was modified
+[NX Daemon Server] - 2023-12-09T20:50:50.384Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T20:50:50.446Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T20:50:54.414Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T20:50:54.415Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/modal-change-password/modal-change-password.component.ts
+[NX Daemon Server] - 2023-12-09T20:50:54.415Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T20:50:54.481Z - Time taken for 'hash changed files from watcher' 2.207399994134903ms
+[NX Daemon Server] - 2023-12-09T20:51:06.805Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T20:51:06.806Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/modal-change-password/modal-change-password.component.ts was modified
+[NX Daemon Server] - 2023-12-09T20:51:08.171Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T20:51:09.963Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T20:51:10.025Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T20:51:13.240Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T20:51:13.240Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/modal-change-password/modal-change-password.component.ts
+[NX Daemon Server] - 2023-12-09T20:51:13.240Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T20:51:13.346Z - Time taken for 'hash changed files from watcher' 1.5867000222206116ms
+[NX Daemon Server] - 2023-12-09T20:51:18.782Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/modal-change-password/modal-change-password.component.ts was modified
+[NX Daemon Server] - 2023-12-09T20:51:18.782Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T20:51:20.123Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T20:51:21.697Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T20:51:21.761Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T20:51:25.214Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T20:51:25.214Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/modal-change-password/modal-change-password.component.ts
+[NX Daemon Server] - 2023-12-09T20:51:25.214Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T20:51:25.305Z - Time taken for 'hash changed files from watcher' 1.128499984741211ms

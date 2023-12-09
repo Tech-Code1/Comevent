@@ -24,31 +24,7 @@ import {
   TitleComponent,
 } from '@ui/components';
 import { AvatarComponent, ButtonsActionsChangeMainInfoComponent } from '..';
-import { ISimplifiedUserEditProfile } from '../../..';
-
-export interface IUserName {
-  userName: FormControl<string>;
-  pass: FormControl<string>;
-}
-
-export interface IEmail {
-  email: FormControl<string>;
-  pass: FormControl<string>;
-}
-
-export interface IPassword {
-  pass: FormControl<string>;
-  password: FormControl<string>;
-  passRepeat: FormControl<string>;
-}
-
-export interface IFormPartialPersonalInformation {
-  avatar: FormControl<string | null>;
-  description: FormControl<string>;
-  changeUserName: FormGroup<IUserName>;
-  changeEmail: FormGroup<IEmail>;
-  changePassword: FormGroup<IPassword>;
-}
+import { IFormPersonalInfo, ISimplifiedUserEditProfile } from '../../..';
 
 @Component({
   standalone: true,
@@ -94,7 +70,7 @@ export class MainInfoComponent implements OnInit, OnChanges {
   ngOnInit(): void {
     this.parentFormGroup.addControl(
       this.controlKey,
-      this.formBuilder.group<IFormPartialPersonalInformation>({
+      this.formBuilder.group<IFormPersonalInfo>({
         description: this.formBuilder.control(''),
         avatar: this.formBuilder.control(null),
         changeEmail: this.formBuilder.group({

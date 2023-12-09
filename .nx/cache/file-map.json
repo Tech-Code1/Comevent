@@ -4268,7 +4268,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/main-info/main-info.component.ts",
-          "hash": "17388734389434461733",
+          "hash": "12990536029744611034",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
@@ -4352,7 +4352,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.html",
-          "hash": "11731881114558943139"
+          "hash": "10440785997640605028"
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.scss",
@@ -4360,7 +4360,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.ts",
-          "hash": "624231792619308486",
+          "hash": "17995889905411569397",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
@@ -4415,7 +4415,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.html",
-          "hash": "10732943208948181172"
+          "hash": "13187342875798962213"
         },
         {
           "file": "frontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.scss",
@@ -4423,7 +4423,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.ts",
-          "hash": "11077443026531398306",
+          "hash": "1357589287086996045",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
@@ -4631,7 +4631,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/types/index.ts",
-          "hash": "3756894458968163102"
+          "hash": "12195318283063303834"
         },
         {
           "file": "frontend/app/src/modules/user-profile/types/reset.types.ts",
@@ -4758,6 +4758,13 @@
             "npm:@angular/forms",
             "npm:lodash",
             "npm:rxjs"
+          ]
+        },
+        {
+          "file": "frontend/app/src/modules/user-profile/types/forms.types.ts",
+          "hash": "4758288587881021017",
+          "deps": [
+            "npm:@angular/forms"
           ]
         }
       ],

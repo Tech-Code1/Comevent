@@ -20,11 +20,11 @@
     <main-info
       controlKey="mainInfo"
       [dataUserEditProfile]="userProfileStateService.dataUserEditProfile()"
-      [formGroup]="userProfileFormService.descriptionFormGroup"
       [loadingProfile]="userProfileStateService.loadingProfile()"
     />
     <social-networks
-      [formGroup]="userProfileFormService.socialNetworksFormGroup"
+      controlKey="socialNetworkInfo"
+      [dataUserEditProfile]="userProfileStateService.dataUserEditProfile()"
       [loadingProfile]="userProfileStateService.loadingProfile()"
     />
     <areas
