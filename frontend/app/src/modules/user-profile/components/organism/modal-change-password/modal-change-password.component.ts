@@ -1,12 +1,6 @@
 import { CommonModule } from '@angular/common';
-import {
-  Component,
-  Input,
-  OnInit,
-  ViewEncapsulation,
-  inject,
-} from '@angular/core';
-import { FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { Component, ViewEncapsulation, inject } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 import { InputComponent, LabelComponent } from '@ui/components';
 import { FormChangePassService } from '../../..';
 import { LayoutModalComponent } from '../layout-modal/layout-modal.component';
@@ -25,11 +19,10 @@ import { LayoutModalComponent } from '../layout-modal/layout-modal.component';
   styleUrls: ['./modal-change-password.component.scss'],
   encapsulation: ViewEncapsulation.Emulated,
 })
-export class ModalChangePasswordComponent implements OnInit {
+export class ModalChangePasswordComponent {
   protected formChangePassService = inject(FormChangePassService);
-  @Input({ required: true }) changePassword!: FormGroup;
 
-  ngOnInit(): void {
+  /* ngOnInit(): void {
     this.changePassword = this.formChangePassService.getChangePasswordForm();
-  }
+  } */
 }

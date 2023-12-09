@@ -2,15 +2,12 @@ import { CommonModule } from '@angular/common';
 import {
   ChangeDetectionStrategy,
   Component,
-  Input,
   ViewEncapsulation,
   inject,
 } from '@angular/core';
-import { FormGroup } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
 import { ButtonComponent, TitleComponent } from '@ui/components';
 import { ButtonChangeMainInfoComponent } from '../..';
-import { ISimplifiedUserEditProfile } from '../../..';
 import { MODALS } from '../../../../../common/constants';
 import { ModalManagerService } from '../../../../../utils';
 import { ModalChangeEmailComponent } from '../modal-change-email/modal-change-email.component';
@@ -36,12 +33,9 @@ import { ModalChangeUserNameComponent } from '../modal-change-user-name/modal-ch
   changeDetection: ChangeDetectionStrategy.Default,
 })
 export class ButtonsActionsChangeMainInfoComponent {
-  @Input({ required: true }) dataUserEditProfile!:
+  /* @Input({ required: true }) dataUserEditProfile!:
     | ISimplifiedUserEditProfile
-    | Partial<ISimplifiedUserEditProfile>;
-  @Input({ required: true }) changeUserName!: FormGroup;
-  @Input({ required: true }) changePassword!: FormGroup;
-  @Input({ required: true }) changeEmail!: FormGroup;
+    | Partial<ISimplifiedUserEditProfile>; */
 
   protected modalManagerService = inject(ModalManagerService);
   MODALS = MODALS;

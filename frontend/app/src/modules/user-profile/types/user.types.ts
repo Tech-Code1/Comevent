@@ -19,7 +19,7 @@ export interface ISocialNetworks {
 }
 
 export interface ISimplifiedUserEditProfile {
-  avatar: string;
+  avatar: string | undefined;
   username: string;
   email: string;
   description: string;
@@ -39,14 +39,7 @@ export interface ISimplifiedUserEditProfile {
 
 export interface IEditProfileFormData {
   description: string;
-  socialNetworks: {
-    x: string;
-    discord: string;
-    facebook: string;
-    github: string;
-    linkedin: string;
-    instagram: string;
-  };
+  socialNetworks: ISocialNetworks[];
   areas: {
     areaOfExpertise: string[];
     areaOfInteres: string[];
@@ -73,7 +66,7 @@ export interface IEditProfileFormData {
     email: string;
     pass: string;
   };
-  avatar: File | null;
+  avatar: string;
 }
 
 export type IEditProfile = Partial<ISimplifiedUserEditProfile>;

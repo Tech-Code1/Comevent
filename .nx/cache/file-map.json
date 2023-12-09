@@ -230,15 +230,15 @@
       },
       {
         "file": ".nx/cache/d/daemon.log",
-        "hash": "7798070133577695438"
+        "hash": "4837255367991258157"
       },
       {
         "file": ".nx/cache/d/server-process.json",
-        "hash": "11427906357219033644"
+        "hash": "7390043124230821089"
       },
       {
         "file": ".nx/cache/file-map.json",
-        "hash": "17352841406658798265"
+        "hash": "9828302551031701271"
       },
       {
         "file": ".nx/cache/file-map.json~7050fc8b",
@@ -274,7 +274,7 @@
       },
       {
         "file": ".nx/cache/project-graph.json",
-        "hash": "4321865615598551773"
+        "hash": "14323500895400338511"
       },
       {
         "file": ".nx/cache/project-graph.json~23d1c17d",
@@ -461,6 +461,10 @@
         "hash": "15862764260562924101"
       },
       {
+        "file": ".nx/cache/terminalOutputs/5579847345970128879",
+        "hash": "8112618171877010428"
+      },
+      {
         "file": ".nx/cache/terminalOutputs/6942639836899772101",
         "hash": "5135604348138215686"
       },
@@ -483,6 +487,10 @@
       {
         "file": ".nx/cache/terminalOutputs/9298162160238469658",
         "hash": "10098507490887202006"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/9410926753737066236",
+        "hash": "12960179388273010584"
       },
       {
         "file": ".nx/cache/terminalOutputs/9696018590133355535",
@@ -642,20 +650,6 @@
       }
     ],
     "projectFileMap": {
-      "tailwind-preset": [
-        {
-          "file": "libs/tailwind-preset/ng-package.json",
-          "hash": "11469096192323666953"
-        },
-        {
-          "file": "libs/tailwind-preset/project.json",
-          "hash": "10139954266306851421"
-        },
-        {
-          "file": "libs/tailwind-preset/tailwind.config.js",
-          "hash": "4896745220441525489"
-        }
-      ],
       "frontend-ui": [
         {
           "file": "frontend/ui/.eslintrc.json",
@@ -1726,48 +1720,275 @@
           "hash": "8246693900492800589"
         }
       ],
-      "api-e2e": [
+      "database": [
         {
-          "file": "backend/api-e2e/.eslintrc.json",
-          "hash": "915344961052474398"
+          "file": "backend/database/.eslintrc.json",
+          "hash": "11808533155536463924"
         },
         {
-          "file": "backend/api-e2e/jest.config.ts",
-          "hash": "2076893759250098545"
+          "file": "backend/database/README.md",
+          "hash": "6441506021839928775"
         },
         {
-          "file": "backend/api-e2e/project.json",
-          "hash": "1785820208333181515"
+          "file": "backend/database/factories/index.ts",
+          "hash": "12094962443727244665"
         },
         {
-          "file": "backend/api-e2e/src/api/api.spec.ts",
-          "hash": "110394728024017389",
+          "file": "backend/database/factories/project.factory.ts",
+          "hash": "8696332426482595517",
           "deps": [
-            "npm:axios"
+            "npm:typeorm-extension"
           ]
         },
         {
-          "file": "backend/api-e2e/src/support/global-setup.ts",
-          "hash": "2568409276037275290"
-        },
-        {
-          "file": "backend/api-e2e/src/support/global-teardown.ts",
-          "hash": "5275447082211835490"
-        },
-        {
-          "file": "backend/api-e2e/src/support/test-setup.ts",
-          "hash": "10984585515912236441",
+          "file": "backend/database/factories/task.factory.ts",
+          "hash": "17439653222710912915",
           "deps": [
-            "npm:axios"
+            "npm:typeorm-extension"
           ]
         },
         {
-          "file": "backend/api-e2e/tsconfig.json",
-          "hash": "15443990093475294480"
+          "file": "backend/database/factories/user.factory.ts",
+          "hash": "14669134207595852556",
+          "deps": [
+            "npm:bcrypt",
+            "npm:typeorm-extension"
+          ]
         },
         {
-          "file": "backend/api-e2e/tsconfig.spec.json",
-          "hash": "14226830188665428950"
+          "file": "backend/database/factories/usersProjects.factory.ts",
+          "hash": "3658359318071894742",
+          "deps": [
+            "npm:typeorm-extension"
+          ]
+        },
+        {
+          "file": "backend/database/jest.config.ts",
+          "hash": "5789169710423194275"
+        },
+        {
+          "file": "backend/database/project.json",
+          "hash": "14346910720650844901"
+        },
+        {
+          "file": "backend/database/seeders/clearDatabase.ts",
+          "hash": "275142317553438473",
+          "deps": [
+            "npm:../../../config/orm.config"
+          ]
+        },
+        {
+          "file": "backend/database/seeders/country.seeder.ts",
+          "hash": "6000711160211082222",
+          "deps": [
+            "npm:typeorm",
+            "npm:typeorm-extension"
+          ]
+        },
+        {
+          "file": "backend/database/seeders/index.ts",
+          "hash": "7418275171420687158"
+        },
+        {
+          "file": "backend/database/seeders/init.seeders.ts",
+          "hash": "7171372659626399218",
+          "deps": [
+            "npm:@config",
+            "npm:typeorm",
+            "npm:typeorm-extension"
+          ]
+        },
+        {
+          "file": "backend/database/seeders/project.seeder.ts",
+          "hash": "15921476753752845729",
+          "deps": [
+            "npm:typeorm",
+            "npm:typeorm-extension",
+            "npm:../../../config/constants"
+          ]
+        },
+        {
+          "file": "backend/database/seeders/specialty.seeder.ts",
+          "hash": "2681567930681220574",
+          "deps": [
+            "npm:typeorm",
+            "npm:typeorm-extension"
+          ]
+        },
+        {
+          "file": "backend/database/seeders/task.seeder.ts",
+          "hash": "501863792970261726",
+          "deps": [
+            "npm:typeorm",
+            "npm:typeorm-extension",
+            "npm:../../../config/constants"
+          ]
+        },
+        {
+          "file": "backend/database/seeders/user.seeder.ts",
+          "hash": "10678654584316740254",
+          "deps": [
+            "npm:typeorm",
+            "npm:typeorm-extension",
+            "npm:../../../config/constants"
+          ]
+        },
+        {
+          "file": "backend/database/seeders/usersProjects.seeder.ts",
+          "hash": "12668783565710568963",
+          "deps": [
+            "npm:typeorm",
+            "npm:typeorm-extension",
+            "npm:../../../config/constants"
+          ]
+        },
+        {
+          "file": "backend/database/src/constants/interfaces.entities.ts",
+          "hash": "3392942980388562368"
+        },
+        {
+          "file": "backend/database/src/decorators/lastUpdateBy.decorator.ts",
+          "hash": "624347076385518409",
+          "deps": [
+            "npm:typeorm"
+          ]
+        },
+        {
+          "file": "backend/database/src/index.ts",
+          "hash": "6090071860588022704"
+        },
+        {
+          "file": "backend/database/src/lib/database.module.ts",
+          "hash": "14360511402893014626",
+          "deps": [
+            "npm:@environments",
+            "npm:@nestjs/common",
+            "npm:@nestjs/config",
+            "npm:@nestjs/typeorm"
+          ]
+        },
+        {
+          "file": "backend/database/src/lib/entities/area.entity.ts",
+          "hash": "5156447007403063085",
+          "deps": [
+            "npm:typeorm"
+          ]
+        },
+        {
+          "file": "backend/database/src/lib/entities/base.entity.ts",
+          "hash": "2813724608735378632",
+          "deps": [
+            "npm:typeorm"
+          ]
+        },
+        {
+          "file": "backend/database/src/lib/entities/community.entity.ts",
+          "hash": "12924055372353947690",
+          "deps": [
+            "npm:typeorm"
+          ]
+        },
+        {
+          "file": "backend/database/src/lib/entities/country.entity.ts",
+          "hash": "17434994674649927241",
+          "deps": [
+            "npm:typeorm"
+          ]
+        },
+        {
+          "file": "backend/database/src/lib/entities/event.entity.ts",
+          "hash": "3608794079670050016",
+          "deps": [
+            "npm:typeorm"
+          ]
+        },
+        {
+          "file": "backend/database/src/lib/entities/index.ts",
+          "hash": "7935807207014462282"
+        },
+        {
+          "file": "backend/database/src/lib/entities/socialNetwork.entity.ts",
+          "hash": "7357632339243928407",
+          "deps": [
+            "npm:typeorm"
+          ]
+        },
+        {
+          "file": "backend/database/src/lib/entities/specialty.entity.ts",
+          "hash": "2633792597143775073",
+          "deps": [
+            "npm:typeorm"
+          ]
+        },
+        {
+          "file": "backend/database/src/lib/entities/task.entity.ts",
+          "hash": "8455701300504653527",
+          "deps": [
+            "npm:typeorm"
+          ]
+        },
+        {
+          "file": "backend/database/src/lib/entities/token.entity.ts",
+          "hash": "17601444814832171927",
+          "deps": [
+            "npm:typeorm"
+          ]
+        },
+        {
+          "file": "backend/database/src/lib/entities/user.entity.ts",
+          "hash": "15252327343734830925",
+          "deps": [
+            "npm:class-transformer",
+            "npm:typeorm"
+          ]
+        },
+        {
+          "file": "backend/database/src/lib/entities/userArea.entity.ts",
+          "hash": "9695803705402393018",
+          "deps": [
+            "npm:typeorm"
+          ]
+        },
+        {
+          "file": "backend/database/src/lib/entities/userProviders.ts",
+          "hash": "5270090795705453723",
+          "deps": [
+            "npm:typeorm"
+          ]
+        },
+        {
+          "file": "backend/database/src/lib/entities/usersCommunities.entity.ts",
+          "hash": "509476470309259746",
+          "deps": [
+            "npm:typeorm"
+          ]
+        },
+        {
+          "file": "backend/database/src/lib/interfaces/project.interface.ts",
+          "hash": "11378361696322599253"
+        },
+        {
+          "file": "backend/database/src/lib/interfaces/user.interface.ts",
+          "hash": "2046351945951052058"
+        },
+        {
+          "file": "backend/database/src/lib/migrations/1687053374121-migration.ts",
+          "hash": "12530792810964465673",
+          "deps": [
+            "npm:typeorm"
+          ]
+        },
+        {
+          "file": "backend/database/tsconfig.json",
+          "hash": "5840880287502376438"
+        },
+        {
+          "file": "backend/database/tsconfig.lib.json",
+          "hash": "14587288153021154776"
+        },
+        {
+          "file": "backend/database/tsconfig.spec.json",
+          "hash": "17313551537729802733"
         }
       ],
       "api": [
@@ -2844,275 +3065,48 @@
           ]
         }
       ],
-      "database": [
+      "api-e2e": [
         {
-          "file": "backend/database/.eslintrc.json",
-          "hash": "11808533155536463924"
+          "file": "backend/api-e2e/.eslintrc.json",
+          "hash": "915344961052474398"
         },
         {
-          "file": "backend/database/README.md",
-          "hash": "6441506021839928775"
+          "file": "backend/api-e2e/jest.config.ts",
+          "hash": "2076893759250098545"
         },
         {
-          "file": "backend/database/factories/index.ts",
-          "hash": "12094962443727244665"
+          "file": "backend/api-e2e/project.json",
+          "hash": "1785820208333181515"
         },
         {
-          "file": "backend/database/factories/project.factory.ts",
-          "hash": "8696332426482595517",
+          "file": "backend/api-e2e/src/api/api.spec.ts",
+          "hash": "110394728024017389",
           "deps": [
-            "npm:typeorm-extension"
+            "npm:axios"
           ]
         },
         {
-          "file": "backend/database/factories/task.factory.ts",
-          "hash": "17439653222710912915",
+          "file": "backend/api-e2e/src/support/global-setup.ts",
+          "hash": "2568409276037275290"
+        },
+        {
+          "file": "backend/api-e2e/src/support/global-teardown.ts",
+          "hash": "5275447082211835490"
+        },
+        {
+          "file": "backend/api-e2e/src/support/test-setup.ts",
+          "hash": "10984585515912236441",
           "deps": [
-            "npm:typeorm-extension"
+            "npm:axios"
           ]
         },
         {
-          "file": "backend/database/factories/user.factory.ts",
-          "hash": "14669134207595852556",
-          "deps": [
-            "npm:bcrypt",
-            "npm:typeorm-extension"
-          ]
+          "file": "backend/api-e2e/tsconfig.json",
+          "hash": "15443990093475294480"
         },
         {
-          "file": "backend/database/factories/usersProjects.factory.ts",
-          "hash": "3658359318071894742",
-          "deps": [
-            "npm:typeorm-extension"
-          ]
-        },
-        {
-          "file": "backend/database/jest.config.ts",
-          "hash": "5789169710423194275"
-        },
-        {
-          "file": "backend/database/project.json",
-          "hash": "14346910720650844901"
-        },
-        {
-          "file": "backend/database/seeders/clearDatabase.ts",
-          "hash": "275142317553438473",
-          "deps": [
-            "npm:../../../config/orm.config"
-          ]
-        },
-        {
-          "file": "backend/database/seeders/country.seeder.ts",
-          "hash": "6000711160211082222",
-          "deps": [
-            "npm:typeorm",
-            "npm:typeorm-extension"
-          ]
-        },
-        {
-          "file": "backend/database/seeders/index.ts",
-          "hash": "7418275171420687158"
-        },
-        {
-          "file": "backend/database/seeders/init.seeders.ts",
-          "hash": "7171372659626399218",
-          "deps": [
-            "npm:@config",
-            "npm:typeorm",
-            "npm:typeorm-extension"
-          ]
-        },
-        {
-          "file": "backend/database/seeders/project.seeder.ts",
-          "hash": "15921476753752845729",
-          "deps": [
-            "npm:typeorm",
-            "npm:typeorm-extension",
-            "npm:../../../config/constants"
-          ]
-        },
-        {
-          "file": "backend/database/seeders/specialty.seeder.ts",
-          "hash": "2681567930681220574",
-          "deps": [
-            "npm:typeorm",
-            "npm:typeorm-extension"
-          ]
-        },
-        {
-          "file": "backend/database/seeders/task.seeder.ts",
-          "hash": "501863792970261726",
-          "deps": [
-            "npm:typeorm",
-            "npm:typeorm-extension",
-            "npm:../../../config/constants"
-          ]
-        },
-        {
-          "file": "backend/database/seeders/user.seeder.ts",
-          "hash": "10678654584316740254",
-          "deps": [
-            "npm:typeorm",
-            "npm:typeorm-extension",
-            "npm:../../../config/constants"
-          ]
-        },
-        {
-          "file": "backend/database/seeders/usersProjects.seeder.ts",
-          "hash": "12668783565710568963",
-          "deps": [
-            "npm:typeorm",
-            "npm:typeorm-extension",
-            "npm:../../../config/constants"
-          ]
-        },
-        {
-          "file": "backend/database/src/constants/interfaces.entities.ts",
-          "hash": "3392942980388562368"
-        },
-        {
-          "file": "backend/database/src/decorators/lastUpdateBy.decorator.ts",
-          "hash": "624347076385518409",
-          "deps": [
-            "npm:typeorm"
-          ]
-        },
-        {
-          "file": "backend/database/src/index.ts",
-          "hash": "6090071860588022704"
-        },
-        {
-          "file": "backend/database/src/lib/database.module.ts",
-          "hash": "14360511402893014626",
-          "deps": [
-            "npm:@environments",
-            "npm:@nestjs/common",
-            "npm:@nestjs/config",
-            "npm:@nestjs/typeorm"
-          ]
-        },
-        {
-          "file": "backend/database/src/lib/entities/area.entity.ts",
-          "hash": "5156447007403063085",
-          "deps": [
-            "npm:typeorm"
-          ]
-        },
-        {
-          "file": "backend/database/src/lib/entities/base.entity.ts",
-          "hash": "2813724608735378632",
-          "deps": [
-            "npm:typeorm"
-          ]
-        },
-        {
-          "file": "backend/database/src/lib/entities/community.entity.ts",
-          "hash": "12924055372353947690",
-          "deps": [
-            "npm:typeorm"
-          ]
-        },
-        {
-          "file": "backend/database/src/lib/entities/country.entity.ts",
-          "hash": "17434994674649927241",
-          "deps": [
-            "npm:typeorm"
-          ]
-        },
-        {
-          "file": "backend/database/src/lib/entities/event.entity.ts",
-          "hash": "3608794079670050016",
-          "deps": [
-            "npm:typeorm"
-          ]
-        },
-        {
-          "file": "backend/database/src/lib/entities/index.ts",
-          "hash": "7935807207014462282"
-        },
-        {
-          "file": "backend/database/src/lib/entities/socialNetwork.entity.ts",
-          "hash": "7357632339243928407",
-          "deps": [
-            "npm:typeorm"
-          ]
-        },
-        {
-          "file": "backend/database/src/lib/entities/specialty.entity.ts",
-          "hash": "2633792597143775073",
-          "deps": [
-            "npm:typeorm"
-          ]
-        },
-        {
-          "file": "backend/database/src/lib/entities/task.entity.ts",
-          "hash": "8455701300504653527",
-          "deps": [
-            "npm:typeorm"
-          ]
-        },
-        {
-          "file": "backend/database/src/lib/entities/token.entity.ts",
-          "hash": "17601444814832171927",
-          "deps": [
-            "npm:typeorm"
-          ]
-        },
-        {
-          "file": "backend/database/src/lib/entities/user.entity.ts",
-          "hash": "15252327343734830925",
-          "deps": [
-            "npm:class-transformer",
-            "npm:typeorm"
-          ]
-        },
-        {
-          "file": "backend/database/src/lib/entities/userArea.entity.ts",
-          "hash": "9695803705402393018",
-          "deps": [
-            "npm:typeorm"
-          ]
-        },
-        {
-          "file": "backend/database/src/lib/entities/userProviders.ts",
-          "hash": "5270090795705453723",
-          "deps": [
-            "npm:typeorm"
-          ]
-        },
-        {
-          "file": "backend/database/src/lib/entities/usersCommunities.entity.ts",
-          "hash": "509476470309259746",
-          "deps": [
-            "npm:typeorm"
-          ]
-        },
-        {
-          "file": "backend/database/src/lib/interfaces/project.interface.ts",
-          "hash": "11378361696322599253"
-        },
-        {
-          "file": "backend/database/src/lib/interfaces/user.interface.ts",
-          "hash": "2046351945951052058"
-        },
-        {
-          "file": "backend/database/src/lib/migrations/1687053374121-migration.ts",
-          "hash": "12530792810964465673",
-          "deps": [
-            "npm:typeorm"
-          ]
-        },
-        {
-          "file": "backend/database/tsconfig.json",
-          "hash": "5840880287502376438"
-        },
-        {
-          "file": "backend/database/tsconfig.lib.json",
-          "hash": "14587288153021154776"
-        },
-        {
-          "file": "backend/database/tsconfig.spec.json",
-          "hash": "17313551537729802733"
+          "file": "backend/api-e2e/tsconfig.spec.json",
+          "hash": "14226830188665428950"
         }
       ],
       "frontend-app": [
@@ -4400,7 +4394,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.ts",
-          "hash": "3936618251541785925",
+          "hash": "17908637348552070370",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
@@ -4411,7 +4405,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/areas/areas.component.html",
-          "hash": "14483543677742682759"
+          "hash": "5727101233299011601"
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/areas/areas.component.scss",
@@ -4419,7 +4413,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts",
-          "hash": "7335697771771627404",
+          "hash": "15766571193447271001",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
@@ -4430,7 +4424,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/avatar/avatar.component.html",
-          "hash": "7488033134010204796"
+          "hash": "4280625356336658706"
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/avatar/avatar.component.scss",
@@ -4438,7 +4432,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/avatar/avatar.component.ts",
-          "hash": "5330114064052315275",
+          "hash": "17177608417680418402",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
@@ -4449,7 +4443,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/buttons-actions-change-main-info/buttons-actions-change-main-info.component.html",
-          "hash": "4471273487087399834"
+          "hash": "4043661826482358578"
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/buttons-actions-change-main-info/buttons-actions-change-main-info.component.scss",
@@ -4457,11 +4451,10 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/buttons-actions-change-main-info/buttons-actions-change-main-info.component.ts",
-          "hash": "2788898892858370259",
+          "hash": "5159915736027727639",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
-            "npm:@angular/forms",
             "npm:@ngx-translate/core",
             "frontend-ui"
           ]
@@ -4573,7 +4566,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/main-info/main-info.component.html",
-          "hash": "4190855465153989349"
+          "hash": "10678135963508912186"
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/main-info/main-info.component.scss",
@@ -4581,7 +4574,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/main-info/main-info.component.ts",
-          "hash": "2836340350261674133",
+          "hash": "246359038612364192",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
@@ -4592,7 +4585,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/modal-change-email/modal-change-email.component.html",
-          "hash": "12975086925607930023"
+          "hash": "12623875316607533801"
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/modal-change-email/modal-change-email.component.scss",
@@ -4600,7 +4593,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/modal-change-email/modal-change-email.component.ts",
-          "hash": "1972274265910306162",
+          "hash": "17210879228039211681",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
@@ -4610,7 +4603,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/modal-change-password/modal-change-password.component.html",
-          "hash": "14389714612680815472"
+          "hash": "233327402818937930"
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/modal-change-password/modal-change-password.component.scss",
@@ -4618,7 +4611,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/modal-change-password/modal-change-password.component.ts",
-          "hash": "357795645862969312",
+          "hash": "12742942301483929197",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
@@ -4628,7 +4621,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/modal-change-user-name/modal-change-user-name.component.html",
-          "hash": "12829947893607121327"
+          "hash": "831941263191241938"
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/modal-change-user-name/modal-change-user-name.component.scss",
@@ -4636,7 +4629,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/modal-change-user-name/modal-change-user-name.component.ts",
-          "hash": "16588424480201711982",
+          "hash": "2236814724027709524",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
@@ -4646,7 +4639,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/more-information/more-information.component.html",
-          "hash": "11858897572795247554"
+          "hash": "16103729610347026754"
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/more-information/more-information.component.scss",
@@ -4654,7 +4647,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/more-information/more-information.component.ts",
-          "hash": "14330704141154841980",
+          "hash": "18300660839595202004",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
@@ -4673,7 +4666,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.ts",
-          "hash": "16006980579516426368",
+          "hash": "624231792619308486",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
@@ -4728,7 +4721,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.html",
-          "hash": "6489034881897616443"
+          "hash": "10732943208948181172"
         },
         {
           "file": "frontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.scss",
@@ -4736,7 +4729,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.ts",
-          "hash": "12350794985671579272",
+          "hash": "11077443026531398306",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
@@ -4860,15 +4853,6 @@
           ]
         },
         {
-          "file": "frontend/app/src/modules/user-profile/service/state/form-change-description.state.service.ts",
-          "hash": "13427412100280719557",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/forms",
-            "npm:rxjs"
-          ]
-        },
-        {
           "file": "frontend/app/src/modules/user-profile/service/state/form-change-email.state.service.ts",
           "hash": "16965521181334803344",
           "deps": [
@@ -4914,7 +4898,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/service/state/index.ts",
-          "hash": "17444628236772849197"
+          "hash": "3101253674211843940"
         },
         {
           "file": "frontend/app/src/modules/user-profile/service/state/reset.state.service.ts",
@@ -4927,8 +4911,17 @@
           ]
         },
         {
+          "file": "frontend/app/src/modules/user-profile/service/state/user-profile-form.service.ts",
+          "hash": "6871189614650640865",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "npm:rxjs"
+          ]
+        },
+        {
           "file": "frontend/app/src/modules/user-profile/service/state/user-profile-update.service.ts",
-          "hash": "11680443847687120347",
+          "hash": "17940427160933564034",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/forms"
@@ -4961,7 +4954,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/types/user.types.ts",
-          "hash": "16565152257181720914",
+          "hash": "17313194682067324216",
           "deps": [
             "database"
           ]
@@ -5067,6 +5060,24 @@
         {
           "file": "frontend/app/tsconfig.spec.json",
           "hash": "2927375835638640771"
+        },
+        {
+          "file": "frontend/app/src/modules/user-profile/service/state/form-partial-main-info.state.service.ts",
+          "hash": "3244421341483603138"
+        }
+      ],
+      "tailwind-preset": [
+        {
+          "file": "libs/tailwind-preset/ng-package.json",
+          "hash": "11469096192323666953"
+        },
+        {
+          "file": "libs/tailwind-preset/project.json",
+          "hash": "10139954266306851421"
+        },
+        {
+          "file": "libs/tailwind-preset/tailwind.config.js",
+          "hash": "4896745220441525489"
         }
       ]
     }

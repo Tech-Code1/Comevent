@@ -3,9 +3,7 @@ import {
   ChangeDetectionStrategy,
   Component,
   Input,
-  OnChanges,
   OnInit,
-  SimpleChanges,
   ViewEncapsulation,
   inject,
 } from '@angular/core';
@@ -21,10 +19,7 @@ import {
   InputComponent,
   TitleComponent,
 } from '@ui/components';
-import {
-  FormChangeSocialNetworksService,
-  ISimplifiedUserEditProfile,
-} from '../../..';
+import { FormChangeSocialNetworksService } from '../../..';
 
 @Component({
   standalone: true,
@@ -47,10 +42,10 @@ import {
   encapsulation: ViewEncapsulation.Emulated,
   changeDetection: ChangeDetectionStrategy.Default,
 })
-export class SocialNetworksComponent implements OnChanges, OnInit {
-  @Input({ required: true }) dataUserEditProfile!:
+export class SocialNetworksComponent implements OnInit {
+  /*  @Input({ required: true }) dataUserEditProfile!:
     | ISimplifiedUserEditProfile
-    | Partial<ISimplifiedUserEditProfile>;
+    | Partial<ISimplifiedUserEditProfile>; */
   @Input({ required: true }) loadingProfile!: boolean;
   @Input({ required: true }) formGroup!: FormGroup;
 
@@ -63,12 +58,12 @@ export class SocialNetworksComponent implements OnChanges, OnInit {
       this.formChangeSocialNetworksService.getchangeSocialNetworkForm();
   }
 
-  ngOnChanges(changes: SimpleChanges): void {
+  /* ngOnChanges(changes: SimpleChanges): void {
     if (changes['dataUserEditProfile']) {
       const currentData = changes['dataUserEditProfile'].currentValue;
       this.formChangeSocialNetworksService.updateFormWithNewData(currentData);
     }
-  }
+  } */
 
   networks = [
     {

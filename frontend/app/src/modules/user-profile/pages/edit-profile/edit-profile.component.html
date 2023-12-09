@@ -1,5 +1,9 @@
 <div class="flex justify-center w-full">
-  <section class="flex flex-col gap-6 w-[1025px] my-10">
+  <form
+    [formGroup]="editProfileForm"
+    (ngSubmit)="saveData()"
+    class="flex flex-col gap-6 w-[1025px] my-10"
+  >
     <header class="flex flex-row justify-between items-center">
       <button
         routerLink="/user/profile"
@@ -8,42 +12,36 @@
         <icon-circle-arrow-left class="" />
       </button>
       <c-title variant="title-h1" color="black"> Editar perfil </c-title>
-      <c-button variant="button-base" (click)="onSaveChanges()"
+      <c-button variant="button-base" type="submit"
         ><c-title variant="title-h6"> Guardar cambios </c-title></c-button
       >
     </header>
 
     <main-info
-      [changeAvatar]="avatarFormControl"
-      [changeUserName]="changeUserNameFormGroup"
-      [changeEmail]="changeEmailFormGroup"
-      [changePassword]="changePasswordFormGroup"
-      [formGroup]="descriptionFormGroup"
+      controlKey="mainInfo"
       [dataUserEditProfile]="userProfileStateService.dataUserEditProfile()"
+      [formGroup]="userProfileFormService.descriptionFormGroup"
       [loadingProfile]="userProfileStateService.loadingProfile()"
     />
     <social-networks
-      [formGroup]="socialNetworksFormGroup"
-      [dataUserEditProfile]="userProfileStateService.dataUserEditProfile()"
+      [formGroup]="userProfileFormService.socialNetworksFormGroup"
       [loadingProfile]="userProfileStateService.loadingProfile()"
     />
     <areas
-      [formGroup]="areasFormArray"
-      [dataUserEditProfile]="userProfileStateService.dataUserEditProfile()"
+      [formGroup]="userProfileFormService.areasFormArray"
       [loadingProfile]="userProfileStateService.loadingProfile()"
     />
     <more-information
-      [formGroup]="moreInformationFormGroup"
-      [dataUserEditProfile]="userProfileStateService.dataUserEditProfile()"
+      [formGroup]="userProfileFormService.moreInformationFormGroup"
       [loadingProfile]="userProfileStateService.loadingProfile()"
       [countries]="userProfileStateService.dataCountries()"
       [specialties]="userProfileStateService.dataSpecialties()"
     />
 
     <div class="flex flex-row justify-end">
-      <c-button variant="button-base" (click)="onSaveChanges()"
+      <c-button variant="button-base" type="submit"
         ><c-title variant="title-h6"> Guardar cambios </c-title></c-button
       >
     </div>
-  </section>
+  </form>
 </div>

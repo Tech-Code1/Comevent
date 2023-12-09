@@ -8,6 +8,7 @@
       <icon-edit class="stroke-secondary hover-child" />
     </button>
     <input
+      [formControl]="avatarControl"
       hidden
       (change)="uploadedPicture($event)"
       type="file"
@@ -16,10 +17,7 @@
     @if(!editingfile) {
     <img
       class="w-[136px] h-[136px] border-2 border-secondary rounded-full flex-shrink-0"
-      [src]="
-        (dataUserEditProfile && dataUserEditProfile.avatar) ||
-        'assets/png/avatar-default.png'
-      "
+      [src]="currentAvatarUrl || 'assets/png/avatar-default.png'"
       alt="avatar"
     />
     } @else {
@@ -33,15 +31,13 @@
 
   <div
     [ngClass]="{
-      'gap-2': dataUserEditProfile.username && dataUserEditProfile.email,
+      'gap-2': currentUserName && currentEmail,
       'flex flex-col text-center': true
     }"
   >
     <c-title variant="body-small" color="black">{{
-      '@' + dataUserEditProfile.username
+      '@' + currentUserName
     }}</c-title>
-    <c-title variant="body-medium" color="black">{{
-      dataUserEditProfile.email
-    }}</c-title>
+    <c-title variant="body-medium" color="black">{{ currentEmail }}</c-title>
   </div>
 </div>

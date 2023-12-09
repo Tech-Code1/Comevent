@@ -44,19 +44,14 @@ export class UserProfileUpdateService {
         ...formData.moreInformation,
       },
       changePassword: passwordRest,
-      avatar: this.processAvatar(formData.avatar),
     };
 
     if (currentPassword) {
       dataToSend.currentPassword = currentPassword;
     }
 
-    return dataToSend;
-  }
+    console.log('dataToSend', dataToSend);
 
-  private processAvatar(avatar: File | null): any {
-    // Procesa el campo avatar si es necesario
-    // Por ejemplo, convertirlo en FormData para cargar archivos, etc.
-    return avatar; // Modifica según sea necesario
+    return dataToSend;
   }
 }

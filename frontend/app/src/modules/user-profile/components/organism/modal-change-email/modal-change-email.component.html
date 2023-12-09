@@ -4,18 +4,12 @@
   [footer]="true"
   titleButtonOne="Aceptar"
   titleButtonTwo="Cancelar"
-  [form]="changeEmail"
   [resetFormFunction]="
     formChangeEmailService.resetToOriginalValues.bind(formChangeEmailService)
   "
   [isInputChanged]="!formChangeEmailService.isInputChanged"
 >
-  <form
-    [formGroup]="changeEmail"
-    class="flex flex-col gap-3 w-full"
-    action=""
-    autocomplete="off"
-  >
+  <form class="flex flex-col gap-3 w-full" action="" autocomplete="off">
     <c-label>
       Email
       <c-input

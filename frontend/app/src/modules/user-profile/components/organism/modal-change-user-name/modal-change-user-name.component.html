@@ -4,7 +4,6 @@
   [footer]="true"
   titleButtonOne="Aceptar"
   titleButtonTwo="Cancelar"
-  [form]="changeUserName"
   [resetFormFunction]="
     formChangeUserNameService.resetToOriginalValues.bind(
       formChangeUserNameService
@@ -12,12 +11,7 @@
   "
   [isInputChanged]="!formChangeUserNameService.isInputChanged"
 >
-  <form
-    [formGroup]="changeUserName"
-    class="flex flex-col gap-3 w-full"
-    action=""
-    autocomplete="off"
-  >
+  <form class="flex flex-col gap-3 w-full" action="" autocomplete="off">
     <c-label>
       Username
       <c-input

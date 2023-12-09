@@ -3,9 +3,7 @@ import {
   ChangeDetectionStrategy,
   Component,
   Input,
-  OnChanges,
   OnInit,
-  SimpleChanges,
   ViewEncapsulation,
   inject,
 } from '@angular/core';
@@ -22,7 +20,7 @@ import {
   InputComponent,
   TitleComponent,
 } from '@ui/components';
-import { FormChangeAreasService, ISimplifiedUserEditProfile } from '../../..';
+import { FormChangeAreasService } from '../../..';
 import { AREAS, TYPE_AREA } from '../../../constants';
 
 interface ISelectArea {
@@ -52,10 +50,10 @@ interface ISelectAreaWithType extends ISelectArea {
   encapsulation: ViewEncapsulation.Emulated,
   changeDetection: ChangeDetectionStrategy.Default,
 })
-export class AreaSelectComponent implements OnInit, OnChanges {
-  @Input({ required: true }) dataUserEditProfile!:
+export class AreaSelectComponent implements OnInit {
+  /*  @Input({ required: true }) dataUserEditProfile!:
     | ISimplifiedUserEditProfile
-    | Partial<ISimplifiedUserEditProfile>;
+    | Partial<ISimplifiedUserEditProfile>; */
   @Input({ required: true }) loadingProfile!: boolean;
   @Input({ required: true }) formGroup!: FormGroup;
 
@@ -121,13 +119,13 @@ export class AreaSelectComponent implements OnInit, OnChanges {
     this.formGroup = this.formChangeAreasService.getchangeAreasForm();
   }
 
-  ngOnChanges(changes: SimpleChanges): void {
+  /* ngOnChanges(changes: SimpleChanges): void {
     if (changes['dataUserEditProfile']) {
       const currentData = changes['dataUserEditProfile'].currentValue;
       this.formChangeAreasService.updateFormWithNewData(currentData);
       this.initializeSelectedAreas();
     }
-  }
+  } */
 
   initializeSelectedAreas() {
     if (!this.formGroup) return;

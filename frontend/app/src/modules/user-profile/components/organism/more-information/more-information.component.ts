@@ -3,13 +3,10 @@ import {
   ChangeDetectionStrategy,
   Component,
   Input,
-  OnChanges,
-  OnInit,
-  SimpleChanges,
   ViewEncapsulation,
   inject,
 } from '@angular/core';
-import { FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
 import {
   InputComponent,
@@ -20,7 +17,6 @@ import {
 import {
   FormChangeMoreInformationsService,
   ICountries,
-  ISimplifiedUserEditProfile,
   ISpecialties,
 } from '../../..';
 
@@ -41,14 +37,13 @@ import {
   encapsulation: ViewEncapsulation.Emulated,
   changeDetection: ChangeDetectionStrategy.Default,
 })
-export class MoreInformationComponent implements OnChanges, OnInit {
-  @Input({ required: true }) dataUserEditProfile!:
+export class MoreInformationComponent {
+  /* @Input({ required: true }) dataUserEditProfile!:
     | ISimplifiedUserEditProfile
-    | Partial<ISimplifiedUserEditProfile>;
+    | Partial<ISimplifiedUserEditProfile>; */
   @Input({ required: true }) loadingProfile!: boolean;
   @Input({ required: true }) countries!: ICountries[];
   @Input({ required: true }) specialties!: ISpecialties[];
-  @Input({ required: true }) formGroup!: FormGroup;
 
   genders: string[] = ['hombre', 'mujer'];
   countriesOptions: string[] = [];
@@ -58,12 +53,12 @@ export class MoreInformationComponent implements OnChanges, OnInit {
     FormChangeMoreInformationsService
   );
 
-  ngOnInit(): void {
+  /* ngOnInit(): void {
     this.formGroup =
       this.formchangeMoreInformationService.getchangeMoreInformationForm();
-  }
+  } */
 
-  ngOnChanges(changes: SimpleChanges): void {
+  /* ngOnChanges(changes: SimpleChanges): void {
     if (changes['dataUserEditProfile']) {
       const currentData = changes['dataUserEditProfile'].currentValue;
       this.formchangeMoreInformationService.updateFormWithNewData(currentData);
@@ -78,5 +73,5 @@ export class MoreInformationComponent implements OnChanges, OnInit {
     if (changes['countries']) {
       this.countriesOptions = this.countries.map((country) => country.name);
     }
-  }
+  } */
 }

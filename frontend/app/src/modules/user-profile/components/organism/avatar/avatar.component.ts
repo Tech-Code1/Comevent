@@ -4,15 +4,21 @@ import {
   Component,
   Input,
   ViewEncapsulation,
+  inject,
 } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import {
+  ControlContainer,
+  FormControl,
+  FormGroup,
+  NonNullableFormBuilder,
+  ReactiveFormsModule,
+} from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
 import {
   ButtonComponent,
   IconEditComponent,
   TitleComponent,
 } from '@ui/components';
-import { ISimplifiedUserEditProfile } from '../../..';
 import { Swal } from '../../../../../utils';
 
 @Component({
@@ -23,6 +29,7 @@ import { Swal } from '../../../../../utils';
     ButtonComponent,
     TranslateModule,
     IconEditComponent,
+    ReactiveFormsModule,
   ],
   selector: 'avatar',
   templateUrl: './avatar.component.html',
@@ -31,14 +38,19 @@ import { Swal } from '../../../../../utils';
   changeDetection: ChangeDetectionStrategy.Default,
 })
 export class AvatarComponent {
-  @Input({ required: true }) dataUserEditProfile!:
-    | ISimplifiedUserEditProfile
-    | Partial<ISimplifiedUserEditProfile>;
   @Input({ required: true }) loadingProfile!: boolean;
-  @Input({ required: true }) changeAvatar: FormControl =
-    new FormControl<File | null>(null);
+  @Input({ required: true }) avatarControl!: FormControl;
+  @Input({ required: true }) currentAvatarUrl!: string | undefined;
+  @Input({ required: true }) currentUserName!: string | undefined;
+  @Input({ required: true }) currentEmail!: string | undefined;
+  private controlContainer = inject(ControlContainer);
+  private formBuilder = inject(NonNullableFormBuilder);
 
   editingfile: any = undefined;
+
+  get form(): FormGroup {
+    return this.controlContainer.control as FormGroup;
+  }
 
   uploadedPicture(event: any) {
     const element = event.target as HTMLInputElement;
@@ -59,12 +71,13 @@ export class AvatarComponent {
         return;
       }
 
-      this.changeAvatar.setValue(file);
+      //this.changeAvatar.setValue(file);
       const reader = new FileReader();
 
       reader.onload = (e) => {
         // the result image data
         this.editingfile = e.target?.result;
+        this.avatarControl.setValue(file);
       };
       reader.readAsDataURL(file);
     } else {
