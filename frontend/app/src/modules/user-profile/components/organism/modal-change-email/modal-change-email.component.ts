@@ -27,8 +27,4 @@ import { LayoutModalComponent } from '../layout-modal/layout-modal.component';
 export class ModalChangeEmailComponent {
   @Input({ required: true }) emailControl!: FormGroup;
   protected formChangeEmailService = inject(FormChangeEmailService);
-
-  /* ngOnInit(): void {
-    this.changeEmail = this.formChangeEmailService.getChangeEmailForm();
-  } */
 }

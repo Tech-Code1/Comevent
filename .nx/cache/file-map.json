@@ -3235,7 +3235,7 @@
         },
         {
           "file": "frontend/app/src/common/services/index.ts",
-          "hash": "11265422675714180236"
+          "hash": "11130647953850970061"
         },
         {
           "file": "frontend/app/src/common/services/signalsStore.service.ts",
@@ -4136,7 +4136,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/buttons-actions-change-main-info/buttons-actions-change-main-info.component.html",
-          "hash": "8794142140158383488"
+          "hash": "541608351586894789"
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/buttons-actions-change-main-info/buttons-actions-change-main-info.component.scss",
@@ -4144,7 +4144,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/buttons-actions-change-main-info/buttons-actions-change-main-info.component.ts",
-          "hash": "2401131714873579744",
+          "hash": "15089672603551695980",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
@@ -4260,7 +4260,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/main-info/main-info.component.html",
-          "hash": "18295648392591009368"
+          "hash": "15478725251860009316"
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/main-info/main-info.component.scss",
@@ -4268,7 +4268,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/main-info/main-info.component.ts",
-          "hash": "17388734389434461733",
+          "hash": "17564801577228941595",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
@@ -4287,7 +4287,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/modal-change-email/modal-change-email.component.ts",
-          "hash": "9259900454778286779",
+          "hash": "2031557690882819708",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
@@ -4305,7 +4305,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/modal-change-password/modal-change-password.component.ts",
-          "hash": "1687985503973702561",
+          "hash": "10254221486999521949",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
@@ -4315,7 +4315,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/modal-change-user-name/modal-change-user-name.component.html",
-          "hash": "17975353104896539443"
+          "hash": "13345169284403947056"
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/modal-change-user-name/modal-change-user-name.component.scss",
@@ -4323,7 +4323,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/modal-change-user-name/modal-change-user-name.component.ts",
-          "hash": "12930801172824198929",
+          "hash": "4830062204819940354",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
@@ -4548,7 +4548,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/service/state/form-change-email.state.service.ts",
-          "hash": "16965521181334803344",
+          "hash": "14750036424281480786",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/forms",
@@ -4573,15 +4573,6 @@
           ]
         },
         {
-          "file": "frontend/app/src/modules/user-profile/service/state/form-change-user-name.state.service.ts",
-          "hash": "886294176307143728",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/forms",
-            "npm:rxjs"
-          ]
-        },
-        {
           "file": "frontend/app/src/modules/user-profile/service/state/form-partial-main-info.state.service.ts",
           "hash": "3244421341483603138"
         },
@@ -4596,7 +4587,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/service/state/index.ts",
-          "hash": "3101253674211843940"
+          "hash": "15403292032845719450"
         },
         {
           "file": "frontend/app/src/modules/user-profile/service/state/reset.state.service.ts",
@@ -4758,6 +4749,16 @@
         {
           "file": "frontend/app/tsconfig.spec.json",
           "hash": "2927375835638640771"
+        },
+        {
+          "file": "frontend/app/src/common/services/form-change-tracking.service.ts",
+          "hash": "13489879244812410942",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "npm:lodash",
+            "npm:rxjs"
+          ]
         }
       ],
       "tailwind-preset": [

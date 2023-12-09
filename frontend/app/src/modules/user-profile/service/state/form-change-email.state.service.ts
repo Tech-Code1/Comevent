@@ -34,10 +34,6 @@ export class FormChangeEmailService implements OnDestroy {
       this.userProfileStateService.dataUserEditProfile().email || '';
   }
 
-  get isInputChanged(): boolean {
-    return this.inputChanged;
-  }
-
   openChangeUserNameModal() {
     this.modalManagerService.openModal(MODALS.EMAIL_MODAL);
   }
@@ -53,6 +49,12 @@ export class FormChangeEmailService implements OnDestroy {
       .subscribe((value) => {
         this.inputChanged = value !== this.initialValue;
       });
+  }
+
+  get isInputChanged(): boolean {
+    console.log('isInputChanged', this.isInputChanged);
+
+    return this.inputChanged;
   }
 
   resetToOriginalValues() {

@@ -29,8 +29,4 @@ import { LayoutModalComponent } from '../layout-modal/layout-modal.component';
 export class ModalChangePasswordComponent {
   protected formChangePassService = inject(FormChangePassService);
   @Input({ required: true }) passwordControl!: FormGroup;
-
-  /* ngOnInit(): void {
-    this.changePassword = this.formChangePassService.getChangePasswordForm();
-  } */
 }

@@ -21271,6 +21271,11 @@
         "source": "frontend-app",
         "target": "tailwind-preset",
         "type": "static"
+      },
+      {
+        "source": "frontend-app",
+        "target": "npm:lodash",
+        "type": "static"
       }
     ],
     "api": [
