@@ -1,4 +1,4 @@
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormArray, FormControl, FormGroup } from '@angular/forms';
 
 export interface IUserName {
   userName: FormControl<string>;
@@ -33,4 +33,11 @@ export interface IFormSocialNetworks {
   instagram: FormControl<string | null>;
 }
 
-export type IUserUpdateForm = IFormPersonalInfo & IFormSocialNetworks;
+export interface IFormAreas {
+  areaOfExpertise: FormArray<FormControl<unknown>>;
+  areaOfInteres: FormArray<FormControl<unknown>>;
+}
+
+export type IUserUpdateForm = IFormPersonalInfo &
+  IFormSocialNetworks &
+  IFormAreas;

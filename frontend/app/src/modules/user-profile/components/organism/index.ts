@@ -1,4 +1,3 @@
-export * from './area-select/area-select.component';
 export * from './areas/areas.component';
 export * from './avatar/avatar.component';
 export * from './buttons-actions-change-main-info/buttons-actions-change-main-info.component';

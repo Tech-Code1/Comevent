@@ -2459,3 +2459,815 @@ ENOENT: no such file or directory, scandir 'C:\projects\Comevent\database'
 [37m[0mBuild at: [1m[37m2023-12-09T20:51:20.402Z[39m[37m[22m - Hash: [1m[37m030daefb91dd3c6a[39m[37m[22m - Time: [1m[37m1649[39m[37m[22mms[0m[39m
 [37m[39m
 [37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m702.81 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.86 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-12-09T21:01:51.939Z[39m[37m[22m - Hash: [1m[37me0676a4b8ee00133[39m[37m[22m - Time: [1m[37m1587[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.html[0m:[93m3[0m:[93m16[0m - [91merror[0m[90m TS2339: [0mProperty 'formGroup' does not exist on type 'SocialNetworksComponent'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m3[0m   [formGroup]="formGroup"[39m[22m
+[1m[31m[7m [0m [91m               ~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.ts[0m:[93m53[0m:[93m16[0m[39m[22m
+[1m[31m    [7m53[0m   templateUrl: './social-networks.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component SocialNetworksComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.ts[0m:[93m70[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'NonNullableFormBuilder'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m70[0m   private formBuilder = inject(NonNullableFormBuilder);[39m[22m
+[1m[31m[7m  [0m [91m                               ~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.ts[0m:[93m80[0m:[93m7[0m - [91merror[0m[90m TS2571: [0mObject is of type 'unknown'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m80[0m       this.formBuilder.group<IFormSocialNetworks>({[39m[22m
+[1m[31m[7m  [0m [91m      ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.ts[0m:[93m81[0m:[93m22[0m - [91merror[0m[90m TS2571: [0mObject is of type 'unknown'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m81[0m         description: this.formBuilder.control(''),[39m[22m
+[1m[31m[7m  [0m [91m                     ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.ts[0m:[93m82[0m:[93m17[0m - [91merror[0m[90m TS2571: [0mObject is of type 'unk[39m[22m[1m[31mnown'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m82[0m         avatar: this.formBuilder.control(null),[39m[22m
+[1m[31m[7m  [0m [91m                ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.ts[0m:[93m83[0m:[93m22[0m - [91merror[0m[90m TS2571: [0mObject is of type 'unknown'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m83[0m         changeEmail: this.formBuilder.group({[39m[22m
+[1m[31m[7m  [0m [91m                     ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.ts[0m:[93m84[0m:[93m18[0m - [91merror[0m[90m TS2571: [0mObject is of type 'unknown'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m84[0m           email: this.formBuilder.control(''),[39m[22m
+[1m[31m[7m  [0m [91m                 ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.ts[0m:[93m85[0m:[93m17[0m - [91merror[0m[90m TS2571: [0mObject is of type 'unknown'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m85[0m           pass: this.formBuilder.control(''),[39m[22m
+[1m[31m[7m  [0m [91m                ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.ts[0m:[93m87[0m:[93m25[0m - [91merror[0m[90m TS2571: [0mObject is of type 'unknown'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m87[0m         changeUserName: this.formBuilder.group({[39m[22m
+[1m[31m[7m  [0m [91m                        ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.ts[0m:[93m88[0m:[93m21[0m - [91merror[0m[90m TS2571: [0mObject is of type 'unknown'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m88[0m           userName: this.formBuilder.control(''),[39m[22m
+[1m[31m[7m  [0m [91m                    ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.ts[0m:[93m8[39m[22m[1m[31m9[0m:[93m17[0m - [91merror[0m[90m TS2571: [0mObject is of type 'unknown'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m89[0m           pass: this.formBuilder.control(''),[39m[22m
+[1m[31m[7m  [0m [91m                ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.ts[0m:[93m91[0m:[93m25[0m - [91merror[0m[90m TS2571: [0mObject is of type 'unknown'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m91[0m         changePassword: this.formBuilder.group({[39m[22m
+[1m[31m[7m  [0m [91m                        ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.ts[0m:[93m92[0m:[93m17[0m - [91merror[0m[90m TS2571: [0mObject is of type 'unknown'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m92[0m           pass: this.formBuilder.control(''),[39m[22m
+[1m[31m[7m  [0m [91m                ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.ts[0m:[93m93[0m:[93m21[0m - [91merror[0m[90m TS2571: [0mObject is of type 'unknown'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m93[0m           password: this.formBuilder.control(''),[39m[22m
+[1m[31m[7m  [0m [91m                    ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.ts[0m:[93m94[0m:[93m23[0m - [91merror[0m[90m TS2571: [0mObject is of type 'unknown'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m94[0m           passRepeat: this.formBuilder.control(''),[39m[22m
+[1m[31m[7m  [0m [91m                      ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.html[0m:[93m26[0m:[93m5[0m - [91merror[0m[90m NG8008: [0mRequired inputs 'dataUserEditProfile', 'controlKey' from component SocialNetworksComponent must be specified.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m26[0m     <social-networks[39m[22m
+[1m[31m[7m  [0m [91m    ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m27[0m       [formGroup]="userProfileFo[39m[22m[1m[31mrmService.socialNetworksFormGroup"[39m[22m
+[1m[31m[7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m28[0m       [loadingProfile]="userProfileStateService.loadingProfile()"[39m[22m
+[1m[31m[7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m29[0m     />[39m[22m
+[1m[31m[7m  [0m [91m~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.ts[0m:[93m68[0m:[93m16[0m[39m[22m
+[1m[31m    [7m68[0m   templateUrl: './edit-profile.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component EditProfileComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-12-09T21:01:52.674Z[39m[37m[22m - Hash: [1m[37me0676a4b8ee00133[39m[37m[22m - Time: [1m[37m631[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.html[0m:[93m3[0m:[93m16[0m - [91merror[0m[90m TS2339: [0mProperty 'formGroup' does not exist on type 'SocialNetworksComponent'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m3[0m   [formGroup]="formGroup"[39m[22m
+[1m[31m[7m [0m [91m               ~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.ts[0m:[93m53[0m:[93m16[0m[39m[22m
+[1m[31m    [7m53[0m   templateUrl: './social-networks.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component SocialNetworksComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.ts[0m:[93m70[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'NonNullableFormBuilder'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m70[0m   private formBuilder = inject(NonNullableFormBuilder);[39m[22m
+[1m[31m[7m  [0m [91m                               ~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.ts[0m:[93m80[0m:[93m7[0m - [91merror[0m[90m TS2571: [0mObject is of type 'unknown'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m80[0m       this.formBuilder.group<IFormSocialNetworks>({[39m[22m
+[1m[31m[7m  [0m [91m      ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.ts[0m:[93m81[0m:[93m22[0m - [91merror[0m[90m TS2571: [0mObject is of type 'unknown'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m81[0m         description: this.formBuilder.control(''),[39m[22m
+[1m[31m[7m  [0m [91m                     ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.ts[0m:[93m82[0m:[93m17[0m - [91merror[0m[90m TS2571: [0mObject is of type 'unk[39m[22m[1m[31mnown'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m82[0m         avatar: this.formBuilder.control(null),[39m[22m
+[1m[31m[7m  [0m [91m                ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.ts[0m:[93m83[0m:[93m22[0m - [91merror[0m[90m TS2571: [0mObject is of type 'unknown'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m83[0m         changeEmail: this.formBuilder.group({[39m[22m
+[1m[31m[7m  [0m [91m                     ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.ts[0m:[93m84[0m:[93m18[0m - [91merror[0m[90m TS2571: [0mObject is of type 'unknown'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m84[0m           email: this.formBuilder.control(''),[39m[22m
+[1m[31m[7m  [0m [91m                 ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.ts[0m:[93m85[0m:[93m17[0m - [91merror[0m[90m TS2571: [0mObject is of type 'unknown'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m85[0m           pass: this.formBuilder.control(''),[39m[22m
+[1m[31m[7m  [0m [91m                ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.ts[0m:[93m87[0m:[93m25[0m - [91merror[0m[90m TS2571: [0mObject is of type 'unknown'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m87[0m         changeUserName: this.formBuilder.group({[39m[22m
+[1m[31m[7m  [0m [91m                        ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.ts[0m:[93m88[0m:[93m21[0m - [91merror[0m[90m TS2571: [0mObject is of type 'unknown'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m88[0m           userName: this.formBuilder.control(''),[39m[22m
+[1m[31m[7m  [0m [91m                    ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.ts[0m:[93m8[39m[22m[1m[31m9[0m:[93m17[0m - [91merror[0m[90m TS2571: [0mObject is of type 'unknown'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m89[0m           pass: this.formBuilder.control(''),[39m[22m
+[1m[31m[7m  [0m [91m                ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.ts[0m:[93m91[0m:[93m25[0m - [91merror[0m[90m TS2571: [0mObject is of type 'unknown'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m91[0m         changePassword: this.formBuilder.group({[39m[22m
+[1m[31m[7m  [0m [91m                        ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.ts[0m:[93m92[0m:[93m17[0m - [91merror[0m[90m TS2571: [0mObject is of type 'unknown'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m92[0m           pass: this.formBuilder.control(''),[39m[22m
+[1m[31m[7m  [0m [91m                ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.ts[0m:[93m93[0m:[93m21[0m - [91merror[0m[90m TS2571: [0mObject is of type 'unknown'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m93[0m           password: this.formBuilder.control(''),[39m[22m
+[1m[31m[7m  [0m [91m                    ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.ts[0m:[93m94[0m:[93m23[0m - [91merror[0m[90m TS2571: [0mObject is of type 'unknown'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m94[0m           passRepeat: this.formBuilder.control(''),[39m[22m
+[1m[31m[7m  [0m [91m                      ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.html[0m:[93m26[0m:[93m5[0m - [91merror[0m[90m NG8008: [0mRequired inputs 'dataUserEditProfile', 'controlKey' from component SocialNetworksComponent must be specified.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m26[0m     <social-networks[39m[22m
+[1m[31m[7m  [0m [91m    ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m27[0m       [formGroup]="userProfileFo[39m[22m[1m[31mrmService.socialNetworksFormGroup"[39m[22m
+[1m[31m[7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m28[0m       [loadingProfile]="userProfileStateService.loadingProfile()"[39m[22m
+[1m[31m[7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m29[0m     />[39m[22m
+[1m[31m[7m  [0m [91m~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.ts[0m:[93m68[0m:[93m16[0m[39m[22m
+[1m[31m    [7m68[0m   templateUrl: './edit-profile.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component EditProfileComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m702.50 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.86 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-12-09T21:03:46.690Z[39m[37m[22m - Hash: [1m[37m47eeee2929a2fbff[39m[37m[22m - Time: [1m[37m1480[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.html[0m:[93m3[0m:[93m16[0m - [91merror[0m[90m TS2339: [0mProperty 'formGroup' does not exist on type 'SocialNetworksComponent'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m3[0m   [formGroup]="formGroup"[39m[22m
+[1m[31m[7m [0m [91m               ~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.ts[0m:[93m53[0m:[93m16[0m[39m[22m
+[1m[31m    [7m53[0m   templateUrl: './social-networks.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component SocialNetworksComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.ts[0m:[93m70[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'NonNullableFormBuilder'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m70[0m   private formBuilder = inject(NonNullableFormBuilder);[39m[22m
+[1m[31m[7m  [0m [91m                               ~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.ts[0m:[93m80[0m:[93m7[0m - [91merror[0m[90m TS2571: [0mObject is of type 'unknown'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m80[0m       this.formBuilder.group<IFormSocialNetworks>({[39m[22m
+[1m[31m[7m  [0m [91m      ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.ts[0m:[93m81[0m:[93m12[0m - [91merror[0m[90m TS2571: [0mObject is of type 'unknown'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m81[0m         x: this.formBuilder.control(''),[39m[22m
+[1m[31m[7m  [0m [91m           ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.ts[0m:[93m82[0m:[93m18[0m - [91merror[0m[90m TS2571: [0mObject is of type 'unknown'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m82[0m[39m[22m[1m[31m         discord: this.formBuilder.control(''),[39m[22m
+[1m[31m[7m  [0m [91m                 ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.ts[0m:[93m83[0m:[93m19[0m - [91merror[0m[90m TS2571: [0mObject is of type 'unknown'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m83[0m         facebook: this.formBuilder.control(''),[39m[22m
+[1m[31m[7m  [0m [91m                  ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.ts[0m:[93m84[0m:[93m17[0m - [91merror[0m[90m TS2571: [0mObject is of type 'unknown'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m84[0m         github: this.formBuilder.control(''),[39m[22m
+[1m[31m[7m  [0m [91m                ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.ts[0m:[93m85[0m:[93m19[0m - [91merror[0m[90m TS2571: [0mObject is of type 'unknown'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m85[0m         linkedin: this.formBuilder.control(''),[39m[22m
+[1m[31m[7m  [0m [91m                  ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.ts[0m:[93m86[0m:[93m20[0m - [91merror[0m[90m TS2571: [0mObject is of type 'unknown'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m86[0m         instagram: this.formBuilder.control(''),[39m[22m
+[1m[31m[7m  [0m [91m                   ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.html[0m:[93m26[0m:[93m5[0m - [91merror[0m[90m NG8008: [0mRequired inputs 'dataUserEditProfile', 'controlKey' from component SocialNetworksComponent must be specified.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m26[0m     <social-networks[39m[22m
+[1m[31m[7m  [0m [91m    ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m27[0m       [formGroup]="userProfileFormService.socialNetworksFormGroup"[39m[22m
+[1m[31m[7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[39m[22m[1m[31m~~~~~~~~~[0m[39m[22m
+[1m[31m[7m28[0m       [loadingProfile]="userProfileStateService.loadingProfile()"[39m[22m
+[1m[31m[7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m29[0m     />[39m[22m
+[1m[31m[7m  [0m [91m~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.ts[0m:[93m68[0m:[93m16[0m[39m[22m
+[1m[31m    [7m68[0m   templateUrl: './edit-profile.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component EditProfileComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m702.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.86 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-12-09T21:04:58.622Z[39m[37m[22m - Hash: [1m[37m2839e0b5ca6fd6dc[39m[37m[22m - Time: [1m[37m1460[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.html[0m:[93m3[0m:[93m16[0m - [91merror[0m[90m TS2339: [0mProperty 'formGroup' does not exist on type 'SocialNetworksComponent'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m3[0m   [formGroup]="formGroup"[39m[22m
+[1m[31m[7m [0m [91m               ~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.ts[0m:[93m54[0m:[93m16[0m[39m[22m
+[1m[31m    [7m54[0m   templateUrl: './social-networks.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component SocialNetworksComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.html[0m:[93m26[0m:[93m5[0m - [91merror[0m[90m NG8008: [0mRequired inputs 'dataUserEditProfile', 'controlKey' from component SocialNetworksComponent must be specified.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m26[0m     <social-networks[39m[22m
+[1m[31m[7m  [0m [91m    ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m27[0m       [formGroup]="userProfileFormService.socialNetworksFormGroup"[39m[22m
+[1m[31m[7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m28[0m       [loadingProfile]="userProfileStateService.loadingProfile()"[39m[22m
+[1m[31m[7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m29[0m     />[39m[22m
+[1m[31m[7m  [0m [91m~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.ts[0m:[93m68[0m:[93m16[0m[39m[22m
+[1m[31m    [7m68[0m   templateUrl: './edit-profile.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component EditProfileComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m702.53 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.86 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-12-09T21:06:32.602Z[39m[37m[22m - Hash: [1m[37me0538b2b2697f694[39m[37m[22m - Time: [1m[37m1334[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.html[0m:[93m3[0m:[93m16[0m - [91merror[0m[90m TS2339: [0mProperty 'formGroup' does not exist on type 'SocialNetworksComponent'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m3[0m   [formGroup]="formGroup"[39m[22m
+[1m[31m[7m [0m [91m               ~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.ts[0m:[93m54[0m:[93m16[0m[39m[22m
+[1m[31m    [7m54[0m   templateUrl: './social-networks.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component SocialNetworksComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m702.54 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.86 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-12-09T21:07:09.827Z[39m[37m[22m - Hash: [1m[37mf62526c25d3aefe0[39m[37m[22m - Time: [1m[37m1293[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m703.38 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.86 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-12-09T21:13:10.289Z[39m[37m[22m - Hash: [1m[37mf8ac47c1005dabe2[39m[37m[22m - Time: [1m[37m1489[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m703.38 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.86 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-12-09T21:13:23.439Z[39m[37m[22m - Hash: [1m[37m889b033d33df1519[39m[37m[22m - Time: [1m[37m1188[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m703.57 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.86 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-12-09T21:22:14.008Z[39m[37m[22m - Hash: [1m[37m5a47076139586f25[39m[37m[22m - Time: [1m[37m1078[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.ts[0m:[93m101[0m:[93m33[0m - [91merror[0m[90m TS2366: [0mFunction lacks ending return statement and return type does not include 'undefined'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m101[0m   getNetwork(platform: string): string {[39m[22m
+[1m[31m[7m   [0m [91m                                ~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m703.57 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.86 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-12-09T21:22:22.619Z[39m[37m[22m - Hash: [1m[37mbefa3ada7ae582df[39m[37m[22m - Time: [1m[37m915[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.ts[0m:[93m101[0m:[93m3[0m - [91merror[0m[90m TS7030: [0mNot all code paths return a value.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m101[0m   getNetwork(platform: string) {[39m[22m
+[1m[31m[7m   [0m [91m  ~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m703.58 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.86 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-12-09T21:22:39.861Z[39m[37m[22m - Hash: [1m[37me9ed37e1817bd461[39m[37m[22m - Time: [1m[37m981[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m703.58 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.86 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-12-09T21:22:50.925Z[39m[37m[22m - Hash: [1m[37m1abd174b6c2e8870[39m[37m[22m - Time: [1m[37m1006[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-12-09T21:38:42.649Z[39m[37m[22m - Hash: [1m[37m1abd174b6c2e8870[39m[37m[22m - Time: [1m[37m802[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-12-09T21:39:18.276Z[39m[37m[22m - Hash: [1m[37m1abd174b6c2e8870[39m[37m[22m - Time: [1m[37m948[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m704.01 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.86 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-12-09T21:39:25.081Z[39m[37m[22m - Hash: [1m[37md784180b74a76b6e[39m[37m[22m - Time: [1m[37m1660[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/index.ts[0m:[93m13[0m:[93m1[0m - [91merror[0m[90m TS2308: [0mModule './components' has already exported a member named 'IEmail'. Consider explicitly re-exporting to resolve the ambiguity.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m13[0m export * from './types';[39m[22m
+[1m[31m[7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/index.ts[0m:[93m13[0m:[93m1[0m - [91merror[0m[90m TS2308: [0mModule './components' has already exported a member named 'IFormPartialPersonalInformation'. Consider explicitly re-exporting to resolve the ambiguity.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m13[0m export * from './types';[39m[22m
+[1m[31m[7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/index.ts[0m:[93m13[0m:[93m1[0m - [91merror[0m[90m TS2308: [0mModule './components' has already exported a member named 'IPassword'. Consider explicitly re-exporting to resolve the ambiguity.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m13[0m export * from './types';[39m[22m
+[1m[31m[7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/index.ts[0m:[93m13[0m:[93m1[0m - [91merror[0m[90m TS2308: [0mModule './components' has already exported a member named 'IUserName'. Consider explicitly re-exporting to resolve the ambiguity.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m13[0m export * from './types';[39m[22m
+[1m[31m[7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m704.01 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.86 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-12-09T21:39:40.101Z[39m[37m[22m - Hash: [1m[37m5474f9a2ba565068[39m[37m[22m - Time: [1m[37m1316[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.ts[0m:[93m75[0m:[93m30[0m - [91merror[0m[90m TS2304: [0mCannot find name 'IFormSocialNetworks'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m75[0m       this.formBuilder.group<IFormSocialNetworks>({[39m[22m
+[1m[31m[7m  [0m [91m                             ~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/index.ts[0m:[93m13[0m:[93m1[0m - [91merror[0m[90m TS2308: [0mModule './components' has already exported a member named 'IEmail'. Consider explicitly re-exporting to resolve the ambiguity.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m13[0m export * from './types';[39m[22m
+[1m[31m[7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/index.ts[0m:[93m13[0m:[93m1[0m - [91merror[0m[90m TS2308: [0mModule './components' has already exported a member named 'IFormPartialPersonalInformation'. Consider explicitly re-exporting to resolve the ambiguity.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m13[0m export * from './types';[39m[22m
+[1m[31m[7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/index.ts[0m:[93m13[0m:[93m1[0m - [91merror[0m[90m TS2308: [0mModule './components' has already exported a member named 'IPassword'. Consider explicitly re-exporting to resolve the ambiguity.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m13[0m export * from './types';[39m[22m
+[1m[31m[7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/index.ts[0m:[93m13[0m:[93m1[0m - [91merror[0m[90m TS2308: [0mModule './components' has already exported a member named 'IUserName'. Consider explicitly re-exporting to resolve the ambiguity.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m13[0m export * from './types';[39m[22m
+[1m[31m[7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m704.01 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.86 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-12-09T21:39:44.989Z[39m[37m[22m - Hash: [1m[37m49c688668cad1acd[39m[37m[22m - Time: [1m[37m1186[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.ts[0m:[93m75[0m:[93m30[0m - [91merror[0m[90m TS2304: [0mCannot find name 'IFormSocialNetworks'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m75[0m       this.formBuilder.group<IFormSocialNetworks>({[39m[22m
+[1m[31m[7m  [0m [91m                             ~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/index.ts[0m:[93m13[0m:[93m1[0m - [91merror[0m[90m TS2308: [0mModule './components' has already exported a member named 'IEmail'. Consider explicitly re-exporting to resolve the ambiguity.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m13[0m export * from './types';[39m[22m
+[1m[31m[7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/index.ts[0m:[93m13[0m:[93m1[0m - [91merror[0m[90m TS2308: [0mModule './components' has already exported a member named 'IFormPartialPersonalInformation'. Consider explicitly re-exporting to resolve the ambiguity.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m13[0m export * from './types';[39m[22m
+[1m[31m[7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/index.ts[0m:[93m13[0m:[93m1[0m - [91merror[0m[90m TS2308: [0mModule './components' has already exported a member named 'IPassword'. Consider explicitly re-exporting to resolve the ambiguity.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m13[0m export * from './types';[39m[22m
+[1m[31m[7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/index.ts[0m:[93m13[0m:[93m1[0m - [91merror[0m[90m TS2308: [0mModule './components' has already exported a member named 'IUserName'. Consider explicitly re-exporting to resolve the ambiguity.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m13[0m export * from './types';[39m[22m
+[1m[31m[7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m704.01 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.86 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-12-09T21:40:02.425Z[39m[37m[22m - Hash: [1m[37m9b7283195da046f4[39m[37m[22m - Time: [1m[37m1271[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.ts[0m:[93m75[0m:[93m30[0m - [91merror[0m[90m TS2304: [0mCannot find name 'IFormSocialNetworks'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m75[0m       this.formBuilder.group<IFormSocialNetworks>({[39m[22m
+[1m[31m[7m  [0m [91m                             ~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/index.ts[0m:[93m13[0m:[93m1[0m - [91merror[0m[90m TS2308: [0mModule './components' has already exported a member named 'IEmail'. Consider explicitly re-exporting to resolve the ambiguity.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m13[0m export * from './types';[39m[22m
+[1m[31m[7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/index.ts[0m:[93m13[0m:[93m1[0m - [91merror[0m[90m TS2308: [0mModule './components' has already exported a member named 'IFormPartialPersonalInformation'. Consider explicitly re-exporting to resolve the ambiguity.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m13[0m export * from './types';[39m[22m
+[1m[31m[7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/index.ts[0m:[93m13[0m:[93m1[0m - [91merror[0m[90m TS2308: [0mModule './components' has already exported a member named 'IPassword'. Consider explicitly re-exporting to resolve the ambiguity.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m13[0m export * from './types';[39m[22m
+[1m[31m[7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/index.ts[0m:[93m13[0m:[93m1[0m - [91merror[0m[90m TS2308: [0mModule './components' has already exported a member named 'IUserName'. Consider explicitly re-exporting to resolve the ambiguity.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m13[0m export * from './types';[39m[22m
+[1m[31m[7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.ts[0m:[93m80[0m:[93m49[0m - [91merror[0m[90m TS2304: [0mCannot [39m[22m[1m[31mfind name 'IUserUpdateForm'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m80[0m     const data = this.getFormControlValueAsType<IUserUpdateForm>([39m[22m
+[1m[31m[7m  [0m [91m                                                ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m704.01 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.86 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-12-09T21:42:30.981Z[39m[37m[22m - Hash: [1m[37me801b5e966fa3ae8[39m[37m[22m - Time: [1m[37m1176[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.ts[0m:[93m75[0m:[93m30[0m - [91merror[0m[90m TS2304: [0mCannot find name 'IFormSocialNetworks'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m75[0m       this.formBuilder.group<IFormSocialNetworks>({[39m[22m
+[1m[31m[7m  [0m [91m                             ~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/index.ts[0m:[93m13[0m:[93m1[0m - [91merror[0m[90m TS2308: [0mModule './components' has already exported a member named 'IEmail'. Consider explicitly re-exporting to resolve the ambiguity.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m13[0m export * from './types';[39m[22m
+[1m[31m[7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/index.ts[0m:[93m13[0m:[93m1[0m - [91merror[0m[90m TS2308: [0mModule './components' has already exported a member named 'IPassword'. Consider explicitly re-exporting to resolve the ambiguity.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m13[0m export * from './types';[39m[22m
+[1m[31m[7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/index.ts[0m:[93m13[0m:[93m1[0m - [91merror[0m[90m TS2308: [0mModule './components' has already exported a member named 'IUserName'. Consider explicitly re-exporting to resolve the ambiguity.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m13[0m export * from './types';[39m[22m
+[1m[31m[7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.ts[0m:[93m80[0m:[93m49[0m - [91merror[0m[90m TS2304: [0mCannot find name 'IUserUpdateForm'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m80[0m     const data = this.getFormControlValueAsType<IUserUpdateForm>([39m[22m
+[1m[31m[7m  [0m [91m                                                ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m704.01 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.86 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-12-09T21:42:45.903Z[39m[37m[22m - Hash: [1m[37m186709ffd843f802[39m[37m[22m - Time: [1m[37m1074[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/social-networks/social-networks.component.ts[0m:[93m75[0m:[93m30[0m - [91merror[0m[90m TS2304: [0mCannot find name 'IFormSocialNetworks'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m75[0m       this.formBuilder.group<IFormSocialNetworks>({[39m[22m
+[1m[31m[7m  [0m [91m                             ~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/index.ts[0m:[93m13[0m:[93m1[0m - [91merror[0m[90m TS2308: [0mModule './components' has already exported a member named 'IEmail'. Consider explicitly re-exporting to resolve the ambiguity.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m13[0m export * from './types';[39m[22m
+[1m[31m[7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/index.ts[0m:[93m13[0m:[93m1[0m - [91merror[0m[90m TS2308: [0mModule './components' has already exported a member named 'IPassword'. Consider explicitly re-exporting to resolve the ambiguity.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m13[0m export * from './types';[39m[22m
+[1m[31m[7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/index.ts[0m:[93m13[0m:[93m1[0m - [91merror[0m[90m TS2308: [0mModule './components' has already exported a member named 'IUserName'. Consider explicitly re-exporting to resolve the ambiguity.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m13[0m export * from './types';[39m[22m
+[1m[31m[7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m704.01 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.86 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-12-09T21:42:52.784Z[39m[37m[22m - Hash: [1m[37m04e2cac220bfa469[39m[37m[22m - Time: [1m[37m1267[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/index.ts[0m:[93m13[0m:[93m1[0m - [91merror[0m[90m TS2308: [0mModule './components' has already exported a member named 'IEmail'. Consider explicitly re-exporting to resolve the ambiguity.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m13[0m export * from './types';[39m[22m
+[1m[31m[7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/index.ts[0m:[93m13[0m:[93m1[0m - [91merror[0m[90m TS2308: [0mModule './components' has already exported a member named 'IPassword'. Consider explicitly re-exporting to resolve the ambiguity.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m13[0m export * from './types';[39m[22m
+[1m[31m[7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/index.ts[0m:[93m13[0m:[93m1[0m - [91merror[0m[90m TS2308: [0mModule './components' has already exported a member named 'IUserName'. Consider explicitly re-exporting to resolve the ambiguity.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m13[0m export * from './types';[39m[22m
+[1m[31m[7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m704.01 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.86 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-12-09T21:43:04.065Z[39m[37m[22m - Hash: [1m[37m708763660eacf3f3[39m[37m[22m - Time: [1m[37m1267[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m704.16 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.86 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-12-09T21:44:04.160Z[39m[37m[22m - Hash: [1m[37mc821b2b807d7c253[39m[37m[22m - Time: [1m[37m1226[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m

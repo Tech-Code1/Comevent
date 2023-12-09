@@ -28,7 +28,8 @@
       [loadingProfile]="userProfileStateService.loadingProfile()"
     />
     <areas
-      [formGroup]="userProfileFormService.areasFormArray"
+      controlKey="areasInfo"
+      [dataUserEditProfile]="userProfileStateService.dataUserEditProfile()"
       [loadingProfile]="userProfileStateService.loadingProfile()"
     />
     <more-information

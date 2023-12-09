@@ -1,3 +1,4 @@
+export * from './areas.types';
 export * from './countries.types';
 export * from './forms.types';
 export * from './reset.types';

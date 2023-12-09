@@ -3996,7 +3996,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/index.ts",
-          "hash": "12051891345819564647"
+          "hash": "12577796619387729328"
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/molecules/button-action/button-action.component.html",
@@ -4079,7 +4079,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.html",
-          "hash": "14597004347889892914"
+          "hash": "15036214574332298676"
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.scss",
@@ -4087,18 +4087,11 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.ts",
-          "hash": "17908637348552070370",
-          "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core",
-            "npm:@angular/forms",
-            "npm:@ngx-translate/core",
-            "frontend-ui"
-          ]
+          "hash": "3244421341483603138"
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/areas/areas.component.html",
-          "hash": "5727101233299011601"
+          "hash": "1164504444406702163"
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/areas/areas.component.scss",
@@ -4106,7 +4099,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts",
-          "hash": "15766571193447271001",
+          "hash": "2066920764190813411",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
@@ -4219,7 +4212,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/index.ts",
-          "hash": "9242342768381434281"
+          "hash": "12762657510434929263"
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/layout-modal/layout-modal.component.html",
@@ -4415,7 +4408,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.html",
-          "hash": "13187342875798962213"
+          "hash": "10720141919763157922"
         },
         {
           "file": "frontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.scss",
