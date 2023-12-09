@@ -1977,3 +1977,353 @@ ENOENT: no such file or directory, scandir 'C:\projects\Comevent\database'
 [37m[0mBuild at: [1m[37m2023-12-09T20:16:56.461Z[39m[37m[22m - Hash: [1m[37m9b9afcf7a991001b[39m[37m[22m - Time: [1m[37m936[39m[37m[22mms[0m[39m
 [37m[39m
 [37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m701.80 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.86 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-12-09T20:24:25.756Z[39m[37m[22m - Hash: [1m[37m2ae4e990302867c7[39m[37m[22m - Time: [1m[37m1023[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/buttons-actions-change-main-info/buttons-actions-change-main-info.component.html[0m:[93m13[0m:[93m3[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'originalUserName' since it isn't a known property of 'modal-change-user-name'.[39m[22m
+[1m[31m1. If 'modal-change-user-name' is an Angular component and it has 'originalUserName' input, then verify that it is included in the '@Component.imports' of this component.[39m[22m
+[1m[31m2. If 'modal-change-user-name' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[39m[22m
+[1m[31m3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@Component.schemas' of this component.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m13[0m   [originalUserName]="originalUserName"[39m[22m
+[1m[31m[7m  [0m [91m  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/user-profile/components/organism/buttons-actions-change-main-info/buttons-actions-change-main-info.component.ts[0m:[93m32[0m:[93m16[0m[39m[22m
+[1m[31m    [7m32[0m   templateUrl: './buttons-actions-change-main-info.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ButtonsActionsChangeMainInfoComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m701.73 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.86 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-12-09T20:24:48.631Z[39m[37m[22m - Hash: [1m[37m21d3218a3a57f9e2[39m[37m[22m - Time: [1m[37m832[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m701.69 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.86 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-12-09T20:24:53.260Z[39m[37m[22m - Hash: [1m[37m00070824f94a254b[39m[37m[22m - Time: [1m[37m1097[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/main-info/main-info.component.html[0m:[93m33[0m:[93m7[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'originalUserName' since it isn't a known property of 'buttons-actions-change-main-info'.[39m[22m
+[1m[31m1. If 'buttons-actions-change-main-info' is an Angular component and it has 'originalUserName' input, then verify that it is included in the '@Component.imports' of this component.[39m[22m
+[1m[31m2. If 'buttons-actions-change-main-info' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[39m[22m
+[1m[31m3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@Component.schemas' of this component.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m33[0m       [originalUserName]="originalUserNameValue"[39m[22m
+[1m[31m[7m  [0m [91m      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/user-profile/components/organism/main-info/main-info.component.ts[0m:[93m67[0m:[93m16[0m[39m[22m
+[1m[31m    [7m67[0m   templateUrl: './main-info.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component MainInfoComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m701.69 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.86 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-12-09T20:24:58.819Z[39m[37m[22m - Hash: [1m[37m284507b21b4fb968[39m[37m[22m - Time: [1m[37m760[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/main-info/main-info.component.html[0m:[93m33[0m:[93m7[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'originalUserName' since it isn't a known property of 'buttons-actions-change-main-info'.[39m[22m
+[1m[31m1. If 'buttons-actions-change-main-info' is an Angular component and it has 'originalUserName' input, then verify that it is included in the '@Component.imports' of this component.[39m[22m
+[1m[31m2. If 'buttons-actions-change-main-info' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[39m[22m
+[1m[31m3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@Component.schemas' of this component.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m33[0m       [originalUserName]="originalUserNameValue"[39m[22m
+[1m[31m[7m  [0m [91m      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/user-profile/components/organism/main-info/main-info.component.ts[0m:[93m67[0m:[93m16[0m[39m[22m
+[1m[31m    [7m67[0m   templateUrl: './main-info.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component MainInfoComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m701.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.86 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-12-09T20:25:05.867Z[39m[37m[22m - Hash: [1m[37m322ca0fe5bd5ee73[39m[37m[22m - Time: [1m[37m967[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m701.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.86 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-12-09T20:25:17.889Z[39m[37m[22m - Hash: [1m[37m01ebc49aa8cc4092[39m[37m[22m - Time: [1m[37m1171[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m701.88 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.86 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-12-09T20:26:14.583Z[39m[37m[22m - Hash: [1m[37m1736f3650b74af8a[39m[37m[22m - Time: [1m[37m1669[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/modal-change-email/modal-change-email.component.html[0m:[93m8[0m:[93m5[0m - [91merror[0m[90m TS2339: [0mProperty 'formChangeEmailService' does not exist on type 'ModalChangeEmailComponent'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m8[0m     formChangeEmailService.resetToOriginalValues.bind(formChangeEmailService)[39m[22m
+[1m[31m[7m [0m [91m    ~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/user-profile/components/organism/modal-change-email/modal-change-email.component.ts[0m:[93m23[0m:[93m16[0m[39m[22m
+[1m[31m    [7m23[0m   templateUrl: './modal-change-email.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ModalChangeEmailComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/modal-change-email/modal-change-email.component.html[0m:[93m8[0m:[93m55[0m - [91merror[0m[90m TS2339: [0mProperty 'formChangeEmailService' does not exist on type 'ModalChangeEmailComponent'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m8[0m     formChangeEmailService.resetToOriginalValues.bind(formChangeEmailService)[39m[22m
+[1m[31m[7m [0m [91m                                                      ~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/user-profile/components/organism/modal-change-email/modal-change-email.component.ts[0m:[93m23[0m:[93m16[0m[39m[22m
+[1m[31m    [7m23[0m   templateUrl: './modal-change-email.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ModalChangeEmailComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/modal-change-email/modal-change-email.component.html[0m:[93m10[0m:[93m22[0m - [91merror[0m[90m TS2339: [0mProperty 'formChangeEmailService' does not exist on type 'ModalChangeEmailComponent'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m10[0m   [isInputChanged]="!formChangeEmailService.isInput[39m[22m[1m[31mChanged"[39m[22m
+[1m[31m[7m  [0m [91m                     ~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/user-profile/components/organism/modal-change-email/modal-change-email.component.ts[0m:[93m23[0m:[93m16[0m[39m[22m
+[1m[31m    [7m23[0m   templateUrl: './modal-change-email.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ModalChangeEmailComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/modal-change-email/modal-change-email.component.ts[0m:[93m32[0m:[93m61[0m - [91merror[0m[90m TS2339: [0mProperty 'userNameControl' does not exist on type 'ModalChangeEmailComponent'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m32[0m     this.formChangeTrackingService.monitorInputChanges(this.userNameControl, [[39m[22m
+[1m[31m[7m  [0m [91m                                                            ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/modal-change-email/modal-change-email.component.ts[0m:[93m35[0m:[93m59[0m - [91merror[0m[90m TS2339: [0mProperty 'userNameControl' does not exist on type 'ModalChangeEmailComponent'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m35[0m     this.formChangeTrackingService.setOriginalValues(this.userNameControl);[39m[22m
+[1m[31m[7m  [0m [91m                                                          ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/modal-change-email/modal-change-email.component.ts[0m:[93m39[0m:[93m63[0m - [91merror[0m[90m TS2339: [0mProperty 'userNameControl' does not exist on type 'ModalChangeEmailComponent'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m39[0m     this.formChangeTrackingService.resetToOriginalValues(this.userNameControl);[39m[22m
+[1m[31m[7m  [0m [91m                                                              ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/modal-change-email/modal-change-email.component.t[39m[22m[1m[31ms[0m:[93m43[0m:[93m1[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m43[0m }[39m[22m
+[1m[31m[7m  [0m [91m~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m701.87 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.86 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-12-09T20:26:31.186Z[39m[37m[22m - Hash: [1m[37m8e3e9ddb3f63960e[39m[37m[22m - Time: [1m[37m1014[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/modal-change-email/modal-change-email.component.html[0m:[93m8[0m:[93m5[0m - [91merror[0m[90m TS2339: [0mProperty 'formChangeEmailService' does not exist on type 'ModalChangeEmailComponent'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m8[0m     formChangeEmailService.resetToOriginalValues.bind(formChangeEmailService)[39m[22m
+[1m[31m[7m [0m [91m    ~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/user-profile/components/organism/modal-change-email/modal-change-email.component.ts[0m:[93m23[0m:[93m16[0m[39m[22m
+[1m[31m    [7m23[0m   templateUrl: './modal-change-email.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ModalChangeEmailComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/modal-change-email/modal-change-email.component.html[0m:[93m8[0m:[93m55[0m - [91merror[0m[90m TS2339: [0mProperty 'formChangeEmailService' does not exist on type 'ModalChangeEmailComponent'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m8[0m     formChangeEmailService.resetToOriginalValues.bind(formChangeEmailService)[39m[22m
+[1m[31m[7m [0m [91m                                                      ~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/user-profile/components/organism/modal-change-email/modal-change-email.component.ts[0m:[93m23[0m:[93m16[0m[39m[22m
+[1m[31m    [7m23[0m   templateUrl: './modal-change-email.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ModalChangeEmailComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/modal-change-email/modal-change-email.component.html[0m:[93m10[0m:[93m22[0m - [91merror[0m[90m TS2339: [0mProperty 'formChangeEmailService' does not exist on type 'ModalChangeEmailComponent'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m10[0m   [isInputChanged]="!formChangeEmailService.isInput[39m[22m[1m[31mChanged"[39m[22m
+[1m[31m[7m  [0m [91m                     ~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/user-profile/components/organism/modal-change-email/modal-change-email.component.ts[0m:[93m23[0m:[93m16[0m[39m[22m
+[1m[31m    [7m23[0m   templateUrl: './modal-change-email.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ModalChangeEmailComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/modal-change-email/modal-change-email.component.ts[0m:[93m43[0m:[93m1[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m43[0m }[39m[22m
+[1m[31m[7m  [0m [91m~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m701.87 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.86 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-12-09T20:26:38.530Z[39m[37m[22m - Hash: [1m[37m84ec92a02c5e4e1c[39m[37m[22m - Time: [1m[37m786[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/modal-change-email/modal-change-email.component.html[0m:[93m8[0m:[93m5[0m - [91merror[0m[90m TS2339: [0mProperty 'formChangeEmailService' does not exist on type 'ModalChangeEmailComponent'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m8[0m     formChangeEmailService.resetToOriginalValues.bind(formChangeEmailService)[39m[22m
+[1m[31m[7m [0m [91m    ~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/user-profile/components/organism/modal-change-email/modal-change-email.component.ts[0m:[93m23[0m:[93m16[0m[39m[22m
+[1m[31m    [7m23[0m   templateUrl: './modal-change-email.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ModalChangeEmailComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/modal-change-email/modal-change-email.component.html[0m:[93m8[0m:[93m55[0m - [91merror[0m[90m TS2339: [0mProperty 'formChangeEmailService' does not exist on type 'ModalChangeEmailComponent'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m8[0m     formChangeEmailService.resetToOriginalValues.bind(formChangeEmailService)[39m[22m
+[1m[31m[7m [0m [91m                                                      ~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/user-profile/components/organism/modal-change-email/modal-change-email.component.ts[0m:[93m23[0m:[93m16[0m[39m[22m
+[1m[31m    [7m23[0m   templateUrl: './modal-change-email.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ModalChangeEmailComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/modal-change-email/modal-change-email.component.html[0m:[93m10[0m:[93m22[0m - [91merror[0m[90m TS2339: [0mProperty 'formChangeEmailService' does not exist on type 'ModalChangeEmailComponent'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m10[0m   [isInputChanged]="!formChangeEmailService.isInput[39m[22m[1m[31mChanged"[39m[22m
+[1m[31m[7m  [0m [91m                     ~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/user-profile/components/organism/modal-change-email/modal-change-email.component.ts[0m:[93m23[0m:[93m16[0m[39m[22m
+[1m[31m    [7m23[0m   templateUrl: './modal-change-email.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ModalChangeEmailComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m701.87 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.86 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-12-09T20:26:48.404Z[39m[37m[22m - Hash: [1m[37m6b2c809719e3fa88[39m[37m[22m - Time: [1m[37m1162[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/modal-change-email/modal-change-email.component.html[0m:[93m8[0m:[93m5[0m - [91merror[0m[90m TS2339: [0mProperty 'formChangeEmailService' does not exist on type 'ModalChangeEmailComponent'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m8[0m     formChangeEmailService.resetToOriginalValues.bind(formChangeEmailService)[39m[22m
+[1m[31m[7m [0m [91m    ~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/user-profile/components/organism/modal-change-email/modal-change-email.component.ts[0m:[93m24[0m:[93m16[0m[39m[22m
+[1m[31m    [7m24[0m   templateUrl: './modal-change-email.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ModalChangeEmailComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/modal-change-email/modal-change-email.component.html[0m:[93m8[0m:[93m55[0m - [91merror[0m[90m TS2339: [0mProperty 'formChangeEmailService' does not exist on type 'ModalChangeEmailComponent'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m8[0m     formChangeEmailService.resetToOriginalValues.bind(formChangeEmailService)[39m[22m
+[1m[31m[7m [0m [91m                                                      ~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/user-profile/components/organism/modal-change-email/modal-change-email.component.ts[0m:[93m24[0m:[93m16[0m[39m[22m
+[1m[31m    [7m24[0m   templateUrl: './modal-change-email.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ModalChangeEmailComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/components/organism/modal-change-email/modal-change-email.component.html[0m:[93m10[0m:[93m22[0m - [91merror[0m[90m TS2339: [0mProperty 'formChangeEmailService' does not exist on type 'ModalChangeEmailComponent'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m10[0m   [isInputChanged]="!formChangeEmailService.isInput[39m[22m[1m[31mChanged"[39m[22m
+[1m[31m[7m  [0m [91m                     ~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/user-profile/components/organism/modal-change-email/modal-change-email.component.ts[0m:[93m24[0m:[93m16[0m[39m[22m
+[1m[31m    [7m24[0m   templateUrl: './modal-change-email.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ModalChangeEmailComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m701.78 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.86 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-12-09T20:27:27.652Z[39m[37m[22m - Hash: [1m[37m14da1ecaf24146ce[39m[37m[22m - Time: [1m[37m890[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m701.78 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.86 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-12-09T20:28:10.550Z[39m[37m[22m - Hash: [1m[37me9efd005e19881e4[39m[37m[22m - Time: [1m[37m1253[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m

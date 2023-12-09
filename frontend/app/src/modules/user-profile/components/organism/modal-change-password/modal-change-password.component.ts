@@ -3,12 +3,13 @@ import {
   ChangeDetectionStrategy,
   Component,
   Input,
+  OnInit,
   ViewEncapsulation,
   inject,
 } from '@angular/core';
 import { FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { FormChangeTrackingService } from '@services';
 import { InputComponent, LabelComponent } from '@ui/components';
-import { FormChangePassService } from '../../..';
 import { LayoutModalComponent } from '../layout-modal/layout-modal.component';
 
 @Component({
@@ -26,7 +27,14 @@ import { LayoutModalComponent } from '../layout-modal/layout-modal.component';
   encapsulation: ViewEncapsulation.Emulated,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ModalChangePasswordComponent {
-  protected formChangePassService = inject(FormChangePassService);
+export class ModalChangePasswordComponent implements OnInit {
   @Input({ required: true }) passwordControl!: FormGroup;
+  protected formChangeTrackingService = inject(FormChangeTrackingService);
+
+  ngOnInit(): void {
+    this.formChangeTrackingService.setOriginalValues(this.passwordControl);
+  }
+
+  resetForm = () =>
+    this.formChangeTrackingService.resetToOriginalValues(this.passwordControl);
 }

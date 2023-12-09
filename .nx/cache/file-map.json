@@ -4297,7 +4297,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/modal-change-password/modal-change-password.component.html",
-          "hash": "11596232888332117434"
+          "hash": "8374645812809741108"
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/modal-change-password/modal-change-password.component.scss",
@@ -4305,7 +4305,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/modal-change-password/modal-change-password.component.ts",
-          "hash": "10254221486999521949",
+          "hash": "11557977590507758309",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
