@@ -10,6 +10,7 @@ import {
   inject,
 } from '@angular/core';
 import {
+  AbstractControl,
   ControlContainer,
   FormArray,
   FormControl,
@@ -93,7 +94,9 @@ export class AreasComponent implements OnInit, OnChanges {
     const areaOfExpertiseArray = this.getFormControl(
       'areaOfExpertise'
     ) as FormArray;
-    areaOfExpertiseArray.clear(); // Limpia el FormArray existente
+    if (areaOfExpertiseArray) {
+      areaOfExpertiseArray.clear(); // Limpia el FormArray existente
+    }
     this.dataUserEditProfile.areaOfExpertise?.forEach((area) => {
       areaOfExpertiseArray.push(new FormControl(area));
     });
@@ -102,7 +105,9 @@ export class AreasComponent implements OnInit, OnChanges {
     const areaOfInteresArray = this.getFormControl(
       'areaOfInteres'
     ) as FormArray;
-    areaOfInteresArray.clear(); // Limpia el FormArray existente
+    if (areaOfInteresArray) {
+      areaOfInteresArray.clear(); // Limpia el FormArray existente
+    }
     this.dataUserEditProfile.areaOfInteres?.forEach((area) => {
       areaOfInteresArray.push(new FormControl(area));
     });
@@ -161,11 +166,8 @@ export class AreasComponent implements OnInit, OnChanges {
 
   TYPE_AREA = TYPE_AREA;
 
-  getFormControl(control: string) {
-    if (this.parentFormGroup && this.controlKey) {
-      return this.parentFormGroup.get(`${this.controlKey}.${control}`);
-    }
-    return;
+  getFormControl(controlName: string): AbstractControl | null {
+    return this.parentFormGroup.get(`${this.controlKey}.${controlName}`);
   }
 
   initializeSelectedAreas() {
@@ -174,43 +176,50 @@ export class AreasComponent implements OnInit, OnChanges {
     const expertiseArray = this.getFormControl('areaOfExpertise') as FormArray;
     const interestArray = this.getFormControl('areaOfInteres') as FormArray;
 
-    this.areasSelectTypeExpertise = expertiseArray.value
-      .map((areaName: string) => {
-        const foundArea = this.areas.find(
-          (area: ISelectArea) => area.name === areaName
-        );
-        console.log(`Mapping ${areaName}:`, foundArea);
-        return foundArea;
-      })
-      .filter((area: ISelectArea | undefined): area is ISelectArea => !!area)
-      .map((area: ISelectArea) => ({
-        id: area.id,
-        name: area.name,
-        type: TYPE_AREA.EXPERTISE,
-      }));
+    if (
+      expertiseArray instanceof FormArray &&
+      interestArray instanceof FormArray
+    ) {
+      this.areasSelectTypeExpertise = expertiseArray.value
+        .map((areaName: string) => {
+          const foundArea = this.areas.find(
+            (area: ISelectArea) => area.name === areaName
+          );
+          console.log(`Mapping ${areaName}:`, foundArea);
+          return foundArea;
+        })
+        .filter((area: ISelectArea | undefined): area is ISelectArea => !!area)
+        .map((area: ISelectArea) => ({
+          id: area.id,
+          name: area.name,
+          type: TYPE_AREA.EXPERTISE,
+        }));
 
-    this.areasSelectTypeInteres = interestArray.value
-      .map((areaName: string) =>
-        this.areas.find((area: ISelectArea) => area.name === areaName)
-      )
-      .filter((area: ISelectArea | undefined): area is ISelectArea => !!area)
-      .map((area: ISelectArea) => ({
-        id: area.id,
-        name: area.name,
-        type: TYPE_AREA.INTEREST,
-      }));
+      this.areasSelectTypeInteres = interestArray.value
+        .map((areaName: string) =>
+          this.areas.find((area: ISelectArea) => area.name === areaName)
+        )
+        .filter((area: ISelectArea | undefined): area is ISelectArea => !!area)
+        .map((area: ISelectArea) => ({
+          id: area.id,
+          name: area.name,
+          type: TYPE_AREA.INTEREST,
+        }));
 
-    const expertiseControl = this.getFormControl(
-      'areaOfExpertise'
-    ) as FormArray;
-    this.areasSelectTypeExpertise.forEach((area) => {
-      expertiseControl.push(new FormControl(area.id));
-    });
+      const expertiseControl = this.getFormControl('areaOfExpertise');
+      if (expertiseControl instanceof FormArray) {
+        this.areasSelectTypeExpertise.forEach((area) => {
+          expertiseControl.push(new FormControl(area.id));
+        });
+      }
 
-    const interestControl = this.getFormControl('areaOfInteres') as FormArray;
-    this.areasSelectTypeInteres.forEach((area) => {
-      interestControl.push(new FormControl(area.id));
-    });
+      const interestControl = this.getFormControl('areaOfInteres');
+      if (interestControl instanceof FormArray) {
+        this.areasSelectTypeInteres.forEach((area) => {
+          interestControl.push(new FormControl(area.id));
+        });
+      }
+    }
   }
 
   toggleAreaSelection(area: ISelectArea, type: TYPE_AREA) {

@@ -38,6 +38,16 @@ export interface IFormAreas {
   areaOfInteres: FormArray<FormControl<unknown>>;
 }
 
+export interface IFormMoreInfo {
+  firstName: FormControl<string | null>;
+  lastName: FormControl<string | null>;
+  gender: FormControl<string | null>;
+  bornDate: FormControl<string | null>;
+  specialty: FormControl<string | null>;
+  country: FormControl<string | null>;
+}
+
 export type IUserUpdateForm = IFormPersonalInfo &
   IFormSocialNetworks &
-  IFormAreas;
+  IFormAreas &
+  IFormMoreInfo;

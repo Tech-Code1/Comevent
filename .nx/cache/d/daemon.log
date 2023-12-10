@@ -32025,3 +32025,838 @@ Error: EPERM: operation not permitted, rename 'C:\projects\Comevent\.nx\cache\pr
 [NX Daemon Server] - 2023-12-09T21:44:09.391Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.ts
 [NX Daemon Server] - 2023-12-09T21:44:09.391Z - [REQUEST]: 
 [NX Daemon Server] - 2023-12-09T21:44:09.483Z - Time taken for 'hash changed files from watcher' 2.1209999918937683ms
+[NX Daemon Server] - 2023-12-09T22:04:30.260Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.html was modified
+[NX Daemon Server] - 2023-12-09T22:04:30.260Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:04:31.329Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:04:33.262Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:04:33.315Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:04:36.737Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T22:04:36.737Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.html
+[NX Daemon Server] - 2023-12-09T22:04:36.737Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T22:04:37.325Z - Time taken for 'hash changed files from watcher' 1.506500005722046ms
+[NX Daemon Server] - 2023-12-09T22:07:45.661Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.ts was modified
+[NX Daemon Server] - 2023-12-09T22:07:45.662Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:07:46.865Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:07:48.295Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:07:50.870Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:07:50.872Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts was modified
+[NX Daemon Server] - 2023-12-09T22:07:51.796Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:07:52.088Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T22:07:52.088Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.ts,frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts
+[NX Daemon Server] - 2023-12-09T22:07:52.088Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T22:07:52.204Z - Time taken for 'hash changed files from watcher' 1.5130999982357025ms
+[NX Daemon Server] - 2023-12-09T22:07:53.097Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:07:53.160Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:07:53.225Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:08:24.237Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:08:24.298Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts was modified
+[NX Daemon Server] - 2023-12-09T22:08:25.312Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:08:26.626Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:08:30.734Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T22:08:30.734Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts
+[NX Daemon Server] - 2023-12-09T22:08:30.734Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T22:08:30.837Z - Time taken for 'hash changed files from watcher' 1.7914999723434448ms
+[NX Daemon Server] - 2023-12-09T22:08:56.418Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.ts was modified
+[NX Daemon Server] - 2023-12-09T22:08:56.418Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:08:58.329Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:08:59.772Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:08:59.836Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:09:02.848Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T22:09:02.848Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.ts
+[NX Daemon Server] - 2023-12-09T22:09:02.848Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T22:09:02.941Z - Time taken for 'hash changed files from watcher' 1.8395000100135803ms
+[NX Daemon Server] - 2023-12-09T22:09:06.173Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:09:06.175Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.ts was modified
+[NX Daemon Server] - 2023-12-09T22:09:06.849Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:09:08.161Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:09:12.335Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts was modified
+[NX Daemon Server] - 2023-12-09T22:09:12.336Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:09:12.618Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T22:09:12.618Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.ts,frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts
+[NX Daemon Server] - 2023-12-09T22:09:12.618Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T22:09:12.757Z - Time taken for 'hash changed files from watcher' 2.497299998998642ms
+[NX Daemon Server] - 2023-12-09T22:09:13.654Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:09:14.978Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:14:14.053Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:14:14.055Z - [WATCHER]: frontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.html was modified
+[NX Daemon Server] - 2023-12-09T22:14:15.013Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:14:16.347Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:14:20.484Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T22:14:20.484Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.html
+[NX Daemon Server] - 2023-12-09T22:14:20.484Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T22:14:20.581Z - Time taken for 'hash changed files from watcher' 2.195600003004074ms
+[NX Daemon Server] - 2023-12-09T22:17:46.595Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:17:46.596Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.html was modified
+[NX Daemon Server] - 2023-12-09T22:17:47.862Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:17:49.144Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:17:49.605Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:17:49.607Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts was modified
+[NX Daemon Server] - 2023-12-09T22:17:50.842Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:17:52.163Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:17:53.028Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T22:17:53.028Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.html,frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts
+[NX Daemon Server] - 2023-12-09T22:17:53.029Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T22:17:53.126Z - Time taken for 'hash changed files from watcher' 1.3944000005722046ms
+[NX Daemon Server] - 2023-12-09T22:19:31.947Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts was modified
+[NX Daemon Server] - 2023-12-09T22:19:31.948Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:19:32.942Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:19:34.294Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:19:34.355Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:19:38.375Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T22:19:38.375Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts
+[NX Daemon Server] - 2023-12-09T22:19:38.375Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T22:19:38.468Z - Time taken for 'hash changed files from watcher' 1.3136000037193298ms
+[NX Daemon Server] - 2023-12-09T22:28:26.886Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts was modified
+[NX Daemon Server] - 2023-12-09T22:28:26.886Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:28:28.452Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:28:29.782Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:28:33.308Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T22:28:33.308Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts
+[NX Daemon Server] - 2023-12-09T22:28:33.308Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T22:28:33.402Z - Time taken for 'hash changed files from watcher' 1.6272999942302704ms
+[NX Daemon Server] - 2023-12-09T22:29:02.705Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:29:02.709Z - [WATCHER]: frontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.html was modified
+[NX Daemon Server] - 2023-12-09T22:29:03.432Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:29:04.888Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:29:09.144Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T22:29:09.144Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.html
+[NX Daemon Server] - 2023-12-09T22:29:09.144Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T22:29:09.274Z - Time taken for 'hash changed files from watcher' 1.9000999927520752ms
+[NX Daemon Server] - 2023-12-09T22:29:14.619Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:29:14.621Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/index.ts was modified
+[NX Daemon Server] - 2023-12-09T22:29:16.185Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:29:17.519Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:29:17.574Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:29:21.050Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T22:29:21.050Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/index.ts
+[NX Daemon Server] - 2023-12-09T22:29:21.050Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T22:29:21.156Z - Time taken for 'hash changed files from watcher' 1.391099989414215ms
+[NX Daemon Server] - 2023-12-09T22:29:24.564Z - [WATCHER]: frontend/app/src/modules/user-profile/components/index.ts was modified
+[NX Daemon Server] - 2023-12-09T22:29:24.565Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:29:26.141Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:29:27.634Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:29:27.703Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:29:27.761Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:29:31.003Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T22:29:31.003Z - [REQUEST]: frontend/app/src/modules/user-profile/components/index.ts
+[NX Daemon Server] - 2023-12-09T22:29:31.003Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T22:29:31.094Z - Time taken for 'hash changed files from watcher' 2.0399999916553497ms
+[NX Daemon Server] - 2023-12-09T22:30:19.946Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.html was modified
+[NX Daemon Server] - 2023-12-09T22:30:19.947Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:30:22.173Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:30:26.378Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T22:30:26.378Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/area-select/area-select.component.html
+[NX Daemon Server] - 2023-12-09T22:30:26.378Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T22:30:26.471Z - Time taken for 'hash changed files from watcher' 2.062700003385544ms
+[NX Daemon Server] - 2023-12-09T22:30:33.335Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:30:33.337Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/area-select was deleted
+[NX Daemon Server] - 2023-12-09T22:30:35.238Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:30:36.805Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.html was modified
+[NX Daemon Server] - 2023-12-09T22:30:36.805Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:30:38.859Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:30:38.937Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:30:39.770Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T22:30:39.770Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.html
+[NX Daemon Server] - 2023-12-09T22:30:39.771Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/area-select
+[NX Daemon Server] - 2023-12-09T22:30:39.840Z - Time taken for 'hash changed files from watcher' 1.3689000010490417ms
+[NX Daemon Server] - 2023-12-09T22:33:35.511Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:33:35.513Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts was modified
+[NX Daemon Server] - 2023-12-09T22:33:36.483Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:33:37.974Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:33:41.944Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T22:33:41.944Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts
+[NX Daemon Server] - 2023-12-09T22:33:41.944Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T22:33:41.986Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-09T22:33:41.987Z - Time taken for 'hash changed files from watcher' 1.814300000667572ms
+[NX Daemon Server] - 2023-12-09T22:37:06.479Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:37:06.481Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts was modified
+[NX Daemon Server] - 2023-12-09T22:37:07.517Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:37:08.923Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:37:08.973Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:37:12.909Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T22:37:12.910Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts
+[NX Daemon Server] - 2023-12-09T22:37:12.910Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T22:37:12.955Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-09T22:37:12.957Z - Time taken for 'hash changed files from watcher' 1.2087999880313873ms
+[NX Daemon Server] - 2023-12-09T22:37:15.821Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:37:15.822Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts was modified
+[NX Daemon Server] - 2023-12-09T22:37:16.513Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:37:17.917Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:37:21.803Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts was modified
+[NX Daemon Server] - 2023-12-09T22:37:21.803Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:37:22.247Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T22:37:22.247Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts
+[NX Daemon Server] - 2023-12-09T22:37:22.247Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T22:37:22.303Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-09T22:37:22.305Z - Time taken for 'hash changed files from watcher' 2.1049000024795532ms
+[NX Daemon Server] - 2023-12-09T22:37:22.519Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:37:23.913Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:37:23.971Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:37:36.655Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:37:36.657Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts was modified
+[NX Daemon Server] - 2023-12-09T22:37:37.441Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:37:38.908Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:37:38.975Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:37:41.906Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:37:41.908Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts was modified
+[NX Daemon Server] - 2023-12-09T22:37:43.097Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T22:37:43.097Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts
+[NX Daemon Server] - 2023-12-09T22:37:43.097Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T22:37:43.159Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-09T22:37:43.160Z - Time taken for 'hash changed files from watcher' 1.8898000121116638ms
+[NX Daemon Server] - 2023-12-09T22:37:44.069Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:39:33.559Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:39:33.562Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts was modified
+[NX Daemon Server] - 2023-12-09T22:39:34.721Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:39:36.054Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:39:39.984Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T22:39:39.984Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts
+[NX Daemon Server] - 2023-12-09T22:39:39.984Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T22:39:40.032Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-09T22:39:40.034Z - Time taken for 'hash changed files from watcher' 2.1346000134944916ms
+[NX Daemon Server] - 2023-12-09T22:40:43.608Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:40:43.609Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.html was modified
+[NX Daemon Server] - 2023-12-09T22:40:44.590Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:40:45.920Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:40:50.045Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T22:40:50.045Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.html
+[NX Daemon Server] - 2023-12-09T22:40:50.045Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T22:40:50.090Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-09T22:40:50.092Z - Time taken for 'hash changed files from watcher' 2.1146999895572662ms
+[NX Daemon Server] - 2023-12-09T22:41:05.615Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.html was modified
+[NX Daemon Server] - 2023-12-09T22:41:05.616Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:41:07.660Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:41:07.722Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:41:12.044Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T22:41:12.044Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.html
+[NX Daemon Server] - 2023-12-09T22:41:12.044Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T22:41:12.091Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-09T22:41:12.092Z - Time taken for 'hash changed files from watcher' 1.2958000004291534ms
+[NX Daemon Server] - 2023-12-09T22:41:36.750Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts was modified
+[NX Daemon Server] - 2023-12-09T22:41:36.751Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:41:37.992Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:41:39.338Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:41:43.175Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T22:41:43.175Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts
+[NX Daemon Server] - 2023-12-09T22:41:43.175Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T22:41:43.219Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-09T22:41:43.221Z - Time taken for 'hash changed files from watcher' 1.6862000226974487ms
+[NX Daemon Server] - 2023-12-09T22:42:31.400Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:42:31.402Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts was modified
+[NX Daemon Server] - 2023-12-09T22:42:32.746Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:42:34.124Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:42:37.835Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T22:42:37.835Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts
+[NX Daemon Server] - 2023-12-09T22:42:37.835Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T22:42:37.881Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-09T22:42:37.883Z - Time taken for 'hash changed files from watcher' 1.8041000068187714ms
+[NX Daemon Server] - 2023-12-09T22:42:46.129Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts was modified
+[NX Daemon Server] - 2023-12-09T22:42:46.130Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:42:47.233Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:42:48.602Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:42:48.659Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:42:52.563Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T22:42:52.563Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts
+[NX Daemon Server] - 2023-12-09T22:42:52.563Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T22:42:52.610Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-09T22:42:52.612Z - Time taken for 'hash changed files from watcher' 2.032100021839142ms
+[NX Daemon Server] - 2023-12-09T22:42:58.493Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts was modified
+[NX Daemon Server] - 2023-12-09T22:42:58.494Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:43:00.923Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:43:00.974Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:43:01.028Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:43:04.916Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T22:43:04.916Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts
+[NX Daemon Server] - 2023-12-09T22:43:04.916Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T22:43:04.962Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-09T22:43:04.964Z - Time taken for 'hash changed files from watcher' 1.32150000333786ms
+[NX Daemon Server] - 2023-12-09T22:43:06.893Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts was modified
+[NX Daemon Server] - 2023-12-09T22:43:06.893Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:43:07.815Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:43:09.205Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:43:13.329Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T22:43:13.329Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts
+[NX Daemon Server] - 2023-12-09T22:43:13.329Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T22:43:13.374Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-09T22:43:13.375Z - Time taken for 'hash changed files from watcher' 2.2387000024318695ms
+[NX Daemon Server] - 2023-12-09T22:43:18.201Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts was modified
+[NX Daemon Server] - 2023-12-09T22:43:18.201Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:43:19.423Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:43:20.724Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:43:24.620Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T22:43:24.620Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts
+[NX Daemon Server] - 2023-12-09T22:43:24.620Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T22:43:24.664Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-09T22:43:24.664Z - Time taken for 'hash changed files from watcher' 1.2038000226020813ms
+[NX Daemon Server] - 2023-12-09T22:43:26.725Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:43:26.726Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts was modified
+[NX Daemon Server] - 2023-12-09T22:43:27.660Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:43:29.091Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:43:29.147Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:43:33.164Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T22:43:33.165Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts
+[NX Daemon Server] - 2023-12-09T22:43:33.165Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T22:43:33.208Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-09T22:43:33.210Z - Time taken for 'hash changed files from watcher' 1.3854999840259552ms
+[NX Daemon Server] - 2023-12-09T22:43:34.766Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:43:34.767Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts was modified
+[NX Daemon Server] - 2023-12-09T22:43:35.586Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:43:36.939Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:43:37.001Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:43:41.196Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T22:43:41.196Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts
+[NX Daemon Server] - 2023-12-09T22:43:41.196Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T22:43:41.237Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-09T22:43:41.238Z - Time taken for 'hash changed files from watcher' 1.9553000032901764ms
+[NX Daemon Server] - 2023-12-09T22:43:45.690Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:43:45.692Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts was modified
+[NX Daemon Server] - 2023-12-09T22:43:46.785Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:43:48.211Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:43:48.273Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:43:52.124Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T22:43:52.124Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts
+[NX Daemon Server] - 2023-12-09T22:43:52.124Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T22:43:52.168Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-09T22:43:52.170Z - Time taken for 'hash changed files from watcher' 2.174899995326996ms
+[NX Daemon Server] - 2023-12-09T22:44:12.396Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:44:12.398Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts was modified
+[NX Daemon Server] - 2023-12-09T22:44:14.886Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:44:18.830Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T22:44:18.830Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts
+[NX Daemon Server] - 2023-12-09T22:44:18.830Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T22:44:18.875Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-09T22:44:18.875Z - Time taken for 'hash changed files from watcher' 1.2175999879837036ms
+[NX Daemon Server] - 2023-12-09T22:45:04.526Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:45:04.528Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts was modified
+[NX Daemon Server] - 2023-12-09T22:45:05.648Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:45:07.091Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:45:10.959Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T22:45:10.959Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts
+[NX Daemon Server] - 2023-12-09T22:45:10.959Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T22:45:11.008Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-09T22:45:11.010Z - Time taken for 'hash changed files from watcher' 2.0589999854564667ms
+[NX Daemon Server] - 2023-12-09T22:45:58.183Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:45:58.184Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts was modified
+[NX Daemon Server] - 2023-12-09T22:45:59.369Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:46:01.030Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:46:04.613Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T22:46:04.613Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts
+[NX Daemon Server] - 2023-12-09T22:46:04.613Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T22:46:04.664Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-09T22:46:04.666Z - Time taken for 'hash changed files from watcher' 1.5593999922275543ms
+[NX Daemon Server] - 2023-12-09T22:46:20.290Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:46:20.295Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts was modified
+[NX Daemon Server] - 2023-12-09T22:46:21.585Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:46:22.943Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:46:26.733Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T22:46:26.733Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts
+[NX Daemon Server] - 2023-12-09T22:46:26.733Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T22:46:26.819Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-09T22:46:26.822Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:46:26.824Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts was modified
+[NX Daemon Server] - 2023-12-09T22:46:26.825Z - Time taken for 'hash changed files from watcher' 1.9557999968528748ms
+[NX Daemon Server] - 2023-12-09T22:46:28.160Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:46:29.604Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:46:33.260Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T22:46:33.260Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts
+[NX Daemon Server] - 2023-12-09T22:46:33.260Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T22:46:33.308Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-09T22:46:33.310Z - Time taken for 'hash changed files from watcher' 1.1245999932289124ms
+[NX Daemon Server] - 2023-12-09T22:46:48.217Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts was modified
+[NX Daemon Server] - 2023-12-09T22:46:48.217Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:46:49.932Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:46:51.587Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:46:51.637Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:46:51.689Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:46:54.643Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T22:46:54.643Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts
+[NX Daemon Server] - 2023-12-09T22:46:54.643Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T22:46:54.689Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-09T22:46:54.689Z - Time taken for 'hash changed files from watcher' 2.0940000116825104ms
+[NX Daemon Server] - 2023-12-09T22:47:39.042Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:47:39.044Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts was modified
+[NX Daemon Server] - 2023-12-09T22:47:40.422Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:47:41.896Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:47:45.472Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T22:47:45.472Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts
+[NX Daemon Server] - 2023-12-09T22:47:45.472Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T22:47:45.521Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-09T22:47:45.523Z - Time taken for 'hash changed files from watcher' 1.2457999885082245ms
+[NX Daemon Server] - 2023-12-09T22:48:24.850Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:48:24.852Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts was modified
+[NX Daemon Server] - 2023-12-09T22:48:26.071Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:48:27.569Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:48:31.286Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T22:48:31.286Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts
+[NX Daemon Server] - 2023-12-09T22:48:31.286Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T22:48:31.333Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-09T22:48:31.335Z - Time taken for 'hash changed files from watcher' 1.1931000053882599ms
+[NX Daemon Server] - 2023-12-09T22:49:05.303Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:49:05.305Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts was modified
+[NX Daemon Server] - 2023-12-09T22:49:07.995Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:49:11.729Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T22:49:11.729Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts
+[NX Daemon Server] - 2023-12-09T22:49:11.729Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T22:49:11.777Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-09T22:49:11.778Z - Time taken for 'hash changed files from watcher' 1.7800999879837036ms
+[NX Daemon Server] - 2023-12-09T22:49:39.784Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.html was modified
+[NX Daemon Server] - 2023-12-09T22:49:39.785Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:49:40.631Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:49:42.063Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:49:42.116Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:49:46.217Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T22:49:46.217Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.html
+[NX Daemon Server] - 2023-12-09T22:49:46.217Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T22:49:46.266Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-09T22:49:46.268Z - Time taken for 'hash changed files from watcher' 1.3763999938964844ms
+[NX Daemon Server] - 2023-12-09T22:51:50.203Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:51:50.206Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts was modified
+[NX Daemon Server] - 2023-12-09T22:51:51.400Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:51:52.948Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:51:56.636Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T22:51:56.637Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts
+[NX Daemon Server] - 2023-12-09T22:51:56.637Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T22:51:56.680Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-09T22:51:56.682Z - Time taken for 'hash changed files from watcher' 2.012699991464615ms
+[NX Daemon Server] - 2023-12-09T22:53:15.789Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:53:15.791Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts was modified
+[NX Daemon Server] - 2023-12-09T22:53:17.065Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:53:18.560Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:53:22.232Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T22:53:22.232Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts
+[NX Daemon Server] - 2023-12-09T22:53:22.232Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T22:53:22.277Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-09T22:53:22.279Z - Time taken for 'hash changed files from watcher' 2.132300019264221ms
+[NX Daemon Server] - 2023-12-09T22:57:00.468Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:57:00.472Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts was modified
+[NX Daemon Server] - 2023-12-09T22:57:01.851Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:57:02.119Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:57:02.120Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts was modified
+[NX Daemon Server] - 2023-12-09T22:57:02.807Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:57:04.112Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:57:06.906Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T22:57:06.906Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts
+[NX Daemon Server] - 2023-12-09T22:57:06.906Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T22:57:06.951Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-09T22:57:06.953Z - Time taken for 'hash changed files from watcher' 1.198500007390976ms
+[NX Daemon Server] - 2023-12-09T22:57:36.441Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:57:36.444Z - [WATCHER]: frontend/app/src/modules/user-profile/types/forms.types.ts was modified
+[NX Daemon Server] - 2023-12-09T22:57:37.620Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:57:39.015Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:57:42.878Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T22:57:42.878Z - [REQUEST]: frontend/app/src/modules/user-profile/types/forms.types.ts
+[NX Daemon Server] - 2023-12-09T22:57:42.878Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T22:57:42.927Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-09T22:57:42.929Z - Time taken for 'hash changed files from watcher' 1.9292000234127045ms
+[NX Daemon Server] - 2023-12-09T22:57:49.837Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:57:49.839Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts was modified
+[NX Daemon Server] - 2023-12-09T22:57:50.960Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:57:52.256Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:57:52.316Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:57:56.270Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T22:57:56.270Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts
+[NX Daemon Server] - 2023-12-09T22:57:56.270Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T22:57:56.313Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-09T22:57:56.315Z - Time taken for 'hash changed files from watcher' 1.2840000092983246ms
+[NX Daemon Server] - 2023-12-09T22:58:00.775Z - [WATCHER]: frontend/app/src/modules/user-profile/types/areas.types.ts was created or restored
+[NX Daemon Server] - 2023-12-09T22:58:00.775Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:58:00.906Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T22:58:00.906Z - [REQUEST]: frontend/app/src/modules/user-profile/types/areas.types.ts
+[NX Daemon Server] - 2023-12-09T22:58:00.906Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T22:58:00.948Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-09T22:58:00.948Z - Time taken for 'hash changed files from watcher' 1.5532000064849854ms
+[NX Daemon Server] - 2023-12-09T22:58:02.751Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:58:19.154Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:58:19.156Z - [WATCHER]: frontend/app/src/modules/user-profile/types/areas.types.ts was modified
+[NX Daemon Server] - 2023-12-09T22:58:19.407Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T22:58:19.408Z - [REQUEST]: frontend/app/src/modules/user-profile/types/areas.types.ts
+[NX Daemon Server] - 2023-12-09T22:58:19.408Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T22:58:19.510Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-09T22:58:19.511Z - Time taken for 'hash changed files from watcher' 1.8407999873161316ms
+[NX Daemon Server] - 2023-12-09T22:58:21.196Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:58:24.969Z - [WATCHER]: frontend/app/src/modules/user-profile/types/index.ts was modified
+[NX Daemon Server] - 2023-12-09T22:58:24.969Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:58:25.410Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T22:58:25.410Z - [REQUEST]: frontend/app/src/modules/user-profile/types/index.ts
+[NX Daemon Server] - 2023-12-09T22:58:25.410Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T22:58:25.494Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-09T22:58:25.495Z - Time taken for 'hash changed files from watcher' 2.8093000054359436ms
+[NX Daemon Server] - 2023-12-09T22:58:26.588Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:58:27.941Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:58:27.998Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:59:23.078Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts was modified
+[NX Daemon Server] - 2023-12-09T22:59:23.078Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:59:23.930Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T22:59:23.931Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts
+[NX Daemon Server] - 2023-12-09T22:59:23.931Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T22:59:23.988Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-09T22:59:23.988Z - Time taken for 'hash changed files from watcher' 2.538800001144409ms
+[NX Daemon Server] - 2023-12-09T22:59:24.774Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:59:26.289Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:59:29.653Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:59:29.656Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts was modified
+[NX Daemon Server] - 2023-12-09T22:59:30.860Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:59:31.292Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T22:59:31.292Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts
+[NX Daemon Server] - 2023-12-09T22:59:31.292Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T22:59:31.340Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-09T22:59:31.342Z - Time taken for 'hash changed files from watcher' 2.1353000104427338ms
+[NX Daemon Server] - 2023-12-09T22:59:32.152Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:59:36.387Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts was modified
+[NX Daemon Server] - 2023-12-09T22:59:36.387Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:59:37.427Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:59:38.721Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:59:39.621Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T22:59:39.621Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts
+[NX Daemon Server] - 2023-12-09T22:59:39.621Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T22:59:39.661Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-09T22:59:39.661Z - Time taken for 'hash changed files from watcher' 1.289799988269806ms
+[NX Daemon Server] - 2023-12-09T22:59:45.131Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:59:45.133Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts was modified
+[NX Daemon Server] - 2023-12-09T22:59:45.961Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:59:47.405Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T22:59:51.563Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T22:59:51.564Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts
+[NX Daemon Server] - 2023-12-09T22:59:51.564Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T22:59:51.612Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-09T22:59:51.614Z - Time taken for 'hash changed files from watcher' 2.2030999958515167ms
+[NX Daemon Server] - 2023-12-09T23:00:35.216Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:00:35.218Z - [WATCHER]: frontend/app/src/modules/user-profile/service/state/form-areas.state.service.ts was deleted
+[NX Daemon Server] - 2023-12-09T23:00:38.696Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:00:38.758Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:00:41.652Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T23:00:41.652Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T23:00:41.652Z - [REQUEST]: frontend/app/src/modules/user-profile/service/state/form-areas.state.service.ts
+[NX Daemon Server] - 2023-12-09T23:00:41.700Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-09T23:00:41.702Z - Time taken for 'hash changed files from watcher' 1.6221999824047089ms
+[NX Daemon Server] - 2023-12-09T23:00:45.552Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:00:45.554Z - [WATCHER]: frontend/app/src/modules/user-profile/service/state/index.ts was modified
+[NX Daemon Server] - 2023-12-09T23:00:46.988Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:00:48.493Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:00:48.543Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:00:48.600Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:00:51.897Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:00:51.899Z - [WATCHER]: frontend/app/src/modules/user-profile/service/state/form-change-email.state.service.ts was modified
+[NX Daemon Server] - 2023-12-09T23:00:52.003Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T23:00:52.003Z - [REQUEST]: frontend/app/src/modules/user-profile/service/state/index.ts,frontend/app/src/modules/user-profile/service/state/form-change-email.state.service.ts
+[NX Daemon Server] - 2023-12-09T23:00:52.003Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T23:00:52.085Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-09T23:00:52.088Z - Time taken for 'hash changed files from watcher' 2.1191000044345856ms
+[NX Daemon Server] - 2023-12-09T23:00:53.114Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:00:54.415Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:00:54.474Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:00:58.839Z - [WATCHER]: frontend/app/src/modules/user-profile/service/state/index.ts was modified
+[NX Daemon Server] - 2023-12-09T23:00:58.839Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:00:59.950Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:01:01.513Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:01:01.572Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:01:05.291Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T23:01:05.291Z - [REQUEST]: frontend/app/src/modules/user-profile/service/state/index.ts
+[NX Daemon Server] - 2023-12-09T23:01:05.291Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T23:01:05.357Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-09T23:01:05.357Z - Time taken for 'hash changed files from watcher' 3.3006999790668488ms
+[NX Daemon Server] - 2023-12-09T23:01:15.285Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:01:15.287Z - [WATCHER]: frontend/app/src/modules/user-profile/service/state/index.ts was modified
+[NX Daemon Server] - 2023-12-09T23:01:17.717Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:01:17.783Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:01:18.117Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:01:18.119Z - [WATCHER]: frontend/app/src/modules/user-profile/service/state/form-change-email.state.service.ts was modified
+[NX Daemon Server] - 2023-12-09T23:01:20.497Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:01:20.609Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:01:20.690Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:01:21.710Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T23:01:21.710Z - [REQUEST]: frontend/app/src/modules/user-profile/service/state/index.ts,frontend/app/src/modules/user-profile/service/state/form-change-email.state.service.ts
+[NX Daemon Server] - 2023-12-09T23:01:21.710Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T23:01:21.757Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-09T23:01:21.759Z - Time taken for 'hash changed files from watcher' 1.3864000141620636ms
+[NX Daemon Server] - 2023-12-09T23:01:51.378Z - [WATCHER]: frontend/app/src/modules/user-profile/components/molecules/button-action/button-action.component.html was modified
+[NX Daemon Server] - 2023-12-09T23:01:51.378Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:01:52.304Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:01:53.770Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:01:53.834Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:01:53.914Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:01:57.806Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T23:01:57.806Z - [REQUEST]: frontend/app/src/modules/user-profile/components/molecules/button-action/button-action.component.html
+[NX Daemon Server] - 2023-12-09T23:01:57.806Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T23:01:57.851Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-09T23:01:57.853Z - Time taken for 'hash changed files from watcher' 1.163100004196167ms
+[NX Daemon Server] - 2023-12-09T23:03:21.799Z - [WATCHER]: frontend/app/src/modules/user-profile/service/state/form-change-email.state.service.ts was modified
+[NX Daemon Server] - 2023-12-09T23:03:21.800Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:03:24.129Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:03:28.229Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T23:03:28.229Z - [REQUEST]: frontend/app/src/modules/user-profile/service/state/form-change-email.state.service.ts
+[NX Daemon Server] - 2023-12-09T23:03:28.229Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T23:03:28.275Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-09T23:03:28.277Z - Time taken for 'hash changed files from watcher' 1.3438000082969666ms
+[NX Daemon Server] - 2023-12-09T23:04:58.628Z - [WATCHER]: frontend/app/src/modules/user-profile/components/molecules/button-change-main-info/button-change-main-info.component.html was modified
+[NX Daemon Server] - 2023-12-09T23:04:58.629Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:04:59.838Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:05:02.355Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:05:02.407Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:05:05.063Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T23:05:05.063Z - [REQUEST]: frontend/app/src/modules/user-profile/components/molecules/button-change-main-info/button-change-main-info.component.html
+[NX Daemon Server] - 2023-12-09T23:05:05.063Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T23:05:05.121Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-09T23:05:05.123Z - Time taken for 'hash changed files from watcher' 1.6956999897956848ms
+[NX Daemon Server] - 2023-12-09T23:05:12.699Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:05:12.701Z - [WATCHER]: frontend/app/src/modules/user-profile/service/state/form-change-email.state.service.ts was deleted
+[NX Daemon Server] - 2023-12-09T23:05:16.026Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:05:19.132Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T23:05:19.132Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T23:05:19.132Z - [REQUEST]: frontend/app/src/modules/user-profile/service/state/form-change-email.state.service.ts
+[NX Daemon Server] - 2023-12-09T23:05:19.192Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-09T23:05:19.195Z - Time taken for 'hash changed files from watcher' 1.2721999883651733ms
+[NX Daemon Server] - 2023-12-09T23:05:19.388Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:05:19.392Z - [WATCHER]: frontend/app/src/modules/user-profile/service/state/index.ts was modified
+[NX Daemon Server] - 2023-12-09T23:05:22.074Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:05:25.814Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T23:05:25.814Z - [REQUEST]: frontend/app/src/modules/user-profile/service/state/index.ts
+[NX Daemon Server] - 2023-12-09T23:05:25.814Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T23:05:25.859Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-09T23:05:25.861Z - Time taken for 'hash changed files from watcher' 1.267899990081787ms
+[NX Daemon Server] - 2023-12-09T23:05:37.835Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:05:37.836Z - [WATCHER]: frontend/app/src/modules/user-profile/service/state/form-change-pass.state.service.ts was deleted
+[NX Daemon Server] - 2023-12-09T23:05:40.337Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:05:41.617Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:05:41.619Z - [WATCHER]: frontend/app/src/modules/user-profile/service/state/index.ts was modified
+[NX Daemon Server] - 2023-12-09T23:05:42.785Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:05:44.178Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:05:44.296Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T23:05:44.296Z - [REQUEST]: frontend/app/src/modules/user-profile/service/state/index.ts
+[NX Daemon Server] - 2023-12-09T23:05:44.296Z - [REQUEST]: frontend/app/src/modules/user-profile/service/state/form-change-pass.state.service.ts
+[NX Daemon Server] - 2023-12-09T23:05:44.428Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-09T23:05:44.429Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:05:44.429Z - Time taken for 'hash changed files from watcher' 4.518200010061264ms
+[NX Daemon Server] - 2023-12-09T23:05:52.064Z - [WATCHER]: frontend/app/src/modules/user-profile/service/state/index.ts was modified
+[NX Daemon Server] - 2023-12-09T23:05:52.064Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:05:54.642Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:05:54.693Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:05:58.495Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T23:05:58.496Z - [REQUEST]: frontend/app/src/modules/user-profile/service/state/index.ts
+[NX Daemon Server] - 2023-12-09T23:05:58.496Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T23:05:58.546Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-09T23:05:58.548Z - Time taken for 'hash changed files from watcher' 1.5856000185012817ms
+[NX Daemon Server] - 2023-12-09T23:06:22.080Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:06:22.081Z - [WATCHER]: frontend/app/src/modules/user-profile/service/state/form-social-networks.state.service.ts was deleted
+[NX Daemon Server] - 2023-12-09T23:06:25.934Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:06:26.001Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:06:28.465Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:06:28.467Z - [WATCHER]: frontend/app/src/modules/user-profile/service/state/index.ts was modified
+[NX Daemon Server] - 2023-12-09T23:06:28.561Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T23:06:28.561Z - [REQUEST]: frontend/app/src/modules/user-profile/service/state/index.ts
+[NX Daemon Server] - 2023-12-09T23:06:28.561Z - [REQUEST]: frontend/app/src/modules/user-profile/service/state/form-social-networks.state.service.ts
+[NX Daemon Server] - 2023-12-09T23:06:28.671Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-09T23:06:28.675Z - Time taken for 'hash changed files from watcher' 15.416200011968613ms
+[NX Daemon Server] - 2023-12-09T23:06:29.869Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:06:31.276Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:08:46.350Z - [WATCHER]: frontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.ts was modified
+[NX Daemon Server] - 2023-12-09T23:08:46.351Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:08:47.785Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:08:49.415Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:08:49.466Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:08:49.520Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:08:52.781Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T23:08:52.781Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.ts
+[NX Daemon Server] - 2023-12-09T23:08:52.781Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T23:08:52.830Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-09T23:08:52.830Z - Time taken for 'hash changed files from watcher' 1.3535999953746796ms
+[NX Daemon Server] - 2023-12-09T23:10:05.310Z - [WATCHER]: frontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.ts was modified
+[NX Daemon Server] - 2023-12-09T23:10:05.311Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:10:06.513Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:10:07.967Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:10:08.031Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-09T23:10:11.741Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-09T23:10:11.741Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.ts
+[NX Daemon Server] - 2023-12-09T23:10:11.741Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-09T23:10:11.788Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-09T23:10:11.790Z - Time taken for 'hash changed files from watcher' 1.9332000017166138ms
+[NX Daemon Server] - 2023-12-10T00:30:32.804Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/more-information/more-information.component.ts was modified
+[NX Daemon Server] - 2023-12-10T00:30:32.805Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-10T00:30:34.115Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-10T00:30:36.009Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-10T00:30:39.241Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-10T00:30:39.241Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/more-information/more-information.component.ts
+[NX Daemon Server] - 2023-12-10T00:30:39.241Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-10T00:30:39.297Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-10T00:30:39.297Z - Time taken for 'hash changed files from watcher' 1.2949999868869781ms
+[NX Daemon Server] - 2023-12-10T00:34:06.896Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/more-information/more-information.component.ts was modified
+[NX Daemon Server] - 2023-12-10T00:34:06.896Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-10T00:34:07.661Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-10T00:34:09.054Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-10T00:34:09.114Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-10T00:34:13.316Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-10T00:34:13.316Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/more-information/more-information.component.ts
+[NX Daemon Server] - 2023-12-10T00:34:13.316Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-10T00:34:13.363Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-10T00:34:13.365Z - Time taken for 'hash changed files from watcher' 1.186700016260147ms
+[NX Daemon Server] - 2023-12-10T00:35:21.962Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/more-information/more-information.component.ts was modified
+[NX Daemon Server] - 2023-12-10T00:35:21.962Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-10T00:35:22.961Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-10T00:35:24.414Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-10T00:35:24.476Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-10T00:35:28.394Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-10T00:35:28.394Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/more-information/more-information.component.ts
+[NX Daemon Server] - 2023-12-10T00:35:28.394Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-10T00:35:28.441Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-10T00:35:28.441Z - Time taken for 'hash changed files from watcher' 1.2052000164985657ms
+[NX Daemon Server] - 2023-12-10T00:35:31.404Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-10T00:35:31.406Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/more-information/more-information.component.ts was modified
+[NX Daemon Server] - 2023-12-10T00:35:32.047Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-10T00:35:33.347Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-10T00:35:37.830Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-10T00:35:37.830Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/more-information/more-information.component.ts
+[NX Daemon Server] - 2023-12-10T00:35:37.830Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-10T00:35:37.872Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-10T00:35:37.874Z - Time taken for 'hash changed files from watcher' 2.1480000019073486ms
+[NX Daemon Server] - 2023-12-10T00:35:49.231Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/more-information/more-information.component.html was modified
+[NX Daemon Server] - 2023-12-10T00:35:49.231Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-10T00:35:50.024Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-10T00:35:51.317Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-10T00:35:55.652Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-10T00:35:55.652Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/more-information/more-information.component.html
+[NX Daemon Server] - 2023-12-10T00:35:55.652Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-10T00:35:55.692Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-10T00:35:55.692Z - Time taken for 'hash changed files from watcher' 2.11489999294281ms
+[NX Daemon Server] - 2023-12-10T00:37:03.721Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-10T00:37:03.723Z - [WATCHER]: frontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.html was modified
+[NX Daemon Server] - 2023-12-10T00:37:04.458Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-10T00:37:05.915Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-10T00:37:10.157Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-10T00:37:10.157Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.html
+[NX Daemon Server] - 2023-12-10T00:37:10.157Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-10T00:37:10.201Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-10T00:37:10.203Z - Time taken for 'hash changed files from watcher' 1.5293000042438507ms
+[NX Daemon Server] - 2023-12-10T00:37:30.812Z - [WATCHER]: frontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.ts was modified
+[NX Daemon Server] - 2023-12-10T00:37:30.813Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-10T00:37:31.895Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-10T00:37:33.272Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-10T00:37:33.330Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-10T00:37:37.240Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-10T00:37:37.240Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.ts
+[NX Daemon Server] - 2023-12-10T00:37:37.240Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-10T00:37:37.284Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-10T00:37:37.286Z - Time taken for 'hash changed files from watcher' 1.233000010251999ms
+[NX Daemon Server] - 2023-12-10T00:37:41.128Z - [WATCHER]: frontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.ts was modified
+[NX Daemon Server] - 2023-12-10T00:37:41.128Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-10T00:37:41.845Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-10T00:37:43.205Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-10T00:37:43.265Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-10T00:37:47.548Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-10T00:37:47.548Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/edit-profile/edit-profile.component.ts
+[NX Daemon Server] - 2023-12-10T00:37:47.548Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-10T00:37:47.591Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-10T00:37:47.593Z - Time taken for 'hash changed files from watcher' 1.138700008392334ms
+[NX Daemon Server] - 2023-12-10T00:41:16.172Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/more-information/more-information.component.ts was modified
+[NX Daemon Server] - 2023-12-10T00:41:16.173Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-10T00:41:17.044Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-10T00:41:18.363Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-10T00:41:22.281Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-10T00:41:22.282Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/more-information/more-information.component.ts was modified
+[NX Daemon Server] - 2023-12-10T00:41:22.598Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-10T00:41:22.599Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/more-information/more-information.component.ts
+[NX Daemon Server] - 2023-12-10T00:41:22.599Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-10T00:41:22.657Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-10T00:41:22.658Z - Time taken for 'hash changed files from watcher' 1.757099986076355ms
+[NX Daemon Server] - 2023-12-10T00:41:23.309Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-10T00:41:24.614Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-10T00:41:24.667Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-10T00:41:40.340Z - [WATCHER]: frontend/app/src/modules/user-profile/types/forms.types.ts was modified
+[NX Daemon Server] - 2023-12-10T00:41:40.341Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-10T00:41:41.232Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-10T00:41:42.630Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-10T00:41:46.774Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-10T00:41:46.774Z - [REQUEST]: frontend/app/src/modules/user-profile/types/forms.types.ts
+[NX Daemon Server] - 2023-12-10T00:41:46.774Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-10T00:41:46.818Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-10T00:41:46.819Z - Time taken for 'hash changed files from watcher' 2.1625999808311462ms
+[NX Daemon Server] - 2023-12-10T00:41:53.442Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-10T00:41:53.443Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/more-information/more-information.component.ts was modified
+[NX Daemon Server] - 2023-12-10T00:41:54.433Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-10T00:41:55.757Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-10T00:41:59.872Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-10T00:41:59.872Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/more-information/more-information.component.ts
+[NX Daemon Server] - 2023-12-10T00:41:59.872Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-10T00:41:59.916Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-10T00:41:59.918Z - Time taken for 'hash changed files from watcher' 1.164900004863739ms
+[NX Daemon Server] - 2023-12-10T00:45:21.995Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-10T00:45:21.998Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts was modified
+[NX Daemon Server] - 2023-12-10T00:45:23.317Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-10T00:45:24.865Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-10T00:45:28.426Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-10T00:45:28.426Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts
+[NX Daemon Server] - 2023-12-10T00:45:28.426Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-10T00:45:28.482Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-10T00:45:28.482Z - Time taken for 'hash changed files from watcher' 2.2387000024318695ms
+[NX Daemon Server] - 2023-12-10T00:45:37.377Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-10T00:45:37.379Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts was modified
+[NX Daemon Server] - 2023-12-10T00:45:39.456Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-10T00:45:43.800Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-10T00:45:43.800Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/areas/areas.component.ts
+[NX Daemon Server] - 2023-12-10T00:45:43.800Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-10T00:45:43.849Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\organism\\area-select\\area-select.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-12-10T00:45:43.851Z - Time taken for 'hash changed files from watcher' 1.5313999950885773ms

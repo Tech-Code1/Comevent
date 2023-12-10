@@ -33,7 +33,8 @@
       [loadingProfile]="userProfileStateService.loadingProfile()"
     />
     <more-information
-      [formGroup]="userProfileFormService.moreInformationFormGroup"
+      controlKey="moreInfo"
+      [dataUserEditProfile]="userProfileStateService.dataUserEditProfile()"
       [loadingProfile]="userProfileStateService.loadingProfile()"
       [countries]="userProfileStateService.dataCountries()"
       [specialties]="userProfileStateService.dataSpecialties()"

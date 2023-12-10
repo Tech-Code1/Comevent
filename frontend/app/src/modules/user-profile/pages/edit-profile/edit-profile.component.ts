@@ -92,8 +92,14 @@ export class EditProfileComponent implements OnInit {
       'areasInfo'
     );
 
+    const moreInfo = this.getFormControlValueAsType<IUserUpdateForm>(
+      this.editProfileForm,
+      'moreInfo'
+    );
+
     console.log('data:', data);
     console.log('dataNetwork:', dataNetwork);
     console.log('dataAreas:', dataAreas);
+    console.log('moreInfo:', moreInfo);
   }
 }

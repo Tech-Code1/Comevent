@@ -18,6 +18,7 @@
 
         @for(area of areas; track area.id) {
         <button
+          type="button"
           (click)="toggleAreaSelection(area, TYPE_AREA.EXPERTISE)"
           [ngClass]="{
             'bg-success-light-2 gap-2 text-success': isAreaSelected(
