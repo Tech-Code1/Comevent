@@ -36,8 +36,8 @@ export class UserProfileStateService {
     bornDate: null,
     gender: '',
     age: null,
-    specialty: [''],
-    country: '',
+    specialty: { id: null, name: null },
+    country: { id: null, name: null },
   });
   private _dataCountries = signal<ICountries[]>([{ id: 0, name: '' }]);
   private _dataSpecialties = signal<ISpecialties[]>([{ id: 0, name: '' }]);

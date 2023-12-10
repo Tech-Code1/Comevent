@@ -1,4 +1,5 @@
 import { UserArea } from '@db/entities';
+import { ICountries, ISpecialties } from '.';
 
 export interface ISocialNetworks {
   platform: string;
@@ -31,8 +32,8 @@ export interface ISimplifiedUserEditProfile {
   gender: string;
   bornDate: Date | null;
   age: number | null;
-  specialty: string[];
-  country: string;
+  specialty: ISpecialties;
+  country: ICountries;
   currentPassword?: string;
   password?: string;
 }

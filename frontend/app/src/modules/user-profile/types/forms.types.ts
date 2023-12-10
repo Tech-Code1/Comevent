@@ -43,8 +43,8 @@ export interface IFormMoreInfo {
   lastName: FormControl<string | null>;
   gender: FormControl<string | null>;
   bornDate: FormControl<string | null>;
-  specialty: FormControl<string | null>;
-  country: FormControl<string | null>;
+  specialty: FormControl<number | null>;
+  country: FormControl<number | null>;
 }
 
 export type IUserUpdateForm = IFormPersonalInfo &

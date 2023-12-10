@@ -1,4 +1,4 @@
 export interface ISpecialties {
-  id: number;
-  name: string;
+  id: number | null;
+  name: string | null;
 }

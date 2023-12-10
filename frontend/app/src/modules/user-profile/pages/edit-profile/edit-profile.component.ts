@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit, inject } from '@angular/core';
+import { Component, OnInit, ViewChild, inject } from '@angular/core';
 import {
   FormGroup,
   NonNullableFormBuilder,
@@ -13,6 +13,7 @@ import {
 } from '@ui/components';
 import {
   AreasComponent,
+  IFormMoreInfo,
   IUserUpdateForm,
   MainInfoComponent,
   MoreInformationComponent,
@@ -22,7 +23,10 @@ import {
   UserProfileUpdateService,
 } from '../..';
 import { TokenService } from '../../../../common/services/token.service';
-import { ValidatorsService } from '../../../../utils';
+import {
+  ValidatorsService,
+  getFormControlValueAsType,
+} from '../../../../utils';
 @Component({
   standalone: true,
   imports: [
@@ -49,6 +53,9 @@ export class EditProfileComponent implements OnInit {
   public validatorsService = inject(ValidatorsService);
   private userProfileUpdateService = inject(UserProfileUpdateService);
   editProfileForm!: FormGroup;
+  @ViewChild(AreasComponent) areasComponent!: AreasComponent;
+  socialNetworksData: { [key: string]: { link: string; platform: string } } =
+    {};
 
   ngOnInit(): void {
     const userId = this.tokenService.getUserIdFromToken();
@@ -63,43 +70,93 @@ export class EditProfileComponent implements OnInit {
     this.editProfileForm = new FormGroup({});
   }
 
-  getFormControlValueAsType = <T>(
-    formGroup: FormGroup,
-    controlName: string
-  ): T | null => {
-    const control = formGroup.get(controlName);
-    if (control) {
-      return control.value as T;
-    }
-    return null;
-  };
+  networks = [
+    {
+      id: 1,
+      network: 'X',
+      placeholder: 'Enter your social network X',
+    },
+    {
+      id: 2,
+      network: 'Discord',
+      placeholder: 'Enter your social network Discord',
+    },
+    {
+      id: 3,
+      network: 'LinkedIn',
+      placeholder: 'Enter your social network LinkedIn',
+    },
+    {
+      id: 4,
+      network: 'Facebook',
+      placeholder: 'Enter your social network Facebook',
+    },
+    {
+      id: 5,
+      network: 'Github',
+      placeholder: 'Enter your social network Github',
+    },
+    {
+      id: 6,
+      network: 'Instagram',
+      placeholder: 'Enter your social network Instagram',
+    },
+  ];
 
   saveData() {
-    // console.log(this.formGroup.getRawValue());
-
-    // const data= this.formGroup.get('dataFather')?.value as unknown as IPersonData;
-    const data = this.getFormControlValueAsType<IUserUpdateForm>(
+    const mainInfo = getFormControlValueAsType<IUserUpdateForm>(
       this.editProfileForm,
       'mainInfo'
     );
 
-    const dataNetwork = this.getFormControlValueAsType<IUserUpdateForm>(
-      this.editProfileForm,
-      'socialNetworkInfo'
-    );
-    const dataAreas = this.getFormControlValueAsType<IUserUpdateForm>(
-      this.editProfileForm,
-      'areasInfo'
-    );
+    const changeEmail = mainInfo!.changeEmail.value;
+    const changeUserName = mainInfo!.changeUserName.value;
+    const changePassword = mainInfo!.changePassword.value;
 
-    const moreInfo = this.getFormControlValueAsType<IUserUpdateForm>(
+    const moreInfo = getFormControlValueAsType<IFormMoreInfo>(
       this.editProfileForm,
       'moreInfo'
     );
 
-    console.log('data:', data);
-    console.log('dataNetwork:', dataNetwork);
-    console.log('dataAreas:', dataAreas);
-    console.log('moreInfo:', moreInfo);
+    const socialNetworksToSend = this.networks
+      .map((network) => {
+        const control = this.editProfileForm.get(
+          `socialNetworkInfo.${network.network.toLowerCase()}`
+        );
+
+        return {
+          link: control?.value || null,
+          platform: network.network,
+        };
+      })
+      .filter((network) => network.link);
+
+    const selectedAreas = this.areasComponent.getSelectedAreasData();
+
+    const formData = {
+      areaOfExpertise: selectedAreas.areaOfExpertise,
+      areaOfInterest: selectedAreas.areaOfInterest,
+      socialNetworks: socialNetworksToSend,
+      avatar: mainInfo?.avatar || null,
+      description: mainInfo?.description || null,
+      email: changeEmail?.email || null,
+      userName: changeUserName?.userName || null,
+      password: changePassword?.password || null,
+      pass:
+        changeEmail?.pass ||
+        changeUserName?.pass ||
+        changePassword?.pass ||
+        null,
+      firstName: moreInfo?.firstName || null,
+      lastName: moreInfo?.lastName || null,
+      gender: moreInfo?.gender || null,
+      bornDate: moreInfo?.bornDate || null,
+      specialty: moreInfo?.specialty || null,
+      country: moreInfo?.country || null,
+    };
+
+    console.log('formData', formData);
+
+    //return formData;
   }
 }

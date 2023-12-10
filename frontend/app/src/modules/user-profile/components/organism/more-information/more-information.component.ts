@@ -62,8 +62,8 @@ export class MoreInformationComponent implements OnInit, OnChanges {
   @Input({ required: true }) controlKey = '';
 
   genders: string[] = ['hombre', 'mujer'];
-  countriesOptions: string[] = [];
-  specialtiesOptions: string[] = [];
+  countriesOptions: ICountries[] = [];
+  specialtiesOptions: ISpecialties[] = [];
   private formBuilder = inject(NonNullableFormBuilder);
   private parentContainer = inject(ControlContainer);
 
@@ -91,13 +91,17 @@ export class MoreInformationComponent implements OnInit, OnChanges {
     }
 
     if (changes['specialties']) {
-      this.specialtiesOptions = this.specialties.map(
-        (specialty) => specialty.name
-      );
+      this.specialtiesOptions = this.specialties.map((specialty) => ({
+        id: specialty.id,
+        name: specialty.name,
+      }));
     }
 
     if (changes['countries']) {
-      this.countriesOptions = this.countries.map((country) => country.name);
+      this.countriesOptions = this.countries.map((country) => ({
+        id: country.id,
+        name: country.name,
+      }));
     }
   }
 
@@ -109,8 +113,8 @@ export class MoreInformationComponent implements OnInit, OnChanges {
           lastName: this.dataUserEditProfile.lastName,
           gender: this.dataUserEditProfile.gender,
           bornDate: this.dataUserEditProfile.bornDate,
-          specialty: this.dataUserEditProfile.specialty,
-          country: this.dataUserEditProfile.country,
+          specialty: this.dataUserEditProfile.specialty?.id || null,
+          country: this.dataUserEditProfile.country?.id || null,
         },
       });
     }

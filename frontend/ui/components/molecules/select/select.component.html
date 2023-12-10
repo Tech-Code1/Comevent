@@ -23,10 +23,10 @@
     </option>
     <option
       *ngFor="let option of options"
-      [value]="option"
+      [ngValue]="getOptionValue(option)"
       class="select-options"
     >
-      {{ option }}
+      {{ getOptionDisplay(option) }}
     </option>
   </select>
   <c-error-input

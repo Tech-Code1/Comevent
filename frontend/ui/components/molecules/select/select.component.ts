@@ -18,7 +18,7 @@ import {
 } from '../../atoms';
 import { IconLoadingComponent } from '../../atoms/icons';
 import { ControlValueAccesorDirective } from '../../shared/directives/control-value-accesor.directive';
-import { SelectType } from './select.interface';
+import { Option, SelectType } from './select.interface';
 
 @Component({
   standalone: true,
@@ -44,7 +44,7 @@ import { SelectType } from './select.interface';
     },
   ],
 })
-export class SelectComponent<T>
+export class SelectComponent<T extends Option>
   extends ControlValueAccesorDirective<T>
   implements SelectType<T>
 {
@@ -56,5 +56,23 @@ export class SelectComponent<T>
   @Input()
   set disabled(value: boolean) {
     this.setDisabledState(value);
+  }
+
+  getOptionValue(option: Option): number | string {
+    if (typeof option === 'string') {
+      return option;
+    } else {
+      // ? Manejar el caso en el que id es null
+      return option.id !== null ? option.id : '';
+    }
+  }
+
+  getOptionDisplay(option: Option): string {
+    if (typeof option === 'string') {
+      return option;
+    } else {
+      // ? Manejar el caso en el que name es null
+      return option.name !== null ? option.name : '';
+    }
   }
 }

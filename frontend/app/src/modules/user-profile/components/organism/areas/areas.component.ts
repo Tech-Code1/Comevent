@@ -166,6 +166,24 @@ export class AreasComponent implements OnInit, OnChanges {
 
   TYPE_AREA = TYPE_AREA;
 
+  getSelectedAreasData(): {
+    areaOfExpertise: number[];
+    areaOfInterest: number[];
+  } {
+    const areaOfExpertiseIds = this.areasSelectTypeExpertise
+      .filter((area) => area.type === TYPE_AREA.EXPERTISE)
+      .map((area) => area.id);
+
+    const areaOfInterestIds = this.areasSelectTypeInteres
+      .filter((area) => area.type === TYPE_AREA.INTEREST)
+      .map((area) => area.id);
+
+    return {
+      areaOfExpertise: areaOfExpertiseIds,
+      areaOfInterest: areaOfInterestIds,
+    };
+  }
+
   getFormControl(controlName: string): AbstractControl | null {
     return this.parentFormGroup.get(`${this.controlKey}.${controlName}`);
   }

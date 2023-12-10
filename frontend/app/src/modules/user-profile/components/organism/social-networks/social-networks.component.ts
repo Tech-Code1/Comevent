@@ -64,6 +64,8 @@ export class SocialNetworksComponent implements OnInit, OnChanges {
   @Input({ required: true }) controlKey = '';
   private formBuilder = inject(NonNullableFormBuilder);
   private parentContainer = inject(ControlContainer);
+  socialNetworksData: { [key: string]: { link: string; platform: string } } =
+    {};
 
   get parentFormGroup(): FormGroup {
     return this.parentContainer.control as FormGroup;
@@ -89,30 +91,36 @@ export class SocialNetworksComponent implements OnInit, OnChanges {
     }
   }
 
-  getNetwork(platform: string) {
-    if (this.dataUserEditProfile.socialNetworks) {
-      return (
-        this.dataUserEditProfile.socialNetworks.find(
-          (social) => social.platform === platform
-        )?.link || ''
-      );
-    }
-    return;
-  }
-
   updateFormWithUserProfileData(): void {
-    if (this.dataUserEditProfile) {
+    const networksMapping = {
+      x: SOCIAL_NETWORK.X,
+      discord: SOCIAL_NETWORK.DISCORD,
+      facebook: SOCIAL_NETWORK.FACEBOOK,
+      github: SOCIAL_NETWORK.GITHUB,
+      linkedin: SOCIAL_NETWORK.LINKEDIN,
+      instagram: SOCIAL_NETWORK.INSTAGRAM,
+    };
+
+    if (this.dataUserEditProfile && this.dataUserEditProfile.socialNetworks) {
+      // Crear un objeto con los valores iniciales de los controles
+      const formValue: { [key: string]: string | null } = {};
+
+      // Iterar sobre el objeto de mapeo y obtener los valores de la propiedad correspondiente
+      for (const [controlName, networkKey] of Object.entries(networksMapping)) {
+        formValue[controlName] = this.getNetwork(networkKey) || '';
+      }
+
+      // Actualizar el formulario con los valores obtenidos
       this.parentFormGroup.patchValue({
-        [this.controlKey]: {
-          x: this.getNetwork(SOCIAL_NETWORK.X),
-          discord: this.getNetwork(SOCIAL_NETWORK.DISCORD),
-          facebook: this.getNetwork(SOCIAL_NETWORK.FACEBOOK),
-          github: this.getNetwork(SOCIAL_NETWORK.GITHUB),
-          linkedin: this.getNetwork(SOCIAL_NETWORK.LINKEDIN),
-          instagram: this.getNetwork(SOCIAL_NETWORK.INSTAGRAM),
-        },
+        [this.controlKey]: formValue,
       });
     }
+  }
+
+  getNetwork(platform: string): string | undefined {
+    return this.dataUserEditProfile.socialNetworks?.find(
+      (network) => network.platform === platform
+    )?.link;
   }
 
   networks = [
