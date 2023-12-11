@@ -59,9 +59,9 @@ export class MainInfoComponent implements OnInit, OnChanges {
   @Input({ required: true }) controlKey = '';
   private parentContainer = inject(ControlContainer);
   private formBuilder = inject(NonNullableFormBuilder);
-  currentAvatarUrl!: string | undefined;
-  currentUserName: string | undefined = '';
-  currentEmail: string | undefined = '';
+  currentAvatarUrl!: string | null | undefined;
+  currentUserName: string | null | undefined = '';
+  currentEmail: string | null | undefined = '';
 
   get parentFormGroup(): FormGroup {
     return this.parentContainer.control as FormGroup;

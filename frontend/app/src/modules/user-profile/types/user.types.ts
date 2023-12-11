@@ -20,9 +20,9 @@ export interface ISocialNetworks {
 }
 
 export interface ISimplifiedUserEditProfile {
-  avatar: string | undefined;
-  username: string;
-  email: string;
+  avatar: string | null;
+  username: string | null;
+  email: string | null;
   description: string;
   socialNetworks: ISocialNetworks[];
   areaOfInteres: string[];
@@ -30,28 +30,47 @@ export interface ISimplifiedUserEditProfile {
   firstName: string;
   lastName: string;
   gender: string;
-  bornDate: Date | null;
-  age: number | null;
+  bornDate: Date;
+  age: number;
   specialty: ISpecialties;
   country: ICountries;
   currentPassword?: string;
   password?: string;
 }
 
+export interface IUpdateProfile {
+  avatar: string | null;
+  username: string | null;
+  email: string | null;
+  description: string | null;
+  socialNetworks: ISocialNetworks[] | null;
+  areaOfInteres: number[] | null;
+  areaOfExpertise: number[] | null;
+  firstName: string | null;
+  lastName: string | null;
+  gender: string | null;
+  bornDate: string | null;
+  age: number | null;
+  specialty: number | null;
+  country: number | null;
+  currentPassword?: string | null;
+  password?: string | null;
+}
+
 export interface IEditProfileFormData {
   description: string;
   socialNetworks: ISocialNetworks[];
   areas: {
-    areaOfExpertise: string[];
-    areaOfInteres: string[];
+    areaOfExpertise: number[];
+    areaOfInteres: number[];
   };
   moreInformation: {
     firstName: string;
     lastName: string;
     gender: string;
     bornDate: Date | null;
-    specialty: string;
-    country: string;
+    specialty: number;
+    country: number;
   };
   changeUserName: {
     userName: string;

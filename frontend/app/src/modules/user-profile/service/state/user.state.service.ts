@@ -7,6 +7,7 @@ import {
   IEditProfile,
   ISimplifiedUserEditProfile,
   ISpecialties,
+  IUpdateProfile,
   IUserProfile,
 } from '../..';
 import { environment } from '../../../../environments/environment';
@@ -33,9 +34,9 @@ export class UserProfileStateService {
     areaOfInteres: [],
     firstName: '',
     lastName: '',
-    bornDate: null,
+    bornDate: undefined,
     gender: '',
-    age: null,
+    age: undefined,
     specialty: { id: null, name: null },
     country: { id: null, name: null },
   });
@@ -128,7 +129,7 @@ export class UserProfileStateService {
       });
   }
 
-  onUpdateProfile(updateProfile: IEditProfile): void {
+  onUpdateProfile(updateProfile: Partial<IUpdateProfile>): void {
     this._loading.set(true);
 
     this.userProfileService

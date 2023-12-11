@@ -14,9 +14,9 @@ import {
 
 import {
   ICountries,
-  IEditProfile,
   ISimplifiedUserEditProfile,
   ISpecialties,
+  IUpdateProfile,
   IUserProfile,
 } from '../../types';
 
@@ -93,8 +93,8 @@ export class UserProfileApiService {
   }
 
   editUserProfile(
-    updateProfile: IEditProfile
-  ): Observable<BaseResponse<IEditProfile | undefined>> {
+    updateProfile: Partial<IUpdateProfile>
+  ): Observable<BaseResponse<Partial<IUpdateProfile> | undefined>> {
     const token = localStorage.getItem('token');
 
     if (!token) {
@@ -104,7 +104,7 @@ export class UserProfileApiService {
     const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
 
     return this.http
-      .patch<BaseResponse<IEditProfile | undefined>>(
+      .patch<BaseResponse<Partial<IUpdateProfile> | undefined>>(
         `${this.BASE_API}/edit-profile`,
         updateProfile,
         { headers }

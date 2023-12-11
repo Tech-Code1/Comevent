@@ -40,9 +40,9 @@ import { Swal } from '../../../../../utils';
 export class AvatarComponent {
   @Input({ required: true }) loadingProfile!: boolean;
   @Input({ required: true }) avatarControl!: FormControl;
-  @Input({ required: true }) currentAvatarUrl!: string | undefined;
-  @Input({ required: true }) currentUserName!: string | undefined;
-  @Input({ required: true }) currentEmail!: string | undefined;
+  @Input({ required: true }) currentAvatarUrl!: string | null | undefined;
+  @Input({ required: true }) currentUserName!: string | null | undefined;
+  @Input({ required: true }) currentEmail!: string | null | undefined;
   private controlContainer = inject(ControlContainer);
   private formBuilder = inject(NonNullableFormBuilder);
 

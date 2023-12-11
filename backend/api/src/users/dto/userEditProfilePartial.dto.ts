@@ -150,15 +150,15 @@ export class UserEditProfilePartialDTO {
     description: 'Specialty of the user',
     type: 'Specialty',
   })
-  @IsString()
+  @IsNumber()
   @IsOptional()
-  specialty?: string;
+  specialty?: number;
 
   @ApiProperty({
     description: 'Country of the user',
     type: 'Country',
   })
-  @IsString()
+  @IsNumber()
   @IsOptional()
-  country?: string;
+  country?: number;
 }
