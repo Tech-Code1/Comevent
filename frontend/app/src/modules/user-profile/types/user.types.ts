@@ -58,35 +58,35 @@ export interface IUpdateProfile {
 }
 
 export interface IEditProfileFormData {
-  description: string;
-  socialNetworks: ISocialNetworks[];
-  areas: {
-    areaOfExpertise: number[];
-    areaOfInteres: number[];
+  description?: string;
+  socialNetworks?: ISocialNetworks[];
+  areasInfo?: {
+    areaOfExpertise?: number[];
+    areaOfInteres?: number[];
   };
-  moreInformation: {
-    firstName: string;
-    lastName: string;
-    gender: string;
-    bornDate: Date | null;
-    specialty: number;
-    country: number;
+  moreInfo?: {
+    firstName?: string;
+    lastName?: string;
+    gender?: string;
+    bornDate?: Date | null;
+    specialty?: number;
+    country?: number;
   };
-  changeUserName: {
-    userName: string;
-    pass: string;
+  changeUserName?: {
+    userName?: string;
+    pass?: string;
   };
-  changePassword: {
-    pass: string;
-    password: string;
-    passRepeat: string;
+  changePassword?: {
+    pass?: string;
+    password?: string;
+    passRepeat?: string;
     currentPassword?: string;
   };
-  changeEmail: {
-    email: string;
-    pass: string;
+  changeEmail?: {
+    email?: string;
+    pass?: string;
   };
-  avatar: string;
+  avatar?: string;
 }
 
 export type IEditProfile = Partial<ISimplifiedUserEditProfile>;

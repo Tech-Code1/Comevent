@@ -71,7 +71,7 @@ export class MainInfoComponent implements OnInit, OnChanges {
     this.parentFormGroup.addControl(
       this.controlKey,
       this.formBuilder.group<IFormPersonalInfo>({
-        description: this.formBuilder.control(''),
+        description: this.formBuilder.control(null),
         avatar: this.formBuilder.control(null),
         changeEmail: this.formBuilder.group({
           email: this.formBuilder.control(''),
@@ -88,6 +88,8 @@ export class MainInfoComponent implements OnInit, OnChanges {
         }),
       })
     );
+
+    this.updateFormWithUserProfileData();
   }
 
   ngOnChanges(changes: SimpleChanges): void {
@@ -100,12 +102,12 @@ export class MainInfoComponent implements OnInit, OnChanges {
     if (this.dataUserEditProfile) {
       this.parentFormGroup.patchValue({
         [this.controlKey]: {
-          description: this.dataUserEditProfile.description,
+          description: this.dataUserEditProfile.description || '',
           changeEmail: {
-            email: this.dataUserEditProfile.email,
+            email: this.dataUserEditProfile.email || '',
           },
           changeUserName: {
-            userName: this.dataUserEditProfile.username,
+            userName: this.dataUserEditProfile.username || '',
           },
         },
       });

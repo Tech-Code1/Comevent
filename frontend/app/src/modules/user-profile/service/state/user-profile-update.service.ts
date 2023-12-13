@@ -1,13 +1,11 @@
 import { Injectable, inject } from '@angular/core';
-import { FormGroup } from '@angular/forms';
+import { AbstractControl, FormArray, FormGroup } from '@angular/forms';
 import * as lodash from 'lodash';
-import { getFormControlValueAsType } from '../../../../utils';
 import { AreasComponent } from '../../components';
 import {
   IEditProfileFormData,
-  IFormMoreInfo,
+  ISocialNetworks,
   IUpdateProfile,
-  IUserUpdateForm,
 } from '../../types';
 import { UserProfileStateService } from './user.state.service';
 // Importa otros servicios y modelos necesarios
@@ -51,6 +49,36 @@ export class UserProfileUpdateService {
     },
   ];
 
+  private processControl(
+    control: AbstractControl,
+    originalValue: any,
+    changes: Record<string, any>,
+    controlKey: string
+  ) {
+    if (control instanceof FormGroup) {
+      // ? Manejo de FormGroup anidado
+      Object.keys(control.controls).forEach((nestedKey) => {
+        this.processControl(
+          control.get(nestedKey)!,
+          originalValue[nestedKey],
+          changes,
+          nestedKey
+        );
+      });
+    } else if (control instanceof FormArray) {
+      // ? Manejo específico para FormArray
+      const currentValues = control.controls.map((c) => c.value);
+      if (!lodash.isEqual(currentValues, originalValue)) {
+        changes[controlKey] = currentValues;
+      }
+    } else {
+      // ? Para FormControl individual
+      if (control.dirty && !lodash.isEqual(control.value, originalValue)) {
+        changes[controlKey] = control.value;
+      }
+    }
+  }
+
   updateProfile(
     editProfileForm: FormGroup,
     originalValues: IEditProfileFormData,
@@ -60,19 +88,20 @@ export class UserProfileUpdateService {
       const currentValues = editProfileForm.value as Record<string, any>;
       const originalValuesRecord = originalValues as Record<string, any>;
 
-      console.log('current values:', currentValues);
-      console.log('original values:', originalValuesRecord);
+      console.log('current values: **', currentValues);
+      console.log('original values: **', originalValuesRecord);
 
       const changes: Record<string, any> = {};
 
-      console.log(changes, 'changes');
-
-      Object.keys(currentValues).forEach((key) => {
-        if (
-          key in originalValuesRecord &&
-          !lodash.isEqual(currentValues[key], originalValuesRecord[key])
-        ) {
-          changes[key] = currentValues[key];
+      Object.keys(editProfileForm.controls).forEach((controlKey) => {
+        const control = editProfileForm.get(controlKey);
+        if (control) {
+          this.processControl(
+            control,
+            originalValuesRecord[controlKey] || {},
+            changes,
+            controlKey
+          );
         }
       });
 
@@ -80,7 +109,6 @@ export class UserProfileUpdateService {
 
       if (Object.keys(changes).length > 0) {
         const profileData: Partial<IUpdateProfile> = this.prepareProfileData(
-          editProfileForm,
           areasComponent,
           changes
         );
@@ -95,60 +123,67 @@ export class UserProfileUpdateService {
   }
 
   private prepareProfileData(
-    editProfileForm: FormGroup,
     areasComponent: AreasComponent,
     changes: Record<string, any>
   ): Partial<IUpdateProfile> {
-    const mainInfo = getFormControlValueAsType<IUserUpdateForm>(
-      editProfileForm,
-      'mainInfo'
-    );
+    const formData: Partial<IEditProfileFormData> = {};
 
-    const changeEmail = mainInfo!.changeEmail.value;
-    const changeUserName = mainInfo!.changeUserName.value;
-    const changePassword = mainInfo!.changePassword.value;
+    for (const key in changes) {
+      if (Object.prototype.hasOwnProperty.call(changes, key)) {
+        formData[key as keyof IEditProfileFormData] = changes[key];
+      }
+    }
 
-    const moreInfo = getFormControlValueAsType<IFormMoreInfo>(
-      editProfileForm,
-      'moreInfo'
-    );
+    if (changes['mainInfo']) {
+      const mainInfo = changes['mainInfo'];
 
-    const socialNetworksToSend = this.networks
-      .map((network) => {
-        const control = editProfileForm.get(
-          `socialNetworkInfo.${network.network.toLowerCase()}`
-        );
+      if (mainInfo.changeEmail) {
+        formData.changeEmail = mainInfo.changeEmail;
+      }
+      if (mainInfo.changeUserName) {
+        formData.changeUserName = mainInfo.changeUserName;
+      }
+      if (mainInfo.changePassword) {
+        formData.changePassword = mainInfo.changePassword;
+      }
+    }
 
-        return {
-          link: control?.value || null,
-          platform: network.network,
-        };
-      })
-      .filter((network) => network.link);
+    if (changes['moreInfo']) {
+      const moreInfoChanges = changes['moreInfo'];
+      Object.keys(moreInfoChanges).forEach((key) => {
+        const change = moreInfoChanges[key];
+        if (change !== null && change !== undefined) {
+          if (!formData.moreInfo) {
+            formData.moreInfo = {};
+          }
+          formData.moreInfo[key as keyof typeof formData.moreInfo] = change;
+        }
+      });
+    }
 
-    const selectedAreas = areasComponent.getSelectedAreasData();
+    if (changes['socialNetworkInfo']) {
+      formData.socialNetworks = this.networks
+        .map((network) => {
+          const networkKey = `socialNetworkInfo.${network.network.toLowerCase()}`;
+          if (changes[networkKey]) {
+            return {
+              link: changes[networkKey],
+              platform: network.network,
+            };
+          }
+          return undefined;
+        })
+        .filter((network): network is ISocialNetworks => network !== undefined);
+    }
 
-    const formData = {
-      areaOfExpertise: selectedAreas.areaOfExpertise || null,
-      areaOfInterest: selectedAreas.areaOfInterest || null,
-      socialNetworks: socialNetworksToSend || null,
-      avatar: mainInfo?.avatar?.value || null,
-      description: mainInfo?.description?.value || null,
-      email: changeEmail?.email || null,
-      userName: changeUserName?.userName || null,
-      password: changePassword?.password || null,
-      pass:
-        changeEmail?.pass ||
-        changeUserName?.pass ||
-        changePassword?.pass ||
-        null,
-      firstName: moreInfo?.firstName?.value || null,
-      lastName: moreInfo?.lastName?.value || null,
-      gender: moreInfo?.gender?.value || null,
-      bornDate: moreInfo?.bornDate?.value || null,
-      specialty: moreInfo?.specialty?.value || null,
-      country: moreInfo?.country?.value || null,
-    };
+    if (changes['selectedAreas']) {
+      const selectedAreas = areasComponent.getSelectedAreasData();
+      if (!formData.areasInfo) {
+        formData.areasInfo = {};
+      }
+      formData.areasInfo.areaOfExpertise = selectedAreas.areaOfExpertise;
+      formData.areasInfo.areaOfInteres = selectedAreas.areaOfInterest;
+    }
 
     console.log('formData', formData);
 

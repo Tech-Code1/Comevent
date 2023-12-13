@@ -24,22 +24,7 @@ export class UserProfileStateService {
   private _dataUserProfile = signal<IUserProfile>({});
   private _dataUserEditProfile = signal<
     ISimplifiedUserEditProfile | Partial<ISimplifiedUserEditProfile>
-  >({
-    avatar: '',
-    username: '',
-    email: '',
-    description: '',
-    socialNetworks: [{ link: '', platform: '' }],
-    areaOfExpertise: [],
-    areaOfInteres: [],
-    firstName: '',
-    lastName: '',
-    bornDate: undefined,
-    gender: '',
-    age: undefined,
-    specialty: { id: null, name: null },
-    country: { id: null, name: null },
-  });
+  >({});
   private _dataCountries = signal<ICountries[]>([{ id: 0, name: '' }]);
   private _dataSpecialties = signal<ISpecialties[]>([{ id: 0, name: '' }]);
   private _loading = signal<boolean>(false);

@@ -109,8 +109,8 @@ export class MoreInformationComponent implements OnInit, OnChanges {
     if (this.dataUserEditProfile) {
       this.parentFormGroup.patchValue({
         [this.controlKey]: {
-          firstName: this.dataUserEditProfile.firstName,
-          lastName: this.dataUserEditProfile.lastName,
+          firstName: this.dataUserEditProfile.firstName || '',
+          lastName: this.dataUserEditProfile.lastName || '',
           gender: this.dataUserEditProfile.gender,
           bornDate: this.dataUserEditProfile.bornDate,
           specialty: this.dataUserEditProfile.specialty?.id || null,

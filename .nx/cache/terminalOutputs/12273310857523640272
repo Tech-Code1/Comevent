@@ -1,7 +1,0 @@
-chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 253 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
-webpack compiled [1m[32msuccessfully[39m[22m (a5839f80845cf7e0)
-[1m[31mDebugger listening on ws://loc[39m[22m
-[1m[31malhost:9229/2a401d5b-1cc6-420b-b7ff-7e1393be7809[39m[22m
-[1m[31mDebugger listening on ws://localhost:9229/2a401d5b-1cc6-420b-b7ff-7e1393be7809[39m[22m
-[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
-[1m[31m[39m[22m

@@ -1,17 +1,15 @@
 import { CommonModule } from '@angular/common';
 import {
   AfterViewInit,
+  ChangeDetectionStrategy,
   Component,
   OnInit,
   ViewChild,
   inject,
 } from '@angular/core';
-import {
-  FormGroup,
-  NonNullableFormBuilder,
-  ReactiveFormsModule,
-} from '@angular/forms';
+import { FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { FormChangeTrackingService } from '@services';
 import {
   ButtonComponent,
   IconCircleArrowLeftComponent,
@@ -45,18 +43,17 @@ import { ValidatorsService } from '../../../../utils';
   selector: 'edit-profile',
   templateUrl: './edit-profile.component.html',
   styleUrls: ['./edit-profile.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class EditProfileComponent implements OnInit, AfterViewInit {
   private tokenService = inject(TokenService);
-  private formBuilder = inject(NonNullableFormBuilder);
   public userProfileStateService = inject(UserProfileStateService);
   public validatorsService = inject(ValidatorsService);
   private userProfileUpdateService = inject(UserProfileUpdateService);
   editProfileForm!: FormGroup;
   originalValues!: IEditProfileFormData;
+  protected formChangeTrackingService = inject(FormChangeTrackingService);
   @ViewChild(AreasComponent) areasComponent!: AreasComponent;
-  socialNetworksData: { [key: string]: { link: string; platform: string } } =
-    {};
 
   ngOnInit(): void {
     const userId = this.tokenService.getUserIdFromToken();
@@ -72,11 +69,14 @@ export class EditProfileComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit() {
-    this.setInitialValues();
+    setTimeout(() => {
+      this.setInitialValues();
+    }, 1000);
   }
 
   setInitialValues() {
     this.originalValues = this.editProfileForm.value;
+    console.log('this.originalValues', this.originalValues);
   }
 
   saveData() {

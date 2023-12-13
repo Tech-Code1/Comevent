@@ -18,7 +18,7 @@ export interface IPassword {
 
 export interface IFormPersonalInfo {
   avatar: FormControl<string | null>;
-  description: FormControl<string>;
+  description: FormControl<string | null>;
   changeUserName: FormGroup<IUserName>;
   changeEmail: FormGroup<IEmail>;
   changePassword: FormGroup<IPassword>;
